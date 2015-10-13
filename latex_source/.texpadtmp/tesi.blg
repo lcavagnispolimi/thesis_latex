@@ -13,54 +13,50 @@ A level-1 auxiliary file: capitolo3.aux
 A level-1 auxiliary file: capitolo4.aux
 A level-1 auxiliary file: capitolo5.aux
 A level-1 auxiliary file: conclusioni.aux
-The style file: plain.bst
 A level-1 auxiliary file: appendiceA.aux
-A level-1 auxiliary file: appendiceB.aux
-A level-1 auxiliary file: appendiceC.aux
-A level-1 auxiliary file: appendiceD.aux
-A level-1 auxiliary file: appendiceE.aux
-A level-1 auxiliary file: appendiceF.aux
+The style file: plain.bst
 Database file #1: ../bibl_tesi.bib
-Warning--I didn't find a database entry for "marco02bud"
-You've used 0 entries,
+Warning--to sort, need author, editor, or key in foo
+Warning--empty author and editor in foo
+You've used 1 entry,
             2118 wiz_defined-function locations,
-            516 strings with 4387 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            514 strings with 4328 characters,
+and the built_in function-call counts, 196 in all, are:
+= -- 15
+> -- 1
 < -- 0
-+ -- 0
++ -- 1
 - -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+* -- 13
+:= -- 31
+add.period$ -- 2
+call.type$ -- 1
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
+cite$ -- 3
+duplicate$ -- 13
+empty$ -- 25
 format.name$ -- 0
-if$ -- 1
+if$ -- 42
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 7
 num.names$ -- 0
-pop$ -- 0
+pop$ -- 7
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 2
 quote$ -- 0
-skip$ -- 1
+skip$ -- 6
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 5
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
+type$ -- 2
+warning$ -- 2
 while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 warning)
+width$ -- 2
+write$ -- 10
+(There were 2 warnings)

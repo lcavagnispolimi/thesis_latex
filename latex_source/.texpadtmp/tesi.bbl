@@ -1,3 +1,7 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{foo}
+{\em Title}.
+\newblock Publisher, 2015.
 
 \end{thebibliography}

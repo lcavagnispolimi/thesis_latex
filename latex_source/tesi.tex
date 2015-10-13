@@ -35,6 +35,9 @@
 \include{abstract}
 \thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
 \include{ringraziamenti}
+\tableofcontents
+\listoffigures
+\listoftables
 \thispagestyle{empty} \vspace*{.75truecm} \normalfont \cleardoublepage
 \pagestyle{plain}\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}} 
 \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}         
@@ -46,8 +49,6 @@
 
 \pagenumbering{arabic}
 
-\tableofcontents
-
 \include{introduzione}
 \include{capitolo1}
 \include{capitolo2}
@@ -56,14 +57,7 @@
 \include{capitolo5}
 \include{conclusioni}
 
-\pagenumbering{roman}
-
 \cleardoublepage
-% ---- Bibliography ----
-\addcontentsline{toc}{chapter}{Bibliografia}
-\bibliographystyle{plain}
-\bibliography{bibl_tesi}
-%\nocite{*}
 
 \appendix
 
@@ -78,11 +72,12 @@
 \renewcommand{\headrulewidth}{0.3pt} 
 
 \include{appendiceA}
-\include{appendiceB}
-\include{appendiceC}
-\include{appendiceD}
-\include{appendiceE}
-\include{appendiceF}
+
+% ---- Bibliography ----
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliographystyle{plain}
+\bibliography{bibl_tesi}
+%\nocite{*}
 
 \end{document}
 

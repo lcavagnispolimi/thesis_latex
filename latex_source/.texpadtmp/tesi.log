@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.8.29)  13 OCT 2015 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2014.8.29)  13 OCT 2015 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -212,7 +212,7 @@ File: latin1.def 2014/04/30 v1.2b Input encoding file
 
 LaTeX Warning: Label `conclusioni' multiply defined.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceB.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceC.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceD.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceE.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceF.aux))
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -285,165 +285,116 @@ File: ./pictures/logopm.eps Graphic file (type eps)
 
 ] [6
 
+
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.toc)
 \tf@toc=\write3
 \openout3 = `tesi.toc'.
 
- [1
+ [7] [8
 
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof)
+\tf@lof=\write4
+\openout4 = `tesi.lof'.
+
+ [9] [10
+
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
+\tf@lot=\write5
+\openout5 = `tesi.lot'.
+
+ [11] [12
 
 ]
 \openout2 = `introduzione.aux'.
 
- (./introduzione.tex [2
+ (./introduzione.tex) [1
 
 
-] [3]) [4]
+]
 \openout2 = `capitolo1.aux'.
 
- (./capitolo1.tex
-Capitolo 1.
-
-LaTeX Warning: Citation `marco02bud' on page 5 undefined on input line 18.
-
-) [5
+ (./capitolo1.tex [2
 
 
 
 ]
+Capitolo 1.
+) [3]
 \openout2 = `capitolo2.aux'.
 
- (./capitolo2.tex [6
+ (./capitolo2.tex [4
 
 
 
 ]
 Capitolo 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-) [7]
+) [5]
 \openout2 = `capitolo3.aux'.
 
- (./capitolo3.tex [8
+ (./capitolo3.tex [6
 
 
 
 ]
 Capitolo 3.
-) [9]
+) [7]
 \openout2 = `capitolo4.aux'.
 
- (./capitolo4.tex [10
+ (./capitolo4.tex [8
 
 
 
 ]
 Capitolo 4.
-) [11]
+) [9]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex [12
+ (./capitolo5.tex [10
 
 
 
 ]
 Capitolo 5.
-) [13]
+) [11]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [14
+ (./conclusioni.tex [12
 
 
 
-]) [15] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [1
-
+]) [13] [14
 
 
 ]
 \openout2 = `appendiceA.aux'.
 
  (./appendiceA.tex
+Appendice A.
+) [15
+
+
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2
+[16
 
 
-]
-Appendice A.
-) [3]
-\openout2 = `appendiceB.aux'.
-
- (./appendiceB.tex [4
-
-
-
-]
-Appendice B.
-) [5]
-\openout2 = `appendiceC.aux'.
-
- (./appendiceC.tex [6
-
-
-
-]
-Appendice C.
-) [7]
-\openout2 = `appendiceD.aux'.
-
- (./appendiceD.tex [8
-
-
-
-]
-Appendice D.
-) [9]
-\openout2 = `appendiceE.aux'.
-
- (./appendiceE.tex [10
-
-
-
-]
-Appendice E.
-) [11]
-\openout2 = `appendiceF.aux'.
-
- (./appendiceF.tex [12
-
-
-
-]
-Appendice F.
-) [13] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceB.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceC.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceD.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceE.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceF.aux))
-
-LaTeX Warning: There were undefined references.
-
+]) [17] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4004 strings out of 493109
- 60463 string characters out of 6134873
- 125714 words of memory out of 5000000
- 7305 multiletter control sequences out of 15000+600000
- 8222 words of font info for 29 fonts, out of 8000000 for 9000
+ 3926 strings out of 493109
+ 58258 string characters out of 6134873
+ 121867 words of memory out of 5000000
+ 7262 multiletter control sequences out of 15000+600000
+ 6718 words of font info for 24 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 36i,11n,43p,746b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,43p,379b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.dvi (38 pages, 18120 bytes).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.dvi (33 pages, 5088 bytes).
