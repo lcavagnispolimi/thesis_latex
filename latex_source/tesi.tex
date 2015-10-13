@@ -32,7 +32,6 @@
 \pagenumbering{Roman}
 \include{sommario}
 \thispagestyle{empty}  \cleardoublepage
-\pagenumbering{Roman}
 \include{abstract}
 \thispagestyle{empty} \vspace*{.75truecm} \cleardoublepage
 \include{ringraziamenti}
@@ -45,13 +44,19 @@
 \fancyhead[LO]{\bfseries\rightmark}     
 \renewcommand{\headrulewidth}{0.3pt} 
 
+\pagenumbering{arabic}
+
+\tableofcontents
+
+\include{introduzione}
 \include{capitolo1}
 \include{capitolo2}
 \include{capitolo3}
 \include{capitolo4}
 \include{capitolo5}
-\include{capitolo6}
-\include{capitolo7}
+\include{conclusioni}
+
+\pagenumbering{roman}
 
 \cleardoublepage
 % ---- Bibliography ----

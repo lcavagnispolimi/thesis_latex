@@ -1,0 +1,17 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{Sommario}{I}
+\contentsline {chapter}{Abstract}{III}
+\contentsline {chapter}{Ringraziamenti}{V}
+\contentsline {chapter}{\numberline {1}Stato dell'arte}{5}
+\contentsline {chapter}{\numberline {2}Impostazione del problema di ricerca}{7}
+\contentsline {chapter}{\numberline {3}Progetto logico della soluzione del problema}{9}
+\contentsline {chapter}{\numberline {4}Architettura del sistema}{11}
+\contentsline {chapter}{\numberline {5}Realizzazioni sperimentali e valutazione}{13}
+\contentsline {chapter}{Bibliografia}{i}
+\contentsline {chapter}{\numberline {A}Documentazione del progetto logico}{iii}
+\contentsline {chapter}{\numberline {B}Documentazione della programmazione}{v}
+\contentsline {chapter}{\numberline {C}Listato}{vii}
+\contentsline {chapter}{\numberline {D}Il manuale utente}{ix}
+\contentsline {chapter}{\numberline {E}Esempio di impiego}{xi}
+\contentsline {chapter}{\numberline {F}Datasheet}{xiii}

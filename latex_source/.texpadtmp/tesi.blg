@@ -6,13 +6,13 @@ A level-1 auxiliary file: dedica.aux
 A level-1 auxiliary file: sommario.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: ringraziamenti.aux
+A level-1 auxiliary file: introduzione.aux
 A level-1 auxiliary file: capitolo1.aux
 A level-1 auxiliary file: capitolo2.aux
 A level-1 auxiliary file: capitolo3.aux
 A level-1 auxiliary file: capitolo4.aux
 A level-1 auxiliary file: capitolo5.aux
-A level-1 auxiliary file: capitolo6.aux
-A level-1 auxiliary file: capitolo7.aux
+A level-1 auxiliary file: conclusioni.aux
 The style file: plain.bst
 A level-1 auxiliary file: appendiceA.aux
 A level-1 auxiliary file: appendiceB.aux
@@ -24,7 +24,7 @@ Database file #1: ../bibl_tesi.bib
 Warning--I didn't find a database entry for "marco02bud"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4382 characters,
+            516 strings with 4387 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
