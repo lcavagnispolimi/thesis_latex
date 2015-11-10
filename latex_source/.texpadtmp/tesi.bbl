@@ -1,7 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{foo}
-{\em Title}.
-\newblock Publisher, 2015.
+\bibitem{341714}
+S.~Donati, G.~Giuliani, and S.~Merlo.
+\newblock Laser diode feedback interferometer for measurement of displacements
+  without ambiguity.
+\newblock {\em Quantum Electronics, IEEE Journal of}, 31(1):113--119, Jan 1995.
 
 \end{thebibliography}

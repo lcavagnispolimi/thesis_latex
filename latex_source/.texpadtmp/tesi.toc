@@ -1,8 +1,5 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{Sommario}{I}
-\contentsline {chapter}{Abstract}{III}
-\contentsline {chapter}{Ringraziamenti}{V}
 \contentsline {chapter}{Introduzione}{1}
 \contentsline {chapter}{\numberline {1}Principi di Laser e Telemetria}{3}
 \contentsline {chapter}{\numberline {2}Interferometria a retroiniezione}{5}
@@ -10,5 +7,5 @@
 \contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{9}
 \contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{11}
 \contentsline {chapter}{Conclusioni e sviluppi futuri}{13}
-\contentsline {chapter}{\numberline {A}Datasheet}{15}
+\contentsline {chapter}{\numberline {A}Documentazione software}{15}
 \contentsline {chapter}{Bibliografia}{16}
