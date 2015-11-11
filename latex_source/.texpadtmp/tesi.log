@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  11 NOV 2015 12:36
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  11 NOV 2015 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -651,50 +651,79 @@ File: ./pictures/cap1/cavitaottica.png Graphic file (type QTm)
 File: ./pictures/cap1/roundtrip.png Graphic file (type QTm)
  <use  "./pictures/cap1/roundtrip.png" >
 File: ./pictures/cap1/propagazione.png Graphic file (type QTm)
- <use  "./pictures/cap1/propagazione.png" > [8] [9]) [10]
+ <use  "./pictures/cap1/propagazione.png" > [8] [9] [10]
+File: ./pictures/cap1/fabryperot.png Graphic file (type QTm)
+ <use  "./pictures/cap1/fabryperot.png" > [11]
+File: ./pictures/cap1/dfb.png Graphic file (type QTm)
+ <use  "./pictures/cap1/dfb.png" >
+Overfull \hbox (6.77307pt too wide) in paragraph at lines 199--200
+ [] 
+ []
+
+File: ./pictures/cap1/vcsel.png Graphic file (type QTm)
+<use  "./pictures/cap1/vcsel.png" > [12] [13]
+File: ./pictures/cap1/classisicurezza.png Graphic file (type QTm)
+ <use  "./pictures/cap1/classisicurezza.png" > [14]
+File: ./pictures/cap1/triangolazione.png Graphic file (type QTm)
+ <use  "./pictures/cap1/triangolazione.png" >
+Overfull \hbox (30.45778pt too wide) in paragraph at lines 259--260
+ [] 
+ []
+
+[15]
+File: ./pictures/cap1/tempodivolo.png Graphic file (type QTm)
+ <use  "./pictures/cap1/tempodivolo.png" >
+Overfull \hbox (6.9645pt too wide) in paragraph at lines 316--317
+ [] 
+ []
+
+File: ./pictures/cap1/ondacontinua.png Graphic file (type QTm)
+<use  "./pictures/cap1/ondacontinua.png" > [16] [17]
+Missing character: There is no ’ in font ecrm1095!
+ [18]) [19]
 \openout2 = `capitolo2.aux'.
 
- (./capitolo2.tex
-Capitolo 2.
-) [11
+ (./capitolo2.tex [20
 
 
 
 ]
+Capitolo 2.
+) [21]
 \openout2 = `capitolo3.aux'.
 
- (./capitolo3.tex [12
+ (./capitolo3.tex [22
 
 
 
 ]
 Capitolo 3.
-) [13]
+) [23]
 \openout2 = `capitolo4.aux'.
 
- (./capitolo4.tex [14
+ (./capitolo4.tex [24
 
 
 
 ]
 Capitolo 4.
-) [15]
+) [25]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex [16
+ (./capitolo5.tex [26
 
 
 
 ]
 Capitolo 5.
-) [17]
+) [27]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [18
+ (./conclusioni.tex [28
 
 
 
-]) [19] [20
+]) [29] [30
 
 
 ]
@@ -702,7 +731,7 @@ Capitolo 5.
 
  (./appendiceA.tex
 Appendice A.
-) [21
+) [31
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -712,21 +741,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22
+[32
 
 
-]) [23] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+]) [33] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12454 strings out of 493725
- 256624 string characters out of 6145912
- 271856 words of memory out of 5000000
- 15546 multiletter control sequences out of 15000+600000
+ 12476 strings out of 493725
+ 257021 string characters out of 6145912
+ 271944 words of memory out of 5000000
+ 15561 multiletter control sequences out of 15000+600000
  23953 words of font info for 60 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,11n,43p,10405b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (39 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (49 pages).

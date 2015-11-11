@@ -98,7 +98,7 @@ Considerando un sistema ad esattamente tre livelli energetici ($E_1$, $E_2$ e $E
 
 Successivamente si manifesta un decadimento dallo stato instabile $E_3$ allo stato $E_2$ in tempi molto rapidi e privi di emissione spontanea. Solitamente l'energia rilasciata viene trasferita sotto forma di moto vibrazionale al materiale circostante e non come fotone emesso.
 
-Dal livello $E_2$ si verifica l'emissione laser alla frequenza $\nu_{21}$ e la conseguente regressione dal livello $E_2$ al livello $E_1$. La condizione necessaria, sui tempi di vita medi, per il funzionamento del laser è $\tau_{32} << \tau_{21}$, ovvero che il decadimento da $E_3$ a $E_2$ sia pi\'u rapido di quello da $E_2$ a $E_1$. Tale condizione permette di avere inversione di popolazione, ovvero $N_2 > N_1$, cos\'i da poter innescare l'amplificazione ottica e, quindi, l'effetto laser alla frequenza $\nu_{21}$.
+Dal livello $E_2$ si verifica l'emissione laser alla frequenza $\nu_{21}$ e la conseguente regressione dal livello $E_2$ al livello $E_1$. La condizione necessaria, sui tempi di vita medi, per il funzionamento del laser è $\tau_{32} \ll \tau_{21}$, ovvero che il decadimento da $E_3$ a $E_2$ sia pi\'u rapido di quello da $E_2$ a $E_1$. Tale condizione permette di avere inversione di popolazione, ovvero $N_2 > N_1$, cos\'i da poter innescare l'amplificazione ottica e, quindi, l'effetto laser alla frequenza $\nu_{21}$.
 
 Questo metodo \'e inefficiente perch\'e richiede un pompaggio elevato: \'e necessario fornire un numero elevato di elettroni al livello $E_3$ in modo tale che possa donarli al livello $E_2$ permettendo cos\'i l'inversione di popolazione.
 \begin{figure}
@@ -110,7 +110,7 @@ Questo metodo \'e inefficiente perch\'e richiede un pompaggio elevato: \'e neces
 \end{figure}
 Un struttura pi\'u efficiente \'e quella a quattro livelli schematizzata in Figura \ref{sistema4liv}. In questa disposizione, il pompaggio degli elettroni avviene da $E_1$ a $E_4$ a cui segue una transizione rapida e senza radiazione verso $E_3$ che consente di popolare il livello energetico. A questo punto avviene la transizione lenta e l'emissione tramite azione laser. Infine avviene una rapida transizione da $E_2$ allo stato fondamentale $E_1$.
 
-A differenza della struttura a tre livelli, questa ha il vantaggio di avere il livello $E_3$ popolato mentre il livello $E_2$ vuoto ($N_2=0$), in quanto gli elettroni decadono rapidamente dallo stato $E_2$ allo stato $E_1$, aiutando a conservare l'inversione di popolazione $N_3 >> N_2$. 
+A differenza della struttura a tre livelli, questa ha il vantaggio di avere il livello $E_3$ popolato mentre il livello $E_2$ vuoto ($N_2=0$), in quanto gli elettroni decadono rapidamente dallo stato $E_2$ allo stato $E_1$, aiutando a conservare l'inversione di popolazione $N_3 \gg N_2$. 
 				
 Oltre al meccanismo appena descritto, altre caratteristiche risultano cruciali nel funzionamento del laser: la cavit\'a ottica e il materiale attivo.
 
@@ -160,8 +160,202 @@ Considerando come perdite solamente la riflettività parziale degli specchi $R_1
 Quest'ultimo è chiamato guadagno critico o inversione critica.
 
 \section{Laser a semiconduttore}
+Un dispositivo laser a semiconduttore utilizza una giunzione p-n come materiale attivo all'interno della cavità ottica. Il pompaggio avviene tramite la ricombinazione di elettroni e lacune, che produce fotoni ad una lunghezza d'onda dipendente dal \textit{gap} tra i livelli energetici del dispositivo: la frequenza della radiazione emessa è legata quindi al tipo di materiali impiegati~\cite{sveltolaser}.
 
-%%TODO Cap 1: Laser a semiconduttore
+In commercio esistono diverse tipologie di laser a semiconduttore. Esse differiscono sulla base di due aspetti fondamentali: il tipo di cavità ottica impiegata e la forma degli specchi semi-riflettenti necessari a realizzare la retroazione ottica. 
+
+Sulla base di queste due caratteristiche si possono individuare tre categorie principali di laser:
+\begin{enumerate}
+	\item Laser Fabry-perot
+	\item Laser DFB
+	\item Laser VCSEL
+\end{enumerate}
+
+\subsection{Laser Fabry-Perot}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap1/fabryperot}
+    \caption{Laser Fabry-Perot}
+    \label{fabryperot}
+  \end{center}
+\end{figure}
+I laser Fabry-Perot hanno la classica configurazione con cavità orizzontale a specchi piani, come mostrato in Figura \ref{fabryperot}.
+
+Il principio di funzionamento é analogo a quello di un oscillatore ottico, descritto per esteso nel paragrafo precedente.
+
+In particolare, la luce presente in cavità stimola alcuni atomi, già eccitati dalla corrente di pompa, ad emettere un fotone isofrequenziale con stessa fase di quello incidente.  
+Gli specchi agli estremi della cavità rendono possibile la retroazione positiva, infatti fanno in modo che si possano instaurare alcuni modi di oscillazione stabili, o talvolta solo uno. 
+
+Questo può rappresentare uno svantaggio in applicazioni come l'interferometria.
+
+\subsection{Laser DFB}
+DFB è l'acronimo di \emph{Distributed Feedback Laser}. Il principio di funzionamento è simile a quello dei laser Fabry-Perot, ma con la importante differenza che non sono presenti due specchi separati a formare la cavità ottica ma è inserito uno strato corrugato adiacente allo strato attivo.
+
+Questo strato aggiuntivo è fabbricato in maniera tale da riflettere solo una banda stretta di lunghezze d'onda, così da garantire un singolo modo longitudinale. 
+
+Per questa caratteristica i laser DFB, sono più stabili dei Fabry-Perot, e più adatti ad applicazioni connesse alle fibre ottiche.
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.6]{cap1/dfb}
+    \caption{Laser DFB}
+    \label{dfb}
+  \end{center}
+\end{figure}
+
+\subsection{Laser VCSEL}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.45]{cap1/vcsel}
+    \caption{Laser VCSEL}
+    \label{vcsel}
+  \end{center}
+\end{figure}
+VCSEL è l'acronimo di \emph{Vertical Cavity Surface-Emitting Laser}. Questi dispositivi, a differenza delle precedenti due categorie, presentano una cavità ottica verticale. 
+
+La cavità ottica ha una lunghezza molto inferiore alle dimensioni laterali del dispositivo, ciò implica che la luce del fascio laser viene emessa dalla superficie piuttosto che dai bordi laterali. 
+
+Poiché la cavità risulta essere più ridotta rispetto alle altre tipologie, a parità di guadagno $G$ occorre aumentare la riflettività degli specchi per ottenere un guadagno d'anello maggiore di uno. A sfavore vi è una limitazione in potenza di emissione dovuta agli specchi altamente riflettenti.
+
+\section{Classi di sicurezza dei laser}
+Durante lo sviluppo di un sistema che include l'utilizzo di sorgenti laser è di fondamentale importanza garantire lo svolgimento del lavoro in sicurezza. Infatti, avendo a che fare con sorgenti laser, è importante conoscere i danni che esse possono provocare a cose e persone. In particolare, nei casi più gravi, le sorgenti laser possono procurare danni alla retina dell'occhio e ustioni alla pelle. 
+
+Per poter scegliere in modo appropriato il laser da impiegare nel dispositivo è indispensabile conoscere le norme legislative che ne regolano l'utilizzo~\cite{ans}. A livello europeo vige la normativa \emph{IEC/EN 60825-1} che fissa una classificazione dei fasci laser in funzione della lunghezza d'onda e della potenza ottica emessa. 
+
+La suddetta normativa classifica la pericolosità di una sorgente laser suddividendola in 4 classi:
+\begin{itemize}
+	\item \emph{Classe 1}: Questa classe include le sorgenti laser che non arrecano danni a cose e/o persone
+	\item \emph{Classe 2}: Questa classe comprende i laser che emettono nell'intervallo di lunghezza d'onda compreso tra $400nm$ e $700nm$. Possono provocare danni alla retina dell'occhio in caso di osservazione prolungata.
+	\item \emph{Classe 3}: Questa classe comprende due sotto-classi.
+		\begin{itemize}
+		\item \emph{Classe 3A}: Questa classe include tutte le sorgenti laser che risultano sicure per una visione naturale e non mediante strumenti ottici (es. microscopi)
+		\item \emph{Classe 3B}: Questa classe include tutte le sorgenti laser che risultano pericolose per una visione naturale. \'E necessario utilizzare protezioni per gli occhi e disporre delle segnalazioni di avvertimento nella zona in cui si utilizza il laser. 
+		\end{itemize}
+	\item \emph{Classe 4}: Questa classe include le sorgenti laser più pericolose. Possono causare lesioni alla pelle e costituiscono pericolo d'incendio. 
+\end{itemize}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap1/classisicurezza}
+    \caption{Classi di sicurezza dei laser}
+    \label{classisicurezza}
+  \end{center}
+\end{figure}
+La classificazione appena descritta è rappresentata in Figura \ref{classisicurezza}, insieme alle lunghezza d'onda corrispondenti a ciascuna classe.
+
+\section{Telemetri ottici}
+La telemetria è un insieme di metodi di osservazione aventi lo scopo di fornire la misura della distanza di un oggetto dall'osservatore.
+
+Lo strumento che effettua la misura è chiamato telemetro: esso rileva la distanza assoluta tra lo strumento stesso e un oggetto remoto, chiamato bersaglio. In commercio esistono diverse tipologie di telemetri che si basano sull'impiego di sorgenti laser.
+
+Le tipologie più diffuse sono tre: 
+\begin{enumerate}
+	\item A triangolazione
+	\item A tempo di volo
+	\item A onda continua
+\end{enumerate}
+
+\subsection{Telemetri a triangolazione}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap1/triangolazione}
+    \caption{Schema di funzionamento di un telemetro a triangolazione}
+    \label{triangolazione}
+  \end{center}
+\end{figure}
+I telemetri a triangolazione utilizzano una sorgente laser e un'ottica di ricezione posti perpendicolarmente ad una distanza $D$ tra loro. Inoltre, la sorgente laser è posizionata ad una distanza $L$ dal bersaglio. Si dice, quindi, che il bersaglio è "triangolato" da due punti a distanza $D$ su una stessa linea di base. Lo schema è mostrato in Figura \ref{triangolazione}.
+
+Questo tipo di telemetro si basa sul principio della triangolazione, quindi valuta la distanza del bersaglio, conoscendo l'angolo $\alpha$ con cui il fascio laser viene riflesso sull'ottica di ricezione. 
+
+Tramite questo angolo, infatti, è possibile ricavare la seguente relazione:
+\begin{equation}
+	\frac{D}{L}=\tan\alpha\approx\alpha
+\end{equation}
+Questa approssimazione è valida solo se $\alpha \ll 1$. 
+
+L'angolo $\alpha$ si trova valutando la posizione in cui il fascio colpisce il fotorivelatore, secondo la relazione: 
+\begin{equation}
+  \alpha=\frac{x}{f_{rec}}
+\end{equation}
+dove $x$ è la distanza del punto di incidenza sul fotorivelatore dall'asse ottico della lente di ricezione, mentre $f_{rec}$ è la lunghezza focale dell'ottica di ricezione.
+
+La misura della distanza si ricava facilmente dalle precedenti relazioni:
+\begin{equation}
+  L=\frac{D}{x}f_{rec}
+\end{equation}
+Differenziando quest'ultima equazione si trova l'errore di misura assoluto $\Delta L$ dovuto al minimo spostamento misurabile $\Delta x$ sul rivelatore: 
+\begin{equation}
+	 \Delta L=-\frac{D}{x^2}f_{rec}\Delta x
+\end{equation}
+Ricavando quindi un errore di misura relativo pari a:
+\begin{equation}
+\frac{\Delta L}{L}=-\frac{\Delta x}{x}=-\frac{\Delta\alpha}{\alpha}
+\end{equation}
+Il principale svantaggio di questa tecnica è che, con l'aumentare della distanza $L$, l'angolo $\alpha$ diminuisce, e ciò comporta l'aumento dell'incertezza relativa $-\frac{\Delta\alpha}{\alpha}$.
+ 
+Per tale motivo, questa tipologia di telemetro è utilizzata per la misura di brevi distanze ($0.1\div 10 m$) .
+
+\subsection{Telemetri a tempo di volo}
+I telemetri a tempo di volo utilizzano un laser impulsato. Essi emettono potenza solo per un brevissimo istante di tempo $\tau$.
+
+Con un bersaglio posto a distanza $L$ dalla sorgente laser, il fascio laser percorre un cammino pari a $2L$ (Andata e Ritorno) in un tempo $T$ viaggiando a velocità della luce $c\approx3\cdot10^8\frac{m}{s}$, ricavando così la seguente relazione:
+\begin{equation}
+  L=\frac{c}{2}T
+\end{equation}
+Differenziando la precedente equazione si ottiene:
+\begin{equation}
+  \Delta L=\frac{c}{2}\Delta T
+\end{equation}
+\begin{equation}
+  \frac{\Delta L}{L}=\frac{\Delta T}{T}
+\end{equation}
+Si può osservare come la misura $\Delta L$ dipenda unicamente dal $\Delta T$ che si riesce a risolvere. In pratica, la misura viene effettuata utilizzando un contatore che conta quanti tempi di clock $\Delta T$ sono intercorsi tra l'istante di partenza del raggio laser e il momento in cui ritorna all'ottica di rivelazione.
+
+Il vincolo di questi telemetri è che la durata dell'impulso $\tau$ deve soddisfare la condizione $\tau \ll \Delta T$. Per tale motivo sono utilizzati per misure di distanze medio-lunghe (fino a $10 Km$). 
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.4]{cap1/tempodivolo}
+    \caption{Schema di funzionamento di un telemetri a tempo di volo}
+    \label{tempodivolo}
+  \end{center}
+\end{figure}
+
+\subsection{Telemetri a onda continua}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.4]{cap1/ondacontinua}
+    \caption{Potenza trasmessa e potenza riflessa in un telemetro a onda continua}
+    \label{ondacontinua}
+  \end{center}
+\end{figure}
+I telemetri a onda continua hanno un funzionamento analogo ai telemetri a tempo di volo, ma a differenza di questi ultimi, la potenza ottica viene modulata sinusoidalmente a frequenza $f_{mod}$ ottenendo il segnale in Figura \ref{ondacontinua}.
+
+La potenza trasmessa dal laser vale quindi:
+\begin{equation}
+	 P(t)=P_0[1+msin(2\pi f_{mod}t)]
+\end{equation} 
+Nella pratica, la misura non viene effettuata con un contatore elettronico, come per i telemetri a tempo di volo, ma avviene mediante la rilevazione del ritardo di fase $\Delta\phi$ tra il segnale ricevuto $P_r$ e il segnale trasmesso $P_t$.
+
+Considerando la relazione:
+\begin{equation}
+  \frac{\Delta\phi}{2\pi}=\frac{\Delta t}{T_{mod}}
+\end{equation}
+dove $\Delta t=\frac{2L}{c}$ e $T_{mod}=\frac{1}{f_{mod}}$, si ottiene così la misura di distanza assoluta:
+\begin{equation}
+  L=\frac{c}{2}\frac{1}{2\pi f_{mod}}\Delta\phi=\frac{\Delta\phi}{S}
+\end{equation}
+Dall'ultima equazione si può notare come la sensibilità $S$ della misura migliori all'aumentare della frequenza di modulazione. Tuttavia un aumento eccessivo della frequenza di modulazione comporta una riduzione della massima distanza rilevabile. 
+
+Questo tipo di telemetro si utilizza per misure comprese tra $1\div1000m$, con risoluzioni dell'ordine del millimetro. 
+
+\section{Una tecnica alternativa per la misura}
+Come già discusso nell'Introduzione, lo scopo di questo lavoro di Tesi è realizzare il prototipo di un misuratore di distanza assoluta che sia a basso costo e con ingombro limitato per poter essere più maneggevole nella misura di medio-brevi distanze.
+
+Da quanto esposto nel precedente paragrafo, emerge che i telemetri descritti non sono i'n grado di raggiungere tali obiettivi. Infatti tali strumenti sono adatti per la misura di distanze dell'ordine della decina di metri. Per quanto riguarda i telemetri a triangolazione, invece, esistono in commercio strumenti in grado di misurare distanze brevi con buona sensibilità. Tuttavia questi dispositivi, oltre ad avere un costo elevato, necessitano di un'ottica specifica per la ricezione della radiazione riflessa e di un bersaglio cooperativo.
+
+Da queste osservazioni si conclude che, per raggiungere l'obiettivo preposto, è necessario utilizzare una tecnica di misura che si differenzia da quelle comuni, ovvero l'\textbf{interferometria a retroiniezione}. Questa tecnica verrà ampiamente discussa nel Capitolo \ref{capitolo2}.
+
+
+
 
 
 
