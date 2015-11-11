@@ -1,10 +1,21 @@
 \begin{thebibliography}{1}
 
+\bibitem{sensmeslaser}
+S.~Donati.
+\newblock {\em Electro-Optical Instrumentation: Sensing and Measuring with
+  Lasers}.
+\newblock Prentice Hall, 2003.
+
 \bibitem{341714}
 S.~Donati, G.~Giuliani, and S.~Merlo.
 \newblock Laser diode feedback interferometer for measurement of displacements
   without ambiguity.
 \newblock {\em Quantum Electronics, IEEE Journal of}, 31(1):113--119, Jan 1995.
+
+\bibitem{1464-4258-4-6-371}
+Guido Giuliani, Michele Norgia, Silvano Donati, and Thierry Bosch.
+\newblock Laser diode self-mixing technique for sensing applications.
+\newblock {\em Journal of Optics A: Pure and Applied Optics}, 4(6):S283, 2002.
 
 \bibitem{ans}
 A.N.S. Institute.
@@ -15,6 +26,12 @@ A.N.S. Institute.
 Safa~O Kasap.
 \newblock {\em Optoelectronics and Photonics: Principles and Practices}.
 \newblock Pearson Higher Ed, 2012.
+
+\bibitem{1070479}
+R.~Lang and K.~Kobayashi.
+\newblock External optical feedback effects on semiconductor injection laser
+  properties.
+\newblock {\em Quantum Electronics, IEEE Journal of}, 16(3):347--355, Mar 1980.
 
 \bibitem{sveltolaser}
 O.~Svelto.
