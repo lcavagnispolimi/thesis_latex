@@ -29,21 +29,21 @@
 \contentsline {section}{\numberline {3.1}Struttura complessiva dello strumento}{43}
 \contentsline {section}{\numberline {3.2}Parte analogica}{45}
 \contentsline {subsection}{\numberline {3.2.1}Sistema ottico e sorgente laser}{45}
-\contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{46}
+\contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{47}
 \contentsline {section}{\numberline {3.3}Parte di Conversione}{47}
 \contentsline {subsection}{\numberline {3.3.1}Convertitori}{49}
-\contentsline {subsubsection}{Convertitore DAC}{49}
+\contentsline {subsubsection}{Convertitore DAC}{50}
 \contentsline {paragraph}{Architetture DAC}{50}
-\contentsline {subparagraph}{\textbf {DAC a resistori pesati}}{50}
+\contentsline {subparagraph}{\textbf {DAC a resistori pesati}}{51}
 \contentsline {subparagraph}{\textbf {DAC a scala R-2R}}{51}
 \contentsline {paragraph}{Convertitore DAC presente sulla scheda di conversione}{53}
-\contentsline {subsubsection}{Convertitore ADC}{53}
+\contentsline {subsubsection}{Convertitore ADC}{54}
 \contentsline {paragraph}{Architetture ADC}{54}
 \contentsline {subparagraph}{\textbf {ADC a conteggio}}{54}
 \contentsline {subparagraph}{\textbf {ADC ad approssimazioni successive}}{55}
 \contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{56}
 \contentsline {subparagraph}{\textbf {ADC Flash}}{57}
-\contentsline {subparagraph}{\textbf {ADC Pipeline}}{57}
+\contentsline {subparagraph}{\textbf {ADC Pipeline}}{58}
 \contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{59}
 \contentsline {section}{\numberline {3.4}Parte digitale}{60}
 \contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{61}
