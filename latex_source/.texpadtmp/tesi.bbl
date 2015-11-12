@@ -1,12 +1,34 @@
 \begin{thebibliography}{10}
 
+\bibitem{sitesbrio}
+http://sine.ni.com/nips/cds/view/p/lang/it/nid/210421.
+
+\bibitem{siteads807}
+http://www.ti.com/lit/ds/symlink/ads807.pdf.
+
 \bibitem{sitedac902}
 http://www.ti.com/lit/ds/symlink/dac902.pdf.
+
+\bibitem{dsxilinx}
+http://www.xilinx.com/products/silicon-devices/fpga/spartan-6/lx.html.
 
 \bibitem{thesispallsilv}
 Palludo A. and Silvano A.
 \newblock Sistema ottico a retroiniezione per la misura di distanza assoluta.
 \newblock Master's thesis, Politecnico di Milano, 2015.
+
+\bibitem{birkner1978programmable}
+J.M. Birkner and H.T. Chua.
+\newblock Programmable array logic circuit, November~7 1978.
+\newblock US Patent 4,124,899.
+
+\bibitem{axfpga}
+Actel Corporation.
+\newblock Axcelerator family fpga, May 2005.
+
+\bibitem{actelpro}
+Actel Corporation.
+\newblock Proasic3 flash family fpgas, October 2005.
 
 \bibitem{thesissmldis}
 S.~Disegna.
@@ -30,6 +52,18 @@ Guido Giuliani, Michele Norgia, Silvano Donati, and Thierry Bosch.
 \newblock Laser diode self-mixing technique for sensing applications.
 \newblock {\em Journal of Optics A: Pure and Applied Optics}, 4(6):S283, 2002.
 
+\bibitem{231343}
+J.~Greene, E.~Hamdy, and S.~Beal.
+\newblock Antifuse field programmable gate arrays.
+\newblock {\em Proceedings of the IEEE}, 81(7):1042--1056, Jul 1993.
+
+\bibitem{32929}
+E.~Hamdy, J.~McCollum, S.-O. Chen, S.~Chiang, S.~Eltoukhy, J.~Chang, T.~Speers,
+  and A.~Mohsen.
+\newblock Dielectric based antifuse for logic and memory ics.
+\newblock In {\em Electron Devices Meeting, 1988. IEDM '88. Technical Digest.,
+  International}, pages 786--789, Dec 1988.
+
 \bibitem{ans}
 A.N.S. Institute.
 \newblock American national standard for safe use of lasers: Ansi z 136.1.
@@ -40,22 +74,68 @@ Safa~O Kasap.
 \newblock {\em Optoelectronics and Photonics: Principles and Practices}.
 \newblock Pearson Higher Ed, 2012.
 
+\bibitem{4068926}
+Ian Kuon and J.~Rose.
+\newblock Measuring the gap between fpgas and asics.
+\newblock {\em Computer-Aided Design of Integrated Circuits and Systems, IEEE
+  Transactions on}, 26(2):203--215, Feb 2007.
+
+\bibitem{Kuon:2008:FAS:1454695.1454696}
+Ian Kuon, Russell Tessier, and Jonathan Rose.
+\newblock Fpga architecture: Survey and challenges.
+\newblock {\em Found. Trends Electron. Des. Autom.}, 2(2):135--253, February
+  2008.
+
 \bibitem{1070479}
 R.~Lang and K.~Kobayashi.
 \newblock External optical feedback effects on semiconductor injection laser
   properties.
 \newblock {\em Quantum Electronics, IEEE Journal of}, 16(3):347--355, Mar 1980.
 
+\bibitem{510550}
+R.~Lipp, R.~Freeman, and T.~Saxe.
+\newblock A high density flash memory ppga family.
+\newblock In {\em Custom Integrated Circuits Conference, 1996., Proceedings of
+  the IEEE 1996}, page 239, May 1996.
+
 \bibitem{thesismelch}
 D.~Melchionni.
 \newblock Vibrometro laser retroazionato in digitale.
 \newblock Master's thesis, Politecnico di Milano, 2012.
+
+\bibitem{Minnick:1967:SMR:321386.321387}
+Robert~C. Minnick.
+\newblock A survey of microcellular research.
+\newblock {\em J. ACM}, 14(2):203--241, April 1967.
+
+\bibitem{622505}
+P.~Pavan, R.~Bez, P.~Olivo, and E.~Zanoni.
+\newblock Flash memory cells-an overview.
+\newblock {\em Proceedings of the IEEE}, 85(8):1248--1271, Aug 1997.
 
 \bibitem{randonethesis}
 E.~M. Randone.
 \newblock {\em Fenomeni di retro-iniezione ottica in laser a semiconduttore e
   applicazioni}.
 \newblock PhD thesis, Universit{\`a} Degli Studi di Pavia, 2007.
+
+\bibitem{fpgabook}
+J.~Rose S.~D.~Brown, R.~Francis and Z.~Vranesic.
+\newblock {\em Field-Programmable Gate Arrays}.
+\newblock Kluwer Academic Publishers, 1992.
+
+\bibitem{e300manual}
+Freescale semiconductor.
+\newblock {\em e300 Power Architecture Core Family Reference Manual}.
+
+\bibitem{584227}
+Chih-Ching Shih, R.~Lambertson, F.~Hawley, F.~Issaw, J.~McCollum, E.~Hamdy,
+  H.~Sakurai, H.~Yuasa, H.~Honda, T.~Yamaoka, T.~Wada, and Chenming Hu.
+\newblock Characterization and modeling of a highly reliable metal-to-metal
+  antifuse for high-performance and high-density field-programmable gate
+  arrays.
+\newblock In {\em Reliability Physics Symposium, 1997. 35th Annual
+  Proceedings., IEEE International}, pages 25--33, Apr 1997.
 
 \bibitem{storeyelet}
 N.~Storey.
@@ -72,5 +152,21 @@ D.~Storti.
 O.~Svelto.
 \newblock {\em Principles of Lasers}.
 \newblock Plenum Press, fourth edition, 1998.
+
+\bibitem{reconfgate}
+R.~H. Freeman H. Hsieh J. Y. Ja J. E. Mahoney L. T.~Ngo W.~Carter, K.~Duong and
+  S.~L. Size.
+\newblock A user programmable reconfiguration gate array.
+\newblock {\em in Proceedings of the IEEE Custom Integrated Circuits
+  Conference}, pages 233--235, May 1986.
+
+\bibitem{wahl}
+S.~E. Wahlstrom.
+\newblock {\em Programmable logic arrays - cheaper by the millions}.
+\newblock Electronics, December 1967.
+
+\bibitem{cpldxilinx}
+Xilinx.
+\newblock Xc9500 in-system programmable cpld family ds063(v5.4), April 2006.
 
 \end{thebibliography}

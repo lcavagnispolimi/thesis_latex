@@ -16,48 +16,81 @@ A level-1 auxiliary file: conclusioni.aux
 A level-1 auxiliary file: appendiceA.aux
 The style file: plain.bst
 Database file #1: ../bibl_tesi.bib
+Warning--entry type for "dsxilinx" isn't style-file defined
+--line 18 of file ../bibl_tesi.bib
+Warning--entry type for "sitesbrio" isn't style-file defined
+--line 178 of file ../bibl_tesi.bib
+Warning--entry type for "siteads807" isn't style-file defined
+--line 184 of file ../bibl_tesi.bib
 Warning--entry type for "sitedac902" isn't style-file defined
---line 12 of file ../bibl_tesi.bib
+--line 227 of file ../bibl_tesi.bib
 Warning--to sort, need author or key in sitedac902
-You've used 14 entries,
+Warning--to sort, need author or key in siteads807
+Warning--to sort, need author or key in sitesbrio
+Name 1 in "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" has a comma at the end for entry reconfgate
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1049 of file plain.bst
+Name 1 in "S. D. Brown, R. Francis, J. Rose, and Z. Vranesic" has a comma at the end for entry fpgabook
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in dsxilinx
+Name 1 in "S. D. Brown, R. Francis, J. Rose, and Z. Vranesic" has a comma at the end for entry fpgabook
+while executing---line 1090 of file plain.bst
+Name 1 in "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" has a comma at the end for entry reconfgate
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
+while executing---line 1090 of file plain.bst
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            579 strings with 5839 characters,
-and the built_in function-call counts, 3287 in all, are:
-= -- 319
-> -- 131
-< -- 0
-+ -- 54
-- -- 40
-* -- 181
-:= -- 602
-add.period$ -- 40
-call.type$ -- 14
-change.case$ -- 60
+            683 strings with 8460 characters,
+and the built_in function-call counts, 9140 in all, are:
+= -- 854
+> -- 411
+< -- 4
++ -- 170
+- -- 134
+* -- 574
+:= -- 1518
+add.period$ -- 87
+call.type$ -- 33
+change.case$ -- 161
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 137
-empty$ -- 275
-format.name$ -- 40
-if$ -- 673
+cite$ -- 37
+duplicate$ -- 359
+empty$ -- 776
+format.name$ -- 134
+if$ -- 1929
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 11
-newline$ -- 71
-num.names$ -- 26
-pop$ -- 69
+int.to.str$ -- 33
+missing$ -- 24
+newline$ -- 156
+num.names$ -- 58
+pop$ -- 219
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 133
 quote$ -- 0
-skip$ -- 91
+skip$ -- 281
 stack$ -- 0
-substring$ -- 124
-swap$ -- 9
-text.length$ -- 0
+substring$ -- 429
+swap$ -- 64
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 1
-while$ -- 29
-width$ -- 16
-write$ -- 148
-(There were 2 warnings)
+type$ -- 120
+warning$ -- 4
+while$ -- 75
+width$ -- 35
+write$ -- 323
+(There were 12 error messages)

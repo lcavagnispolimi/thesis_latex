@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 13:02
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,6 +614,11 @@ Overfull \hbox (3.88805pt too wide) in paragraph at lines 43--43
  [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Analogico-Digitale 
  []
 
+
+Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
+ [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
+ []
+
 )
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
@@ -793,32 +798,63 @@ Underfull \vbox (badness 1062) has occurred while \output is active []
 
  [58]
 File: ./pictures/cap3/ads807schema.png Graphic file (type QTm)
- <use  "./pictures/cap3/ads807schema.png" > [59]) [60]
+ <use  "./pictures/cap3/ads807schema.png" > [59] [60]
+File: ./pictures/cap3/sbrio.png Graphic file (type QTm)
+ <use  "./pictures/cap3/sbrio.png" > [61]
+Underfull \vbox (badness 7468) has occurred while \output is active []
+
+ [62]
+File: ./pictures/cap3/pla.png Graphic file (type QTm)
+ <use  "./pictures/cap3/pla.png" >
+File: ./pictures/cap3/plaor.png Graphic file (type QTm)
+ <use  "./pictures/cap3/plaor.png" > [63]
+File: ./pictures/cap3/chipFPGA.png Graphic file (type QTm)
+ <use  "./pictures/cap3/chipFPGA.png" > [64]
+File: ./pictures/cap3/sma.png Graphic file (type QTm)
+ <use  "./pictures/cap3/sma.png" >
+File: ./pictures/cap3/smb.png Graphic file (type QTm)
+ <use  "./pictures/cap3/smb.png" >
+File: ./pictures/cap3/smc.png Graphic file (type QTm)
+ <use  "./pictures/cap3/smc.png" > [65] [66]
+File: ./pictures/cap3/floatgate.png Graphic file (type QTm)
+ <use  "./pictures/cap3/floatgate.png" > [67]
+Underfull \vbox (badness 1264) has occurred while \output is active []
+
+ [68] [69] [70]
+Overfull \hbox (85.90988pt too wide) in paragraph at lines 549--558
+ [][] 
+ []
+
+File: ./pictures/cap3/uproc.png Graphic file (type QTm)
+<use  "./pictures/cap3/uproc.png" > [71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72] [73]) [74]
 \openout2 = `capitolo4.aux'.
 
  (./capitolo4.tex
 Capitolo 4.
-) [61
+) [75
 
 
 
 ]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex [62
+ (./capitolo5.tex [76
 
 
 
 ]
 Capitolo 5.
-) [63]
+) [77]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [64
+ (./conclusioni.tex [78
 
 
 
-]) [65] [66
+]) [79] [80
 
 
 ]
@@ -826,7 +862,7 @@ Capitolo 5.
 
  (./appendiceA.tex
 Appendice A.
-) [67
+) [81
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -836,21 +872,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68
+[82
 
 
-] [69]) [70] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
+ []
+
+[83]
+Underfull \hbox (badness 1824) in paragraph at lines 128--130
+[]\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
+ []
+
+[84]) [85] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12633 strings out of 493725
- 259576 string characters out of 6145912
- 273638 words of memory out of 5000000
- 15679 multiletter control sequences out of 15000+600000
- 25948 words of font info for 69 fonts, out of 8000000 for 9000
+ 12680 strings out of 493725
+ 260217 string characters out of 6145912
+ 273814 words of memory out of 5000000
+ 15716 multiletter control sequences out of 15000+600000
+ 26713 words of font info for 70 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,15n,43p,10391b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (86 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (101 pages).

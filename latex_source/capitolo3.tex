@@ -355,24 +355,269 @@ Il convertitore presente sulla scheda di conversione \textit{SCO Board} è l'\te
 La figura \ref{ads807schema} mostra lo schema a blocchi interno del \textit{ADS807}.
 Il circuito è costituito da quattro componenti principali:
 \begin{itemize}
-	\item \underline{Circuito di Track \& Hold}: L'ingresso analogico consiste in un circuito differenziale di \textit{Track \& Hold}. Tale circuito è utilizzato per mantenere il segnale campionato costante durante tutto il periodo di conversione. A differenza di un \textit{Sample \& Hold}, il \textit{Track \& Hold} trascorre la maggior parte del tempo seguendo l'ingresso ed è posto in modo hold solo per un breve intervallo. Nei sistemi di acquisizione che operano ad elevate velocità, come in questo caso (superiori a $1MHz$), i termini \textit{Sample \& Hold} e \textit{Track \& Hold} perdono la loro distinzione. 
+	\item \underline{Circuito di Track \& Hold}: L'ingresso analogico consiste in un circuito differenziale di \textit{Track \& Hold}. Tale circuito è utilizzato per mantenere il segnale campionato costante durante tutto il periodo di conversione. A differenza di un \textit{Sample \& Hold}, il \textit{Track \& Hold} trascorre la maggior parte del tempo seguendo l'ingresso ed è posto in modo hold solo per un breve intervallo. Nei sistemi di acquisizione che operano ad elevate velocità, come in questo caso (superiori a $1MHz$), i termini \textit{Sample \& Hold} e \textit{Track \& Hold} perdono la loro distinzione.
+	\item \underline{ADC Pipeline}: L'architettura a Pipeline è formata da $12$ stadi interni con una latenza di $6$ cicli di clock. I dati in uscita diventano validi sul fronte di salita del clock.
+	\item \underline{Logica per la correzione dell'errore (Error Correction Logic)}: La logica di correzione dell'errore è quella descritta nel paragrafo precedente dove il campione digitale prodotto ogni stadio della pipeline viene convertito da un DAC e sottratto al valore analogico di ingresso producendo così un errore di quantizzazione che verrà amplificato e inviato allo stadio successivo.
+	\item \underline{3 State Outputs}: L'uscita digitale del convertitore possiede una logica a $3$ stati. Nella logica \textit{tri-state} è presente un terzo stato, detto ad alta impedenza, oltre ai due livelli logici già presenti nella logica binaria. Nello stato ad alta impedenza l'uscita si comporta come se fosse elettricamente disconnessa dal resto del circuito.
 \end{itemize}
-
+Una descrizione più dettagliata dell'integrato è fornita sul sito del produttore~\cite{siteads807}.
 
 \section{Parte digitale}
+La parte digitale dello strumento è composta da una scheda \textit{embedded} di prototipazione. 
 
 \subsection{Scheda di prototipazione utilizzata}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap3/sbrio}
+    \caption{Scheda di elaborazione digitale, National Instruments Single-Board RIO (sbRIO) 9636}
+    \label{sbrio}
+  \end{center}
+\end{figure}
+Per lo svolgimento della fase di prototipazione dello strumento è stata utilizzata la scheda di prototipazione \textit{Single Board RIO 9636}, progettata e prodotta dalla \textit{National Instruments}, Figura \ref{sbrio}.
+
+La principale motivazione che ha spinto all'utilizzo di un dispositivo \textit{embedded} di prototipazione è la possibilità di raggiungere elevate prestazioni di calcolo. Inoltre, l'estrema ri-configurabilità di tale dispositivo ha permesso una rapida prototipazione dello strumento.
+
+La scheda integra su un singolo PCB molteplici componenti elettronici; sono infatti presenti un microprocessore, in grado di eseguire software \textit{Real-Time}, una FPGA, \textit{Xilinx Spartan-6 LX45}, un DAC ed un ADC. Inoltre la scheda integra $4$ output e $16$ input analogici, a $16$-bit, e $28$ canali digitali, programmabili per essere utilizzati come input o output.
+
+Sono presenti infine un connettore \textit{10/100Base-T Ethernet} per la comunicazione con un PC, una USB, un lettore di SDHC, un connettore CAN e due connettori seriali (RS232 e RS485). Delle numerose componenti presenti sulla scheda, per il progetto presentato in questa tesi sono stati sfruttati, oltre al microprocessore ed all'FPGA, soltanto la connessione \textit{Ethernet}, per comunicare con un PC host, e $24$ dei $28$ pin digitali ($12$ in ingresso e $12$ in uscita) per la comunicazione con i convertitori della scheda di conversione \textit{SCO Board}.
+
+A causa dei vincoli stringenti sulla temporizzazione non è stato possibile sfruttare i convertitori integrati nella \textit{sbRIO}, che sono stati sostituiti con i componenti precedentemente descritti. Una descrizione più dettagliata della scheda è fornita sul sito di \textit{National Instruments}~\cite{sitesbrio}.
+
+Poiché la parte centrale dell'architettura software è stata sviluppata per essere eseguita da un'FPGA, in questo capitolo si darà ampio spazio ad una spiegazione generale della nascita e delle principali tecnologie impiegate nella costruzione di FPGA.
 
 \subsection{FPGA}
+Con il termine FPGA, acronimo di \textit{Field Programmable Gate Array}, si intende un circuito integrato le cui funzionalità sono programmabili via software~\cite{Kuon:2008:FAS:1454695.1454696}. Rispetto ad una soluzione specializzata (ASIC, ovvero \textit{Application Specific Integrated Circuit}) offrono numerosi vantaggi, infatti per la realizzazione di un'ASIC possono trascorrere mesi e la spesa è dell'ordine di centinaia di migliaia di dollari solo per la realizzazione del primo prototipo; al contrario un'FPGA può essere riconfigurata in pochi secondi e i suoi costi non superano qualche migliaio di dollari.
+
+I vantaggi in termini di costo e velocità di sviluppo sono compensati da una maggiore area occupata, tipicamente dalle $20$ alle $35$ volte, una computazione $3$-$4$ volte più lenta e un consumo energetico circa $10$ volte maggiore~\cite{4068926}.
+
+Nonostante questi svantaggi le FPGA sono preferite in ambiti in cui i volumi di produzione non sono tali da giustificare la spesa per la realizzazione di un ASIC, e spesso rappresentano l'unica alternativa economicamente sostenibile.
 
 \subsubsection{Storia delle FPGA}
+L'origine delle moderne FPGA può essere ricondotta allo sviluppo dei circuiti integrati negli anni $'60$. 
+
+I primi dispositivi programmabili avevano architetture regolari e funzionalità flessibili. Infatti tipicamente si avevano architetture composte da array bidimensionali di porte logiche, con connessioni punto-punto, detti \textit{cellular array}.
+
+Questi primi array contenevano celle logiche che potevano essere programmate, attraverso la "metallizzazione", durante il processo produttivo per creare funzioni logiche a due ingressi. A metà degli anni $'60$ si è raggiunta la capacità di programmare i circuiti sul campo, ovvero dopo il processo di produzione, attraverso l'introduzione di "punti di taglio"~\cite{Minnick:1967:SMR:321386.321387} nei \textit{cellular array}. Le connessioni tra i diversi elementi logici erano ancora fisse, ma la funzionalità di ogni cella logica era modificabile grazie all'introduzione di fusibili programmabili. Questi fusibili erano programmabili sul campo attraverso l'uso di correnti di programmazione.
+
+Negli anni $'70$ sono state introdotte le memorie PROM, che hanno portato nuovi modi di implementare funzioni logiche. Nonostante una ROM a $N$ indirizzi possa implementare qualsiasi funzione logica con $N$ ingressi, l'efficienza rispetto all'area si rivela essere un problema. Infatti l'area dipende in modo esponenziale dal numero di ingressi $N$ e quindi, anche con valori piccoli di $N$, il chip avrà dimensioni elevate.
+
+\begin{figure}
+\centering
+\subfigure[PLA]
+{\includegraphics[scale=.3]{cap3/pla}}
+\hspace{5mm}
+\subfigure[PLA con piano OR fisso]
+{\includegraphics[scale=.3]{cap3/plaor}}
+\caption{Tipologie di PLA}\label{plas}
+\end{figure}
+%%TODO Cap3: sistemare referenziamento subfigures
+
+I primi dispositivi programmabili, chiamati PLA (\textit{Programmable Logic Array}) si basavano su questa architettura, con una struttura a due livelli, AND e OR. Un esempio di PLA è mostrato in Figura \ref{plas}(a).
+
+Questa architettura si è poi evoluta in un piano AND programmabile, seguito da un piano OR fisso (Figura \ref{plas}(b)). Questa seconda architettura mantiene comunque una buona flessibilità, ma al tempo stesso riduce la complessità del circuito.
+
+Quest'architettura è stata introdotta sul mercato nel $1977$ da \textit{Monolithic Memories Incorporated} (MMI)~\cite{birkner1978programmable}.
+
+Per realizzare una funzione logica con questo tipo di architettura è necessario usare uno o due livelli della struttura. Gli input e le combinazioni intermedie alimentano l'array attraverso un'interconnessione programmabile, tipicamente una \textit{crossbar}. Questo tipo di implementazione dell'interconnessione porta ad una crescita dell'area molto rapida, soprattutto per circuiti con molti ingressi.
+
+La prima memoria basata su FPGA (\textit{SRAM-based FPGA}) è stata introdotta da \textit{Wahlstrom} nel $1967$~\cite{wahl}. 
+
+Questa architettura usa uno stream di bits sia per la logica che per l'interconnessione. Al contrario della \textit{cellular array} ogni cella logica può implementare sia una funzione logica che una memoria. Inoltre, la connessione tra celle logiche può essere facilmente modificata per permettere l'implementazione di diverse topologie del circuito. Nonostante la memoria statica (SRAM) offra una flessibilità maggiore nella programmabilità, richiede un'area maggiore rispetto all'implementazione ROM.
+
+Questo problema ha ritardato l'introduzione in commercio di prodotti basati su memoria statica fino alla metà degli anni $'80$, quando il costo per transistor era diventato sufficientemente basso.
+
+La prima FPGA moderna è stata introdotta da \textit{Xilinx} nel $1984$~\cite{reconfgate}, e conteneva la classica configurazione ad array di elementi logici configurabili. In particolare era formata da $64$ blocchi logici e $58$ input e output. 
+
+Dal primo esempio commerciale le FPGA sono cresciute enormemente, infatti una moderna FPGA può contenere oltre $300000$ elementi logici equivalenti, ed oltre $1000$ input ed output, in aggiunta ad elementi logici specializzati, che hanno permesso alle FPGA di incrementare le loro funzionalità e quindi le loro possibili applicazioni.
 
 \subsubsection{Tecniche di implementazione delle FPGA}
+Come già accennato in precedenza, una FPGA consiste in un array di blocchi logici programmabili, potenzialmente di tipo differente, che includono logica generica, celle di memoria e moltiplicatori, circondati da una rete di routing programmabile, che permette di modificare l'interconnessione via software.
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.3]{cap3/chipFPGA}
+    \caption{Struttura semplificata del chip FPGA}
+    \label{chipFPGA}
+  \end{center}
+\end{figure}
+L'array è circondato da una serie di blocchi input/output programmabili, che connettono il chip con il mondo esterno. La struttura semplificata del chip è presentata in Figura \ref{chipFPGA}.
+
+Ogni FPGA si affida alla presenza di switch programmabili, che sono usati per dare al chip la sua caratteristica di programmabilità.
+
+Nel corso degli anni sono state introdotte diverse tecniche per rendere programmabile un chip, partendo dalle EPROM, EEPROM, per arrivare alle tecniche  \textit{static-memory}, \textit{flash} ed \textit{anti-fuse}.
+
+Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implementate nei moderni prodotti commerciali. In seguito saranno trattate soltanto le tecnologie attualmente in uso.
+
+\paragraph{Static-memory}
+%%TODO Cap3: sistemare ref subfigure
+\begin{figure}
+\centering
+\subfigure[Static Memory Cell]
+{\includegraphics[scale=.3]{cap3/sma}}
+\hspace{5mm}
+\subfigure[Multiplexer con Static Memory Cell]
+{\includegraphics[scale=.3]{cap3/smb}}
+\hspace{5mm}
+\subfigure[Static Memory Cell e Lookup Table]
+{\includegraphics[scale=.3]{cap3/smc}}
+\caption{Static Memory}\label{staticmem}
+\end{figure}
+Le celle statiche di memoria sono la base per la tecnologia SRAM. In questi dispositivi, le celle di memoria statica (Figura \ref{staticmem}(a)) sono distribuite all'interno del chip FPGA, per garantire la programmabilità.
+
+In questo tipo di architettura le SRAM hanno due principali utilizzi; alcune celle di memoria svolgono la funzione di \textit{multiplexer}, per guidare i segnali attraverso le interconnessioni, mentre la maggior parte delle celle implementano le \textit{Look Up Table} (LUT), che sono utilizzate tipicamente per implementare funzioni logiche. Le Figure \ref{staticmem}(b) ed \ref{staticmem}(c) illustrano questi possibili utilizzi.
+
+La tecnologia SRAM è la più utilizzata nell'industria di FPGA per due principali vantaggi che porta, l'uso del processo produttivo CMOS standard e la riprogrammabilità. Una cella di memoria SRAM può essere riprogrammata un numero illimitato di volte. Un circuito dedicato presente nel chip inizializza tutti i bit delle SRAM all'avvio, sulla base di una configurazione fornita dall'utente.
+
+A differenza delle altre tecnologie, l'uso di SRAM non richiede particolari lavorazioni sul circuito integrato, ma, come già detto, permette l'uso della tecnica CMOS standard. Questo porta come conseguenza diretta la possibilità di beneficiare dell'aumento di concentrazione di transistor, velocità e consumo energetico portati dell'uso del più recente processo produttivo disponibile sul mercato.
+
+Tuttavia l'uso della tecnologia SRAM porta ad un certo numero di svantaggi:
+\begin{itemize}
+	\item \underline{Area}: Una cella SRAM richiede $5$-$6$ transistor, e l'elemento riprogrammabile usato per indirizzare i segnali richiede un transistor aggiuntivo.
+	\item \underline{Volatilità}: Le celle di SRAM sono volatili; ciò significa che è necessario usare un dispositivo esterno per salvare la configurazione in modo permanente quando il dispositivo è spento. Questi dispositivi di memoria portano ad un'incremento di costo nell'FPGA.
+	\item \underline{Sicurezza}: \'E possibile che la configurazione sia intercettata e rubata, a causa della necessità di caricare il contenuto delle SRAM all'avvio del dispositivo.
+	\item \underline{Proprietà elettriche dei transistor di passaggio}: Le FPGA basate su SRAM utilizzano transistor di passaggio per implementare i multiplexer. Tuttavia questi transistor non possono essere considerati switch ideali, poiché hanno una resistenza ed una capacità non trascurabili, che possono portare a problemi nell'uso di processi produttivi piccoli.
+\end{itemize}
+
+\paragraph{Flash/EEPROM}
+Una tecnologia per superare alcuni degli svantaggi presenti nella tecnologia SRAM è basata sull'uso di transistor con tecnologia \textit{floating gate}. 
+
+Questo approccio sta alla base dell'implementazione delle celle di memoria flash ed EEPROM. Queste celle di memoria hanno la caratteristica di non essere volatili, quindi i dispositivi basati su questa architettura non hanno necessità di salvare la configurazione fornita dall'utente in memorie separate.
+
+Storicamente le EEPROM non erano usate per controllare gli switch sui segnali dell'FPGA, ma erano usate per implementare le funzioni AND nei dispositivi PLD~\cite{fpgabook}. Questa tecnica non è più usata, tranne che nei dispositivi a piccola capacità~\cite{cpldxilinx}, a causa dell'eccessivo consumo statico dei dispositivi con questa architettura.
+
+I moderni processi produttivi hanno permesso di utilizzare le celle di memoria \textit{floating gate} direttamente come switch. In particolare attualmente sono usate celle di memoria flash a causa della loro efficenza rispetto all'area. L'uso diffuso di memorie flash come memoria non volatile del chip assicura vantaggi nella diminuzione della dimensione geometrica dei transistor.
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.4]{cap3/floatgate}
+    \caption{Implementazione del floating gate}
+    \label{floatgate}
+  \end{center}
+\end{figure}
+
+La Figura \ref{floatgate} mostra l'implementazione del \textit{floating gate} nei dispositivi della linea \textit{ProASIC} di \textit{Actel}~\cite{actelpro}. 
+
+Il transistor più piccolo, nella Figura \ref{floatgate} \textit{programming transistor}, è usato per programmare il \textit{floating gate}, iniettando carica che rimane anche quando il dispositivo è spento, mentre il transistor più grande, nella figura \textit{switching transistor}, funge da switch programmabile. Questa implementazione basata su memoria flash offre molteplici vantaggi, il più importante è la non volatilità. Inoltre, a causa della non volatilità, un dispositivo flash funzionerà immediatamente all'accensione, non dovendo aspettare il caricamento della configurazione.
+
+Tuttavia la logica di programmazione introduce un overhead in area non presente nell'implementazione SRAM; questo costo è comunque modesto ed è ammortizzabile su un gran numero di elementi programmabili.
+
+Paragonata alla tecnologia \textit{anti-fuse}, un'architettura non volatile alternativa che verrà approfondita nel paragrafo successivo, i dispositivi flash hanno il vantaggio di essere riconfigurabili e di poter essere programmati senza essere rimossi dal circuito stampato.
+
+L'uso dei transistor \textit{floating gate} richiede una particolare attenzione nella fase di progettazione, per assicurare che la tensione \textit{source-drain} rimanga sufficientemente bassa da prevenire iniezione di carica nel \textit{floating gate}~\cite{510550}. Tuttavia, con l'uso di processi produttivi sempre più piccoli, e di conseguenza tensioni sempre meno elevate, questo problema perde di importanza.
+
+I principali svantaggi dell'architettura flash sono l'impossibilità di riprogrammare il dispositivo un numero infinito di volte. La carica presente nello strato di ossido ad un certo punto non permette più di cancellare e riprogrammare il dispositivo correttamente~\cite{622505}. I dispositivi attuali permettono di essere riprogrammati fino a $500$ volte, un numero che nella maggior parte dei casi si rivela sufficiente.
+
+Un altro svantaggio della tecnologia flash è l'uso di un processo CMOS non standard. Infine, come già spiegato per l'architettura SRAM, anche l'architettura flash soffre della presenza di resistenze e capacità non trascurabili causate dall'uso di transistor come switch. Un trend che sta emergendo ultimamente è l'uso di memorie flash in combinazione con tecnologie riconfigurabili SRAM. In alcuni dispositivi prodotti da \textit{Altera}, \textit{Xilinx} e \textit{Lattice} la memoria flash è usata per garantire la non volatilità, mentre la SRAM fornisce la riprogrammabilità. Questo tipo di dispositivi, da un punto di vista architetturale, non sono diversi dai puramente SRAM.
+
+Rispetto ad un dispositivo puramente SRAM si guadagna quindi la non volatilità, ma si va a perdere il vantaggio nell'uso di un  processo produttivo standard e si introduce un overhead in termini di area a causa della replicazione dei bit, salvati sia in memorie flash che SRAM.
+
+\paragraph{Anti-fuse}
+Una tecnologia alternativa a SRAM e ai transistor \textit{floating gate} è la tecnologia programmabile \textit{anti-fuse}. Le interconnessioni di questa tecnologia sono strutture che in circostanze nominali mostrano una resistenza molto alta, ma che possono essere programmaticamente connessi per creare canali a bassa resistenza. A differenza delle precedenti tecniche, il collegamento è permanente. L'elemento programmabile, detto \textit{anti-fuse}, è usato direttamente per trasmettere i segnali all'interno dell'FPGA.
+
+Per implementare gli anti-fuse sono usati due approcci:
+\begin{enumerate}
+	\item \underline{Dielettrico}: Gli anti-fuse dielettrici sono composti da un dielettrico posizionato tra lo strato $N+$ e il polisilicio \cite{32929}. L'applicazione di alte tensioni causano la rottura del dielettrico e formano un link conduttore con una resistenza tipicamente tra i $100$ e i $600\Omega$ \cite{231343}.
+	\item \underline{Metal-to-metal}: Gli anti-fuse \textit{metal-to-metal} hanno largamente sostituito l'implementazione dielettrica. Questi \textit{anti-fuse} sono formati da due strati di metallo, separati da uno strato di isolante (tipicamente silicio amorfo o ossido di silicio). Anche in questo caso l'applicazione di alte tensioni causa la rottura dell'\textit{anti-fuse} e lo rende conduttivo. Il vantaggio di questa implementazione è la resistenza molto più bassa, tipicamente tra i $20$ e i $100 \Omega$ \cite{584227}.
+\end{enumerate}
+
+Il principale vantaggio della tecnologia \textit{anti-fuse} è il basso utilizzo di area. In particolare, con l'implementazione \textit{metal-to-metal}, non è richiesta area in silicio per creare le connessioni; ciò diminuisce l'overhead in termini di area causato dalla programmabilità. Tuttavia questo decremento in termini di area è compensato dalla necessità di introdurre transistor di programmazione molto grandi, che devono fornire correnti elevati per programmare gli \textit{anti-fuse}. Anche se questa area può essere distribuita tra molti \textit{anti-fuse} con una progettazione opportuna, gli \textit{anti-fuse} hanno un vantaggio aggiuntivo: hanno resistenze e capacità parassite più basse rispetto alle altre tecnologie.
+
+L'area minore, la capacità e la resistenza ridotte permettono di includere più switch per dispositivo che nelle altre tecnologie. La non volatilità, come per i dispositivi basati su flash, significa che il dispositivo è pronto all'uso all'accensione; questo abbassa i costi, poiché non è necessaria una memoria aggiuntiva, e rende la tecnologia utilizzabile in quegli ambiti in cui il dispositivo deve essere pronto all'uso una volta acceso. Dato che la programmazione dell'FPGA va fatta una sola volta è possibile eseguirla in un ambiente controllato, migliorando così la sicurezza nel design dell'FPGA. Attualmente anche le altre tipologie di programmazione forniscono una modalità sicura, che disabilita l'accesso all'interfaccia di programmazione una volta che il dispositivo è programmato.
+
+La tecnologia \textit{anti-fuse} porta anche notevoli svantaggi. In particolare, l'uso di un processo CMOS non standard comporta l'uso di processi produttivi molto meno all'avanguardia rispetto all'architettura SRAM. Inoltre, la tecnica adottata per la programmazione, che implica cambiamenti significativi nelle proprietà dell'\textit{anti-fuse}, porta a problemi di scaling. La tecnologia \textit{anti-fuse} più avanzata (nel $2005$) utilizza processi produttivi a $150nm$ \cite{axfpga}, che è diverse generazioni indietro rispetto alle più moderne tecnologie CMOS ($90nm$ nel $2004$ e $65nm$ nel $2006$).
+
+L'impossibilità di riprogrammazione rende inutilizzabile questo tipo di dispositivi in ambiti dove sono necessari cambiamenti di configurazione, ma li rende ideali in ambiti in cui il rischio di corruzione delle memorie è elevato, come ad esempio l'ambito delle esplorazioni spaziali.
+
+A differenza delle altre tecnologie, per l'\textit{anti-fuse} non è possibile la programmazione su circuito stampato. Al contrario è necessario utilizzare specifici dispositivi di programmazione per programmare il chip prima che sia montato sul prodotto finito.
+
+Infine la caratteristica di singola programmazione non consente ai produttori di testare gli \textit{anti-fuse} per individuare possibili errori di produzione. Alcuni difetti possono essere individuati solo dopo la programmazione.
 
 \subsection{Xilinx Spartan-6 LX45}
+L'FPGA integrata nella scheda di prototipazione usata è la \textit{Spartan-6 LX45}, prodotta da \textit{Xilinx}.
 
-\subsubsection{Utilizzo FPGA}
+In particolare questo prodotto integra al suo interno $54576$ registri \textit{Flip Flop} e 27288 \textit{Look Up Table} (LUT) a 6 ingressi raggruppati in $6822$ \textit{Slices} (blocchi logici che contengono 8 Flip Flop e 4 LUT). Inoltre sono integrati $58$ \textit{DSP48} (che contengono un moltiplicatore $18x18$ , un sommatore ed un accumulatore), $5$ canali DMA, $2088$ Kbits di block RAM e $358$ moduli di input/output riconfigurabili. 
+
+La scheda possiede un'oscillatore a $40MHz$, da cui possono essere derivati clock in un intervallo compreso tra $2.5MHz$ e $320MHz$. La tecnologia usata per implementare lo switching è SRAM. 
+
+Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx}\cite{dsxilinx}.
+
+\subsubsection{Utilizzo area FPGA}
+Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono mostrati in tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{l|l|l|l}
+                                        & \textbf{Utilizzati} & \textbf{Totali} & \textbf{Percentuale di utilizzo {[}\%{]}} \\ \hline
+\textbf{Slices}                         & 5560                & 6822            & 81,5                                      \\
+\textbf{Registri (FF)}                  & 13465               & 54576           & 24,7                                      \\
+\textbf{Look Up Table (LUT)}            & 18003               & 27288           & 66                                        \\
+\textbf{Block RAM}                      & 57                  & 116             & 49,1                                      \\
+\textbf{Digital Signal Processor (DSP)} & 57                  & 58              & 98,3                                      \\
+\textbf{DMA Channel}                    & 5                   & 5               & 100                                      
+\end{tabular}
+\caption{Valori di utilizzo di area dell'FPGA}
+\label{tabarea}
+\end{table}
 
 \subsection{Microcontrollore}
+Un microcontrollore è un dispositivo elettronico integrato in un singolo chip, utilizzato in alternativa ad un microprocessore nei sistemi \textit{embedded}, ed in particolare per applicazioni specifiche di controllo digitale.
+
+Il microcontrollore utilizzato per il progetto descritto in questo elaborato, codice prodotto \textit{MPC5125}, è prodotto da \textit{Freescale}. 
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap3/uproc}
+    \caption{Schema a blocchi dell'architettura del microcontrollore MPC5125}
+    \label{uproc}
+  \end{center}
+\end{figure}
+
+Nella Figura \ref{uproc} è presentato lo schema a blocchi del microcontrollore; si può notare la presenza dei dispositivi tipicamente integrati in un prodotto di questa categoria, come ad esempio i GPIO, un modulo JTAG e le DMA.
+
+Il core del microcontrollore è basata su architettura \textit{PowerPC}, ed in particolare si tratta dell'architettura \textit{Power e300z4}. Nel corso di questo paragrafo verrà data una spiegazione più dettagliata di questa architettura.
+
+Infine la scheda integra $256MB$ di memoria RAM e $512MB$ di memoria non volatile, su cui sono caricati i programmi utente ed il sistema operativo.
 
 \subsubsection{Architettura PowerPC}
+L'architettura \textit{PowerPC} è nata nel $1991$ dalla collaborazione di \textit{Apple}, \textit{IBM} e \textit{Motorola}. 
+
+La filosofia alla base di questa architettura è denominata RISC (\textit{Reduced Instruction Set Computer}) e prevede lo sviluppo di un processore in grado di eseguire poche istruzioni semplici, per accelerare i tempi di esecuzione. Questa filosofia è nata in contrapposizione alla filosofia CISC (\textit{Complex Instruction Set Computer}) che si era diffusa all'inizio dell'era dell'industria informatica per facilitare il lavoro di sviluppo di programmi, cercando di emulare istruzioni di alto livello, in quanto non erano ancora disponibili i primi compilatori.
+
+Una definizione più precisa delle architetture RISC può essere architettura \textit{load-store}, in quanto le architetture RISC permettono l'accesso alla memoria di sistema unicamente con queste due funzioni.
+
+L'architettura RISC è nata alla fine degli anni $'70$, quando i ricercatori di \textit{IBM} notarono che la maggior parte delle funzioni di indirizzamento integrate nelle ISA (\textit{Instruction Set Architecture}) erano ignorate dai programmatori, a causa dell'introduzione sul mercato dei primi compilatori, che erano in grado di gestire soltanto le istruzioni più semplici dei processori.
+
+Inoltre scoprirono che alcune istruzioni complesse CISC erano più lente del loro corrispettivo sviluppato utilizzando una serie di istruzioni generiche. Per questi motivi si svilupparono set di istruzioni più semplici, che garantissero una progettazione del processore meno complessa e una velocità di esecuzione migliore.
+La conseguenza dell'introduzione di questo tipo di architetture è stata la possibilità di sfruttare soluzioni di parallellizzazione delle istruzioni, come la \textit{pipeline}.
+
+\paragraph{PowerPC e300}
+L'architettura \textit{e300} comprende una famiglia di processori a $32$-bit sviluppata da \textit{Freescale}, il cui principale utilizzo sono le applicazioni \textit{embedded}.
+
+L'architettura \textit{e300} segue la filosofia RISC precedentemente illustrata ed implementa una pipeline a $4$ stadi. 
+
+L'\textit{e300}, inoltre, segue la filosofia \textit{superscalar}, che prevede la possibilità di leggere dalla memoria e di completare più di un'istruzione per ciclo di clock, aumentando così il \textit{throughput} del sistema.
+
+La pipeline, come accennato sopra, si compone di 4 fasi principali:
+
+\begin{enumerate}
+	\item \underline{Fetch}: Si legge l'istruzione da eseguire dalla memoria di sistema e si calcola la posizione dell'istruzione successiva. Inoltre, se necessario, la BPU (\textit{Branch Prediction Unit}) decodifica i branch e decide quale è l'istruzione successiva.
+	\item \underline{Dispatch}: Decodifica l'istruzione proveniente dalla fase di fetch e determina quali istruzioni possono essere eseguite nel ciclo corrente. Inoltre gli operatori delle operazioni sono letti dai registri sorgente ed inviati assieme all'istruzione alla fase successiva della pipeline.
+	\item \underline{Execution}: In questa fase ogni unità funzionale a cui è stata assegnata un'istruzione esegue l'operazione, scrive il risultato nel registro di destinazione e notifica allo stadio finale della pipeline il termine dell'operazione. In questa fase è possibile che le operazioni richiedano più di un ciclo di clock.
+	\item \underline{Complete/write-back}: questa fase si preoccupa di mantenere il corretto comportamento architetturale della macchina, ad esempio in presenza di interrupt la pipeline viene scaricata, i risultati delle precedenti computazioni sono scartati e il flusso di istruzioni viene indirizzato dalla sorgente corretta.
+\end{enumerate}
+
+Nella fase di fetch delle istruzioni si è accennato alla presenza di una BPU. Quando si legge dalla memoria un'istruzione di branch non si può sapere a priori quale sarà l'istruzione successiva; la BPU svolge la funzione di effettuare una predizione su quale flusso sarà seguito dal programma ed in caso di successo nella predizione si ottiene come effetto l'assenza di ritardi causati dalla soluzione del branch.
+
+Nell'architettura in esame la predizione della direzione del branch è fatta a \textit{compile time}; all'istruzione di branch è aggiunto un bit che indica la direzione prevista per quel branch e la BPU, che contiene un sommatore al suo interno, è in grado di calcolare l'indirizzo dell'istruzione seguente. Il flusso di istruzioni si mantiene quello della previsione finché il branch non è risolto. A questo punto se la previsione era corretta il flusso di istruzioni viene mantenuto, altrimenti si provvede a scartare i risultati non utili ed il flusso di istruzioni ricomincia seguendo il verso opposto del branch.
+
+Per ulteriori informazioni riguardo l'architettura e il microcontrollore in uso si faccia riferimento al manuale utente, incluso nella bibliografia di questo elaborato \cite{e300manual}.
+
+
+
+
+
+
+
+
+
+
