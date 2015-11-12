@@ -24,7 +24,8 @@ Infine, il fotodiodo produce una corrente, proporzionale all'intensitá del fasc
 Indicando con ${E_m}$ il campo elettrico relativo al cammino di misura e con ${E_r}$ il campo elettrico relativo al cammino di riferimento, la corrente fotogenerata $I_{ph}$ segue la relazione:
 \begin{equation}
 \begin{split}
-	I_{ph}&=\sigma|E_r+E_m|^2=\sigma\{E_r^2+E_m^2+2E_rE_mRe[e^{i(\phi_m-\phi_r)}]\}\\
+	I_{ph}&=\sigma|E_r+E_m|^2=\sigma|E_re^{i\phi_r}+E_me^{i\phi_m}|^2\\
+	&=\sigma\{E_r^2+E_m^2+2E_rE_mRe[e^{i(\phi_m-\phi_r)}]\}\\
 	&=I_r+I_m+2\sqrt{I_rI_m}\cos{(\phi_m-\phi_r)}
 \end{split}
 \end{equation}
@@ -65,7 +66,7 @@ L'interferometro di \textit{Michelson} è molto vantaggioso dal punto di vista d
 Tutto ciò ha fatto emergere la necessità di uno strumento che presentasse una semplicità di utilizzo e un costo contenuto.
 
 \section{Interferometria a retroiniezione}
-È stato esposto, nel paragrafo precedente, come l'interferometria convenzionale presenti notevoli svantaggi. Per tale motivo viene presentata una differente tecnica interferometrica: si tratta dell'interferometria a retroiniezione, chiamata anche interferometria a self-mixing~\cite{1464-4258-4-6-371}.
+È stato esposto, nel paragrafo precedente, come l'interferometria convenzionale presenti notevoli svantaggi. Per tale motivo viene presentata una differente tecnica interferometrica: si tratta dell'interferometria a retroiniezione, chiamata anche interferometria a \textit{self-mixing}~\cite{1464-4258-4-6-371}.
 
 La tecnica interferometrica a retroiniezione rende possibile la realizzazione di uno strumento di misura tramite il semplice utilizzo di una sorgente laser e di una lente per focalizzare il raggio ottico. Questa configurazione interferometrica risolve, quindi, i problemi dell'interferometria convenzionale, presentando una ridotta complessità di realizzazione e un costo contenuto. Per tale motivo il misuratore realizzato in questo lavoro di tesi sfrutta codesta tecnica.
 
@@ -77,9 +78,9 @@ La tecnica interferometrica a retroiniezione rende possibile la realizzazione di
   \end{center}
 \end{figure}
 
-La configurazione base del misuratore a self-mixing è formata da un diodo laser, posto a distanza $s$ dal bersaglio, un'ottica collimatrice e un fotodiodo, che può essere anche quello di monitor integrato nello stesso package del laser. Lo schema base è riportato in Figura \ref{selfmix}.
+La configurazione base del misuratore a \textit{self-mixing} è formata da un diodo laser, posto a distanza $s$ dal bersaglio, un'ottica collimatrice e un fotodiodo, che può essere anche quello di monitor integrato nello stesso package del laser. Lo schema base è riportato in Figura \ref{selfmix}.
 
-La modalitá self-mixing, a differenza dell'interferometro convenzionale, non utilizza porzioni di fascio ottico come riferimento. Per effettuare la misura viene sfruttata una porzione di luce riflessa dalla superficie del bersaglio che, rientrando nella cavità laser attraverso la lente, genera un battimento ottico con l'onda laser già presente. La luce riflessa dal bersaglio arriva con verso opposto al precedente cammino e con una potenza che è una frazione di quella emessa, a causa dell'attenuazione data dal tragitto laser-ostacolo-laser.
+La modalitá \textit{self-mixing}, a differenza dell'interferometro convenzionale, non utilizza porzioni di fascio ottico come riferimento. Per effettuare la misura viene sfruttata una porzione di luce riflessa dalla superficie del bersaglio che, rientrando nella cavità laser attraverso la lente, genera un battimento ottico con l'onda laser già presente. La luce riflessa dal bersaglio arriva con verso opposto al precedente cammino e con una potenza che è una frazione di quella emessa, a causa dell'attenuazione data dal tragitto laser-ostacolo-laser.
 
 \'E possibile esplicitare la potenza della luce riflessa dal bersaglio con la relazione:
 \begin{equation}
@@ -115,7 +116,7 @@ Se si utilizza un laser a semiconduttore, come nel caso dello strumento presenta
 \end{equation}
 Il funzionamento di un diodo laser a singolo modo longitudinale soggetto a retroiniezione è descritto dalle equazioni differenziali sviluppate da Lang\&Kobayashi~\cite{1070479}; tuttavia, la risoluzione analitica di tali equazioni non è necessaria ai fini di questo lavoro di tesi.
 
-Per questo motivo nel paragrafo successivo è presentata soltanto una soluzione qualitativa delle equazioni di Lang\&Kobayashi, con lo scopo di determinare i regimi di retroiniezione della tecnica self-mixing.
+Per questo motivo nel paragrafo successivo è presentata soltanto una soluzione qualitativa delle equazioni di Lang\&Kobayashi, con lo scopo di determinare i regimi di retroiniezione della tecnica \textit{self-mixing}.
 
 \subsection{Regimi di retroiniezione tramite risoluzione qualitativa}
 \begin{figure}  
@@ -159,7 +160,7 @@ Per studiare le soluzioni del sistema, si divide l'analisi del problema in due c
 Nel primo caso, ovvero con coefficiente $\alpha$ nullo, si trovano le stesse equazioni di un normale laser in cui il guadagno e le perdite sono uguali, ovvero:
 \begin{equation}
 	\begin{cases}
-   G_{loop}=R_1R_2e^{2\gamma L}\\\Phi_{loop} = 2kN=N2\pi
+   G_{loop}=R_1R_2e^{2\gamma L}\\\Phi_{loop} = 2kL=N2\pi
    \end{cases}
    \label{sistnoretr}
 \end{equation}
@@ -242,7 +243,7 @@ dove $A=- \frac{c}{4 \pi n_l L}\alpha$ e $B=\frac{4\pi s}{c}$. Dal sistema \ref{
 	\frac{c}{4 \pi n_l L} \alpha \frac{4\pi s}{c} = \frac{\alpha s}{n_l L} = 1
 \end{equation}
 
-Arrivati a questo punto si è in grado di definire il fattore $C$ come indice della retroiniezione del sistema interferometrico a self-mixing:
+Arrivati a questo punto si è in grado di definire il fattore $C$ come indice della retroiniezione del sistema interferometrico a \textit{self-mixing}:
 \begin{equation}
 	C = \frac{\alpha s}{n_l L}
 \end{equation}
@@ -276,7 +277,7 @@ L'andamento della funzione $F(\Phi)$ è influenzato dal fattore $C$. La consegue
 	\item riflettività del bersaglio 
 	\item parametri del laser
 \end{enumerate}
-Si possono, quindi, identificare quattro possibili regimi di funzionamento per un interferometro a self-mixing sulla base del parametro $C$:
+Si possono, quindi, identificare quattro possibili regimi di funzionamento per un interferometro a \textit{self-mixing} sulla base del parametro $C$:
 \begin{enumerate}
 	\item \textit{Regime di retroiniezione molto debole} ($0 < C \leq 0.1$): la quantità di potenza ottica che rientra in cavità è molto ridotta a causa di un'elevata riflettività degli specchi o di bassi coefficienti di riflessione della superficie del bersaglio. La funzione $F(\Phi)$ è un coseno di ampiezza molto ridotta, tipicamente $10^{-4}$ rispetto al valore in continua.
 	\item \textit{Regime di retroiniezione debole} ($0.1 < C < 1$): La funzione $F(\Phi)$ inizia a distorcersi e non è più simmetrica. La maggior parte dei casi pratici rientra in questo regime di funzionamento. 
@@ -302,7 +303,7 @@ In Figura \ref{regimifunz} è mostrata la forma della funzione $F(\Phi)$ nei 4 p
 Il segnale risultante è periodico in $\Phi$ e mostra le tipiche frange interferometriche ogni volta che la fase varia di $2\pi$. Ciascuna frangia corrisponde ad uno spostamento $\frac{\lambda}{2}$ del bersaglio~\cite{341714}.
 
 \subsection{Vantaggi e svantaggi dell'interferometria a retroiniezione}
-La tecnica self-mixing ha diversi vantaggi rispetto agli strumenti basati su altri principi, come i telemetri visti nel Capitolo precedente.
+La tecnica \textit{self-mixing} ha diversi vantaggi rispetto agli strumenti basati su altri principi, come i telemetri visti nel Capitolo precedente.
 
 I principali vantaggi sono:
 \begin{itemize}
