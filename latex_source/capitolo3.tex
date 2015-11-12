@@ -26,7 +26,7 @@ La Figura \ref{fotorisfin} mostra il risultato finale del misuratore progettato 
 \end{itemize}
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap3/archgen}
+    \includegraphics[scale=0.4]{cap3/archgen}
     \caption{Schema a blocchi dell'architettura complessiva del misuratore}
     \label{archgen}
   \end{center}
@@ -96,20 +96,18 @@ Una descrizione più dettagliata della parte analogica e dell'attività di proge
 
 \section{Parte di Conversione}
 La scheda utilizzata per la parte di conversione del misuratore è la \textit{SCO Board}, progettata e prodotta nel laboratorio di "Misure Ottiche ed Elettroniche - MOLES" del Politecnico di Milano. Anch'essa è stata progetta e realizzata da Samuele Disegna nel contesto del suo lavoro di tesi.
-
-Essa possiede due interfacce di conversione: un'interfaccia Analogico-Digitale (AD), che riceve in ingresso il segnale interferometrico in arrivo dalla sorgente laser, e un'interfaccia Digitale-Analogica (DA), che converte il segnale digitale di modulazione in arrivo dalla scheda di prototipazione. Le conversioni AD e DA vengono svolte in parallelo.
-
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap3/scoboardfoto}
+    \includegraphics[scale=0.35]{cap3/scoboardfoto}
     \caption{Foto della scheda di conversione \textit{SCO Board} e identificazione delle connessioni}
     \label{scoboardfoto}
   \end{center}
 \end{figure}
 
+Essa possiede due interfacce di conversione: un'interfaccia Analogico-Digitale (AD), che riceve in ingresso il segnale interferometrico in arrivo dalla sorgente laser, e un'interfaccia Digitale-Analogica (DA), che converte il segnale digitale di modulazione in arrivo dalla scheda di prototipazione. Le conversioni AD e DA vengono svolte in parallelo.
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap3/scoboardschema}
+    \includegraphics[scale=0.4]{cap3/scoboardschema}
     \caption{Schema a blocchi del sistema di conversione A/D - D/A, \textit{SCO Board}}
     \label{scoboardschema}
   \end{center}
@@ -145,7 +143,7 @@ Il processo di ricostruzione di un segnale analogico consiste nel prelevare valo
 
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.35]{cap3/dac}
+    \includegraphics[scale=0.3]{cap3/dac}
     \caption{Schema di funzionamento di un convertitore Digitale-Analogico (DAC)}
     \label{dac}
   \end{center}
@@ -235,7 +233,7 @@ Una descrizione più dettagliata dell'integrato è fornita sul sito del costrutt
 Il processo di campionamento di un segnale analogico consiste nel prelevare una lettura istantanea della sua grandezza e di convertirla in una forma digitale. Questa operazione è svolta dal convertitore Analogico-Digitale (ADC)~\cite{storeyelet}.
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.35]{cap3/adc}
+    \includegraphics[scale=0.3]{cap3/adc}
     \caption{Schema di funzionamento di un convertitore Analogico-Digitale (ADC)}
     \label{adc}
   \end{center}
@@ -267,6 +265,14 @@ Questo metodo è di semplice realizzazione, ma i principali difetti sono la lent
 
 Una versione migliorata dell'ADC a conteggio è l'ADC a inseguimento (\textit{servo ADC}): il contatore incrementale viene sostituito con un contatore incrementale/decrementale. Pertanto, l'uscita del comparatore è utilizzata come segnale di comando del contatore, forzando il contatore a "inseguire" segnale di ingresso analogico. Esso risulta più veloce dell'ADC a conteggio, a condizione che i valori di tensione da convertire siano abbastanza vicini fra loro.
 
+\subparagraph{\textbf{ADC ad approssimazioni successive}}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.35]{cap3/adcsar}
+    \caption{Schema di funzionamento di un ADC ad approssimazioni successive}
+    \label{adcsar}
+  \end{center}
+\end{figure}
 L'ADC ad approssimazioni successive è basato su una logica di controllo costituita da un registro ad approssimazioni successive chiamato SAR (\textit{Successive Approximation Register}). Lo schema di funzionamento è mostrato in Figura \ref{adcsar}.
 
 Questa architettura è simile a quella dell'ADC a conteggio, fatta eccezione che il semplice contatore incrementale è sostituito dalla logica di controllo SAR. Come negli ADC a conteggio, la conversione avviene confrontando l'uscita di un convertitore DAC con la tensione in ingresso.
@@ -317,7 +323,7 @@ Lo svantaggio è l'alto costo di realizzazione ($n$ bit implica $2^n$ comparator
 \subparagraph{\textbf{ADC Pipeline}}
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.35]{cap3/adcpipeline}
+    \includegraphics[scale=0.3]{cap3/adcpipeline}
     \caption{Schema di funzionamento di un ADC Pipeline }
     \label{adcpipeline}
   \end{center}
@@ -359,7 +365,7 @@ La parte digitale dello strumento è composta da una scheda \textit{embedded} di
 \subsection{Scheda di prototipazione utilizzata}
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap3/sbrio}
+    \includegraphics[scale=0.4]{cap3/sbrio}
     \caption{Scheda di elaborazione digitale, National Instruments Single-Board RIO (sbRIO) 9636}
     \label{sbrio}
   \end{center}
@@ -442,13 +448,13 @@ Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implem
 \begin{figure}
 \centering
 \subfigure[Static Memory Cell]
-{\label{staticmema}\includegraphics[scale=.3]{cap3/sma}}
+{\label{staticmema}\includegraphics[scale=.35]{cap3/sma}}
 \hspace{5mm}
 \subfigure[Multiplexer con Static Memory Cell]
-{\label{staticmemb}\includegraphics[scale=.3]{cap3/smb}}
+{\label{staticmemb}\includegraphics[scale=.35]{cap3/smb}}
 \hspace{5mm}
 \subfigure[Static Memory Cell e Lookup Table]
-{\label{staticmemc}\includegraphics[scale=.3]{cap3/smc}}
+{\label{staticmemc}\includegraphics[scale=.35]{cap3/smc}}
 \caption{Static Memory}\label{staticmem}
 \end{figure}
 Le celle statiche di memoria sono la base per la tecnologia SRAM. In questi dispositivi, le celle di memoria statica (Figura \ref{staticmema}) sono distribuite all'interno del chip FPGA, per garantire la programmabilità.
@@ -531,12 +537,12 @@ La scheda possiede un'oscillatore a $40MHz$, da cui possono essere derivati cloc
 Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx}\cite{dsxilinx}.
 
 \subsubsection{Utilizzo area FPGA}
-Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono mostrati in tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
+Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono riportati in tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
 
 \begin{table}[ht]
 \centering
 \begin{tabular}{l|l|l|l}
-                                        & \textbf{Utilizzati} & \textbf{Totali} & \textbf{Percentuale di utilizzo {[}\%{]}} \\ \hline
+                                        & \textbf{Utilizzati} & \textbf{Totali} & \textbf{Utilizzo {[}\%{]}} \\ \hline
 \textbf{Slices}                         & 5560                & 6822            & 81,5                                      \\
 \textbf{Registri (FF)}                  & 13465               & 54576           & 24,7                                      \\
 \textbf{Look Up Table (LUT)}            & 18003               & 27288           & 66                                        \\
@@ -555,7 +561,7 @@ Il microcontrollore utilizzato per il progetto descritto in questo elaborato, co
 
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap3/uproc}
+    \includegraphics[scale=0.4]{cap3/uproc}
     \caption{Schema a blocchi dell'architettura del microcontrollore MPC5125}
     \label{uproc}
   \end{center}
@@ -600,13 +606,3 @@ Nella fase di fetch delle istruzioni si è accennato alla presenza di una BPU. Q
 Nell'architettura in esame la predizione della direzione del branch è fatta a \textit{compile time}; all'istruzione di branch è aggiunto un bit che indica la direzione prevista per quel branch e la BPU, che contiene un sommatore al suo interno, è in grado di calcolare l'indirizzo dell'istruzione seguente. Il flusso di istruzioni si mantiene quello della previsione finché il branch non è risolto. A questo punto se la previsione era corretta il flusso di istruzioni viene mantenuto, altrimenti si provvede a scartare i risultati non utili ed il flusso di istruzioni ricomincia seguendo il verso opposto del branch.
 
 Per ulteriori informazioni riguardo l'architettura e il microcontrollore in uso si faccia riferimento al manuale utente, incluso nella bibliografia di questo elaborato \cite{e300manual}.
-
-
-
-
-
-
-
-
-
-

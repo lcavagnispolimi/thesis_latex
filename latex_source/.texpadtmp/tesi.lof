@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Sistema atomico a quattro livelli energetici\relax }}{8}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Cavit\'a di Fabry-Perot\relax }}{9}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces Schema del Roundtrip ottico nella cavit\'a ottica\relax }}{9}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Propagazione della radiazione all'interno della cavità laser\relax }}{10}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Propagazione della radiazione all'interno della cavit\IeC {\`a} laser\relax }}{10}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Laser Fabry-Perot\relax }}{11}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Laser DFB\relax }}{12}
 \contentsline {figure}{\numberline {1.10}{\ignorespaces Laser VCSEL\relax }}{12}
@@ -17,10 +17,10 @@
 \contentsline {figure}{\numberline {1.14}{\ignorespaces Potenza trasmessa e potenza riflessa in un telemetro a onda continua\relax }}{17}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Interferometro di \textit {Michelson}\relax }}{22}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ambiguità sul verso di spostamento\relax }}{24}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ambiguit\IeC {\`a} sul verso di spostamento\relax }}{24}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Schema di principio di un interferometro a retroiniezione\relax }}{25}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Rappresentazione vettoriale dell'interferenza all'interno della cavità laser\relax }}{25}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Round trip ottico del campo elettrico all'interno della cavità laser\relax }}{26}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Rappresentazione vettoriale dell'interferenza all'interno della cavit\IeC {\`a} laser\relax }}{25}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Round trip ottico del campo elettrico all'interno della cavit\IeC {\`a} laser\relax }}{26}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Perturbazione della frequenza reale rispetto alla frequenza ideale\relax }}{29}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Regimi di retroiniezione: funzione $F(\Phi )$ al variare del parametro $C$\relax }}{32}
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Esempi di segnale interferometrico per i differenti valori del parametro $C$\relax }}{32}
@@ -30,7 +30,7 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Rappresentazione esemplificata del fenomeno dello speckle-pattern\relax }}{37}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Risultato finale del misuratore realizzato\relax }}{43}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Schema a blocchi dell'architettura complessiva del misuratore\relax }}{45}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Schema a blocchi dell'architettura complessiva del misuratore\relax }}{44}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Struttura del dispositivo \textit {WLSD-1550-020m-1-PD}\relax }}{45}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Sistema ottico con laser e lente\relax }}{46}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Schema a blocchi del circuito di interfacciamento\relax }}{47}
@@ -41,22 +41,23 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Struttura circuitale di un DAC a scala R-2R\relax }}{52}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Schema a Blocchi interno del DAC - DAC902\relax }}{53}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Schema di funzionamento di un convertitore Analogico-Digitale (ADC)\relax }}{54}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Schema di funzionamento di un ADC a conteggio\relax }}{55}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Schema di funzionamento di un ADC a doppia rampa\relax }}{56}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Schema di funzionamento di un ADC Flash\relax }}{57}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Schema di funzionamento di un ADC Pipeline \relax }}{58}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Schema di funzionamento del ADS807\relax }}{59}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Scheda di elaborazione digitale, National Instruments Single-Board RIO (sbRIO) 9636\relax }}{61}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Tipologie di PLA\relax }}{63}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Schema di funzionamento di un ADC a conteggio\relax }}{54}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Schema di funzionamento di un ADC ad approssimazioni successive\relax }}{55}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Schema di funzionamento di un ADC a doppia rampa\relax }}{57}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Schema di funzionamento di un ADC Flash\relax }}{58}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Schema di funzionamento di un ADC Pipeline \relax }}{58}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Schema di funzionamento del ADS807\relax }}{60}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Scheda di elaborazione digitale, National Instruments Single-Board RIO (sbRIO) 9636\relax }}{61}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Tipologie di PLA\relax }}{63}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {PLA}}}{63}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PLA con piano OR fisso}}}{63}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Struttura semplificata del chip FPGA\relax }}{65}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Static Memory\relax }}{66}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Struttura semplificata del chip FPGA\relax }}{65}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Static Memory\relax }}{66}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Static Memory Cell}}}{66}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Multiplexer con Static Memory Cell}}}{66}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Static Memory Cell e Lookup Table}}}{66}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Implementazione del floating gate\relax }}{67}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Schema a blocchi dell'architettura del microcontrollore MPC5125\relax }}{71}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Implementazione del floating gate\relax }}{67}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Schema a blocchi dell'architettura del microcontrollore MPC5125\relax }}{71}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
