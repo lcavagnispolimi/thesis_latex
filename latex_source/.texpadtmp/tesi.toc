@@ -40,24 +40,23 @@
 \contentsline {subsubsection}{Convertitore ADC}{54}
 \contentsline {paragraph}{Architetture ADC}{54}
 \contentsline {subparagraph}{\textbf {ADC a conteggio}}{54}
-\contentsline {subparagraph}{\textbf {ADC a conteggio}}{55}
-\contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{57}
+\contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{56}
 \contentsline {subparagraph}{\textbf {ADC Flash}}{57}
 \contentsline {subparagraph}{\textbf {ADC Pipeline}}{58}
 \contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{59}
-\contentsline {section}{\numberline {3.4}Parte digitale}{61}
-\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{61}
+\contentsline {section}{\numberline {3.4}Parte digitale}{60}
+\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{60}
 \contentsline {subsection}{\numberline {3.4.2}FPGA}{62}
-\contentsline {subsubsection}{Storia delle FPGA}{63}
+\contentsline {subsubsection}{Storia delle FPGA}{62}
 \contentsline {subsubsection}{Tecniche di implementazione delle FPGA}{64}
 \contentsline {paragraph}{Static-memory}{65}
 \contentsline {paragraph}{Flash/EEPROM}{67}
-\contentsline {paragraph}{Anti-fuse}{69}
+\contentsline {paragraph}{Anti-fuse}{68}
 \contentsline {subsection}{\numberline {3.4.3}Xilinx Spartan-6 LX45}{70}
-\contentsline {subsubsection}{Utilizzo area FPGA}{71}
+\contentsline {subsubsection}{Utilizzo area FPGA}{70}
 \contentsline {subsection}{\numberline {3.4.4}Microcontrollore}{71}
-\contentsline {subsubsection}{Architettura PowerPC}{71}
-\contentsline {paragraph}{PowerPC e300}{73}
+\contentsline {subsubsection}{Architettura PowerPC}{72}
+\contentsline {paragraph}{PowerPC e300}{72}
 \contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{75}
 \contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{77}
 \contentsline {chapter}{Conclusioni e sviluppi futuri}{79}

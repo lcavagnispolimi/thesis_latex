@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 17:44
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -615,7 +615,7 @@ Overfull \hbox (3.88805pt too wide) in paragraph at lines 43--43
  []
 
 
-Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
+Overfull \hbox (2.37694pt too wide) in paragraph at lines 59--59
  [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
  []
 
@@ -783,27 +783,20 @@ File: ./pictures/cap3/adc.png Graphic file (type QTm)
  <use  "./pictures/cap3/adc.png" >
 File: ./pictures/cap3/adccounter.png Graphic file (type QTm)
  <use  "./pictures/cap3/adccounter.png" > [54]
-File: ./pictures/cap3/adcsar.png Graphic file (type QTm)
- <use  "./pictures/cap3/adcsar.png" > [55]
-File: ./pictures/cap3/adcdoppiarampa.png Graphic file (type QTm)
- <use  "./pictures/cap3/adcdoppiarampa.png" >
-Underfull \vbox (badness 1484) has occurred while \output is active []
 
- [56]
+LaTeX Warning: Reference `adcsar' on page 55 undefined on input line 270.
+
+[55]
+File: ./pictures/cap3/adcdoppiarampa.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adcdoppiarampa.png" > [56]
 File: ./pictures/cap3/adcflash.png Graphic file (type QTm)
  <use  "./pictures/cap3/adcflash.png" > [57]
 File: ./pictures/cap3/adcpipeline.png Graphic file (type QTm)
- <use  "./pictures/cap3/adcpipeline.png" >
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
- [58]
+ <use  "./pictures/cap3/adcpipeline.png" > [58]
 File: ./pictures/cap3/ads807schema.png Graphic file (type QTm)
- <use  "./pictures/cap3/ads807schema.png" > [59] [60]
+ <use  "./pictures/cap3/ads807schema.png" > [59]
 File: ./pictures/cap3/sbrio.png Graphic file (type QTm)
- <use  "./pictures/cap3/sbrio.png" > [61]
-Underfull \vbox (badness 7468) has occurred while \output is active []
-
- [62]
+ <use  "./pictures/cap3/sbrio.png" > [60] [61] [62]
 File: ./pictures/cap3/pla.png Graphic file (type QTm)
  <use  "./pictures/cap3/pla.png" >
 File: ./pictures/cap3/plaor.png Graphic file (type QTm)
@@ -817,28 +810,26 @@ File: ./pictures/cap3/smb.png Graphic file (type QTm)
 File: ./pictures/cap3/smc.png Graphic file (type QTm)
  <use  "./pictures/cap3/smc.png" > [65] [66]
 File: ./pictures/cap3/floatgate.png Graphic file (type QTm)
- <use  "./pictures/cap3/floatgate.png" > [67]
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [68] [69] [70]
-Overfull \hbox (85.90988pt too wide) in paragraph at lines 549--558
+ <use  "./pictures/cap3/floatgate.png" > [67] [68] [69]
+Overfull \hbox (85.90988pt too wide) in paragraph at lines 538--547
  [][] 
  []
 
-File: ./pictures/cap3/uproc.png Graphic file (type QTm)
-<use  "./pictures/cap3/uproc.png" > [71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72] [73]) [74]
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+ [70]
+File: ./pictures/cap3/uproc.png Graphic file (type QTm)
+ <use  "./pictures/cap3/uproc.png" > [71] [72]) [73]
 \openout2 = `capitolo4.aux'.
 
- (./capitolo4.tex
-Capitolo 4.
-) [75
+ (./capitolo4.tex [74
 
 
 
 ]
+Capitolo 4.
+) [75]
 \openout2 = `capitolo5.aux'.
 
  (./capitolo5.tex [76
@@ -887,14 +878,17 @@ Underfull \hbox (badness 1824) in paragraph at lines 128--130
 
 [84]) [85] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12680 strings out of 493725
- 260217 string characters out of 6145912
- 273814 words of memory out of 5000000
- 15716 multiletter control sequences out of 15000+600000
+ 12688 strings out of 493725
+ 260301 string characters out of 6145912
+ 273932 words of memory out of 5000000
+ 15725 multiletter control sequences out of 15000+600000
  26713 words of font info for 70 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,15n,43p,10391b,581s stack positions out of 5000i,500n,10000p,200000b,80000s

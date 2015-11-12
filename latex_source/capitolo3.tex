@@ -267,15 +267,6 @@ Questo metodo è di semplice realizzazione, ma i principali difetti sono la lent
 
 Una versione migliorata dell'ADC a conteggio è l'ADC a inseguimento (\textit{servo ADC}): il contatore incrementale viene sostituito con un contatore incrementale/decrementale. Pertanto, l'uscita del comparatore è utilizzata come segnale di comando del contatore, forzando il contatore a "inseguire" segnale di ingresso analogico. Esso risulta più veloce dell'ADC a conteggio, a condizione che i valori di tensione da convertire siano abbastanza vicini fra loro.
 
-%%TODO Cap3: Figura confronto servo adc - counter adc 
-\subparagraph{\textbf{ADC a conteggio}}
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.35]{cap3/adcsar}
-    \caption{ADC ad approssimazioni successive}
-    \label{adcsar}
-  \end{center}
-\end{figure}
 L'ADC ad approssimazioni successive è basato su una logica di controllo costituita da un registro ad approssimazioni successive chiamato SAR (\textit{Successive Approximation Register}). Lo schema di funzionamento è mostrato in Figura \ref{adcsar}.
 
 Questa architettura è simile a quella dell'ADC a conteggio, fatta eccezione che il semplice contatore incrementale è sostituito dalla logica di controllo SAR. Come negli ADC a conteggio, la conversione avviene confrontando l'uscita di un convertitore DAC con la tensione in ingresso.
@@ -404,17 +395,16 @@ Negli anni $'70$ sono state introdotte le memorie PROM, che hanno portato nuovi 
 \begin{figure}
 \centering
 \subfigure[PLA]
-{\includegraphics[scale=.3]{cap3/pla}}
+{\label{plasa}\includegraphics[scale=.3]{cap3/pla}}
 \hspace{5mm}
 \subfigure[PLA con piano OR fisso]
-{\includegraphics[scale=.3]{cap3/plaor}}
+{\label{plasb}\includegraphics[scale=.3]{cap3/plaor}}
 \caption{Tipologie di PLA}\label{plas}
 \end{figure}
-%%TODO Cap3: sistemare referenziamento subfigures
 
-I primi dispositivi programmabili, chiamati PLA (\textit{Programmable Logic Array}) si basavano su questa architettura, con una struttura a due livelli, AND e OR. Un esempio di PLA è mostrato in Figura \ref{plas}(a).
+I primi dispositivi programmabili, chiamati PLA (\textit{Programmable Logic Array}) si basavano su questa architettura, con una struttura a due livelli, AND e OR. Un esempio di PLA è mostrato in Figura \ref{plasa}.
 
-Questa architettura si è poi evoluta in un piano AND programmabile, seguito da un piano OR fisso (Figura \ref{plas}(b)). Questa seconda architettura mantiene comunque una buona flessibilità, ma al tempo stesso riduce la complessità del circuito.
+Questa architettura si è poi evoluta in un piano AND programmabile, seguito da un piano OR fisso (Figura \ref{plasb}). Questa seconda architettura mantiene comunque una buona flessibilità, ma al tempo stesso riduce la complessità del circuito.
 
 Quest'architettura è stata introdotta sul mercato nel $1977$ da \textit{Monolithic Memories Incorporated} (MMI)~\cite{birkner1978programmable}.
 
@@ -449,22 +439,21 @@ Nel corso degli anni sono state introdotte diverse tecniche per rendere programm
 Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implementate nei moderni prodotti commerciali. In seguito saranno trattate soltanto le tecnologie attualmente in uso.
 
 \paragraph{Static-memory}
-%%TODO Cap3: sistemare ref subfigure
 \begin{figure}
 \centering
 \subfigure[Static Memory Cell]
-{\includegraphics[scale=.3]{cap3/sma}}
+{\label{staticmema}\includegraphics[scale=.3]{cap3/sma}}
 \hspace{5mm}
 \subfigure[Multiplexer con Static Memory Cell]
-{\includegraphics[scale=.3]{cap3/smb}}
+{\label{staticmemb}\includegraphics[scale=.3]{cap3/smb}}
 \hspace{5mm}
 \subfigure[Static Memory Cell e Lookup Table]
-{\includegraphics[scale=.3]{cap3/smc}}
+{\label{staticmemc}\includegraphics[scale=.3]{cap3/smc}}
 \caption{Static Memory}\label{staticmem}
 \end{figure}
-Le celle statiche di memoria sono la base per la tecnologia SRAM. In questi dispositivi, le celle di memoria statica (Figura \ref{staticmem}(a)) sono distribuite all'interno del chip FPGA, per garantire la programmabilità.
+Le celle statiche di memoria sono la base per la tecnologia SRAM. In questi dispositivi, le celle di memoria statica (Figura \ref{staticmema}) sono distribuite all'interno del chip FPGA, per garantire la programmabilità.
 
-In questo tipo di architettura le SRAM hanno due principali utilizzi; alcune celle di memoria svolgono la funzione di \textit{multiplexer}, per guidare i segnali attraverso le interconnessioni, mentre la maggior parte delle celle implementano le \textit{Look Up Table} (LUT), che sono utilizzate tipicamente per implementare funzioni logiche. Le Figure \ref{staticmem}(b) ed \ref{staticmem}(c) illustrano questi possibili utilizzi.
+In questo tipo di architettura le SRAM hanno due principali utilizzi; alcune celle di memoria svolgono la funzione di \textit{multiplexer}, per guidare i segnali attraverso le interconnessioni, mentre la maggior parte delle celle implementano le \textit{Look Up Table} (LUT), che sono utilizzate tipicamente per implementare funzioni logiche. Le Figure \ref{staticmemb} ed \ref{staticmemc} illustrano questi possibili utilizzi.
 
 La tecnologia SRAM è la più utilizzata nell'industria di FPGA per due principali vantaggi che porta, l'uso del processo produttivo CMOS standard e la riprogrammabilità. Una cella di memoria SRAM può essere riprogrammata un numero illimitato di volte. Un circuito dedicato presente nel chip inizializza tutti i bit delle SRAM all'avvio, sulla base di una configurazione fornita dall'utente.
 
