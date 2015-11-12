@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 10:12
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,8 +555,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `frontespizio.aux'.
 
  (./frontespizio.tex
-File: ./pictures/logopm.pdf Graphic file (type QTm)
- <use  "./pictures/logopm.pdf" > [1
+File: ./pictures/frontesp/newlogopm1.png Graphic file (type QTm)
+ <use  "./pictures/frontesp/newlogopm1.png" > [1
 
 
 ]) [2
@@ -604,7 +604,17 @@ File: ./pictures/logopm.pdf Graphic file (type QTm)
 
  [8] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof [9
 
-])
+]
+Overfull \hbox (3.88805pt too wide) in paragraph at lines 39--39
+ [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Digitale-Analogico 
+ []
+
+
+Overfull \hbox (3.88805pt too wide) in paragraph at lines 43--43
+ [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Analogico-Digitale 
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
@@ -740,32 +750,75 @@ Overfull \hbox (2.91661pt too wide) in paragraph at lines 463--464
 
 ]
 Capitolo 3.
-) [43]
+Missing character: There is no ̀ in font ecti1095!
+Missing character: There is no ̀ in font ecti1095!
+[43]
+File: ./pictures/cap3/archgen.png Graphic file (type QTm)
+ <use  "./pictures/cap3/archgen.png" >
+File: ./pictures/cap3/laserwave.png Graphic file (type QTm)
+ <use  "./pictures/cap3/laserwave.png" > [44] [45]
+File: ./pictures/cap3/sistottico.png Graphic file (type QTm)
+ <use  "./pictures/cap3/sistottico.png" >
+File: ./pictures/cap3/circanalog.png Graphic file (type QTm)
+ <use  "./pictures/cap3/circanalog.png" > [46]
+File: ./pictures/cap3/scoboardfoto.png Graphic file (type QTm)
+ <use  "./pictures/cap3/scoboardfoto.png" >
+File: ./pictures/cap3/scoboardschema.png Graphic file (type QTm)
+ <use  "./pictures/cap3/scoboardschema.png" > [47] [48] [49]
+File: ./pictures/cap3/dac.png Graphic file (type QTm)
+ <use  "./pictures/cap3/dac.png" >
+File: ./pictures/cap3/bwdac.png Graphic file (type QTm)
+ <use  "./pictures/cap3/bwdac.png" > [50]
+File: ./pictures/cap3/r2rdac.png Graphic file (type QTm)
+ <use  "./pictures/cap3/r2rdac.png" > [51] [52]
+Missing character: There is no ” in font ecrm1095!
+File: ./pictures/cap3/schemadac902.png Graphic file (type QTm)
+ <use  "./pictures/cap3/schemadac902.png" > [53]
+File: ./pictures/cap3/adc.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adc.png" >
+File: ./pictures/cap3/adccounter.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adccounter.png" > [54]
+File: ./pictures/cap3/adcsar.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adcsar.png" > [55]
+File: ./pictures/cap3/adcdoppiarampa.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adcdoppiarampa.png" >
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [56]
+File: ./pictures/cap3/adcflash.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adcflash.png" > [57]
+File: ./pictures/cap3/adcpipeline.png Graphic file (type QTm)
+ <use  "./pictures/cap3/adcpipeline.png" >
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [58]
+File: ./pictures/cap3/ads807schema.png Graphic file (type QTm)
+ <use  "./pictures/cap3/ads807schema.png" > [59]) [60]
 \openout2 = `capitolo4.aux'.
 
- (./capitolo4.tex [44
+ (./capitolo4.tex
+Capitolo 4.
+) [61
 
 
 
 ]
-Capitolo 4.
-) [45]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex [46
+ (./capitolo5.tex [62
 
 
 
 ]
 Capitolo 5.
-) [47]
+) [63]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [48
+ (./conclusioni.tex [64
 
 
 
-]) [49] [50
+]) [65] [66
 
 
 ]
@@ -773,7 +826,7 @@ Capitolo 5.
 
  (./appendiceA.tex
 Appendice A.
-) [51
+) [67
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -783,21 +836,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52
+[68
 
 
-]) [53] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+] [69]) [70] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12573 strings out of 493725
- 258515 string characters out of 6145912
- 274415 words of memory out of 5000000
- 15639 multiletter control sequences out of 15000+600000
+ 12633 strings out of 493725
+ 259576 string characters out of 6145912
+ 273638 words of memory out of 5000000
+ 15679 multiletter control sequences out of 15000+600000
  25948 words of font info for 69 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,15n,43p,10391b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (69 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (86 pages).

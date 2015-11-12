@@ -26,8 +26,36 @@
 \contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{37}
 \contentsline {subsection}{\numberline {2.4.1}Misura di distanza assoluta}{38}
 \contentsline {chapter}{\numberline {3}Architettura Hardware dello strumento}{43}
-\contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{45}
-\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{47}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{49}
-\contentsline {chapter}{\numberline {A}Documentazione software}{51}
-\contentsline {chapter}{Bibliografia}{52}
+\contentsline {section}{\numberline {3.1}Struttura complessiva dello strumento}{43}
+\contentsline {section}{\numberline {3.2}Parte analogica}{44}
+\contentsline {subsection}{\numberline {3.2.1}Sistema ottico e sorgente laser}{45}
+\contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{46}
+\contentsline {section}{\numberline {3.3}Parte di Conversione}{47}
+\contentsline {subsection}{\numberline {3.3.1}Convertitori}{49}
+\contentsline {subsubsection}{Convertitore DAC}{50}
+\contentsline {paragraph}{Architetture DAC}{50}
+\contentsline {subparagraph}{\textbf {DAC a resistori pesati}}{51}
+\contentsline {subparagraph}{\textbf {DAC a scala R-2R}}{51}
+\contentsline {paragraph}{Convertitore DAC presente sulla scheda di conversione}{53}
+\contentsline {subsubsection}{Convertitore ADC}{54}
+\contentsline {paragraph}{Architetture ADC}{54}
+\contentsline {subparagraph}{\textbf {ADC a conteggio}}{54}
+\contentsline {subparagraph}{\textbf {ADC a conteggio}}{55}
+\contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{57}
+\contentsline {subparagraph}{\textbf {ADC Flash}}{57}
+\contentsline {subparagraph}{\textbf {ADC Pipeline}}{58}
+\contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{59}
+\contentsline {section}{\numberline {3.4}Parte digitale}{60}
+\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{60}
+\contentsline {subsection}{\numberline {3.4.2}FPGA}{60}
+\contentsline {subsubsection}{Storia delle FPGA}{60}
+\contentsline {subsubsection}{Tecniche di implementazione delle FPGA}{60}
+\contentsline {subsection}{\numberline {3.4.3}Xilinx Spartan-6 LX45}{60}
+\contentsline {subsubsection}{Utilizzo FPGA}{60}
+\contentsline {subsection}{\numberline {3.4.4}Microcontrollore}{60}
+\contentsline {subsubsection}{Architettura PowerPC}{60}
+\contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{61}
+\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{63}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{65}
+\contentsline {chapter}{\numberline {A}Documentazione software}{67}
+\contentsline {chapter}{Bibliografia}{68}

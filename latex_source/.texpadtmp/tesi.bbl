@@ -1,4 +1,17 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{sitedac902}
+http://www.ti.com/lit/ds/symlink/dac902.pdf.
+
+\bibitem{thesispallsilv}
+Palludo A. and Silvano A.
+\newblock Sistema ottico a retroiniezione per la misura di distanza assoluta.
+\newblock Master's thesis, Politecnico di Milano, 2015.
+
+\bibitem{thesissmldis}
+S.~Disegna.
+\newblock Struttura hardware per interferometria a self-mixing.
+\newblock Master's thesis, Politecnico di Milano, 2015.
 
 \bibitem{sensmeslaser}
 S.~Donati.
@@ -43,6 +56,17 @@ E.~M. Randone.
 \newblock {\em Fenomeni di retro-iniezione ottica in laser a semiconduttore e
   applicazioni}.
 \newblock PhD thesis, Universit{\`a} Degli Studi di Pavia, 2007.
+
+\bibitem{storeyelet}
+N.~Storey.
+\newblock {\em Electronics: A Systems Approach}.
+\newblock Pearson Education, fourth edition, 2009.
+
+\bibitem{thesisstorti}
+D.~Storti.
+\newblock Misuratore di distanza assoluto basato sulla interferometria a
+  retro-iniezione.
+\newblock Master's thesis, Politecnico di Milano, 2014.
 
 \bibitem{sveltolaser}
 O.~Svelto.
