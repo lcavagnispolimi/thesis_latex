@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 00:50
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 01:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,7 +726,12 @@ File: ./pictures/cap2/spackle.jpg Graphic file (type QTm)
 File: ./pictures/cap2/specklegeom.png Graphic file (type QTm)
  <use  "./pictures/cap2/specklegeom.png" > [37] [38]
 Missing character: There is no   in font ecrm1095!
- [39] [40]) [41]
+
+Overfull \hbox (2.91661pt too wide) in paragraph at lines 462--463
+[]\T1/cmr/m/n/10.95 Infine, per ri-ca-va-re la di-stan-za $\OML/cmm/m/it/10.95 s$\T1/cmr/m/n/10.95 , è ne-ces-sa-rio ap-pros-si-ma-re $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U \OT1/cmr/m/n/10.95 + ^^A\OML/cmm/m/it/10.95 ^^U[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^Y
+ []
+
+[39] [40]) [41]
 \openout2 = `capitolo3.aux'.
 
  (./capitolo3.tex [42

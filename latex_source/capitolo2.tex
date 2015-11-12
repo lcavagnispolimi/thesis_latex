@@ -451,15 +451,15 @@ Infine, la misura di distanza assoluta s può essere compiuta in due modi:
 	
 	Dalla precedente relazione è possibile ricavare la variazione di lunghezza d'onda $\Delta \lambda_{2\pi}$:
 	\begin{equation}
-		\Delta \lambda_{2\pi} = \frac{t_{frangia}}{\delta t} \Delta \lambda = \frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t} t_{frangia}
+		\Delta \lambda_{2\pi} = \frac{t_{frangia}}{\Delta t} \Delta \lambda = \frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t} t_{frangia}
 	\end{equation}
 	Per ricavare la distanza assoluta $s$ è necessario fare riferimento alla relazione:
 	\begin{equation}
-		2\frac{2\pi}{\lambda}-2\frac{2\pi}{\lambda + \Delta \lambda_{2\pi}} s = 2\pi
+		\left ( 2\frac{2\pi}{\lambda}-2\frac{2\pi}{\lambda + \Delta \lambda_{2\pi}} \right ) s = 2\pi
 	\end{equation}
 	che eguaglia la differenza di fase causata da una variazione di lunghezza d'onda $\Delta \lambda_{2\pi}$ a $2\pi$.
 	
-	Infine, per ricavare la distanza $s$, è necessario approssimare $\lambda + \Delta \lambda_{2\pi} \approx \lambda$ poiché $\lambda \gg \Delta \lambda_{2\pi}$:
+	Infine, per ricavare la distanza $s$, è necessario approssimare $(\lambda + \Delta \lambda_{2\pi}) \approx \lambda$ poiché $\lambda \gg \Delta \lambda_{2\pi}$:
 	\begin{equation}
 		s \approx \frac{\lambda^2}{2\frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t} t_{frangia}} =  \frac{\lambda^2}{2\frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t}}f_{frangia}
 	\end{equation}
@@ -479,7 +479,7 @@ Infine, la misura di distanza assoluta s può essere compiuta in due modi:
 	\begin{equation}
 		\frac{d\phi_s}{ds}=2\pi f_s
 	\end{equation}
-	dove $f_s$' è la frequenza media delle frange prodotte a causa dello spostamento.
+	dove $f_s$ è la frequenza media delle frange prodotte a causa dello spostamento.
 	
 	Da questo si deduce che: se il bersaglio è in movimento la variazione di fase complessiva del segnale interferometrico è data dalla somma di due componenti: $\phi_{mod}$ e $\phi_s$.
 	Per compensare il contributo indesiderato $\phi_s$ è necessario realizzare una modulazione di corrente che vada a incrementare e decrementare la lunghezza d'onda della sorgente laser. Per fare ciò, si utilizza un segnale a forma triangolare con ampiezza opportuna.
