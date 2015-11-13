@@ -3,4 +3,27 @@
 \thispagestyle{empty}
 \addcontentsline{toc}{chapter}{Conclusioni e sviluppi futuri}
 
-\noindent %%TODO Conclusioni
+Il lavoro di questa tesi ha riguardato la progettazione del firmware di un misuratore laser che sfrutta l'interferometria a \textit{self-mixing} per fornire l'informazione di distanza assoluta di un bersaglio fisso.
+
+Questo obiettivo è stato raggiunto in modo soddisfacente, come mostrato dai risultati presentati nel Capitolo \ref{capitolo5}. Si sono ottenute incertezze relative di misura nell'ordine di $10^{-4}$, che, per le distanze considerate, si traducono in errori assoluti dell'ordine dei micrometri. Inoltre le misure effettuate per valutare la linearità dello strumento hanno mostrato che lo strumento finale è lineare nello spostamento all'interno dell'incertezza della misura.
+
+Tuttavia in futuro sono possibili alcuni miglioramenti.
+
+In particolare, per quanto riguarda la frequenza di elaborazione di una singola misura di distanza, non è stato possibile ottenere singoli campioni di distanza a frequenze superiori ai $50Hz$, prestazione molto al di sotto delle potenzialità delle tecnologie utilizzate. 
+
+Inoltre la tecnica di interfermoteria a \textit{self-mixing} utilizzata è in grado di fornire una misura della velocità del bersaglio. Questa funzionalità, a causa di vincoli di tempo nello sviluppo del progetto, non è stata adeguatamente testata e si è quindi scelto di escluderla dal lavoro presentato. 
+
+Infine si sono verificati alcune anomalie durante le misure effettuate, riconducibili a problemi termici.
+
+Per ottenere prestazioni di misura migliori è necessario utilizzare una piattaforma di prototipazione più moderna, più ampia e con capacità di calcolo maggiore. In particolare, a causa dei limiti di spazio imposti dall'FPGA utilizzata in questo lavoro non è stato possibile effettuare tutta la computazione su di essa. Pertanto è stato necessario implementare su microcontrollore parte del codice necessario al calcolo della misura di distanza.
+
+L'utilizzo di una FPGA più versatile dal punto di vista della capacità di elaborazione permetterebbe di effettuare anche la parte di computazione assegnata al microcontrollore direttamente in hardware, in modo da diminuire il tempo totale di elaborazione e garantire quindi una frequenza di elaborazione della singola misura più elevata.
+
+Per mantenere immutata la maggior parte del firmware è necessario scegliere un prodotto ufficialmente supportato da NI LabVIEW. Una scelta adeguata potrebbe essere il \textit{System On Module} (SOM), codice prodotto \textit{sbRIO-9651}, progettato dalla stessa \textit{National Instruments}. Questa scheda di sviluppo, oltre a garantire capacità doppie in termini di area integra al suo interno un microcontrollore più veloce ed è appositamente sviluppata per essere utilizzata per la produzione in volumi, garantendo così anche la possibilità di rendere lo strumento commercializzabile senza ulteriori modifiche.
+
+Per quanto riguarda i problemi di deriva termica dello strumento la soluzione migliore sarebbe quella di implementare un controllo di temperatura in grado di mantenere lo strumento in condizioni termiche stabili. Per questa implementazione è necessario sviluppare un controllore di temperatura all'interno del firmware dello strumento, oppure alternativamente è possibile utilizzare un controllore hardware dedicato. La seconda soluzione è preferibile, poiché richiede un minor sforzo in termini di tempo di sviluppo, ed inoltre riduce il tempo di testing della soluzione implementata.
+
+Si potrà inoltre utilizzare lo stesso strumento anche per misure di velocità e vibrometria, con l'implementazione di algoritmi che sfruttano a loro volta l'estrazione dei toni fondamentali del segnale interferometrico. Per fare ciò è necessario, come per la misura di distanza, effettuare una fase approfondita di taratura e implementare algoritmi di controllo dell'affidabilità della misura.
+
+
+

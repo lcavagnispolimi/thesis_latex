@@ -65,12 +65,12 @@
 \contentsline {subsubsection}{Sistema Real-Time}{78}
 \contentsline {paragraph}{Sistema Operativo Real-Time}{78}
 \contentsline {subparagraph}{VxWorks}{79}
-\contentsline {paragraph}{LabVIEW Real-Time}{80}
+\contentsline {paragraph}{LabVIEW Real-Time}{81}
 \contentsline {subsection}{\numberline {4.2.2}Progettazione e programmazione dell'FPGA}{82}
-\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{82}
+\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{83}
 \contentsline {paragraph}{VHDL}{83}
-\contentsline {subsubsection}{Sintesi Hardware}{83}
-\contentsline {subsubsection}{High-Level Synthesis (HLS)}{84}
+\contentsline {subsubsection}{Sintesi Hardware}{84}
+\contentsline {subsubsection}{High-Level Synthesis (HLS)}{86}
 \contentsline {subsubsection}{LabVIEW FPGA}{87}
 \contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{88}
 \contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{89}

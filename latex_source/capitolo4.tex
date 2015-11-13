@@ -2,7 +2,7 @@
 \label{capitolo4}
 \thispagestyle{empty}
 
-\textit{In questo Capitolo verrà descritta l’architettura software dello strumento realizzato. Inizialmente verrà analizzato l’ambiente di sviluppo software. Successivamente verrano mostrati i principi alla base della programmazione per microcontrollore e FPGA. Infine, verranno illustrate e descritte le funzionalità implementate su FPGA e microcontrollore.}
+\textit{In questo Capitolo verrà descritta l'architettura software dello strumento realizzato. Inizialmente verrà analizzato l'ambiente di sviluppo software. Successivamente verrano mostrati i principi alla base della programmazione per microcontrollore e FPGA. Infine, verranno illustrate e descritte le funzionalità implementate su FPGA e microcontrollore.}
 
 \section{Ambiente di sviluppo LabVIEW}
 L'ambiente di sviluppo scelto per questo lavoro di Tesi è NI LabVIEW.
@@ -33,7 +33,7 @@ Lo schema a blocchi è il diagramma di flusso che rappresenta il codice sorgente
 
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap4/nodocoll}
+    \includegraphics[scale=0.6]{cap4/nodocoll}
     \caption{Esempio di Nodo e di Collegamento}
     \label{nodocoll}
   \end{center}
@@ -63,7 +63,7 @@ Come già accennato nel Capitolo precedente, lo scopo di questo lavoro di Tesi 
 	
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.7]{cap4/baremetalrtos}
+    \includegraphics[scale=0.55]{cap4/baremetalrtos}
     \caption{Schema di funzionamento dei due approcci: RTOS e Bare-metal}
   \end{center}
 \end{figure}
@@ -374,7 +374,7 @@ Nel listato \ref{alg:fft} è mostrato lo pseudocodice dell'algoritmo di FFT.
 
 Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo della FFT si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
 
-%% TODO Cap4 Commentare pseudocodice FFT
+%% TODO Cap4 Commentare e capire pseudocodice FFT
 \begin{algorithm}
 \caption{Algoritmo di Coley-Tukey FFT}\label{alg:fft}
 \begin{algorithmic}[1]
@@ -694,7 +694,7 @@ In LabVIEW i processi producer e consumer sono rappresentati rispettivamente da 
 La \textit{FIFO} è una struttura dati che contiene gli elementi nell'ordine in cui sono ricevuti e fornisce l'accesso a quest'ultimi usando un criterio \textit{First-In First-Out}. Quando si configura una FIFO, è necessario specificarne la dimensione e la tipologia di dato (Figura \ref{fifolabview}).
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.4]{cap4/prodcons}
+    \includegraphics[scale=0.5]{cap4/prodcons}
     \caption{Esempio di Producer/Consumer implementato su LabVIEW FPGA}
     \label{prodcons}
   \end{center}
@@ -774,7 +774,7 @@ Per motivi di prestazioni e di area, è stato ampiamente utilizzato il tipo di d
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.7]{cap4/fxpvsfloat}
-    \caption{Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point o Floating Point}
+    \caption{Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point e Floating Point}
     \label{fxpvsfloat}
   \end{center}
 \end{figure}
@@ -892,7 +892,7 @@ Il DMA, acronimo di \textit{Direct Memory Access}, di una CPU è quel meccanismo
 L'utilizzo del DMA permette al chip FPGA di trasferire grosse quantità di dati sulla memoria del Real-Time host senza l'intervento del microprocessore. Questo meccanismo offre un notevole incremento delle prestazioni del sistema poiché il microprocessore, non essendo impegnato nel trasferimento dei dati, può svolgere altre operazioni.
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap4/dmafunz}
+    \includegraphics[scale=0.6]{cap4/dmafunz}
     \caption{Schema architetturale per DMA}
     \label{dmafunz}
   \end{center}

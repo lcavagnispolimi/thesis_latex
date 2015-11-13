@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  13 NOV 2015 17:21
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  13 NOV 2015 17:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -856,8 +856,6 @@ File: ./pictures/cap3/uproc.png Graphic file (type QTm)
 ]
 Capitolo 4.
 Missing character: There is no ̀ in font ecti1095!
-Missing character: There is no ’ in font ecti1095!
-Missing character: There is no ’ in font ecti1095!
 [75]
 File: ./pictures/cap4/esempiolvaimg.png Graphic file (type QTm)
  <use  "./pictures/cap4/esempiolvaimg.png" >
@@ -902,9 +900,9 @@ Missing character: There is no ̀ in font ecrm1095!
 File: ./pictures/cap4/trenoimp.png Graphic file (type QTm)
  <use  "./pictures/cap4/trenoimp.png" > [89]
 Missing character: There is no ̀ in font ecrm1095!
- [90]
+ [90] [91]
 File: ./pictures/cap4/spectleak.png Graphic file (type QTm)
- <use  "./pictures/cap4/spectleak.png" > [91] [92]
+ <use  "./pictures/cap4/spectleak.png" > [92]
 Missing character: There is no ̀ in font ecrm1095!
 Missing character: There is no ̀ in font ecrm1095!
 Missing character: There is no ̀ in font ecrm1095!
@@ -973,15 +971,20 @@ Capitolo 5.
 
 
 
-]) [119] [120
-
-
 ]
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
+ [119]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+) [120]
 \openout2 = `appendiceA.aux'.
 
  (./appendiceA.tex
 Appendice A.
 ) [121
+
+
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -1008,7 +1011,7 @@ Underfull \hbox (badness 1824) in paragraph at lines 179--181
 Here is how much of TeX's memory you used:
  13384 strings out of 493725
  270716 string characters out of 6145912
- 289511 words of memory out of 5000000
+ 287511 words of memory out of 5000000
  16368 multiletter control sequences out of 15000+600000
  28740 words of font info for 73 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
