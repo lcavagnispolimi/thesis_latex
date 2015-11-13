@@ -74,19 +74,32 @@
 \contentsline {subsubsection}{LabVIEW FPGA}{87}
 \contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{88}
 \contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{89}
-\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{94}
-\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{94}
-\contentsline {section}{\numberline {4.4}Architettura Software}{94}
-\contentsline {subsection}{\numberline {4.4.1}FPGA}{94}
-\contentsline {subsubsection}{Implementazione software}{94}
-\contentsline {paragraph}{Design pattern utilizzati}{94}
-\contentsline {subparagraph}{Producer-consumer}{94}
-\contentsline {subparagraph}{4-Wire Handshake}{95}
-\contentsline {paragraph}{Fixed Point}{95}
-\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{95}
-\contentsline {subsubsection}{Implementazione software}{95}
-\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{95}
-\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{97}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{99}
-\contentsline {chapter}{\numberline {A}Documentazione software}{101}
-\contentsline {chapter}{Bibliografia}{102}
+\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{95}
+\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{98}
+\contentsline {section}{\numberline {4.4}Architettura Software}{98}
+\contentsline {subsection}{\numberline {4.4.1}FPGA}{99}
+\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{99}
+\contentsline {paragraph}{Generazione del segnale di modulazione}{99}
+\contentsline {paragraph}{Campionamento del segnale interferometrico}{100}
+\contentsline {paragraph}{Condizionamento del segnale interferometrico}{100}
+\contentsline {subparagraph}{Sottrazione del residuo}{100}
+\contentsline {subparagraph}{Estrazione di 512 campioni}{100}
+\contentsline {subparagraph}{Finestratura}{100}
+\contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{101}
+\contentsline {paragraph}{Estrazione del massimo bin di frequenza}{101}
+\contentsline {subsubsection}{Implementazione software}{102}
+\contentsline {paragraph}{Design pattern utilizzati}{103}
+\contentsline {subparagraph}{Producer-consumer}{103}
+\contentsline {subparagraph}{4-Wire Handshake}{106}
+\contentsline {paragraph}{Fixed Point}{109}
+\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{110}
+\contentsline {paragraph}{Algoritmo per il controllo del rumore}{111}
+\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{111}
+\contentsline {paragraph}{Calcolo delle frequenze di frangia}{112}
+\contentsline {paragraph}{Calcolo della distanza assoluta}{112}
+\contentsline {subsubsection}{Implementazione software}{113}
+\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{113}
+\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{117}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{119}
+\contentsline {chapter}{\numberline {A}Documentazione software}{121}
+\contentsline {chapter}{Bibliografia}{122}

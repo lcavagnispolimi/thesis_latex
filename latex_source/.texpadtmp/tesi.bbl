@@ -1,10 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{4wirehs}
+https://decibel.ni.com/content/docs/doc-12682.
+
 \bibitem{sitesbrio}
 http://sine.ni.com/nips/cds/view/p/lang/it/nid/210421.
 
 \bibitem{sitevxworks}
 http://windriver.com/products/vxworks/.
+
+\bibitem{fxpdoc}
+http://www.ni.com/newsletter/50303/en/.
 
 \bibitem{siteads807}
 http://www.ti.com/lit/ds/symlink/ads807.pdf.
@@ -19,6 +25,14 @@ http://www.xilinx.com/products/silicon-devices/fpga/spartan-6/lx.html.
 Palludo A. and Silvano A.
 \newblock Sistema ottico a retroiniezione per la misura di distanza assoluta.
 \newblock Master's thesis, Politecnico di Milano, 2015.
+
+\bibitem{1007077}
+D.~Agrez.
+\newblock Frequency estimation of the non-stationary signals using interpolated
+  dft.
+\newblock In {\em Instrumentation and Measurement Technology Conference, 2002.
+  IMTC/2002. Proceedings of the 19th IEEE}, volume~2, pages 925--930 vol.2,
+  2002.
 
 \bibitem{31004}
 G.~Andria, M.~Savino, and Amerigo Trotta.
@@ -202,6 +216,11 @@ D.~Storti.
 O.~Svelto.
 \newblock {\em Principles of Lasers}.
 \newblock Plenum Press, fourth edition, 1998.
+
+\bibitem{tanembaum}
+A.S. Tanenbaum.
+\newblock {\em Architettura dei calcolatori. Un approccio strutturale.}
+\newblock Pearson Education, 2006.
 
 \bibitem{reconfgate}
 R.~H. Freeman H. Hsieh J. Y. Ja J. E. Mahoney L. T.~Ngo W.~Carter, K.~Duong and

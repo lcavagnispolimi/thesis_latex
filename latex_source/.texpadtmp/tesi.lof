@@ -76,7 +76,20 @@
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Processo di compilazione LabVIEW FPGA\relax }}{88}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Segnale campionato con treno di impulsi\relax }}{89}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Spectral leakage\relax }}{92}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{93}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{94}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Spectral leakage per diversi tipi di finestratura\relax }}{94}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Confronto tra DFT e FT di un segnale a frequenza $\omega _0$\relax }}{95}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Schema a blocchi ad alto livello dell'architettura\relax }}{98}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Block Diagram semplificato del VI eseguito su FPGA\relax }}{104}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Pannello di configurazione per la creazione di una FIFO\relax }}{105}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Esempio di Producer/Consumer implementato su LabVIEW FPGA\relax }}{106}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Ingressi ed uscite di un express VI con esecuzione pipelined\relax }}{107}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Computazione FFT\relax }}{108}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Pannello di configurazione del FFT Express VI\relax }}{108}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces FFT Express VI Timing Diagram\relax }}{109}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point o Floating Point\relax }}{109}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Fixed point in LabVIEW\relax }}{110}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Interfaccia grafica dello strumento di misura\relax }}{113}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Schema architetturale per DMA\relax }}{114}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
