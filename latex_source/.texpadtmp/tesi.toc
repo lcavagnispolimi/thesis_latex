@@ -60,31 +60,33 @@
 \contentsline {paragraph}{PowerPC e300}{72}
 \contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{75}
 \contentsline {section}{\numberline {4.1}Ambiente di sviluppo LabVIEW}{75}
-\contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{75}
-\contentsline {subsection}{\numberline {4.2.1}Sistema Real-Time}{75}
-\contentsline {subsubsection}{Sistema Operativo Real-Time}{75}
-\contentsline {paragraph}{VxWorks}{75}
-\contentsline {subsubsection}{LabVIEW Real-Time}{76}
-\contentsline {subsection}{\numberline {4.2.2}Progettazione e programmazione dell'FPGA}{76}
-\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{76}
-\contentsline {subsubsection}{Sintesi Hardware}{76}
-\contentsline {subsubsection}{High-Level Synthesis (HLS)}{76}
-\contentsline {subsubsection}{LabVIEW FPGA}{76}
-\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{76}
-\contentsline {subsection}{\numberline {4.3.1}Algoritmo di FFT}{76}
-\contentsline {subsection}{\numberline {4.3.2}Algoritmo di FFT Interpolata}{76}
-\contentsline {subsection}{\numberline {4.3.3}Misura di distanza}{76}
-\contentsline {section}{\numberline {4.4}Architettura Software}{76}
-\contentsline {subsection}{\numberline {4.4.1}FPGA}{76}
-\contentsline {subsubsection}{Implementazione software}{76}
-\contentsline {paragraph}{Design pattern utilizzati}{76}
-\contentsline {subparagraph}{Producer-consumer}{76}
-\contentsline {subparagraph}{4-Wire Handshake}{76}
-\contentsline {paragraph}{Fixed Point}{76}
-\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{76}
-\contentsline {subsubsection}{Implementazione software}{76}
-\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{76}
-\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{77}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{79}
-\contentsline {chapter}{\numberline {A}Documentazione software}{81}
-\contentsline {chapter}{Bibliografia}{82}
+\contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{77}
+\contentsline {subsection}{\numberline {4.2.1}Programmazione del microcontrollore}{77}
+\contentsline {subsubsection}{Sistema Real-Time}{78}
+\contentsline {paragraph}{Sistema Operativo Real-Time}{78}
+\contentsline {subparagraph}{VxWorks}{79}
+\contentsline {paragraph}{LabVIEW Real-Time}{80}
+\contentsline {subsection}{\numberline {4.2.2}Progettazione e programmazione dell'FPGA}{82}
+\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{82}
+\contentsline {paragraph}{VHDL}{83}
+\contentsline {subsubsection}{Sintesi Hardware}{83}
+\contentsline {subsubsection}{High-Level Synthesis (HLS)}{84}
+\contentsline {subsubsection}{LabVIEW FPGA}{87}
+\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{88}
+\contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{89}
+\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{94}
+\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{94}
+\contentsline {section}{\numberline {4.4}Architettura Software}{94}
+\contentsline {subsection}{\numberline {4.4.1}FPGA}{94}
+\contentsline {subsubsection}{Implementazione software}{94}
+\contentsline {paragraph}{Design pattern utilizzati}{94}
+\contentsline {subparagraph}{Producer-consumer}{94}
+\contentsline {subparagraph}{4-Wire Handshake}{95}
+\contentsline {paragraph}{Fixed Point}{95}
+\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{95}
+\contentsline {subsubsection}{Implementazione software}{95}
+\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{95}
+\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{97}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{99}
+\contentsline {chapter}{\numberline {A}Documentazione software}{101}
+\contentsline {chapter}{Bibliografia}{102}

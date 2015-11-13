@@ -3,6 +3,9 @@
 \bibitem{sitesbrio}
 http://sine.ni.com/nips/cds/view/p/lang/it/nid/210421.
 
+\bibitem{sitevxworks}
+http://windriver.com/products/vxworks/.
+
 \bibitem{siteads807}
 http://www.ti.com/lit/ds/symlink/ads807.pdf.
 
@@ -17,6 +20,13 @@ Palludo A. and Silvano A.
 \newblock Sistema ottico a retroiniezione per la misura di distanza assoluta.
 \newblock Master's thesis, Politecnico di Milano, 2015.
 
+\bibitem{31004}
+G.~Andria, M.~Savino, and Amerigo Trotta.
+\newblock Windows and interpolation algorithms to improve electrical
+  measurement accuracy.
+\newblock {\em Instrumentation and Measurement, IEEE Transactions on},
+  38(4):856--863, Aug 1989.
+
 \bibitem{birkner1978programmable}
 J.M. Birkner and H.T. Chua.
 \newblock Programmable array logic circuit, November~7 1978.
@@ -29,6 +39,11 @@ Actel Corporation.
 \bibitem{actelpro}
 Actel Corporation.
 \newblock Proasic3 flash family fpgas, October 2005.
+
+\bibitem{Coussy:2008:HSA:1457713}
+Philippe Coussy and Adam Morawiec.
+\newblock {\em High-Level Synthesis: From Algorithm to Digital Circuit}.
+\newblock Springer Publishing Company, Incorporated, 1st edition, 2008.
 
 \bibitem{thesissmldis}
 S.~Disegna.
@@ -46,6 +61,17 @@ S.~Donati, G.~Giuliani, and S.~Merlo.
 \newblock Laser diode feedback interferometer for measurement of displacements
   without ambiguity.
 \newblock {\em Quantum Electronics, IEEE Journal of}, 31(1):113--119, Jan 1995.
+
+\bibitem{bluebook}
+M.~Fingeroff.
+\newblock {\em High-Level Synthesis Blue Book}.
+\newblock Xlibris Corporation, 2010.
+
+\bibitem{fornacia}
+W.~Fornaciari and C.~Brandolese.
+\newblock {\em Sistemi embedded. Sviluppo hardware e software per sistemi
+  dedicati}.
+\newblock Pearson Italia, 2007.
 
 \bibitem{1464-4258-4-6-371}
 Guido Giuliani, Michele Norgia, Silvano Donati, and Thierry Bosch.
@@ -73,6 +99,12 @@ A.N.S. Institute.
 Safa~O Kasap.
 \newblock {\em Optoelectronics and Photonics: Principles and Practices}.
 \newblock Pearson Higher Ed, 2012.
+
+\bibitem{kopetzrt}
+H.~Kopetz.
+\newblock {\em Real-time Systems: Design Principles for Distributed Embedded
+  Applications}.
+\newblock Kluwer Academic Publishers, 1997.
 
 \bibitem{4068926}
 Ian Kuon and J.~Rose.
@@ -102,6 +134,11 @@ R.~Lipp, R.~Freeman, and T.~Saxe.
 D.~Melchionni.
 \newblock Vibrometro laser retroazionato in digitale.
 \newblock Master's thesis, Politecnico di Milano, 2012.
+
+\bibitem{eetimes}
+Michael Meredith.
+\newblock A look inside behavioral synthesis.
+\newblock {\em EETimes}, 2004.
 
 \bibitem{Minnick:1967:SMR:321386.321387}
 Robert~C. Minnick.
@@ -136,6 +173,19 @@ Chih-Ching Shih, R.~Lambertson, F.~Hawley, F.~Issaw, J.~McCollum, E.~Hamdy,
   arrays.
 \newblock In {\em Reliability Physics Symposium, 1997. 35th Annual
   Proceedings., IEEE International}, pages 25--33, Apr 1997.
+
+\bibitem{259423}
+K.G. Shin and P.~Ramanathan.
+\newblock Real-time computing: a new discipline of computer science and
+  engineering.
+\newblock {\em Proceedings of the IEEE}, 82(1):6--24, Jan 1994.
+
+\bibitem{545676}
+D.J. Smith.
+\newblock Vhdl and verilog compared and contrasted-plus modeled example written
+  in vhdl, verilog and c.
+\newblock In {\em Design Automation Conference Proceedings 1996, 33rd}, pages
+  771--776, Jun 1996.
 
 \bibitem{storeyelet}
 N.~Storey.

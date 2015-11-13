@@ -16,14 +16,16 @@ A level-1 auxiliary file: conclusioni.aux
 A level-1 auxiliary file: appendiceA.aux
 The style file: plain.bst
 Database file #1: ../bibl_tesi.bib
+Warning--entry type for "sitevxworks" isn't style-file defined
+--line 68 of file ../bibl_tesi.bib
 Warning--entry type for "dsxilinx" isn't style-file defined
---line 18 of file ../bibl_tesi.bib
+--line 112 of file ../bibl_tesi.bib
 Warning--entry type for "sitesbrio" isn't style-file defined
---line 178 of file ../bibl_tesi.bib
+--line 272 of file ../bibl_tesi.bib
 Warning--entry type for "siteads807" isn't style-file defined
---line 184 of file ../bibl_tesi.bib
+--line 278 of file ../bibl_tesi.bib
 Warning--entry type for "sitedac902" isn't style-file defined
---line 227 of file ../bibl_tesi.bib
+--line 321 of file ../bibl_tesi.bib
 Warning--to sort, need author or key in sitedac902
 Warning--to sort, need author or key in siteads807
 Warning--to sort, need author or key in sitesbrio
@@ -40,6 +42,7 @@ while executing---line 1049 of file plain.bst
 Name 1 in "S. D. Brown, R. Francis, J. Rose, and Z. Vranesic" has a comma at the end for entry fpgabook
 while executing---line 1049 of file plain.bst
 Warning--to sort, need author or key in dsxilinx
+Warning--to sort, need author or key in sitevxworks
 Name 1 in "S. D. Brown, R. Francis, J. Rose, and Z. Vranesic" has a comma at the end for entry fpgabook
 while executing---line 1090 of file plain.bst
 Name 1 in "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" has a comma at the end for entry reconfgate
@@ -52,45 +55,45 @@ Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
 while executing---line 1090 of file plain.bst
-You've used 33 entries,
+You've used 42 entries,
             2118 wiz_defined-function locations,
-            683 strings with 8460 characters,
-and the built_in function-call counts, 9140 in all, are:
-= -- 854
-> -- 411
-< -- 4
-+ -- 170
-- -- 134
-* -- 574
-:= -- 1518
-add.period$ -- 87
-call.type$ -- 33
-change.case$ -- 161
+            727 strings with 9524 characters,
+and the built_in function-call counts, 11495 in all, are:
+= -- 1074
+> -- 497
+< -- 5
++ -- 206
+- -- 160
+* -- 706
+:= -- 1901
+add.period$ -- 112
+call.type$ -- 42
+change.case$ -- 198
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 359
-empty$ -- 776
-format.name$ -- 134
-if$ -- 1929
+cite$ -- 47
+duplicate$ -- 469
+empty$ -- 996
+format.name$ -- 160
+if$ -- 2441
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 24
-newline$ -- 156
-num.names$ -- 58
-pop$ -- 219
+int.to.str$ -- 42
+missing$ -- 36
+newline$ -- 199
+num.names$ -- 74
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 164
 quote$ -- 0
-skip$ -- 281
+skip$ -- 359
 stack$ -- 0
-substring$ -- 429
-swap$ -- 64
-text.length$ -- 4
+substring$ -- 536
+swap$ -- 83
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 4
-while$ -- 75
-width$ -- 35
-write$ -- 323
+type$ -- 148
+warning$ -- 5
+while$ -- 95
+width$ -- 44
+write$ -- 412
 (There were 12 error messages)

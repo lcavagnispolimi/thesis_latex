@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  12 NOV 2015 19:11
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  13 NOV 2015 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,32 +473,62 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 Package: translator 2010/06/12 ver 1.10
  (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/usr/local/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/algorithms/algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count153
+\float@exts=\toks24
+\float@box=\box53
+\@float@everytoks=\toks25
+\@floatcapt=\box54
+)
+\@float@every@algorithm=\toks26
+\c@algorithm=\count154
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count155
+\c@ALG@rem=\count156
+\c@ALG@nested=\count157
+\ALG@tlm=\skip75
+\ALG@thistlm=\skip76
+\c@ALG@Lnr=\count158
+\c@ALG@blocknr=\count159
+\c@ALG@storecount=\count160
+\c@ALG@tmpcounter=\count161
+\ALG@tmplength=\skip77
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2014/03/24 3.9k The Babel package
  (/usr/local/texlive/2014/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2014/03/29 v1.3k Italian support from the babel system
  (/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2014/03/24 3.9k Babel common definitions
-\babel@savecnt=\count153
+\babel@savecnt=\count162
 \U@D=\dimen173
  (/usr/local/texlive/2014/texmf-dist/tex/generic/babel/xebabel.def))
-\it@lettering=\count154
-\it@doublequoteactive=\count155
-\it@ISOcompliance=\count156
-\Virgola=\count157
+\it@lettering=\count163
+\it@doublequoteactive=\count164
+\it@ISOcompliance=\count165
+\Virgola=\count166
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
-\etb@tempcnta=\count158
+\etb@tempcnta=\count167
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2014/04/30 v1.2b Input encoding file
-\inpenc@prehook=\toks24
-\inpenc@posthook=\toks25
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
 
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
@@ -510,48 +540,49 @@ LaTeX Warning: Label `conclusioni' multiply defined.
 ) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 32.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 32.
+LaTeX Info: Redefining \celsius on input line 40.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 40.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 32.
-Package gensymb Info: Using \Omega for \ohm on input line 32.
+LaTeX Info: Redefining \ohm on input line 40.
+Package gensymb Info: Using \Omega for \ohm on input line 40.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Info: Redefining \it@ocap on input line 32.
-LaTeX Info: Redefining \it@ccap on input line 32.
-\c__siunitx_mathsf_int=\count159
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+LaTeX Info: Redefining \it@ocap on input line 40.
+LaTeX Info: Redefining \it@ccap on input line 40.
+\c__siunitx_mathsf_int=\count168
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count160
+\c__siunitx_mathtt_int=\count169
 \openout2 = `frontespizio.aux'.
 
  (./frontespizio.tex
@@ -619,17 +650,17 @@ Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
  [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
  []
 
-)
+[10])
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
- [10] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
+ [11] [12
+
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [11
-
-] [12
+ [13] [14
 
 ]
 \openout2 = `introduzione.aux'.
@@ -831,26 +862,79 @@ Capitolo 4.
 Missing character: There is no ̀ in font ecti1095!
 Missing character: There is no ’ in font ecti1095!
 Missing character: There is no ’ in font ecti1095!
+[75]
+File: ./pictures/cap4/esempiolvaimg.png Graphic file (type QTm)
+ <use  "./pictures/cap4/esempiolvaimg.png" >
+File: ./pictures/cap4/esempiolvbimg.png Graphic file (type QTm)
+ <use  "./pictures/cap4/esempiolvbimg.png" >
+File: ./pictures/cap4/nodocoll.png Graphic file (type QTm)
+ <use  "./pictures/cap4/nodocoll.png" > [76]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+File: ./pictures/cap4/baremetalrtos.png Graphic file (type QTm)
+ <use  "./pictures/cap4/baremetalrtos.png" > [77] [78]
+File: ./pictures/cap4/microvsmono.png Graphic file (type QTm)
+ <use  "./pictures/cap4/microvsmono.png" >
+File: ./pictures/cap4/vxworks.png Graphic file (type QTm)
+ <use  "./pictures/cap4/vxworks.png" > [79] [80]
+File: ./pictures/cap4/lvrt.png Graphic file (type QTm)
+ <use  "./pictures/cap4/lvrt.png" >
+File: ./pictures/cap4/lvrtvi.png Graphic file (type QTm)
+ <use  "./pictures/cap4/lvrtvi.png" >
+File: ./pictures/cap4/timed.png Graphic file (type QTm)
+ <use  "./pictures/cap4/timed.png" >
+File: ./pictures/cap4/while.png Graphic file (type QTm)
+ <use  "./pictures/cap4/while.png" > [81]
+Overfull \hbox (23.07997pt too wide) in paragraph at lines 167--168
+[]$[]$ \T1/cmr/m/n/10.95 (\T1/cmr/m/it/10.95 Non-deterministc loop/process\T1/cmr/m/n/10.95 ): pro-ces-si \T1/cmr/m/it/10.95 Soft-deadline\T1/cmr/m/n/10.95 .
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[82] [83]
+File: ./pictures/cap4/sinthw.png Graphic file (type QTm)
+ <use  "./pictures/cap4/sinthw.png" > [84] [85]
+Overfull \hbox (2.09294pt too wide) in paragraph at lines 233--234
+[]$[]$\T1/cmr/m/n/10.95 : Ven-go-no ana-liz-za-te le ope-ra-zio-ni aritmetico-
+ []
 
- [75]) [76]
+[86]
+File: ./pictures/cap4/hls.png Graphic file (type QTm)
+ <use  "./pictures/cap4/hls.png" > [87]
+File: ./pictures/cap4/fpgalv.png Graphic file (type QTm)
+ <use  "./pictures/cap4/fpgalv.png" >
+Missing character: There is no ̀ in font ecrm1095!
+ [88]
+File: ./pictures/cap4/trenoimp.png Graphic file (type QTm)
+ <use  "./pictures/cap4/trenoimp.png" > [89]
+Missing character: There is no ̀ in font ecrm1095!
+ [90]
+File: ./pictures/cap4/spectleak.png Graphic file (type QTm)
+ <use  "./pictures/cap4/spectleak.png" > [91]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+ [92]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+File: ./pictures/cap4/hann.png Graphic file (type QTm)
+ <use  "./pictures/cap4/hann.png" >
+Missing character: There is no ̀ in font ecrm1095!
+File: ./pictures/cap4/smoothwins.png Graphic file (type QTm)
+ <use  "./pictures/cap4/smoothwins.png" > [93] [94]) [95]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex
-Capitolo 5.
-) [77
+ (./capitolo5.tex [96
 
 
 
 ]
+Capitolo 5.
+) [97]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [78
+ (./conclusioni.tex [98
 
 
 
-]) [79] [80
+]) [99] [100
 
 
 ]
@@ -858,7 +942,7 @@ Capitolo 5.
 
  (./appendiceA.tex
 Appendice A.
-) [81
+) [101
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -868,31 +952,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[82
+[102
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
  []
 
-[83]
-Underfull \hbox (badness 1824) in paragraph at lines 128--130
+[103] [104]
+Underfull \hbox (badness 1824) in paragraph at lines 165--167
 []\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
  []
 
-[84]) [85] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+[105]) [106] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12692 strings out of 493725
- 260379 string characters out of 6145912
- 273944 words of memory out of 5000000
- 15727 multiletter control sequences out of 15000+600000
- 26713 words of font info for 70 fonts, out of 8000000 for 9000
+ 13312 strings out of 493725
+ 269567 string characters out of 6145912
+ 287347 words of memory out of 5000000
+ 16311 multiletter control sequences out of 15000+600000
+ 27389 words of font info for 71 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
- 36i,15n,43p,10391b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (101 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (124 pages).

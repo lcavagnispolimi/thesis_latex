@@ -59,5 +59,24 @@
 \contentsline {figure}{\numberline {3.23}{\ignorespaces Implementazione del floating gate\relax }}{67}
 \contentsline {figure}{\numberline {3.24}{\ignorespaces Schema a blocchi dell'architettura del microcontrollore MPC5125\relax }}{71}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esempio di LabVIEW VI che calcola la somma di due numeri in virgola mobile\relax }}{76}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Front Panel}}}{76}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Block Diagram}}}{76}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Esempio di Nodo e di Collegamento\relax }}{76}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schema di funzionamento dei due approcci: RTOS e Bare-metal\relax }}{78}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Confronto tra kernel monolitico e micro-kernel\relax }}{80}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Struttura del sistema operativo VxWorks\relax }}{80}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Struttura del modulo LabVIEW Real-Time\relax }}{81}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Architettura software di un applicazione LabVIEW Real-Time\relax }}{81}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Cicli deterministici e non-deterministici\relax }}{82}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Timed Loop (Deterministico)}}}{82}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {While Loop (Non deterministico)}}}{82}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Sintesi hardware\relax }}{85}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces High Level Synthesis\relax }}{87}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Processo di compilazione LabVIEW FPGA\relax }}{88}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Segnale campionato con treno di impulsi\relax }}{89}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Spectral leakage\relax }}{92}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{93}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Spectral leakage per diversi tipi di finestratura\relax }}{94}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
