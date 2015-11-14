@@ -108,17 +108,17 @@
 \contentsline {section}{\numberline {5.3}Linearizzazione della misura}{121}
 \contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{126}
 \contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{131}
-\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{134}
-\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{134}
-\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{134}
-\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{134}
-\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{134}
-\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{134}
-\contentsline {subsection}{\numberline {5.5.3}Range di misura}{134}
-\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{134}
-\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{134}
-\contentsline {section}{\numberline {5.7}Drift termico}{134}
-\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{134}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{135}
-\contentsline {chapter}{\numberline {A}Documentazione software}{137}
-\contentsline {chapter}{Bibliografia}{138}
+\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{133}
+\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{133}
+\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{136}
+\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{141}
+\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{142}
+\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{142}
+\contentsline {subsection}{\numberline {5.5.3}Range di misura}{142}
+\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{147}
+\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{147}
+\contentsline {section}{\numberline {5.7}Drift termico}{147}
+\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{147}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{149}
+\contentsline {chapter}{\numberline {A}Documentazione software}{151}
+\contentsline {chapter}{Bibliografia}{152}

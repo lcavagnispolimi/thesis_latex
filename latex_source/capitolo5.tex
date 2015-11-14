@@ -269,20 +269,252 @@ La valutazione dell'errore massimo picco-picco rispetto al valore atteso conferm
 Nonostante l'ottimo miglioramento raggiunto, l'accuratezza non è ancora soddisfacente, a tal proposito si è ritenuto opportuno migliorare ulteriormente la misura con ottimizzazioni che verranno descritte nel paragrafo successivo.
 
 \section{Ottimizzazione della misura}
+In questo paragrafo verranno discusse le ottimizzazioni sviluppate al fine di migliorare la precisione e la l'accuratezza della misura.
 
 \subsection{Variazione dell'ampiezza del segnale di modulazione}
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/cinquesegnali}
+    \caption{Segnale di modulazione compensato, costituito da cinque forme d'onda di ampiezza diversa}
+    \label{cinquesegnali}
+  \end{center}
+\end{figure}
+
+Per cercare di mitigare effetti dipendenti dall'ampiezza del segnale di modulazione sul laser si è deciso di utilizzare un segnale di modulazione ad ampiezza variabile. Poiché le prestazioni dello strumento in termini di velocità di acquisizione di una singola misura sono piuttosto elevate (il tempo di misura è di circa $40 \mu s$), si è deciso di utilizzare $5$ segnali di modulazione con ampiezze differenti (Figura \ref{cinquesegnali}). Le ampiezze scelte per i segnali sono state rispettivamente di $100\%$, $95\%$, $90\%$, $85\%$ e $80\%$ rispetto al segnale di modulazione utilizzato inizialmente.	
+
+Diverse ampiezze del segnale di modulazione restituiscono frequenze di interferenza diverse a parità di distanza del sensore dal bersaglio.
+
+Questo fenomeno è facilmente verificabile osservando la consueta formula per il calcolo della distanza assoluta:
+\begin{equation}
+	s = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  f_{frangia} 
+\end{equation}
+
+Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\frac{\Delta I}{\Delta T}$, mentre gli altri elementi dell'equazione restano costanti. \'E facile dimostrare che all'aumentare dell'ampiezza del segnale di modulazione e a parità di distanza aumenta la frequenza di frangia $f_{frangia}$.
+\begin{table}[]
+\centering
+\caption{Fattori correttivi di frequenza}
+\label{tabfattoricorr}
+\begin{tabular}{l|l|l}
+\multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Fattore moltiplicativo\\ del segnale di\\ modulazione {[}\%{]}\end{tabular}}} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{Fattore di correzione della frequenza}}} \\
+ & \multicolumn{2}{c|}{} \\ \cline{2-3} 
+ & \textbf{di discesa {[}\%{]}} & \multicolumn{1}{l|}{\textbf{di salita {[}\%{]}}} \\ \hline
+\textbf{80} & 77.8805 & 88.0774 \\
+\textbf{85} & 83.9557 & 92.338 \\
+\textbf{90} & 90.3068 & 96.5311 \\
+\textbf{95} & 95.8657 & 100.965 \\
+\textbf{100} & 100 & 105.502
+\end{tabular}
+\end{table}
+
+Per questo motivo tutte le frequenze misurate sono riportate al valore, ritenuto nominale, del semiperiodo di discesa con ampiezza $100\%$. Questa operazione fa si che le distanze misurate con le diverse ampiezze di modulazione siano tra loro comparabili. I valori di correzione di frequenza sono mostrati in tabella \ref{tabfattoricorr}.
+
+Si può notare un leggero scostamento tra i fattori correttivi empirici e i valori teorici. Ciò accade in quanto, con la variazione del parametro $\frac{\Delta I}{\Delta t}$, la linearizzazione del parametro $\frac{\Delta \lambda}{\Delta I}$ non avviene più in maniera rigorosa.
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/cinquesegnalidis}
+    \caption{Segnale di modulazione compensato, costituito da cinque forme d'onda di ampiezza diversa in ordine sparso}
+    \label{cinquesegnalidis}
+  \end{center}
+\end{figure}
+
+L'utilizzo di segnali differenti con ampiezze in ordine decrescente può portare alla creazione di un trend nel segnale di modulazione, causato dall'andamento crescente dei picchi negativi dei segnali. Questo può causare un degrado delle prestazioni della misura, per questo si è deciso di alternare le differenti ampiezze del segnale in modo che l'andamento dei picchi sia il meno deterministico possibile (Figura \ref{cinquesegnalidis}).
+
+L'utilizzo di questa tecnica peggiora il tempo di acquisizione di una singola misura, in quanto, ora, un singolo valore di distanza è ottenuto dalla media dei $5$ valori ricavati utilizzando i $5$ segnali con ampiezze differenti.
+
+Questo approccio, tuttavia, permette di scorrelare l'errore di misura provocato dallo sfasamento iniziale delle frange, permettendo una riduzione teorica di $\sqrt{5}$ sulla deviazione standard della misura. 
+
+Tramite la prova a bersaglio fisso si è notato un miglioramento della deviazione standard di un fattore $2$, leggermente minore del risultato teorico atteso ($\sqrt{5} \approx 2.24$). La deviazione standard su $1000$ misure effettuate ad una distanza di $50 cm$ dal bersaglio è passata da $4 \cdot 10^{-4}$ a $2.5 \cdot 10^{-4}$. 
+
+\begin{figure}
+\centering
+\subfigure[Misure di distanza e media]
+{\label{misfisso4a}\includegraphics[scale=.5]{cap5/misfisso4a}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+{\label{misfisso4b}\includegraphics[scale=.3]{cap5/misfisso4b}}
+\caption{Misure a bersaglio fisso con i 5 segnali di modulazione}\label{misfisso4}
+\end{figure}
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/mismobile4}
+    \caption{Misure di distanza a bersaglio mobile effettuate su $200\mu m$ di spostamento con i 5 segnali di modulazione}
+    \label{mismobile4}
+  \end{center}
+\end{figure}
+
+L'introduzione di questa tecnica migliora anche la linearità dello strumento, come è chiaramente verificabile attraverso la prova a bersaglio mobile (Figura \ref{mismobile4}).
+
+L'errore picco-picco misurato con questa prova è di $451 \mu m$, mentre l'RMS è $142 \mu m$.
+
+Rispetto al caso precedente l'errore picco picco diminuisce di un fattore $2$, mentre l'RMS dell'errore rispetto alla retta ideale migliora di un fattore $5$.
 
 \subsection{Sottrazione del residuo}
+Come già trattato nei capitoli precedenti, l'algoritmo usato per calcolare l'FFT interpolata a 2 punti con finestra di \textit{Hanning} fa uso del bin di ampiezza massima e del bin di ampiezza maggiore scelto tra il precedente ed il successivo.
+
+Analizzando il segnale in arrivo dal sensore laser in assenza di ostacolo, si è notata la presenza di un residuo causato dallo sottrazione non perfetta presente nello stadio analogico. Tale residuo è un errore deterministico che può influenzare negativamente la scelta del bin laterale nella algoritmo di FFT interpolata, poiché nella maggior parte dei casi essi rispetto al massimo bin avranno ampiezze relativamente basse e comparabili al segnale contenuto nel residuo. Questo può portare ad un errore nella stima del bin interpolato e quindi influenzare negativamente la precisione della misura.
+
+Per cercare di mitigare l'effetto del rumore deterministico causato dal residuo si è deciso di procedere sottraendo un certo intervallo di frequenze dal segnale misurato dal laser in presenza di ostacolo.
+
+All'avvio dello strumento, con il sensore in assenza di ostacolo, si acquisiscono e mediano $1000$ segnali in assenza di frange. Il risultato della media è un segnale che chiamiamo "residuo". Perciò, per ogni successiva acquisizione di segnale interferometrico, si procede alla sottrazione del residuo al segnale acquisito.
+
+La sottrazione è effettuata al momento dell'acquisizione del segnale, perciò le componenti del residuo sono sottratte sia in ampiezza che in frequenza. 
+
+Utilizzando questa tecnica si è notato un miglioramento delle prestazioni dello strumento a basse frequenze. Ciò accade perché il residuo estratto è correlato al rumore della misura solo per determinate frequenze e la sottrazione del residuo su tutto lo spettro porta, per frequenze maggiori, all'aggiunta di ulteriore rumore alla misura.
+
+Per mantenere i vantaggi della sottrazione del fondo a basse frequenze senza peggiorare la misura ad alte frequenze si è deciso di applicare un filtro passa-basso al residuo acquisito.
+
+Sperimentalmente si è verificato che sottraendo il residuo per frequenze più basse di $1 \div 1.5MHz$ si ha un miglioramento della deviazione standard relativa della misura, mentre per frequenze più elevate la sottrazione del fondo porta ad un peggioramento della misura.
+Per queste ragioni si è scelto in modo conservativo come frequenza di taglio del filtro passa basso $1MHz$, per evitare di aggiungere ulteriore rumore alla misura.
+
+
+\begin{table}[]
+\centering
+\caption{Valori sperimentali di deviazione standard relativa calcolati su $1000$ misure a ostacolo fisso}
+\label{tab:residuofatt}
+\begin{tabular}{c|l|l}
+\multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Deviazione standard relativa}} \\ \hline
+\multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Frequenza \\ (Distanza)\end{tabular}}} & \textbf{con sottrazione del residuo} & \textbf{senza sottrazione del residuo} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}800 KHz\\ (ca. 20cm)\end{tabular}}  & $2 \cdot 10^{-4} \div 3 \cdot 10^{-4}$ & $3 \cdot 10^{-4} \div 4 \cdot 10^{-4}$   \\
+\textbf{\begin{tabular}[c]{@{}c@{}}1.5 MHz\\ (ca. 40cm)\end{tabular}} & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$  & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$ \\
+\textbf{\begin{tabular}[c]{@{}c@{}}3.5 MHz\\ (ca. 90cm)\end{tabular}} & $6 \cdot 10^{-4} \div 7 \cdot 10^{-4}$ & $5 \cdot 10^{-4} \div 6 \cdot 10^{-4}$
+\end{tabular}
+\end{table}
+
+In tabella \ref{tab:residuofatt} è mostrato il range di deviazioni standard relative misurate al variare della frequenza.
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.4]{cap5/residuo}
+    \caption{Residuo filtrato passa-basso con frequenza di taglio a 1 MHz}
+    \label{residuo}
+  \end{center}
+\end{figure}
+
+Anche per queste implementazioni sono state eseguite le consuete prove descritte nei paragrafi precedenti.
+\begin{figure}
+%% TODO Cap5 Manca campana gaussiana
+\centering
+\subfigure[Misure di distanza e media]
+{\label{misfisso5a}\includegraphics[scale=.5]{cap5/misfisso5a}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+{\label{misfisso5b}\includegraphics[scale=.3]{cap5/misfisso5b}}
+\caption{Misure di distanza a bersaglio fisso con sottrazione del residuo}\label{misfisso5}
+\end{figure}
+
+Nella prova a bersaglio fisso (Figura \ref{misfisso5}) si è notato un miglioramento non sostanziale rispetto al caso senza sottrazione del fondo. Questo accade a causa del posizionamento del bersaglio; infatti, alla distanza di $50 cm$, la frequenza misurata (ca. $1.9MHz$) è al di sopra della frequenza di taglio del filtro passa-basso che agisce sul fondo estratto, rendendo la sottrazione del fondo poco efficace.
+
+In questo caso il valore di deviazione standard relativa calcolato su $1000$ campioni vale $2.4 \cdot 10^{-4}$.
+
+Nella figura \ref{misfisso5b} è stata sovrapposta la distribuzione gaussiana teorica dei valori, e si può notare che i dati empirici sono aderenti ad essa.
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/mismobile5}
+    \caption{Misure di distanza a bersaglio mobile con sottrazione del residuo effettuate su $200 \mu m$ di spostamento}
+    \label{mismobile5}
+  \end{center}
+\end{figure}
+
+Dai risultati ottenuti nella prova a bersaglio mobile (Figura \ref{mismobile5}) si ottiene, al contrario dell'esperimento a bersaglio fisso, un notevole miglioramento nell'accuratezza. Vi è un dimezzamento, rispetto al caso senza sottrazione del fondo, della distanza picco-picco dell'errore. Essa scende a $280 \mu m$ con un RMS pari a $124 \mu m$.
 
 \section{Prove dello strumento finale}
+Alla luce dei risultati riportati nei paragrafi precedenti, nell'implementazione finale dello strumento si è deciso di utilizzare l'algoritmo a $5$ segnali di modulazione con sottrazione del residuo.
+
+Questa scelta è stata fatta poiché l'intervallo di misura garantito permette di avere precisioni migliori a basse distanze, senza avere peggioramenti significativi nella restante zona di funzionamento del sensore.
+
+Come anticipato in precedenza con la configurazione finale sono state eseguite due ulteriori prove a bersaglio fisso e mobile alle distanze di $20cm$ e $90cm$, i cui risultati sono riportati di seguito.
 
 \subsection{Bersaglio fisso}
+\begin{figure}
+\centering
+\subfigure[Misure di distanza e media]
+{\label{misfisso5a20}\includegraphics[scale=.5]{cap5/misfisso5a20}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+{\label{misfisso5b20}\includegraphics[scale=.3]{cap5/misfisso5b20}}
+\caption{Misure di distanza a 20cm con bersaglio fisso }\label{misfisso520}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[Misure di distanza e media]
+{\label{misfisso5a90}\includegraphics[scale=.5]{cap5/misfisso5a90}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+{\label{misfisso5b90}\includegraphics[scale=.3]{cap5/misfisso5b90}}
+\caption{Misure di distanza a 90cm con bersaglio fisso }\label{misfisso590}
+\end{figure}
+
+Nella prova a bersaglio fisso a $20cm$ (Figura \ref{misfisso520}) si ottiene una deviazione standard relativa di $1.32 \cdot 10^{-4}$, mentre con il bersaglio a $90cm$  (Figura \ref{misfisso590}) la deviazione standard relativa ottenuta è di $6.5 \cdot 10^{-4}$.
+
+I risultati sono in linea con le aspettative. Le prestazioni degradano alla distanza di $90cm$ in quanto si arriva nei pressi dei limiti di funzionamento dello strumento.
 
 \subsection{Bersaglio mobile}
+Nella prova a bersaglio mobile, anche in questo caso, i risultati sono in linea con le aspettative. 
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/mismobile520}
+    \caption{Misure di distanza a $20cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento}
+    \label{mismobile520}
+  \end{center}
+\end{figure}
+
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/mismobile590}
+    \caption{Misure di distanza a $90cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento}
+    \label{mismobile590}
+  \end{center}
+\end{figure}
+
+Alla distanza di $20cm$ (Figura \ref{mismobile520}) l'errore picco-picco ottenuto vale $258 \mu m$, con un RMS di $121 \mu m$.
+
+Alla distanza di $90cm$ (Figura \ref{mismobile590}) l'errore picco-picco ottenuto vale $ 545 \mu m$, con un RMS di $ 190 \mu m$.
+
+In questo caso lo strumento dimostra una maggiore linearità all'aumentare della distanza, in quanto l'errore relativo a $90cm$ è minore rispetto a quello registrato a $20cm$, nonostante in valore assoluto sia maggiore.
 
 \subsection{Range di misura}
+Con lo strumento nella sua configurazione finale è stata anche misurata la deviazione standard relativa su $100$ misure a differenti distanze al fine di determinare il range di distanza misurabile dallo strumento. 
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/rangemis}
+    \caption{Andamento della deviazione standard relativa in funzione della distanza}
+    \label{rangemis}
+  \end{center}
+\end{figure}
+
+I risultati ottenuti sono riportati nel grafico seguente ed è possibile notare che la misura si mantiene in valori di deviazione standard relativa accettabili in un range che varia da $15cm$ a $110cm$. 
+
+Oltre questo range la deviazione standard relativa della misura supera valori di $10^{-3}$, rendendo scarsa la precisione della misura.
+\begin{figure}
+\centering
+\subfigure[Sempiperiodo di discesa]
+{\includegraphics[scale=.4]{cap5/ampbindiscesa}}
+\hspace{5mm}
+\subfigure[Semiperiodo di salita]
+{\includegraphics[scale=.4]{cap5/ampbinsalita}}
+\caption{Ampiezza del massimo bin in funzione della distanza}\label{ampbin}
+\end{figure}
+
+Osservando l'andamento dell'ampiezza dei bin massimi in funzione della distanza (Figura \ref{ampbin}) è facilmente intuibile la motivazione della massima distanza misurabile. Per valori di distanza che superano i $110cm$ l'ampiezza del bin è troppo bassa per poter essere distinta dal rumore elettronico che lo strumento presenta, rendendo così la misura inaffidabile.
+
+La minima distanza misurabile, invece, dipende dal numero di bin iniziali che si decide di scartare. Si è verificato che i bin precedenti al quarto sono influenzati dalle componenti in bassa frequenza presenti nel segnale interferometrico, e quindi non possono portare informazioni utili alla misura.
+
+Nell'implementazione finale dello strumento i bin precedenti al quarto non vengono considerati.
 
 \subsection{Prestazioni}
+Qui di seguito si riassumono le prestazioni di misura dello strumento finale:
+\begin{itemize}
+	\item Range spaziale di misura: $10cm \div 110cm$
+	\item Minima incertezza relativa della misura di distanza: $8 \cdot 10^{-4}$
+	\item Massima incertezza relativa della misura di distanza: $2 \cdot 10^{-4}$
+	\item Frequenza massima teorica di misura: $1$ misura valida ogni $208 \mu s$ ($4.8 KHz$).
+	
+	A causa di mancanza di area nell'FPGA in uso non è stato possibile raggiungere le prestazioni di misura teoriche. Con un'acquisizione continua della misura si è riusciti ad ottenere una misura di distanza valida ogni $20 ms$ ($50 Hz$). L'occupazione in termini di area dell'algoritmo dell'FFT non ha permesso di implementare in hardware l'intero algoritmo di FFT interpolata e calcolo della distanza, rendendo così necessario l'uso di un microcontrollore per la conclusione dell'elaborazione numerica dei risultati dell'FFT.
+	
+	La logica di scambio dati FPGA-microcontrollore e l'overhead causato dalla connessione \textit{Ethernet} tra scheda e PC sono le cause più probabili del degrado della prestazione in termini di velocità di acquisizione di una singola misura.
+\end{itemize}
 
 \section{Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}
 
