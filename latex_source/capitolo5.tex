@@ -393,13 +393,12 @@ In tabella \ref{tab:residuofatt} è mostrato il range di deviazioni standard rel
 
 Anche per queste implementazioni sono state eseguite le consuete prove descritte nei paragrafi precedenti.
 \begin{figure}
-%% TODO Cap5 Manca campana gaussiana
 \centering
 \subfigure[Misure di distanza e media]
 {\label{misfisso5a}\includegraphics[scale=.5]{cap5/misfisso5a}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso5b}\includegraphics[scale=.3]{cap5/misfisso5b}}
+{\label{misfisso5b}\includegraphics[scale=.35]{cap5/misfisso5b}}
 \caption{Misure di distanza a bersaglio fisso con sottrazione del residuo}\label{misfisso5}
 \end{figure}
 
@@ -555,7 +554,21 @@ La curve ricavate dal calcolo iterativo del fattore moltiplicativo sono presenta
 
 Come da previsione, la forma d'onda finale (Figura \ref{newondafinale}), ricavata con l'utilizzo dell'algoritmo ottimizzato, possiede un andamento più liscio rispetto alla forma d'onda impiegata fino ad adesso.
 
+\begin{figure}
+\centering
+\subfigure[Semiperiodo di discesa]
+{\includegraphics[scale=.3]{cap5/primadopocompdiscnew}}
+\hspace{5mm}
+\subfigure[Semiperiodo di salita]
+{\includegraphics[scale=.3]{cap5/primadopocompsalnew}}
+\caption{Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, con forma d'onda liscia (rosso) e non (blu)}\label{primadopocompnew}
+\end{figure}
 
+Con lo scopo di mostrare i miglioramenti ottenuti dell'algoritmo di compensazione ottimizzato, sono state comparate le curve delle frequenze ricavate con le due diverse forme d'onda. I miglioramenti sono mostrati in figura \ref{primadopocompnew}. Dalle prove sperimentali è emerso che la massima variazione relativa di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $3\%$, per il semiperiodo di discesa, e $9\%$, per il semiperiodo di salita, contro i $9\%$ e $18\%$ ottenuti con la forma d'onda non liscia.
+
+Nonostante il miglioramento nella linearità della frequenza di frangia, la nuova forma d'onda non ha apportato migliorie significative sulla precisione e l'accuratezza della misura. Per dimostrare quanto affermato, sono state effettuate le consuete prove ad ostacolo fisso e mobile i cui risultati sono riportati in figura \ref{fissocompliscio} e \ref{}.
+
+%% TODO LATEX Riprendere da qui
 
 \section{Drift termico}
 

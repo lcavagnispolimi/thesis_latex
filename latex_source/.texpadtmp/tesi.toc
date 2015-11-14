@@ -119,6 +119,6 @@
 \contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{147}
 \contentsline {section}{\numberline {5.7}Drift termico}{149}
 \contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{149}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{151}
-\contentsline {chapter}{\numberline {A}Documentazione software}{153}
-\contentsline {chapter}{Bibliografia}{154}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{153}
+\contentsline {chapter}{\numberline {A}Documentazione software}{155}
+\contentsline {chapter}{Bibliografia}{156}

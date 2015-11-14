@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  14 NOV 2015 15:33
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  14 NOV 2015 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -554,6 +554,12 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `sub@' multiply defined.
 
+
+LaTeX Warning: Label `mismobile520' multiply defined.
+
+
+LaTeX Warning: Label `mismobile590' multiply defined.
+
 ) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
@@ -667,17 +673,17 @@ Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
  [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
  []
 
-[12] [13])
+[12] [13] [14])
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
- [14] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
+ [15] [16
+
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [15
-
-] [16
+ [17] [18
 
 ]
 \openout2 = `introduzione.aux'.
@@ -1125,25 +1131,233 @@ File: ./pictures/cap5/mulfactdiscesanew.eps Graphic file (type eps)
 File: ./pictures/cap5/mulfactsalitanew.eps Graphic file (type eps)
  <./pictures/cap5/mulfactsalitanew.eps>
 File: ./pictures/cap5/newondafinale.eps Graphic file (type eps)
- <./pictures/cap5/newondafinale.eps> [148]) [149] [150]
+ <./pictures/cap5/newondafinale.eps> [148]
+File: ./pictures/cap5/primadopocompdiscnew.eps Graphic file (type eps)
+ <./pictures/cap5/primadopocompdiscnew.eps>
+File: ./pictures/cap5/primadopocompsalnew.eps Graphic file (type eps)
+ <./pictures/cap5/primadopocompsalnew.eps>
+Underfull \hbox (badness 1163) in paragraph at lines 564--564
+[]\T1/cmss/m/it/10 Figura 5.32: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
+ []
+
+./capitolo5.tex:572: Unable to load picture or PDF file './pictures/cap5/'.
+<to be read again> 
+                   }
+l.572 {\includegraphics[scale=.5]{cap5/}}
+                                         
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: ./pictures/cap5/ Graphic file (type QTm)
+<use  "./pictures/cap5/" >
+./capitolo5.tex:572: Unable to load picture or PDF file './pictures/cap5/'.
+<to be read again> 
+                   \GXT@clipend 
+l.572 {\includegraphics[scale=.5]{cap5/}}
+                                         
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+Overfull \hbox (11.81653pt too wide) in paragraph at lines 572--572
+[]\T1/cmr/m/n/9 (a)
+ []
+
+
+Overfull \hbox (14.1271pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 Mi-
+ []
+
+
+Overfull \hbox (11.86792pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 su-
+ []
+
+
+Overfull \hbox (7.73074pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 re
+ []
+
+
+Overfull \hbox (7.70645pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 di
+ []
+
+
+Overfull \hbox (10.78903pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 di-
+ []
+
+
+Overfull \hbox (20.08812pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 stan-
+ []
+
+
+Overfull \hbox (8.73396pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 za
+ []
+
+
+Overfull \hbox (4.11359pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 e
+ []
+
+
+Overfull \hbox (14.90262pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 me-
+ []
+
+
+Overfull \hbox (12.33032pt too wide) in paragraph at lines 572--572
+\T1/cmr/m/n/9 dia 
+ []
+
+./capitolo5.tex:575: Unable to load picture or PDF file './pictures/'.
+<to be read again> 
+                   }
+l.575 {\includegraphics[scale=.3]{}}
+                                    
+The requested image couldn't be read because
+it was not a recognized image format.
+
+File: ./pictures/ Graphic file (type QTm)
+<use  "./pictures/" >
+./capitolo5.tex:575: Unable to load picture or PDF file './pictures/'.
+<to be read again> 
+                   \GXT@clipend 
+l.575 {\includegraphics[scale=.3]{}}
+                                    
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+Overfull \hbox (12.33029pt too wide) in paragraph at lines 575--575
+[]\T1/cmr/m/n/9 (b)
+ []
+
+
+Overfull \hbox (12.71495pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 Di-
+ []
+
+
+Overfull \hbox (16.51259pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 stri-
+ []
+
+
+Overfull \hbox (13.35785pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 bu-
+ []
+
+
+Overfull \hbox (14.38536pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 zio-
+ []
+
+
+Overfull \hbox (9.25122pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 ne
+ []
+
+
+Overfull \hbox (11.82004pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 dei
+ []
+
+
+Overfull \hbox (12.07343pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 va-
+ []
+
+
+Overfull \hbox (10.27527pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 lo-
+ []
+
+
+Overfull \hbox (6.18597pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 ri
+ []
+
+
+Overfull \hbox (13.35785pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 mi-
+ []
+
+
+Overfull \hbox (11.86792pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 su-
+ []
+
+
+Overfull \hbox (11.32361pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 ra-
+ []
+
+
+Overfull \hbox (6.16515pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 ti
+ []
+
+
+Overfull \hbox (9.26855pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 ri-
+ []
+
+
+Overfull \hbox (19.83472pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 spet-
+ []
+
+
+Overfull \hbox (8.2202pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 to
+ []
+
+
+Overfull \hbox (10.27527pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 al-
+ []
+
+
+Overfull \hbox (7.19269pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 la
+ []
+
+
+Overfull \hbox (14.90262pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 me-
+ []
+
+
+Overfull \hbox (12.33032pt too wide) in paragraph at lines 575--575
+\T1/cmr/m/n/9 dia 
+ []
+
+
+LaTeX Warning: Reference `fissocompliscio' on page 149 undefined on input line 581.
+
+) [149] [150] [151]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex
-Underfull \vbox (badness 2990) has occurred while \output is active []
-
- [151
+ (./conclusioni.tex [152
 
 
 
 ]
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
+ [153]
 Missing character: There is no ̀ in font ecrm1095!
 Missing character: There is no ̀ in font ecrm1095!
-) [152]
+) [154]
 \openout2 = `appendiceA.aux'.
 
  (./appendiceA.tex
 Appendice A.
-) [153
+) [155
 
 
 
@@ -1155,7 +1369,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[154
+[156
 
 
 ]
@@ -1168,23 +1382,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
  []
 
-[155] [156]
+[157] [158]
 Underfull \hbox (badness 1824) in paragraph at lines 182--184
 []\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
  []
 
-[157]) [158] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+[159]) [160] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13553 strings out of 493725
- 274085 string characters out of 6145912
- 288648 words of memory out of 5000000
- 16487 multiletter control sequences out of 15000+600000
+ 13585 strings out of 493725
+ 274568 string characters out of 6145912
+ 288661 words of memory out of 5000000
+ 16494 multiletter control sequences out of 15000+600000
  28740 words of font info for 73 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (178 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (182 pages).
