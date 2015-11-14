@@ -142,4 +142,9 @@
 \contentsline {figure}{\numberline {5.28}{\ignorespaces Ampiezza del massimo bin in funzione della distanza\relax }}{146}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sempiperiodo di discesa}}}{146}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{146}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Curva mediata delle frequenze in un semiperiodo di modulazione con curve fitting polinomiale di $3\degree $ grado\relax }}{148}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Curva delle massime variazioni relative rispetto alla media dei due fronti al variare del fattore moltiplicativo\relax }}{149}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{149}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{149}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Forma d'onda ricavata con algoritmo di compensazione ottimizzato\relax }}{150}
 \addvspace {10\p@ }

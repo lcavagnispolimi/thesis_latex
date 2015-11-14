@@ -160,6 +160,7 @@ Queste caratteristiche sono peculiari della sorgente, e sono esclusivamente dipe
 I due effetti combinati, quindi, causano una non linearità nella frequenza delle frange; in particolare le frange che si trovano all'inizio del segnale interferometrico sono a frequenza più bassa di quelle alla fine.	
 
 \subsection{Metodo di compensazione della non-linearità}
+\label{subsec:metodocomp}
 Una tecnica per compensare le variazioni del parametro $\chi = \frac{\Delta \lambda}{\Delta I}$ consiste nell'utilizzare un segnale modulante con pendenza $\frac{\Delta I}{\Delta t}$ variabile durante il semiperiodo di modulazione. Per fare ciò è necessario ricavare l'andamento $\chi = \frac{\Delta \lambda}{\Delta I}$ conoscendo quello del $t_{frangia}$ o, in alternativa, $f_{frangia}$. Una volta ricavato l'andamento non-lineare nel tempo di $\chi = \frac{\Delta \lambda}{\Delta I}$ lo si compensa, modificando $\frac{\Delta I}{\Delta t}$, in modo che il prodotto $\frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I}$ sia costante e, di conseguenza, anche $t_{frangia}$ risulti costante.
 
 Il metodo utilizzato per ricavare la forma d'onda del segnale di modulazione è stato implementato in LabVIEW Real-Time ed eseguito sul microprocessore della scheda di prototipazione. Per permettere ciò, è stato utilizzato un firmware FPGA, leggermente diverso de quello implementato nello strumento finale, che permettesse di inviare al microprocessore il segnale interferometrico completo e non solo i risultati dell'algoritmo di FFT.
@@ -517,6 +518,44 @@ Qui di seguito si riassumono le prestazioni di misura dello strumento finale:
 \end{itemize}
 
 \section{Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}
+Osservando la forma d'onda finale di modulazione ricavata nei passi precedenti (Figura \ref{ondafinale}) è facile notare come la curva non sia perfettamente liscia e presenti delle irregolarità.
+Queste irregolarità derivano da imperfezioni introdotte durante il calcolo della curva della variazione delle frequenze di frangia (passo $3$ dell'algoritmo presentato nel paragrafo \ref{subsec:metodocomp}) che viene interpolata linearmente punto per punto provocando così un andamento non liscio. 
+
+Queste irregolarità possono influire negativamente durante la modulazione del laser e quindi peggiorare la precisione e l'accuratezza della misura. 
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/curvefittingfreq}
+    \caption{Curva mediata delle frequenze in un semiperiodo di modulazione con curve fitting polinomiale di $3\degree$ grado}
+    \label{curvefittingfreq}
+  \end{center}
+\end{figure}
+
+Per questo motivo è stato deciso di approssimare la curva delle frequenze di frangia utilizzando un processo di \textit{curve fitting} polinomiale di $3\degree$ grado invece che un'interpolazione lineare punto-punto. In figura \ref{curvefittingfreq} è mostrata in blu la curva delle frequenze di frangia estratta in un semiperiodo di modulazione e in rosso la sua approssimazione polinomiale di $3\degree$ grado.
+
+Un ulteriore ottimizzazione effettuata sull'algoritmo di compensazione del segnale di modulazione riguarda il calcolo iterativo del fattore moltiplicativo (passo 4 dell'algoritmo presentato nel paragrafo \ref{subsec:metodocomp}). Per valutare la bontà del fattore moltiplicativo calcolato si è scelto di utilizzare la massima variazione relativa della frequenza di frangia rispetto alla media invece che la deviazione standard relativa, questo per permettere un miglior appiattimento della curva delle frequenze.
+
+\begin{figure}
+\centering
+\subfigure[Semiperiodo di discesa]
+{\label{}\includegraphics[scale=.3]{cap5/mulfactdiscesanew}}
+\hspace{5mm}
+\subfigure[Semiperiodo di salita]
+{\label{}\includegraphics[scale=.3]{cap5/mulfactsalitanew}}
+\caption{Curva delle massime variazioni relative rispetto alla media dei due fronti al variare del fattore moltiplicativo}\label{mulfactnew}
+\end{figure}
+
+La curve ricavate dal calcolo iterativo del fattore moltiplicativo sono presentate in Figura \ref{mulfactnew}. Si può notare che, anche in questa versione ottimizzata dell'algoritmo di compensazione, il minimo della curva si trova nell'intorno di $0.2$, sia per il fronte di salita che per il fronte di discesa. I valori esatti ricavati sono $0.16$ per il fronte di discesa e $0.27$ per il fronte di salita. Essi variano leggermente rispetto a quelli ricavati con l'algoritmo non ottimizzato. 
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/newondafinale}
+    \caption{Forma d'onda ricavata con algoritmo di compensazione ottimizzato}
+    \label{newondafinale}
+  \end{center}
+\end{figure}
+
+Come da previsione, la forma d'onda finale (Figura \ref{newondafinale}), ricavata con l'utilizzo dell'algoritmo ottimizzato, possiede un andamento più liscio rispetto alla forma d'onda impiegata fino ad adesso.
+
+
 
 \section{Drift termico}
 
