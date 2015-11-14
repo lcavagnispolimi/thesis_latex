@@ -100,6 +100,25 @@
 \contentsline {subsubsection}{Implementazione software}{113}
 \contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{113}
 \contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{117}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{119}
-\contentsline {chapter}{\numberline {A}Documentazione software}{121}
-\contentsline {chapter}{Bibliografia}{122}
+\contentsline {section}{\numberline {5.1}Metodologia proposta}{117}
+\contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{118}
+\contentsline {subsection}{\numberline {5.1.2}Prova a bersaglio mobile}{119}
+\contentsline {subsection}{\numberline {5.1.3}Prova del range di misura}{119}
+\contentsline {section}{\numberline {5.2}Finestratura del segnale}{120}
+\contentsline {section}{\numberline {5.3}Linearizzazione della misura}{121}
+\contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{126}
+\contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{131}
+\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{132}
+\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{132}
+\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{132}
+\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{132}
+\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{132}
+\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{132}
+\contentsline {subsection}{\numberline {5.5.3}Range di misura}{132}
+\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{132}
+\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{132}
+\contentsline {section}{\numberline {5.7}Drift termico}{132}
+\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{132}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{133}
+\contentsline {chapter}{\numberline {A}Documentazione software}{135}
+\contentsline {chapter}{Bibliografia}{136}

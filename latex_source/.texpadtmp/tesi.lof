@@ -92,4 +92,25 @@
 \contentsline {figure}{\numberline {4.27}{\ignorespaces Interfaccia grafica dello strumento di misura\relax }}{113}
 \contentsline {figure}{\numberline {4.28}{\ignorespaces Schema architetturale per DMA\relax }}{114}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Allestimento della misura\relax }}{118}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Segnale interferometrico (blu) in un periodo di modulazione (nero)\relax }}{120}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Misure a bersaglio fisso con finestratura rettangolare\relax }}{122}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{122}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{122}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Misure a bersaglio fisso con finestratura di Hanning\relax }}{123}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{123}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{123}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Misure di distanza a bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{124}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {con finestra rettangolare}}}{124}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {con finestra di Hanning}}}{124}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Porzione di spettro calcolato sul fronte di discesa dalla FFT con finestra rettangolare e di Hanning\relax }}{125}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Semiperiodo del segnale interferometrico prodotto dalla sorgente laser con modulazione a pendenza $\frac {\Delta I}{\Delta t}$ costante su di un bersaglio metallico a distanza fissa\relax }}{126}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Curva di regressione polinomiale del segnale interferometrico\relax }}{127}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Spostamento della finestra di 128 campioni lungo il semiperiodo di modulazione su cui viene calcolata la FFT\relax }}{127}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Curva mediata delle frequenze in un semiperiodo di modulazione con ostacolo a distanza fissa\relax }}{128}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Curva delle deviazioni standard relative dei due fronti al variare del fattore moltiplicativo\relax }}{128}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{128}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{128}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Forma d'onda finale usata per la modulazione\relax }}{130}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Forma d'onda finale usata per la modulazione\relax }}{131}
 \addvspace {10\p@ }

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  13 NOV 2015 17:43
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  14 NOV 2015 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -533,7 +533,14 @@ Package: inputenc 2014/04/30 v1.2b Input encoding file
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -625,13 +632,13 @@ File: ./pictures/frontesp/newlogopm1.png Graphic file (type QTm)
 ] [6
 
 
-] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.toc [7])
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.toc [7] [8])
 \tf@toc=\write3
 \openout3 = `tesi.toc'.
 
- [8] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof [9
+ [9] [10
 
-]
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof [11]
 Overfull \hbox (3.88805pt too wide) in paragraph at lines 39--39
  [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Digitale-Analogico 
  []
@@ -646,17 +653,17 @@ Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
  [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
  []
 
-[10])
+[12] [13])
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
- [11] [12
-
-] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
+ [14] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [13] [14
+ [15
+
+] [16
 
 ]
 \openout2 = `introduzione.aux'.
@@ -964,57 +971,70 @@ File: ./pictures/cap4/dmafunz.png Graphic file (type QTm)
 
 ]
 Capitolo 5.
-) [117]
-\openout2 = `conclusioni.aux'.
-
- (./conclusioni.tex [118
-
-
-
-]
-Underfull \vbox (badness 2990) has occurred while \output is active []
-
- [119]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-) [120]
-\openout2 = `appendiceA.aux'.
-
- (./appendiceA.tex
-Appendice A.
-) [121
-
-
-
-
-] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[122
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-[]\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
+[117]
+File: ./pictures/cap5/allestimento.jpg Graphic file (type QTm)
+ <use  "./pictures/cap5/allestimento.jpg" > [118] [119]
+File: ./pictures/cap5/segnaleinterf.eps Graphic file (type eps)
+ <./pictures/cap5/segnaleinterf.eps> [120]
+File: ./pictures/cap5/misfisso1a.eps Graphic file (type eps)
+ <./pictures/cap5/misfisso1a.eps>
+File: ./pictures/cap5/misfisso1b.png Graphic file (type QTm)
+ <use  "./pictures/cap5/misfisso1b.png" >
+File: ./pictures/cap5/misfisso2a.eps Graphic file (type eps)
+ <./pictures/cap5/misfisso2a.eps>
+File: ./pictures/cap5/misfisso2b.png Graphic file (type QTm)
+ <use  "./pictures/cap5/misfisso2b.png" >
+Overfull \hbox (1.77603pt too wide) in paragraph at lines 106--110
+ [] 
  []
 
-[123] [124]
-Underfull \hbox (badness 1824) in paragraph at lines 179--181
-[]\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
+File: ./pictures/cap5/mismobile1.eps Graphic file (type eps)
+<./pictures/cap5/mismobile1.eps>
+File: ./pictures/cap5/mismobile2.eps Graphic file (type eps)
+ <./pictures/cap5/mismobile2.eps>
+File: ./pictures/cap5/spectleakinterf.eps Graphic file (type eps)
+ <./pictures/cap5/spectleakinterf.eps>
+Missing character: There is no ̀ in font ecrm1095!
+File: ./pictures/cap5/semiperiodononcomp.eps Graphic file (type eps)
+ <./pictures/cap5/semiperiodononcomp.eps> [121] [122] [123] [124]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+ [125]
+File: ./pictures/cap5/regressioncurvefrangia.eps Graphic file (type eps)
+ <./pictures/cap5/regressioncurvefrangia.eps>
+File: ./pictures/cap5/slidingfft.png Graphic file (type QTm)
+ <use  "./pictures/cap5/slidingfft.png" >
+File: ./pictures/cap5/curvamediatafreq.eps Graphic file (type eps)
+ <./pictures/cap5/curvamediatafreq.eps>
+File: ./pictures/cap5/mulfactdiscesa.eps Graphic file (type eps)
+ <./pictures/cap5/mulfactdiscesa.eps>
+File: ./pictures/cap5/mulfactsalita.eps Graphic file (type eps)
+ <./pictures/cap5/mulfactsalita.eps>
+Missing character: There is no ̀ in font ecrm1095!
+ [126] [127] [128]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+
+Overfull \hbox (3.73549pt too wide) in paragraph at lines 208--209
+[]$[]$ $[]$
  []
 
-[125]) [126] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux)) ) 
-Here is how much of TeX's memory you used:
- 13384 strings out of 493725
- 270716 string characters out of 6145912
- 287511 words of memory out of 5000000
- 16368 multiletter control sequences out of 15000+600000
- 28740 words of font info for 73 fonts, out of 8000000 for 9000
- 1329 hyphenation exceptions out of 8191
- 36i,16n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+[129]
+File: ./pictures/cap5/ondafinale.eps Graphic file (type eps)
+ <./pictures/cap5/ondafinale.eps>
+Missing character: There is no ̀ in font ecrm1095!
+ [130]
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (144 pages).
+./capitolo5.tex:231: LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 \end{enumerate}
+                     
+Your command was ignored.
+Type  I <command> <return>  to re

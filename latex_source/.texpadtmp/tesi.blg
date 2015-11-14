@@ -16,20 +16,22 @@ A level-1 auxiliary file: conclusioni.aux
 A level-1 auxiliary file: appendiceA.aux
 The style file: plain.bst
 Database file #1: ../bibl_tesi.bib
+Warning--entry type for "standa" isn't style-file defined
+--line 12 of file ../bibl_tesi.bib
 Warning--entry type for "fxpdoc" isn't style-file defined
---line 20 of file ../bibl_tesi.bib
-Warning--entry type for "4wirehs" isn't style-file defined
 --line 26 of file ../bibl_tesi.bib
+Warning--entry type for "4wirehs" isn't style-file defined
+--line 32 of file ../bibl_tesi.bib
 Warning--entry type for "sitevxworks" isn't style-file defined
---line 102 of file ../bibl_tesi.bib
+--line 108 of file ../bibl_tesi.bib
 Warning--entry type for "dsxilinx" isn't style-file defined
---line 146 of file ../bibl_tesi.bib
+--line 152 of file ../bibl_tesi.bib
 Warning--entry type for "sitesbrio" isn't style-file defined
---line 306 of file ../bibl_tesi.bib
-Warning--entry type for "siteads807" isn't style-file defined
 --line 312 of file ../bibl_tesi.bib
+Warning--entry type for "siteads807" isn't style-file defined
+--line 318 of file ../bibl_tesi.bib
 Warning--entry type for "sitedac902" isn't style-file defined
---line 355 of file ../bibl_tesi.bib
+--line 361 of file ../bibl_tesi.bib
 Warning--to sort, need author or key in sitedac902
 Warning--to sort, need author or key in siteads807
 Warning--to sort, need author or key in sitesbrio
@@ -49,6 +51,7 @@ Warning--to sort, need author or key in dsxilinx
 Warning--to sort, need author or key in sitevxworks
 Warning--to sort, need author or key in 4wirehs
 Warning--to sort, need author or key in fxpdoc
+Warning--to sort, need author or key in standa
 Name 1 in "S. D. Brown, R. Francis, J. Rose, and Z. Vranesic" has a comma at the end for entry fpgabook
 while executing---line 1090 of file plain.bst
 Name 1 in "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" has a comma at the end for entry reconfgate
@@ -61,45 +64,45 @@ Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y
 while executing---line 1090 of file plain.bst
 Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y. Ja, J. E. Mahoney, L. T. Ngo, and S. L. Size" for entry reconfgate
 while executing---line 1090 of file plain.bst
-You've used 46 entries,
+You've used 47 entries,
             2118 wiz_defined-function locations,
-            739 strings with 9900 characters,
-and the built_in function-call counts, 12476 in all, are:
-= -- 1165
-> -- 513
+            741 strings with 9976 characters,
+and the built_in function-call counts, 12624 in all, are:
+= -- 1177
+> -- 514
 < -- 7
-+ -- 214
++ -- 215
 - -- 164
-* -- 752
-:= -- 2028
-add.period$ -- 120
-call.type$ -- 46
-change.case$ -- 211
+* -- 757
+:= -- 2042
+add.period$ -- 121
+call.type$ -- 47
+change.case$ -- 214
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 518
-empty$ -- 1111
+cite$ -- 55
+duplicate$ -- 525
+empty$ -- 1134
 format.name$ -- 164
-if$ -- 2674
+if$ -- 2711
 int.to.chr$ -- 0
-int.to.str$ -- 46
+int.to.str$ -- 47
 missing$ -- 39
-newline$ -- 215
+newline$ -- 218
 num.names$ -- 78
-pop$ -- 308
+pop$ -- 316
 preamble$ -- 1
-purify$ -- 174
+purify$ -- 176
 quote$ -- 0
-skip$ -- 406
+skip$ -- 416
 stack$ -- 0
-substring$ -- 602
-swap$ -- 98
+substring$ -- 607
+swap$ -- 99
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 7
+type$ -- 166
+warning$ -- 8
 while$ -- 101
-width$ -- 48
-write$ -- 444
+width$ -- 49
+write$ -- 449
 (There were 12 error messages)
