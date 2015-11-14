@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  14 NOV 2015 12:21
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  14 NOV 2015 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1027,14 +1027,91 @@ File: ./pictures/cap5/ondafinale.eps Graphic file (type eps)
  <./pictures/cap5/ondafinale.eps>
 Missing character: There is no ̀ in font ecrm1095!
  [130]
+File: ./pictures/cap5/primadopocompdisc.eps Graphic file (type eps)
+ <./pictures/cap5/primadopocompdisc.eps>
+File: ./pictures/cap5/primadopocompsal.eps Graphic file (type eps)
+ <./pictures/cap5/primadopocompsal.eps>
+Underfull \hbox (badness 1163) in paragraph at lines 239--239
+[]\T1/cmss/m/it/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
+ []
 
-./capitolo5.tex:231: LaTeX Error: \begin{document} ended by \end{enumerate}.
+File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
+<./pictures/cap5/misfisso3a.eps>
+File: ./pictures/cap5/misfisso3b.png Graphic file (type QTm)
+ <use  "./pictures/cap5/misfisso3b.png" >
+Overfull \hbox (11.71956pt too wide) in paragraph at lines 246--250
+ [] 
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.231 \end{enumerate}
-                     
-Your command was ignored.
-Type  I <command> <return>  to re
+
+Overfull \hbox (5.81197pt too wide) in paragraph at lines 242--252
+[]\T1/cmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
+ []
+
+File: ./pictures/cap5/mismobile3.eps Graphic file (type eps)
+<./pictures/cap5/mismobile3.eps> [131] [132])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133] [134]
+\openout2 = `conclusioni.aux'.
+
+ (./conclusioni.tex
+Underfull \vbox (badness 2990) has occurred while \output is active []
+
+ [135
+
+
+
+]
+Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ecrm1095!
+) [136]
+\openout2 = `appendiceA.aux'.
+
+ (./appendiceA.tex
+Appendice A.
+) [137
+
+
+
+
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[138
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+[]\T1/cmr/m/n/10.95 http://www.standa.lt/products/catalog/motorised _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
+ []
+
+[139] [140]
+Underfull \hbox (badness 1824) in paragraph at lines 182--184
+[]\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
+ []
+
+[141]) [142] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 13462 strings out of 493725
+ 272240 string characters out of 6145912
+ 287979 words of memory out of 5000000
+ 16422 multiletter control sequences out of 15000+600000
+ 28740 words of font info for 73 fonts, out of 8000000 for 9000
+ 1329 hyphenation exceptions out of 8191
+ 36i,16n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (162 pages).

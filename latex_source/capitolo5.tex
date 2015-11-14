@@ -228,17 +228,45 @@ La forma d'onda finale, mostrata in Figura \ref{ondafinale}, ha consentito di ri
 
 \subsection{Misure in seguito alla compensazione}
 Al fine di valutare la bontà dell'algoritmo precedentemente descritto, è stata comparata quantitativamente l'incertezza relativa della variazione di frequenza del segnale interferometrico prima e dopo la compensazione del segnale di modulazione.
-\end{enumerate}
+
+\begin{figure}
+\centering
+\subfigure[Semiperiodo di discesa]
+{\includegraphics[scale=.3]{cap5/primadopocompdisc}}
+\hspace{5mm}
+\subfigure[Semiperiodo di salita]
+{\includegraphics[scale=.3]{cap5/primadopocompsal}}
+\caption{Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, prima e dopo la compensazione}\label{primadopocomp}
+\end{figure}
+
+I miglioramenti ottenuti per merito della compensazione della non-linearità sono mostrati in figura \ref{primadopocomp}. Dalle prove sperimentali è emerso che l'incertezza relativa della variazione di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $2\%$, per entrambi i fronti di modulazione, contro i $20\%$ ottenuti senza compensazione. La prova è stata ripetuta più volte per verificare che il guadagno in termini di linearità del periodo di frangia sia effettivamente $10$.
+\begin{figure}
+\centering
+\subfigure[Misure di distanza e media]
+{\label{misfisso3a}\includegraphics[scale=.5]{cap5/misfisso3a}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+{\label{misfisso3b}\includegraphics[scale=.4]{cap5/misfisso3b}}
+\caption{Misure a bersaglio fisso con segnale di modulazione compensato}\label{misfisso3}
+\end{figure}
+
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap5/frangedopocomp}
-    \caption{}
-    \label{frangedopocomp}
+    \includegraphics[scale=0.5]{cap5/mismobile3}
+    \caption{Misure di distanza a bersaglio mobile effettuate su $200\mu m$ di spostamento con segnale di modulazione compensato}
+    \label{mismobile3}
   \end{center}
 \end{figure}
 
-I miglioramenti ottenuti per merito della compensazione della non-linearità sono mostrati in figura \ref{}. Dalle prove sperimentali è emerso che l'incertezza relativa della variazione di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $2\%$, per entrambi i fronti di modulazione, contro i $20\%$ ottenuti senza compensazione. La prova è stata ripetuta più volte per verificare che il guadagno in termini di linearità del periodo di frangia sia effettivamente $10$.
+Questo miglioramento ha influito sulla precisione e sull'accuratezza della misura. A conferma del risultato sono riportati gli esiti delle prove a bersaglio fisso e a bersaglio mobile rispettivamente in figura \ref{misfisso3} e \ref{mismobile3}.
 
+Si può apprezzare, dai risultati delle misure a bersaglio fisso, che utilizzando un segnale di modulazione compensato la precisione di misura migliora sensibilmente. In particolare, l'incertezza relativa diminuisce di due ordini di grandezza, passando da $10^{-2}$ a $4 \cdot 10^{-4}$.
+
+Inoltre, si può notare come le misure effettuate con la modulazione compensata risultino complessivamente più lineari rispetto a quella effettuata senza compensazione.
+
+La valutazione dell'errore massimo picco-picco rispetto al valore atteso conferma quanto intuito graficamente: l'errore nel caso di segnale di modulazione con pendenza compensata migliora discretamente passando da $4mm$ a $826 \mu m$, con un RMS pari a $568 \mu m$.
+
+Nonostante l'ottimo miglioramento raggiunto, l'accuratezza non è ancora soddisfacente, a tal proposito si è ritenuto opportuno migliorare ulteriormente la misura con ottimizzazioni che verranno descritte nel paragrafo successivo.
 
 \section{Ottimizzazione della misura}
 

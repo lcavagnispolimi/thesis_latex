@@ -112,5 +112,11 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{128}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{128}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Forma d'onda finale usata per la modulazione\relax }}{130}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Forma d'onda finale usata per la modulazione\relax }}{131}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, prima e dopo la compensazione\relax }}{131}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{131}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{131}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Misure a bersaglio fisso con segnale di modulazione compensato\relax }}{132}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{132}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{132}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Misure di distanza a bersaglio mobile effettuate su $200\mu m$ di spostamento con segnale di modulazione compensato\relax }}{133}
 \addvspace {10\p@ }
