@@ -120,7 +120,7 @@ Per determinare quale delle due finestrature utilizzare nell'implementazione fin
 \caption{Misure di distanza a bersaglio mobile effettuate su $200 \mu m$ di spostamento}\label{mismobile12}
 \end{figure}
 
-I risultati delle prove a bersaglio fisso sono mostrati in Figura \ref{misfisso1} e \ref{misfisso2}. Sono inoltre riportati i grafici della distribuzione dei punti misurati rispetto alla media. In figura \ref{mismobile12}, invece, sono mostrate le misure a bersaglio mobile: i punti rossi rappresentano le medie valutate ogni $100$ misurazioni, e le barre di errore l'incertezza assoluta di misura. La curva blu, invece, rappresenta il valore atteso.
+I risultati delle prove a bersaglio fisso sono mostrati in Figura \ref{misfisso1} e \ref{misfisso2}. Sono inoltre riportati i grafici della distribuzione dei punti misurati rispetto alla media. In Figura \ref{mismobile12}, invece, sono mostrate le misure a bersaglio mobile: i punti rossi rappresentano le medie valutate ogni $100$ misurazioni, e le barre di errore l'incertezza assoluta di misura. La curva blu, invece, rappresenta il valore atteso.
 
 Dai risultati delle misure a bersaglio fisso si evince che con la finestratura di \textit{Hanning} vi è un chiaro miglioramento in termini di precisione. L'incertezza relativa di misura si riduce complessivamente di un fattore $10$ passando da $10^{-1}$, con finestra rettangolare, a $10^{-}2$ con finestra di \textit{Hanning}.
 
@@ -133,7 +133,7 @@ Si nota inoltre, dai risultati delle misure a bersaglio mobile, che l'utilizzo d
   \end{center}
 \end{figure}
 
-Il motivo che spiega questo miglioramento è la diminuzione dello \textit{spectral leakage}, che risulta meno marcato per la finestra di \textit{Hanning} piuttosto che per quella rettangolare. In figura \ref{spectleakinterf} sono confrontati gli spettri di frequenza di un segnale interferometrico calcolati sul fronte di discesa dalla FFT con finestra rettangolare e di \textit{Hanning}. Dalla figura si nota l'evidente effetto dello \textit{spectral leakage} che affligge la FFT con finestra rettangolare.
+Il motivo che spiega questo miglioramento è la diminuzione dello \textit{spectral leakage}, che risulta meno marcato per la finestra di \textit{Hanning} piuttosto che per quella rettangolare. In Figura \ref{spectleakinterf} sono confrontati gli spettri di frequenza di un segnale interferometrico calcolati sul fronte di discesa dalla FFT con finestra rettangolare e di \textit{Hanning}. Dalla figura si nota l'evidente effetto dello \textit{spectral leakage} che affligge la FFT con finestra rettangolare.
 
 \section{Linearizzazione della misura}
 Nonostante i notevoli miglioramenti in termini di precisione, il misuratore possiede ancora una scarsa accuratezza. Tale limitazione dipende dalla lunghezza del periodo di frangia del segnale interferometrico. In particolare, fissata la distanza $s$ dell'ostacolo e modulando triangolarmente il laser, quindi con pendenza $\frac{\Delta I}{\Delta t}$ costante, il periodo di frangia $t_{frangia}$ dovrebbe essere costante lungo tutto il segnale. 
@@ -240,7 +240,7 @@ Al fine di valutare la bontà dell'algoritmo precedentemente descritto, è stata
 \caption{Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, prima e dopo la compensazione}\label{primadopocomp}
 \end{figure}
 
-I miglioramenti ottenuti per merito della compensazione della non-linearità sono mostrati in figura \ref{primadopocomp}. Dalle prove sperimentali è emerso che l'incertezza relativa della variazione di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $2\%$, per entrambi i fronti di modulazione, contro i $20\%$ ottenuti senza compensazione. La prova è stata ripetuta più volte per verificare che il guadagno in termini di linearità del periodo di frangia sia effettivamente $10$.
+I miglioramenti ottenuti per merito della compensazione della non-linearità sono mostrati in Figura \ref{primadopocomp}. Dalle prove sperimentali è emerso che l'incertezza relativa della variazione di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $2\%$, per entrambi i fronti di modulazione, contro i $20\%$ ottenuti senza compensazione. La prova è stata ripetuta più volte per verificare che il guadagno in termini di linearità del periodo di frangia sia effettivamente $10$.
 \begin{figure}
 \centering
 \subfigure[Misure di distanza e media]
@@ -259,7 +259,7 @@ I miglioramenti ottenuti per merito della compensazione della non-linearità son
   \end{center}
 \end{figure}
 
-Questo miglioramento ha influito sulla precisione e sull'accuratezza della misura. A conferma del risultato sono riportati gli esiti delle prove a bersaglio fisso e a bersaglio mobile rispettivamente in figura \ref{misfisso3} e \ref{mismobile3}.
+Questo miglioramento ha influito sulla precisione e sull'accuratezza della misura. A conferma del risultato sono riportati gli esiti delle prove a bersaglio fisso e a bersaglio mobile rispettivamente in Figura \ref{misfisso3} e \ref{mismobile3}.
 
 Si può apprezzare, dai risultati delle misure a bersaglio fisso, che utilizzando un segnale di modulazione compensato la precisione di misura migliora sensibilmente. In particolare, l'incertezza relativa diminuisce di due ordini di grandezza, passando da $10^{-2}$ a $4 \cdot 10^{-4}$.
 
@@ -293,9 +293,7 @@ Questo fenomeno è facilmente verificabile osservando la consueta formula per il
 Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\frac{\Delta I}{\Delta T}$, mentre gli altri elementi dell'equazione restano costanti. \'E facile dimostrare che all'aumentare dell'ampiezza del segnale di modulazione e a parità di distanza aumenta la frequenza di frangia $f_{frangia}$.
 \begin{table}[]
 \centering
-\caption{Fattori correttivi di frequenza}
-\label{tabfattoricorr}
-\begin{tabular}{l|l|l}
+\begin{tabular}{l|l|l|}
 \multirow{3}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Fattore moltiplicativo\\ del segnale di\\ modulazione {[}\%{]}\end{tabular}}} & \multicolumn{2}{c|}{\multirow{2}{*}{\textbf{Fattore di correzione della frequenza}}} \\
  & \multicolumn{2}{c|}{} \\ \cline{2-3} 
  & \textbf{di discesa {[}\%{]}} & \multicolumn{1}{l|}{\textbf{di salita {[}\%{]}}} \\ \hline
@@ -305,9 +303,11 @@ Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\fra
 \textbf{95} & 95.8657 & 100.965 \\
 \textbf{100} & 100 & 105.502
 \end{tabular}
+\caption{Fattori correttivi di frequenza}
+\label{tabfattoricorr}
 \end{table}
 
-Per questo motivo tutte le frequenze misurate sono riportate al valore, ritenuto nominale, del semiperiodo di discesa con ampiezza $100\%$. Questa operazione fa si che le distanze misurate con le diverse ampiezze di modulazione siano tra loro comparabili. I valori di correzione di frequenza sono mostrati in tabella \ref{tabfattoricorr}.
+Per questo motivo tutte le frequenze misurate sono riportate al valore, ritenuto nominale, del semiperiodo di discesa con ampiezza $100\%$. Questa operazione fa si che le distanze misurate con le diverse ampiezze di modulazione siano tra loro comparabili. I valori di correzione di frequenza sono mostrati in Tabella \ref{tabfattoricorr}.
 
 Si può notare un leggero scostamento tra i fattori correttivi empirici e i valori teorici. Ciò accade in quanto, con la variazione del parametro $\frac{\Delta I}{\Delta t}$, la linearizzazione del parametro $\frac{\Delta \lambda}{\Delta I}$ non avviene più in maniera rigorosa.
 \begin{figure}  
@@ -371,18 +371,18 @@ Per queste ragioni si è scelto in modo conservativo come frequenza di taglio de
 
 \begin{table}[]
 \centering
-\caption{Valori sperimentali di deviazione standard relativa calcolati su $1000$ misure a ostacolo fisso}
-\label{tab:residuofatt}
-\begin{tabular}{c|l|l}
+\begin{tabular}{c|l|l|}
 \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Deviazione standard relativa}} \\ \hline
 \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Frequenza \\ (Distanza)\end{tabular}}} & \textbf{con sottrazione del residuo} & \textbf{senza sottrazione del residuo} \\ \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}800 KHz\\ (ca. 20cm)\end{tabular}}  & $2 \cdot 10^{-4} \div 3 \cdot 10^{-4}$ & $3 \cdot 10^{-4} \div 4 \cdot 10^{-4}$   \\
 \textbf{\begin{tabular}[c]{@{}c@{}}1.5 MHz\\ (ca. 40cm)\end{tabular}} & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$  & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$ \\
 \textbf{\begin{tabular}[c]{@{}c@{}}3.5 MHz\\ (ca. 90cm)\end{tabular}} & $6 \cdot 10^{-4} \div 7 \cdot 10^{-4}$ & $5 \cdot 10^{-4} \div 6 \cdot 10^{-4}$
 \end{tabular}
+\caption{Valori sperimentali di deviazione standard relativa calcolati su $1000$ misure a ostacolo fisso}
+\label{tab:residuofatt}
 \end{table}
 
-In tabella \ref{tab:residuofatt} è mostrato il range di deviazioni standard relative misurate al variare della frequenza.
+In Tabella \ref{tab:residuofatt} è mostrato il range di deviazioni standard relative misurate al variare della frequenza.
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.4]{cap5/residuo}
@@ -406,7 +406,7 @@ Nella prova a bersaglio fisso (Figura \ref{misfisso5}) si è notato un miglioram
 
 In questo caso il valore di deviazione standard relativa calcolato su $1000$ campioni vale $2.4 \cdot 10^{-4}$.
 
-Nella figura \ref{misfisso5b} è stata sovrapposta la distribuzione gaussiana teorica dei valori, e si può notare che i dati empirici sono aderenti ad essa.
+Nella Figura \ref{misfisso5b} è stata sovrapposta la distribuzione gaussiana teorica dei valori, e si può notare che i dati empirici sono aderenti ad essa.
 
 \begin{figure}  
   \begin{center}
@@ -529,7 +529,7 @@ Queste irregolarità possono influire negativamente durante la modulazione del l
   \end{center}
 \end{figure}
 
-Per questo motivo è stato deciso di approssimare la curva delle frequenze di frangia utilizzando un processo di \textit{curve fitting} polinomiale di $3\degree$ grado invece che un'interpolazione lineare punto-punto. In figura \ref{curvefittingfreq} è mostrata in blu la curva delle frequenze di frangia estratta in un semiperiodo di modulazione e in rosso la sua approssimazione polinomiale di $3\degree$ grado.
+Per questo motivo è stato deciso di approssimare la curva delle frequenze di frangia utilizzando un processo di \textit{curve fitting} polinomiale di $3\degree$ grado invece che un'interpolazione lineare punto-punto. In Figura \ref{curvefittingfreq} è mostrata in blu la curva delle frequenze di frangia estratta in un semiperiodo di modulazione e in rosso la sua approssimazione polinomiale di $3\degree$ grado.
 
 Un ulteriore ottimizzazione effettuata sull'algoritmo di compensazione del segnale di modulazione riguarda il calcolo iterativo del fattore moltiplicativo (passo 4 dell'algoritmo presentato nel paragrafo \ref{subsec:metodocomp}). Per valutare la bontà del fattore moltiplicativo calcolato si è scelto di utilizzare la massima variazione relativa della frequenza di frangia rispetto alla media invece che la deviazione standard relativa, questo per permettere un miglior appiattimento della curva delle frequenze.
 
@@ -564,12 +564,47 @@ Come da previsione, la forma d'onda finale (Figura \ref{newondafinale}), ricavat
 \caption{Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, con forma d'onda liscia (rosso) e non (blu)}\label{primadopocompnew}
 \end{figure}
 
-Con lo scopo di mostrare i miglioramenti ottenuti dell'algoritmo di compensazione ottimizzato, sono state comparate le curve delle frequenze ricavate con le due diverse forme d'onda. I miglioramenti sono mostrati in figura \ref{primadopocompnew}. Dalle prove sperimentali è emerso che la massima variazione relativa di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $3\%$, per il semiperiodo di discesa, e $9\%$, per il semiperiodo di salita, contro i $9\%$ e $18\%$ ottenuti con la forma d'onda non liscia.
+Con lo scopo di mostrare i miglioramenti ottenuti dell'algoritmo di compensazione ottimizzato, sono state comparate le curve delle frequenze ricavate con le due diverse forme d'onda. I miglioramenti sono mostrati in Figura \ref{primadopocompnew}. Dalle prove sperimentali è emerso che la massima variazione relativa di frequenza, valutata su $100$ semiperiodi di modulazione, è scesa intorno al $3\%$, per il semiperiodo di discesa, e $9\%$, per il semiperiodo di salita, contro i $9\%$ e $18\%$ ottenuti con la forma d'onda non liscia.
 
-Nonostante il miglioramento nella linearità della frequenza di frangia, la nuova forma d'onda non ha apportato migliorie significative sulla precisione e l'accuratezza della misura. Per dimostrare quanto affermato, sono state effettuate le consuete prove ad ostacolo fisso e mobile i cui risultati sono riportati in figura \ref{fissocompliscio} e \ref{}.
+\begin{figure}
+\centering
+\subfigure[Misure di distanza e media]
+{\includegraphics[scale=.5]{cap5/fissomodliscioa}}
+\hspace{5mm}
+\subfigure[Distribuzione dei valori misurati rispetto alla media]
+%% TODO Cap5: Manca campana a questa misura
+{\includegraphics[scale=.1]{cap5/fissomodliscioa}}
+\caption{Misure di distanza a bersaglio fisso con segnale di modulazione compensato e liscio}\label{fissomodliscio}
+\end{figure}
 
-%% TODO LATEX Riprendere da qui
+\begin{figure}  
+  \begin{center}
+    \includegraphics[scale=0.5]{cap5/mobilemodliscio}
+    \caption{Misure di distanza a $50cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento}
+    \label{mobilemodliscio}
+  \end{center}
+\end{figure}
+
+Nonostante il miglioramento nella linearità della frequenza di frangia, la nuova forma d'onda non ha apportato migliorie significative sulla precisione e l'accuratezza della misura. Per dimostrare quanto affermato, sono state effettuate le consuete prove ad ostacolo fisso e mobile i cui risultati sono riportati in Figura \ref{fissomodliscio} e \ref{mobilemodliscio}.
 
 \section{Drift termico}
+Dal grafico in Figura \ref{mismobile5} è possibile notare, nonostante i buoni valori di errore picco-picco e RMS, una progressiva perdita di linearità della misura. In particolare le misure effettuate fino alla dodicesima possono essere considerate appartenenti alla retta ideale, mentre i successivi punti si discostano leggermente.
+
+Un fenomeno simile è visibile anche nella prova a bersaglio fisso effettuata a $90cm$, dove si può notare un secondo picco nella distribuzione delle misure (Figura \ref{misfisso5b90}).
+
+Questi fenomeni possono essere ricondotti a fenomeni termici del laser, che, non essendo termostatato, modifica la sua temperatura di funzionamento durante la prova. Inoltre, le condizioni ambientali non sono stabili durante lo svolgimento della prova, e una modifica della temperatura del laser può anche essere dettata da una variazione della temperatura ambientale.
+
+Come accennato all'inizio del capitolo, per mitigare l'effetto del drift termico si lascia accesso e modulato il laser per un fissato periodo di tempo prima di utilizzarlo al fine di far raggiungere al laser una temperatura pressoché costante.
 
 \section{Precisazione sui risultati ottenuti}
+A causa della mole di dati presentata è necessario introdurre alcuni chiarimenti riguardanti i risultati ottenuti.
+
+Innanzitutto è necessario considerare le condizioni di svolgimento della prova. Nonostante si siano prese tutte le dovute precauzioni per minimizzare le vibrazioni presenti su strumento e bersaglio non è stato possibile annullarle completamente. Questo, unito alla sensibilità dello strumento, porta la deviazione standard a non restare costante nel tempo, ma può avere degli scostamenti tra prove differenti. Inoltre questo stimatore dipende anche dal numero di campioni utilizzati per ricavarlo. 
+
+Questa precisazione è necessaria in quanto alcuni risultati basati sulla deviazione standard possono apparire inconsistenti, come ad esempio il contrasto tra i risultati a bersaglio fisso e la prova del range di misura. La prima prova è stata effettuata mediando $1000$ acquisizioni, mentre la seconda è stata effettuata utilizzando soltanto $100$ campioni, il che porta ad un aumento della deviazione standard della misura. 
+
+Per questa ragione, inoltre, non è possibile confrontare i risultati percentuali rispetto all'errore picco-picco e l'RMS della prova a bersaglio mobile con la deviazione standard registrata nella prova a bersaglio fisso, in quanto nella prova a bersaglio mobile sono stati mediati $100$ campioni, mentre in quella a bersaglio fisso $1000$.
+
+Inoltre le misure sono state effettuate senza tener conto delle condizioni di temperatura dello strumento. Una variazione della temperatura di esercizio del laser può portare ad una differente precisione della misura e questo fatto può essere ulteriore causa di apparente inconsistenza tra i vari risultati presentati.
+
+Concludendo, ogni prova descritta in questo Capitolo è stata rieseguita più volte e in istanti differenti al fine di confermare la correttezza dei dati sperimentali ottenuti.

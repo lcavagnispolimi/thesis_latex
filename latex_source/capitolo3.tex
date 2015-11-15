@@ -526,7 +526,7 @@ A differenza delle altre tecnologie, per l'\textit{anti-fuse} non è possibile l
 
 Infine la caratteristica di singola programmazione non consente ai produttori di testare gli \textit{anti-fuse} per individuare possibili errori di produzione. Alcuni difetti possono essere individuati solo dopo la programmazione.
 
-\subsection{Xilinx Spartan-6 LX45}
+\subsubsection{Xilinx Spartan-6 LX45}
 L'FPGA integrata nella scheda di prototipazione usata è la \textit{Spartan-6 LX45}, prodotta da \textit{Xilinx}.
 
 In particolare questo prodotto integra al suo interno $54576$ registri \textit{Flip Flop} e 27288 \textit{Look Up Table} (LUT) a 6 ingressi raggruppati in $6822$ \textit{Slices} (blocchi logici che contengono 8 Flip Flop e 4 LUT). Inoltre sono integrati $58$ \textit{DSP48} (che contengono un moltiplicatore $18x18$ , un sommatore ed un accumulatore), $5$ canali DMA, $2088$ Kbits di block RAM e $358$ moduli di input/output riconfigurabili. 
@@ -535,8 +535,8 @@ La scheda possiede un'oscillatore a $40MHz$, da cui possono essere derivati cloc
 
 Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx}\cite{dsxilinx}.
 
-\subsubsection{Utilizzo area FPGA}
-Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono riportati in tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
+\paragraph{Utilizzo area FPGA}
+Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono riportati in Tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
 
 \begin{table}[ht]
 \centering

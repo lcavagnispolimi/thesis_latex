@@ -53,9 +53,9 @@
 \contentsline {paragraph}{Static-memory}{65}
 \contentsline {paragraph}{Flash/EEPROM}{66}
 \contentsline {paragraph}{Anti-fuse}{68}
-\contentsline {subsection}{\numberline {3.4.3}Xilinx Spartan-6 LX45}{70}
-\contentsline {subsubsection}{Utilizzo area FPGA}{70}
-\contentsline {subsection}{\numberline {3.4.4}Microcontrollore}{70}
+\contentsline {subsubsection}{Xilinx Spartan-6 LX45}{70}
+\contentsline {paragraph}{Utilizzo area FPGA}{70}
+\contentsline {subsection}{\numberline {3.4.3}Microcontrollore}{70}
 \contentsline {subsubsection}{Architettura PowerPC}{71}
 \contentsline {paragraph}{PowerPC e300}{72}
 \contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{75}
@@ -66,7 +66,7 @@
 \contentsline {paragraph}{Sistema Operativo Real-Time}{78}
 \contentsline {subparagraph}{VxWorks}{79}
 \contentsline {paragraph}{LabVIEW Real-Time}{81}
-\contentsline {subsection}{\numberline {4.2.2}Progettazione e programmazione dell'FPGA}{82}
+\contentsline {subsection}{\numberline {4.2.2}Programmazione dell'FPGA}{82}
 \contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{83}
 \contentsline {paragraph}{VHDL}{83}
 \contentsline {subsubsection}{Sintesi Hardware}{84}
@@ -118,7 +118,7 @@
 \contentsline {subsection}{\numberline {5.5.4}Prestazioni}{147}
 \contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{147}
 \contentsline {section}{\numberline {5.7}Drift termico}{149}
-\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{149}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{153}
-\contentsline {chapter}{\numberline {A}Documentazione software}{155}
-\contentsline {chapter}{Bibliografia}{156}
+\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{152}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{155}
+\contentsline {chapter}{\numberline {A}Documentazione software}{157}
+\contentsline {chapter}{Bibliografia}{158}
