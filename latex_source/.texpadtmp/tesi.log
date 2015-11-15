@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  15 NOV 2015 02:54
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  15 NOV 2015 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,6 +473,40 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 Package: translator 2010/06/12 ver 1.10
  (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/usr/local/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen173
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/algorithms/algorithm.sty
@@ -535,7 +569,7 @@ Package: inputenc 2014/04/30 v1.2b Input encoding file
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -554,21 +588,25 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `sub@' multiply defined.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -577,34 +615,64 @@ Dictionary: translator-basic-dictionary, Language: English
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 41.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 41.
+LaTeX Info: Redefining \celsius on input line 42.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 42.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 41.
-Package gensymb Info: Using \Omega for \ohm on input line 41.
+LaTeX Info: Redefining \ohm on input line 42.
+Package gensymb Info: Using \Omega for \ohm on input line 42.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Info: Redefining \it@ocap on input line 41.
-LaTeX Info: Redefining \it@ccap on input line 41.
+LaTeX Info: Redefining \it@ocap on input line 42.
+LaTeX Info: Redefining \it@ccap on input line 42.
 \c__siunitx_mathsf_int=\count168
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 42.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 42.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 \c__siunitx_mathtt_int=\count169
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 42.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 \openout2 = `frontespizio.aux'.
 
  (./frontespizio.tex
-File: ./pictures/frontesp/newlogopm1.png Graphic file (type QTm)
- <use  "./pictures/frontesp/newlogopm1.png" > [1
+File: ./pictures/frontesp/NewLogo.png Graphic file (type QTm)
+ <use  "./pictures/frontesp/NewLogo.png" > [1
 
 
 ]) [2
@@ -636,48 +704,41 @@ File: ./pictures/frontesp/newlogopm1.png Graphic file (type QTm)
 
 ] [4
 
-]
-\openout2 = `ringraziamenti.aux'.
-
- (./ringraziamenti.tex) [5
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.toc [5
 
 
-
-] [6
-
-
-] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.toc [7] [8])
+] [6])
 \tf@toc=\write3
 \openout3 = `tesi.toc'.
 
- [9] [10
+ [7] [8
 
-] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof [11]
-Overfull \hbox (3.88805pt too wide) in paragraph at lines 39--39
- [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Digitale-Analogico 
+] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lof [9]
+Overfull \hbox (6.00293pt too wide) in paragraph at lines 39--39
+ [][] []\T1/lmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Digitale-Analogico 
  []
 
 
-Overfull \hbox (3.88805pt too wide) in paragraph at lines 43--43
- [][] []\T1/cmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Analogico-Digitale 
+Overfull \hbox (6.00293pt too wide) in paragraph at lines 43--43
+ [][] []\T1/lmr/m/n/10.95 Schema di fun-zio-na-men-to di un con-ver-ti-to-re Analogico-Digitale 
  []
 
 
-Overfull \hbox (2.37694pt too wide) in paragraph at lines 60--60
- [][] []\T1/cmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
+Overfull \hbox (4.57343pt too wide) in paragraph at lines 60--60
+ [][] []\T1/lmr/m/n/10.95 Schema a bloc-chi del-l'ar-chi-tet-tu-ra del mi-cro-con-trol-lo-re MPC5125 []  
  []
 
-[12] [13] [14])
+[10] [11] [12])
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
- [15] [16
+ [13] [14
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.lot)
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [17] [18
+ [15] [16
 
 ]
 \openout2 = `introduzione.aux'.
@@ -702,16 +763,21 @@ Capitolo 1.
 ]
 File: ./pictures/cap1/atomico2liv.jpg Graphic file (type QTm)
  <use  "./pictures/cap1/atomico2liv.jpg" >
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 44.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 44.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 44.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 44.
+ [4]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 51.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 51.
 File: ./pictures/cap1/funzatomoecc.png Graphic file (type QTm)
  <use  "./pictures/cap1/funzatomoecc.png" >
 Overfull \hbox (6.17084pt too wide) in paragraph at lines 60--61
@@ -765,31 +831,41 @@ File: ./pictures/cap1/ondacontinua.png Graphic file (type QTm)
 ]
 Capitolo 2.
 File: ./pictures/cap2/michelson.png Graphic file (type QTm)
-<use  "./pictures/cap2/michelson.png" > [21] [22]
+<use  "./pictures/cap2/michelson.png" > [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
 File: ./pictures/cap2/versospost.png Graphic file (type QTm)
- <use  "./pictures/cap2/versospost.png" > [23]
+ <use  "./pictures/cap2/versospost.png" > [23] [24]
 File: ./pictures/cap2/selfmix.png Graphic file (type QTm)
- <use  "./pictures/cap2/selfmix.png" > [24]
+ <use  "./pictures/cap2/selfmix.png" >
 File: ./pictures/cap2/rapprvet.png Graphic file (type QTm)
  <use  "./pictures/cap2/rapprvet.png" > [25]
 File: ./pictures/cap2/roundtrips.png Graphic file (type QTm)
- <use  "./pictures/cap2/roundtrips.png" > [26] [27]
+ <use  "./pictures/cap2/roundtrips.png" > [26] [27] [28]
 File: ./pictures/cap2/pertfreq.png Graphic file (type QTm)
- <use  "./pictures/cap2/pertfreq.png" > [28] [29] [30]
+ <use  "./pictures/cap2/pertfreq.png" > [29] [30] [31]
 File: ./pictures/cap2/regimifunz.png Graphic file (type QTm)
  <use  "./pictures/cap2/regimifunz.png" >
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 290.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 290.
 File: ./pictures/cap2/regimisegn.png Graphic file (type QTm)
- <use  "./pictures/cap2/regimisegn.png" > [31] [32]
+ <use  "./pictures/cap2/regimisegn.png" > [32] [33]
 File: ./pictures/cap2/wegel.png Graphic file (type QTm)
  <use  "./pictures/cap2/wegel.png" >
 File: ./pictures/cap2/saltifase.jpg Graphic file (type QTm)
  <use  "./pictures/cap2/saltifase.jpg" >
 File: ./pictures/cap2/spackle.jpg Graphic file (type QTm)
- <use  "./pictures/cap2/spackle.jpg" > [33] [34] [35] [36]
+ <use  "./pictures/cap2/spackle.jpg" > [34] [35] [36]
 File: ./pictures/cap2/specklegeom.png Graphic file (type QTm)
- <use  "./pictures/cap2/specklegeom.png" > [37] [38]
-Overfull \hbox (2.91661pt too wide) in paragraph at lines 462--463
-[]\T1/cmr/m/n/10.95 Infine, per ri-ca-va-re la di-stan-za $\OML/cmm/m/it/10.95 s$\T1/cmr/m/n/10.95 , è ne-ces-sa-rio ap-pros-si-ma-re $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U \OT1/cmr/m/n/10.95 + ^^A\OML/cmm/m/it/10.95 ^^U[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^Y
+ <use  "./pictures/cap2/specklegeom.png" >
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
+ [37] [38]
+Overfull \hbox (4.59903pt too wide) in paragraph at lines 462--463
+[]\T1/lmr/m/n/10.95 Infine, per ri-ca-va-re la di-stan-za $\OML/lmm/m/it/10.95 s$\T1/lmr/m/n/10.95 , è ne-ces-sa-rio ap-pros-si-ma-re $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 ^^U \OT1/lmr/m/n/10.95 + ^^A\OML/lmm/m/it/10.95 ^^U[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^Y
  []
 
 [39] [40]) [41]
@@ -801,8 +877,8 @@ Overfull \hbox (2.91661pt too wide) in paragraph at lines 462--463
 
 ]
 Capitolo 3.
-Missing character: There is no ̀ in font ecti1095!
-Missing character: There is no ̀ in font ecti1095!
+Missing character: There is no ̀ in font ec-lmri10!
+Missing character: There is no ̀ in font ec-lmri10!
 File: ./pictures/cap3/fotostrum.jpg Graphic file (type QTm)
 <use  "./pictures/cap3/fotostrum.jpg" > [43]
 File: ./pictures/cap3/archgen.png Graphic file (type QTm)
@@ -826,7 +902,7 @@ File: ./pictures/cap3/bwdac.png Graphic file (type QTm)
  <use  "./pictures/cap3/bwdac.png" > [50]
 File: ./pictures/cap3/r2rdac.png Graphic file (type QTm)
  <use  "./pictures/cap3/r2rdac.png" > [51] [52]
-Missing character: There is no ” in font ecrm1095!
+Missing character: There is no ” in font ec-lmr10!
 File: ./pictures/cap3/schemadac902.png Graphic file (type QTm)
  <use  "./pictures/cap3/schemadac902.png" > [53]
 File: ./pictures/cap3/adc.png Graphic file (type QTm)
@@ -862,7 +938,7 @@ File: ./pictures/cap3/floatgate.png Graphic file (type QTm)
 Underfull \vbox (badness 1831) has occurred while \output is active []
 
  [68] [69]
-Overfull \hbox (5.79388pt too wide) in paragraph at lines 543--552
+Overfull \hbox (8.00266pt too wide) in paragraph at lines 543--552
  [][] 
  []
 
@@ -876,7 +952,7 @@ File: ./pictures/cap3/uproc.png Graphic file (type QTm)
 
 ]
 Capitolo 4.
-Missing character: There is no ̀ in font ecti1095!
+Missing character: There is no ̀ in font ec-lmri10!
 [75]
 File: ./pictures/cap4/esempiolvaimg.png Graphic file (type QTm)
  <use  "./pictures/cap4/esempiolvaimg.png" >
@@ -884,8 +960,8 @@ File: ./pictures/cap4/esempiolvbimg.png Graphic file (type QTm)
  <use  "./pictures/cap4/esempiolvbimg.png" >
 File: ./pictures/cap4/nodocoll.png Graphic file (type QTm)
  <use  "./pictures/cap4/nodocoll.png" > [76]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/baremetalrtos.png Graphic file (type QTm)
  <use  "./pictures/cap4/baremetalrtos.png" > [77] [78]
 File: ./pictures/cap4/microvsmono.png Graphic file (type QTm)
@@ -900,15 +976,15 @@ File: ./pictures/cap4/timed.png Graphic file (type QTm)
  <use  "./pictures/cap4/timed.png" >
 File: ./pictures/cap4/while.png Graphic file (type QTm)
  <use  "./pictures/cap4/while.png" > [81]
-Overfull \hbox (23.07997pt too wide) in paragraph at lines 167--168
-[]$[]$ \T1/cmr/m/n/10.95 (\T1/cmr/m/it/10.95 Non-deterministc loop/process\T1/cmr/m/n/10.95 ): pro-ces-si \T1/cmr/m/it/10.95 Soft-deadline\T1/cmr/m/n/10.95 .
+Overfull \hbox (25.10526pt too wide) in paragraph at lines 167--168
+[]$[]$ \T1/lmr/m/n/10.95 (\T1/lmr/m/it/10.95 Non-deterministc loop/process\T1/lmr/m/n/10.95 ): pro-ces-si \T1/lmr/m/it/10.95 Soft-deadline\T1/lmr/m/n/10.95 .
  []
 
 [82] [83]
 File: ./pictures/cap4/sinthw.png Graphic file (type QTm)
  <use  "./pictures/cap4/sinthw.png" > [84] [85]
-Overfull \hbox (2.09294pt too wide) in paragraph at lines 233--234
-[]$[]$\T1/cmr/m/n/10.95 : Ven-go-no ana-liz-za-te le ope-ra-zio-ni aritmetico-
+Overfull \hbox (4.07204pt too wide) in paragraph at lines 233--234
+[]$[]$\T1/lmr/m/n/10.95 : Ven-go-no ana-liz-za-te le ope-ra-zio-ni aritmetico-
  []
 
 [86]
@@ -916,41 +992,46 @@ File: ./pictures/cap4/hls.png Graphic file (type QTm)
  <use  "./pictures/cap4/hls.png" > [87]
 File: ./pictures/cap4/fpgalv.png Graphic file (type QTm)
  <use  "./pictures/cap4/fpgalv.png" >
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
  [88]
 File: ./pictures/cap4/trenoimp.png Graphic file (type QTm)
  <use  "./pictures/cap4/trenoimp.png" > [89]
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
  [90] [91]
 File: ./pictures/cap4/spectleak.png Graphic file (type QTm)
  <use  "./pictures/cap4/spectleak.png" > [92]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/hann.png Graphic file (type QTm)
  <use  "./pictures/cap4/hann.png" >
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/smoothwins.png Graphic file (type QTm)
  <use  "./pictures/cap4/smoothwins.png" > [93] [94]
 File: ./pictures/cap4/ifft.png Graphic file (type QTm)
  <use  "./pictures/cap4/ifft.png" > [95]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
  [96]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ́ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ́ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
  [97]
 File: ./pictures/cap4/archgenschema.png Graphic file (type QTm)
  <use  "./pictures/cap4/archgenschema.png" > [98] [99] [100]
-Missing character: There is no ̀ in font ecrm1095!
- [101] [102]
-Overfull \hbox (2.54097pt too wide) in paragraph at lines 663--664
-[]$[]$\T1/cmr/m/n/10.95 : Per ogni ri-sul-ta-to ge-ne-ra-to dal bloc-
+Missing character: There is no ̀ in font ec-lmr10!
+ [101]
+Overfull \hbox (1.98749pt too wide) in paragraph at lines 660--661
+[]$[]$\T1/lmr/m/n/10.95 : Que-sto bloc-co fun-
+ []
+
+[102]
+Overfull \hbox (4.51218pt too wide) in paragraph at lines 663--664
+[]$[]$\T1/lmr/m/n/10.95 : Per ogni ri-sul-ta-to ge-ne-ra-to dal bloc-
  []
 
 File: ./pictures/cap4/codicefpga.png Graphic file (type QTm)
@@ -958,7 +1039,12 @@ File: ./pictures/cap4/codicefpga.png Graphic file (type QTm)
 File: ./pictures/cap4/fifolabview.png Graphic file (type QTm)
  <use  "./pictures/cap4/fifolabview.png" >
 File: ./pictures/cap4/prodcons.png Graphic file (type QTm)
- <use  "./pictures/cap4/prodcons.png" > [105] [106]
+ <use  "./pictures/cap4/prodcons.png" > [105]
+Overfull \hbox (1.03926pt too wide) in paragraph at lines 708--709
+ \T1/lmr/bx/n/10.95 4-Wire Hand-sha-ke[] \T1/lmr/m/n/10.95 L'im-ple-men-ta-zio-ne \T1/lmr/m/it/10.95 pi-pe-li-ned \T1/lmr/m/n/10.95 dell'\T1/lmr/m/it/10.95 express VI \T1/lmr/m/n/10.95 FFT
+ []
+
+[106]
 File: ./pictures/cap4/pipelinevi.png Graphic file (type QTm)
  <use  "./pictures/cap4/pipelinevi.png" >
 File: ./pictures/cap4/fftloop.png Graphic file (type QTm)
@@ -971,7 +1057,7 @@ File: ./pictures/cap4/fxpvsfloat.jpg Graphic file (type QTm)
  <use  "./pictures/cap4/fxpvsfloat.jpg" > [109]
 File: ./pictures/cap4/configfxp.png Graphic file (type QTm)
  <use  "./pictures/cap4/configfxp.png" > [110]
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
  [111] [112]
 File: ./pictures/cap4/guimicro.png Graphic file (type QTm)
  <use  "./pictures/cap4/guimicro.png" > [113]
@@ -1008,12 +1094,15 @@ File: ./pictures/cap5/mismobile2.eps Graphic file (type eps)
  <./pictures/cap5/mismobile2.eps>
 File: ./pictures/cap5/spectleakinterf.eps Graphic file (type eps)
  <./pictures/cap5/spectleakinterf.eps>
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap5/semiperiodononcomp.eps Graphic file (type eps)
  <./pictures/cap5/semiperiodononcomp.eps> [121] [122] [123] [124]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
  [125]
 File: ./pictures/cap5/regressioncurvefrangia.eps Graphic file (type eps)
  <./pictures/cap5/regressioncurvefrangia.eps>
@@ -1025,28 +1114,28 @@ File: ./pictures/cap5/mulfactdiscesa.eps Graphic file (type eps)
  <./pictures/cap5/mulfactdiscesa.eps>
 File: ./pictures/cap5/mulfactsalita.eps Graphic file (type eps)
  <./pictures/cap5/mulfactsalita.eps>
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
  [126] [127] [128]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
 
-Overfull \hbox (3.73549pt too wide) in paragraph at lines 209--210
+Overfull \hbox (5.73018pt too wide) in paragraph at lines 209--210
 []$[]$ $[]$
  []
 
 [129]
 File: ./pictures/cap5/ondafinale.eps Graphic file (type eps)
  <./pictures/cap5/ondafinale.eps>
-Missing character: There is no ̀ in font ecrm1095!
+Missing character: There is no ̀ in font ec-lmr10!
  [130]
 File: ./pictures/cap5/primadopocompdisc.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdisc.eps>
 File: ./pictures/cap5/primadopocompsal.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsal.eps>
-Underfull \hbox (badness 1163) in paragraph at lines 240--240
-[]\T1/cmss/m/it/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
+Underfull \hbox (badness 1158) in paragraph at lines 240--240
+[]\T1/lmss/m/sl/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
 File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
@@ -1058,8 +1147,8 @@ Overfull \hbox (11.71956pt too wide) in paragraph at lines 247--251
  []
 
 
-Overfull \hbox (5.81197pt too wide) in paragraph at lines 243--253
-[]\T1/cmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
+Overfull \hbox (7.88374pt too wide) in paragraph at lines 243--253
+[]\T1/lmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
  []
 
 File: ./pictures/cap5/mismobile3.eps Graphic file (type eps)
@@ -1070,25 +1159,28 @@ File: ./pictures/cap5/cinquesegnali.eps Graphic file (type eps)
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 294.
 
+[134]
 File: ./pictures/cap5/cinquesegnalidis.eps Graphic file (type eps)
-<./pictures/cap5/cinquesegnalidis.eps> [134]
+ <./pictures/cap5/cinquesegnalidis.eps>
 File: ./pictures/cap5/misfisso4a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso4a.eps>
 File: ./pictures/cap5/misfisso4b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso4b.png" >
 File: ./pictures/cap5/mismobile4.eps Graphic file (type eps)
  <./pictures/cap5/mismobile4.eps>
-Underfull \vbox (badness 4726) has occurred while \output is active []
+Overfull \hbox (0.43459pt too wide) in paragraph at lines 349--350
+[]\T1/lmr/m/n/10.95 L'errore picco-picco mi-su-ra-to con que-sta pro-va è di $\OT1/lmr/m/n/10.95 451\OML/lmm/m/it/10.95 ^^Vm$\T1/lmr/m/n/10.95 , men-tre l'RMS
+ []
 
- [135]
-Missing character: There is no ̀ in font ecrm1095!
+[135]
+Missing character: There is no ̀ in font ec-lmr10!
  [136] [137]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 372.
 
 
-Overfull \hbox (40.40147pt too wide) in paragraph at lines 374--381
+Overfull \hbox (43.01105pt too wide) in paragraph at lines 374--381
  [][] 
  []
 
@@ -1130,55 +1222,41 @@ File: ./pictures/cap5/primadopocompdiscnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdiscnew.eps>
 File: ./pictures/cap5/primadopocompsalnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsalnew.eps>
-Underfull \hbox (badness 1163) in paragraph at lines 564--564
-[]\T1/cmss/m/it/10 Figura 5.32: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
+Underfull \hbox (badness 1158) in paragraph at lines 564--564
+[]\T1/lmss/m/sl/10 Figura 5.32: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
 File: ./pictures/cap5/fissomodliscioa.eps Graphic file (type eps)
 <./pictures/cap5/fissomodliscioa.eps>
-File: ./pictures/cap5/fissomodliscioa.eps Graphic file (type eps)
- <./pictures/cap5/fissomodliscioa.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-[]\T1/cmr/m/n/9 (b) Di-stri-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/cmr/m/n/9 bu-zio-ne dei
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 576--576
-\T1/cmr/m/n/9 va-lo-ri mi-su-ra-ti
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
-\T1/cmr/m/n/9 ri-spet-to al-la
- []
-
+File: ./pictures/cap5/fissomodlisciob.png Graphic file (type QTm)
+ <use  "./pictures/cap5/fissomodlisciob.png" >
 File: ./pictures/cap5/mobilemodliscio.eps Graphic file (type eps)
-<./pictures/cap5/mobilemodliscio.eps> [149] [150] [151] [152]) [153]
+ <./pictures/cap5/mobilemodliscio.eps> [149] [150] [151] [152]) [153]
 \openout2 = `conclusioni.aux'.
 
  (./conclusioni.tex [154
 
 
 
-]
-Underfull \vbox (badness 2990) has occurred while \output is active []
-
- [155]
-Missing character: There is no ̀ in font ecrm1095!
-Missing character: There is no ̀ in font ecrm1095!
+] [155]
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
 ) [156]
+\openout2 = `ringraziamenti.aux'.
+
+ (./ringraziamenti.tex) [157
+
+
+
+] [158
+
+
+]
 \openout2 = `appendiceA.aux'.
 
  (./appendiceA.tex
 Appendice A.
-) [157
-
-
+) [159
 
 
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
@@ -1188,35 +1266,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[158
+[160
 
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
-[]\T1/cmr/m/n/10.95 http://www.standa.lt/products/catalog/motorised _
+[]\T1/lmr/m/n/10.95 http://www.standa.lt/products/catalog/motorised _
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]\T1/cmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
+[]\T1/lmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
  []
 
-[159] [160]
-Underfull \hbox (badness 1824) in paragraph at lines 182--184
-[]\T1/cmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/cmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
+[161] [162]
+Underfull \hbox (badness 1509) in paragraph at lines 182--184
+[]\T1/lmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/lmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
  []
 
-[161]) [162] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+[163]) [164] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13564 strings out of 493725
- 274370 string characters out of 6145912
- 288687 words of memory out of 5000000
- 16494 multiletter control sequences out of 15000+600000
- 28740 words of font info for 73 fonts, out of 8000000 for 9000
+ 13748 strings out of 493725
+ 278384 string characters out of 6145912
+ 288858 words of memory out of 5000000
+ 16652 multiletter control sequences out of 15000+600000
+ 110198 words of font info for 80 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
 

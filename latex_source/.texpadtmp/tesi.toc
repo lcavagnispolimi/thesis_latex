@@ -20,10 +20,10 @@
 \contentsline {section}{\numberline {2.1}Principi di interferometria convenzionale}{21}
 \contentsline {subsection}{\numberline {2.1.1}Svantaggi dell'interferometria convenzionale}{23}
 \contentsline {section}{\numberline {2.2}Interferometria a retroiniezione}{24}
-\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{26}
-\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{33}
+\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{27}
+\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{32}
 \contentsline {section}{\numberline {2.3}Principali limitazioni della tecnica interferometrica}{34}
-\contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{37}
+\contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{38}
 \contentsline {subsection}{\numberline {2.4.1}Misura di distanza assoluta}{38}
 \contentsline {chapter}{\numberline {3}Architettura Hardware dello strumento}{43}
 \contentsline {section}{\numberline {3.1}Struttura complessiva dello strumento}{43}
@@ -120,5 +120,5 @@
 \contentsline {section}{\numberline {5.7}Drift termico}{149}
 \contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{152}
 \contentsline {chapter}{Conclusioni e sviluppi futuri}{155}
-\contentsline {chapter}{\numberline {A}Documentazione software}{157}
-\contentsline {chapter}{Bibliografia}{158}
+\contentsline {chapter}{\numberline {A}Documentazione software}{159}
+\contentsline {chapter}{Bibliografia}{160}
