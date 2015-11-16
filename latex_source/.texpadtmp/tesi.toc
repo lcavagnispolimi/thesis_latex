@@ -14,111 +14,111 @@
 \contentsline {section}{\numberline {1.4}Telemetri ottici}{14}
 \contentsline {subsection}{\numberline {1.4.1}Telemetri a triangolazione}{15}
 \contentsline {subsection}{\numberline {1.4.2}Telemetri a tempo di volo}{16}
-\contentsline {subsection}{\numberline {1.4.3}Telemetri a onda continua}{18}
+\contentsline {subsection}{\numberline {1.4.3}Telemetri a onda continua}{17}
 \contentsline {section}{\numberline {1.5}Una tecnica alternativa per la misura}{18}
-\contentsline {chapter}{\numberline {2}Interferometria a retroiniezione}{21}
-\contentsline {section}{\numberline {2.1}Principi di interferometria convenzionale}{21}
-\contentsline {subsection}{\numberline {2.1.1}Svantaggi dell'interferometria convenzionale}{23}
-\contentsline {section}{\numberline {2.2}Interferometria a retroiniezione}{24}
-\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{27}
-\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{32}
-\contentsline {section}{\numberline {2.3}Principali limitazioni della tecnica interferometrica}{34}
-\contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{38}
-\contentsline {subsection}{\numberline {2.4.1}Misura di distanza assoluta}{38}
-\contentsline {chapter}{\numberline {3}Architettura Hardware dello strumento}{43}
-\contentsline {section}{\numberline {3.1}Struttura complessiva dello strumento}{43}
-\contentsline {section}{\numberline {3.2}Parte analogica}{45}
-\contentsline {subsection}{\numberline {3.2.1}Sistema ottico e sorgente laser}{45}
-\contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{47}
-\contentsline {section}{\numberline {3.3}Parte di Conversione}{47}
-\contentsline {subsection}{\numberline {3.3.1}Convertitori}{49}
-\contentsline {subsubsection}{Convertitore DAC}{50}
-\contentsline {paragraph}{Architetture DAC}{50}
-\contentsline {subparagraph}{\textbf {DAC a resistori pesati}}{51}
-\contentsline {subparagraph}{\textbf {DAC a scala R-2R}}{51}
-\contentsline {paragraph}{Convertitore DAC presente sulla scheda di conversione}{53}
-\contentsline {subsubsection}{Convertitore ADC}{54}
-\contentsline {paragraph}{Architetture ADC}{54}
-\contentsline {subparagraph}{\textbf {ADC a conteggio}}{54}
-\contentsline {subparagraph}{\textbf {ADC ad approssimazioni successive}}{55}
-\contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{56}
-\contentsline {subparagraph}{\textbf {ADC Flash}}{57}
-\contentsline {subparagraph}{\textbf {ADC Pipeline}}{58}
-\contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{59}
-\contentsline {section}{\numberline {3.4}Parte digitale}{60}
-\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{61}
-\contentsline {subsection}{\numberline {3.4.2}FPGA}{62}
-\contentsline {subsubsection}{Storia delle FPGA}{62}
-\contentsline {subsubsection}{Tecniche di implementazione delle FPGA}{64}
-\contentsline {paragraph}{Static-memory}{65}
-\contentsline {paragraph}{Flash/EEPROM}{66}
-\contentsline {paragraph}{Anti-fuse}{68}
-\contentsline {subsubsection}{Xilinx Spartan-6 LX45}{70}
-\contentsline {paragraph}{Utilizzo area FPGA}{70}
-\contentsline {subsection}{\numberline {3.4.3}Microcontrollore}{70}
-\contentsline {subsubsection}{Architettura PowerPC}{71}
-\contentsline {paragraph}{PowerPC e300}{72}
-\contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{75}
-\contentsline {section}{\numberline {4.1}Ambiente di sviluppo LabVIEW}{75}
-\contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{77}
-\contentsline {subsection}{\numberline {4.2.1}Programmazione del microcontrollore}{77}
-\contentsline {subsubsection}{Sistema Real-Time}{78}
-\contentsline {paragraph}{Sistema Operativo Real-Time}{78}
-\contentsline {subparagraph}{VxWorks}{79}
-\contentsline {paragraph}{LabVIEW Real-Time}{81}
-\contentsline {subsection}{\numberline {4.2.2}Programmazione dell'FPGA}{82}
-\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{83}
-\contentsline {paragraph}{VHDL}{83}
-\contentsline {subsubsection}{Sintesi Hardware}{84}
-\contentsline {subsubsection}{High-Level Synthesis (HLS)}{86}
-\contentsline {subsubsection}{LabVIEW FPGA}{87}
-\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{88}
-\contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{89}
-\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{95}
-\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{98}
-\contentsline {section}{\numberline {4.4}Architettura Software}{98}
-\contentsline {subsection}{\numberline {4.4.1}FPGA}{99}
-\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{99}
-\contentsline {paragraph}{Generazione del segnale di modulazione}{99}
-\contentsline {paragraph}{Campionamento del segnale interferometrico}{100}
-\contentsline {paragraph}{Condizionamento del segnale interferometrico}{100}
-\contentsline {subparagraph}{Sottrazione del residuo}{100}
-\contentsline {subparagraph}{Estrazione di 512 campioni}{100}
-\contentsline {subparagraph}{Finestratura}{100}
-\contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{101}
-\contentsline {paragraph}{Estrazione del massimo bin di frequenza}{101}
-\contentsline {subsubsection}{Implementazione software}{102}
-\contentsline {paragraph}{Design pattern utilizzati}{103}
-\contentsline {subparagraph}{Producer-consumer}{103}
-\contentsline {subparagraph}{4-Wire Handshake}{106}
-\contentsline {paragraph}{Fixed Point}{109}
-\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{110}
-\contentsline {paragraph}{Algoritmo per il controllo del rumore}{111}
-\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{111}
-\contentsline {paragraph}{Calcolo delle frequenze di frangia}{112}
-\contentsline {paragraph}{Calcolo della distanza assoluta}{112}
-\contentsline {subsubsection}{Implementazione software}{113}
-\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{113}
-\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{117}
-\contentsline {section}{\numberline {5.1}Metodologia proposta}{117}
-\contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{118}
-\contentsline {subsection}{\numberline {5.1.2}Prova a bersaglio mobile}{119}
-\contentsline {subsection}{\numberline {5.1.3}Prova del range di misura}{119}
-\contentsline {section}{\numberline {5.2}Finestratura del segnale}{120}
-\contentsline {section}{\numberline {5.3}Linearizzazione della misura}{121}
-\contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{126}
-\contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{131}
-\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{133}
-\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{133}
-\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{136}
-\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{141}
-\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{142}
-\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{142}
-\contentsline {subsection}{\numberline {5.5.3}Range di misura}{142}
-\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{147}
-\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{147}
-\contentsline {section}{\numberline {5.7}Drift termico}{149}
-\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{152}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{155}
-\contentsline {chapter}{\numberline {A}Documentazione software}{159}
-\contentsline {chapter}{Bibliografia}{160}
+\contentsline {chapter}{\numberline {2}Interferometria a retroiniezione}{19}
+\contentsline {section}{\numberline {2.1}Principi di interferometria convenzionale}{19}
+\contentsline {subsection}{\numberline {2.1.1}Svantaggi dell'interferometria convenzionale}{21}
+\contentsline {section}{\numberline {2.2}Interferometria a retroiniezione}{22}
+\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{25}
+\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{30}
+\contentsline {section}{\numberline {2.3}Principali limitazioni della tecnica interferometrica}{32}
+\contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{36}
+\contentsline {subsection}{\numberline {2.4.1}Misura di distanza assoluta}{36}
+\contentsline {chapter}{\numberline {3}Architettura Hardware dello strumento}{41}
+\contentsline {section}{\numberline {3.1}Struttura complessiva dello strumento}{41}
+\contentsline {section}{\numberline {3.2}Parte analogica}{43}
+\contentsline {subsection}{\numberline {3.2.1}Sistema ottico e sorgente laser}{43}
+\contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{45}
+\contentsline {section}{\numberline {3.3}Parte di Conversione}{45}
+\contentsline {subsection}{\numberline {3.3.1}Convertitori}{47}
+\contentsline {subsubsection}{Convertitore DAC}{48}
+\contentsline {paragraph}{Architetture DAC}{48}
+\contentsline {subparagraph}{\textbf {DAC a resistori pesati}}{49}
+\contentsline {subparagraph}{\textbf {DAC a scala R-2R}}{49}
+\contentsline {paragraph}{Convertitore DAC presente sulla scheda di conversione}{51}
+\contentsline {subsubsection}{Convertitore ADC}{52}
+\contentsline {paragraph}{Architetture ADC}{52}
+\contentsline {subparagraph}{\textbf {ADC a conteggio}}{52}
+\contentsline {subparagraph}{\textbf {ADC ad approssimazioni successive}}{53}
+\contentsline {subparagraph}{\textbf {ADC a Doppia rampa}}{54}
+\contentsline {subparagraph}{\textbf {ADC Flash}}{55}
+\contentsline {subparagraph}{\textbf {ADC Pipeline}}{56}
+\contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{57}
+\contentsline {section}{\numberline {3.4}Parte digitale}{58}
+\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{59}
+\contentsline {subsection}{\numberline {3.4.2}FPGA}{60}
+\contentsline {subsubsection}{Storia delle FPGA}{60}
+\contentsline {subsubsection}{Tecniche di implementazione delle FPGA}{62}
+\contentsline {paragraph}{Static-memory}{63}
+\contentsline {paragraph}{Flash/EEPROM}{64}
+\contentsline {paragraph}{Anti-fuse}{66}
+\contentsline {subsubsection}{Xilinx Spartan-6 LX45}{68}
+\contentsline {paragraph}{Utilizzo area FPGA}{68}
+\contentsline {subsection}{\numberline {3.4.3}Microcontrollore}{68}
+\contentsline {subsubsection}{Architettura PowerPC}{69}
+\contentsline {paragraph}{PowerPC e300}{70}
+\contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{73}
+\contentsline {section}{\numberline {4.1}Ambiente di sviluppo LabVIEW}{73}
+\contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{75}
+\contentsline {subsection}{\numberline {4.2.1}Programmazione del microcontrollore}{75}
+\contentsline {subsubsection}{Sistema Real-Time}{76}
+\contentsline {paragraph}{Sistema Operativo Real-Time}{76}
+\contentsline {subparagraph}{VxWorks}{77}
+\contentsline {paragraph}{LabVIEW Real-Time}{79}
+\contentsline {subsection}{\numberline {4.2.2}Programmazione dell'FPGA}{80}
+\contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{81}
+\contentsline {paragraph}{VHDL}{81}
+\contentsline {subsubsection}{Sintesi Hardware}{82}
+\contentsline {subsubsection}{High-Level Synthesis (HLS)}{84}
+\contentsline {subsubsection}{LabVIEW FPGA}{85}
+\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{86}
+\contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{87}
+\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{93}
+\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{96}
+\contentsline {section}{\numberline {4.4}Architettura Software}{96}
+\contentsline {subsection}{\numberline {4.4.1}FPGA}{97}
+\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{97}
+\contentsline {paragraph}{Generazione del segnale di modulazione}{97}
+\contentsline {paragraph}{Campionamento del segnale interferometrico}{98}
+\contentsline {paragraph}{Condizionamento del segnale interferometrico}{98}
+\contentsline {subparagraph}{Sottrazione del residuo}{98}
+\contentsline {subparagraph}{Estrazione di 512 campioni}{98}
+\contentsline {subparagraph}{Finestratura}{98}
+\contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{99}
+\contentsline {paragraph}{Estrazione del massimo bin di frequenza}{99}
+\contentsline {subsubsection}{Implementazione software}{100}
+\contentsline {paragraph}{Design pattern utilizzati}{101}
+\contentsline {subparagraph}{Producer-consumer}{101}
+\contentsline {subparagraph}{4-Wire Handshake}{104}
+\contentsline {paragraph}{Fixed Point}{107}
+\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{108}
+\contentsline {paragraph}{Algoritmo per il controllo del rumore}{109}
+\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{109}
+\contentsline {paragraph}{Calcolo delle frequenze di frangia}{110}
+\contentsline {paragraph}{Calcolo della distanza assoluta}{110}
+\contentsline {subsubsection}{Implementazione software}{111}
+\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{111}
+\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{115}
+\contentsline {section}{\numberline {5.1}Metodologia proposta}{115}
+\contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{116}
+\contentsline {subsection}{\numberline {5.1.2}Prova a bersaglio mobile}{117}
+\contentsline {subsection}{\numberline {5.1.3}Prova del range di misura}{117}
+\contentsline {section}{\numberline {5.2}Finestratura del segnale}{118}
+\contentsline {section}{\numberline {5.3}Linearizzazione della misura}{119}
+\contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{124}
+\contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{129}
+\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{131}
+\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{131}
+\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{134}
+\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{139}
+\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{140}
+\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{140}
+\contentsline {subsection}{\numberline {5.5.3}Range di misura}{140}
+\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{145}
+\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{145}
+\contentsline {section}{\numberline {5.7}Drift termico}{147}
+\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{150}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{153}
+\contentsline {chapter}{\numberline {A}Documentazione software}{157}
+\contentsline {chapter}{Bibliografia}{158}

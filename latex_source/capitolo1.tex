@@ -46,15 +46,7 @@ Un laser \'e un sistema ottico costituito da due specchi separati da un mezzo at
   \end{center}
 \end{figure}
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[scale=0.6]{cap1/funzatomoecc}
-    \caption{Schema di funzionamento di un atomo eccitato: assorbimento, emissione spontanea ed emissione stimolata}
-    \label{funzatomoecc}
-  \end{center}
-\end{figure}
-
-Quando la luce investe un materiale, si possono verificare due differenti tipi di transizione (Figura \ref{funzatomoecc}):
+Quando la luce investe un materiale, si possono verificare due differenti tipi di transizione:
 \begin{itemize}
 	\item \emph{Assorbimento}: Quando il fascio di luce investe un materiale, parte dell'energia posseduta dal fascio viene ceduta. L'assorbimento consiste nel cedere, da parte del fotone, la propria energia al sistema atomico permettendo ad un singolo elettrone di passare da uno stato fondamentale $E_{1}$ ad uno stato eccitato $E_{2}$.
 	\item \emph{Emissione}: Il sistema atomico cede energia al campo, in questo caso si possono avere due possibili scenari:
@@ -76,7 +68,7 @@ Per comprendere i meccanismi che regolano lo scambio di energia tra la radiazion
 \begin{equation}
   N=N_0e^{{-\frac{E}{kT}}}
 \end{equation}
-dove $N_0$ \'e la popolazione iniziale in un dato livello energetico e $k=1.38\cdot10^{-23}\frac{J}{K}$ \'e la costante di Boltzmann.
+dove $N_0$ \'e la popolazione iniziale in un dato livello energetico e $k= 1.38 \cdot 10^{-23} J / K$ \'e la costante di Boltzmann. %% TODO controlla notazione
  
  Indicando, quindi, con $N_1$ e $N_2$ il numero di atomi per unit\'a di volume (popolazione atomica) per i rispettivi livelli $E_1$ e $E_2$, possiamo ricavare il rapporto tra il numero di atomi nello stato fondamentale e quello nello stato eccitato, all'equilibrio termodinamico alla temperatura $T$, tramite la seguente equazione:
 \begin{equation}
@@ -252,7 +244,6 @@ La suddetta normativa classifica la pericolosità di una sorgente laser suddivid
 \end{figure}
 La classificazione appena descritta è rappresentata in Figura \ref{classisicurezza}, insieme alle lunghezza d'onda corrispondenti a ciascuna classe.
 
-%% TODO Check Leo fino a qui
 \section{Telemetri ottici}
 La telemetria è un insieme di metodi di osservazione aventi lo scopo di fornire la misura della distanza di un oggetto dall'osservatore.
 
@@ -309,7 +300,7 @@ Per tale motivo, questa tipologia di telemetro è utilizzata per la misura di br
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.4]{cap1/tempodivolo}
-		\caption{Schema di funzionamento di un telemetri a tempo di volo}
+		\caption{Schema di funzionamento di un telemetro a tempo di volo}
 		\label{tempodivolo}
 	\end{center}
 \end{figure}
@@ -323,6 +314,9 @@ Differenziando la precedente equazione si ottiene:
 \begin{equation}
   \Delta L=\frac{c}{2}\Delta T
 \end{equation}
+
+Da cui si ricava la relazione:
+
 \begin{equation}
   \frac{\Delta L}{L}=\frac{\Delta T}{T}
 \end{equation}
@@ -354,14 +348,14 @@ dove $\Delta t=\frac{2L}{c}$ e $T_{mod}=\frac{1}{f_{mod}}$, si ottiene così la 
 \begin{equation}
   L=\frac{c}{2}\frac{1}{2\pi f_{mod}}\Delta\phi=\frac{\Delta\phi}{S}
 \end{equation}
-Dall'ultima equazione si può notare come la sensibilità $S$ della misura migliori all'aumentare della frequenza di modulazione. Tuttavia un aumento eccessivo della frequenza di modulazione comporta una riduzione della massima distanza rilevabile. 
+Dall'ultima equazione si può notare come la sensibilità $S=2 \frac{2\pi f_{mod}}{c}$ della misura migliori all'aumentare della frequenza di modulazione. Tuttavia un aumento eccessivo della frequenza di modulazione comporta una riduzione della massima distanza rilevabile. 
 
-Questo tipo di telemetro si utilizza per misure comprese tra $1$ e $1000m$, con risoluzioni dell'ordine del millimetro. 
+Questo tipo di telemetro si utilizza per misure comprese tra $1 \div 1000m$, con risoluzioni dell'ordine del millimetro. 
 
 \section{Una tecnica alternativa per la misura}
 Come già discusso nell'Introduzione, lo scopo di questo lavoro di Tesi è realizzare il prototipo di un misuratore di distanza assoluta che sia a basso costo e con ingombro limitato per poter essere più maneggevole nella misura di medio-brevi distanze.
 
-Da quanto esposto nel precedente paragrafo, emerge che i telemetri descritti non sono i'n grado di raggiungere tali obiettivi. Infatti tali strumenti sono adatti per la misura di distanze dell'ordine della decina di metri. Per quanto riguarda i telemetri a triangolazione, invece, esistono in commercio strumenti in grado di misurare distanze brevi con buona sensibilità. Tuttavia questi dispositivi, oltre ad avere un costo elevato, necessitano di un'ottica specifica per la ricezione della radiazione riflessa e di un bersaglio cooperativo.
+Da quanto esposto nel precedente paragrafo, emerge che i telemetri descritti non sono in grado di raggiungere tali obiettivi. Infatti tali strumenti sono adatti per la misura di distanze dell'ordine della decina di metri. Per quanto riguarda i telemetri a triangolazione, invece, esistono in commercio strumenti in grado di misurare distanze brevi con buona sensibilità. Tuttavia questi dispositivi, oltre ad avere un costo elevato, necessitano di un'ottica specifica per la ricezione della radiazione riflessa e di un bersaglio cooperativo.
 
 Da queste osservazioni si conclude che, per raggiungere l'obiettivo preposto, è necessario utilizzare una tecnica di misura che si differenzia da quelle comuni, ovvero l'\textbf{interferometria a retroiniezione}. Questa tecnica verrà ampiamente discussa nel Capitolo \ref{capitolo2}.
 
