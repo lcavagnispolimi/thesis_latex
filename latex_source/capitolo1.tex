@@ -6,7 +6,7 @@
 
 \section{Principi di funzionamento del laser}
 LASER \'e l'acronimo di \emph{Light Amplification by Stimulated Emission of Radiation}, cio\'e amplificazione della luce mediante il fenomeno dell'emissione stimolata di radiazione~\cite{sveltolaser}. In generale, un laser \'e un dispositivo elettronico in grado di emettere un fascio di luce.
-Un fascio di luce \'e un onda elettromagnetica costituita da particelle chiamate fotoni. Il fotone \'e il quanto di energia della radiazione elettromagnetica.
+Un fascio di luce \'e un onda elettromagnetica costituita da particelle chiamate \textit{fotoni}. Il \textit{fotone} \'e il quanto di energia della radiazione elettromagnetica.
 
 Il fascio di luce emesso da un dispositivo laser possiede tre caratteristiche principali:
 \begin{enumerate}
@@ -15,14 +15,14 @@ Il fascio di luce emesso da un dispositivo laser possiede tre caratteristiche pr
 	\item Direzionalit\'a
 \end{enumerate}
 
-Per quanto riguarda la prima caratteristica ci si riferisce in particolare a due aspetti differenti: la coerenza spaziale e la coerenza temporale. La coerenza spaziale esprime la correlazione tra i valori che il campo elettromagnetico emesso assume in due punti diversi dello spazio, mentre per coerenza temporale si definisce la correlazione tra i valori che il campo elettromagnetico assume in due istanti di tempo diversi.
+Per quanto riguarda la prima caratteristica ci si riferisce in particolare a due aspetti differenti: la coerenza spaziale e la coerenza temporale. La coerenza spaziale esprime la correlazione tra i valori che il campo elettromagnetico emesso assume in due punti diversi dello spazio, mentre per coerenza temporale si definisce la correlazione tra i valori che il campo elettromagnetico assume in due istanti di tempo diversi $t$ e $t+dt$.
 Un onda \'e coerente spaziale se esiste una differenza di fase costante tra due punti qualunque sul fronte d'onda. Mentre, la coerenza temporale \'e strettamente legata al tempo di coerenza. Esso \'e l'intervallo medio di tempo nel quale l'onda compir\'a un certo numero di oscillazioni prima di cambiare fase.
 
 La seconda propriet\'a garantisce che tutti i fotoni generati per effetto dell'emissione stimolata risultino iso-frequenziali (aventi tutti la stessa frequenza). Essa \'e strettamente correlata alla coerenza temporale.
 
 La terza e ultima propriet\'a, invece, afferma che la radiazione emessa dalla sorgente si propaga nello spazio in un'unica direzione ben definita con piccoli angoli di divergenza del fascio parallelo e perpendicolare, pi\'u precisamente, l'angolo solido sotteso da un fascio laser \'e estremamente piccolo. Essa \'e strettamente correlata alla coerenza spaziale.
 
-Queste propriet\'a fondamentali di una sorgente laser sono dovute al principio di funzionamento stesso: l'emissione stimolata di radiazione.
+Queste propriet\'a fondamentali di una sorgente laser sono dovute al principio di funzionamento stesso: l'	\textit{emissione stimolata di radiazione}.
 
 \subsection{Emissione stimolata di radiazione}
 Il fenomeno che permette il funzionamento del laser \'e l'emissione stimolata, per questo \'e importante capire di cosa si tratta e in che modo essa \'e differente dall'emissione spontanea. Per fare ci\'o \'e conveniente richiamare alcuni concetti di base.
@@ -46,7 +46,15 @@ Un laser \'e un sistema ottico costituito da due specchi separati da un mezzo at
   \end{center}
 \end{figure}
 
-Quando la luce investe un materiale, si possono verificare due differenti tipi di transizione:
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{cap1/funzatomoecc}
+    \caption{Schema di funzionamento di un atomo eccitato: assorbimento, emissione spontanea ed emissione stimolata}
+    \label{funzatomoecc}
+  \end{center}
+\end{figure}
+
+Quando la luce investe un materiale, si possono verificare due differenti tipi di transizione (Figura \ref{funzatomoecc}):
 \begin{itemize}
 	\item \emph{Assorbimento}: Quando il fascio di luce investe un materiale, parte dell'energia posseduta dal fascio viene ceduta. L'assorbimento consiste nel cedere, da parte del fotone, la propria energia al sistema atomico permettendo ad un singolo elettrone di passare da uno stato fondamentale $E_{1}$ ad uno stato eccitato $E_{2}$.
 	\item \emph{Emissione}: Il sistema atomico cede energia al campo, in questo caso si possono avere due possibili scenari:
@@ -55,20 +63,14 @@ Quando la luce investe un materiale, si possono verificare due differenti tipi d
 		\item \emph{Stimolata}: L'emissione stimolata, invece, si ottiene quando un fotone incidente causa la discesa di un elettrone dal livello $E_{2}$ al livello $E_{1}$ ottenendo così due fotoni alla stessa frequenza. Quindi, in breve, un fotone colpisce l'atomo e due fotoni lo lasciano. Essa viene definita anche emissione coerente: l'energia viene emessa con la stessa fase, frequenza e direzione.
 	\end{itemize} 
 \end{itemize}
-\begin{figure}
-  \begin{center}
-    \includegraphics[scale=0.6]{cap1/funzatomoecc}
-    \caption{Schema di funzionamento di un atomo eccitato: assorbimento, emissione spontanea ed emissione stimolata}
-    \label{funzatomoecc}
-  \end{center}
-\end{figure}
+
 L'importanza dell'emissione stimolata sta nel fatto che essendo prodotti due fotoni iso-frequenziali, di fatto avviene un'amplificazione ottica, la quale consente il funzionamento del sistema laser.
 
 Per comprendere i meccanismi che regolano lo scambio di energia tra la radiazione ed il sistema atomico, è necessario introdurre la statistica di Boltzmann~\cite{kasap2012optoelectronics}. Attraverso tale statistica \'e possibile definire la popolazione, in termini di densit\'a, di un livello energetico all'equilibrio termico mediante la seguente relazione:
 \begin{equation}
   N=N_0e^{{-\frac{E}{kT}}}
 \end{equation}
-dove $N_0$ \'e la popolazione iniziale in un dato livello energetico e $k=1.38\cdot10^{-23}\frac{J}{K}$\'e la costante di Boltzmann.
+dove $N_0$ \'e la popolazione iniziale in un dato livello energetico e $k=1.38\cdot10^{-23}\frac{J}{K}$ \'e la costante di Boltzmann.
  
  Indicando, quindi, con $N_1$ e $N_2$ il numero di atomi per unit\'a di volume (popolazione atomica) per i rispettivi livelli $E_1$ e $E_2$, possiamo ricavare il rapporto tra il numero di atomi nello stato fondamentale e quello nello stato eccitato, all'equilibrio termodinamico alla temperatura $T$, tramite la seguente equazione:
 \begin{equation}
@@ -94,7 +96,7 @@ Per ottenere la condizione di inversione di popolazione \'e quindi necessario l'
 \end{figure}
 L'idea di base dell'inversione di popolazione consiste nello sfruttare i diversi tempi di vita medi dei differenti stati energetici.
 
-Considerando un sistema ad esattamente tre livelli energetici ($E_1$, $E_2$ e $E_3$) schematizzato in Figura \ref{sistema3liv}, si sottopone il sistema atomico ad una radiazione luminosa di frequenza $\nu_{31}$, corrispondente al gap energetico $E_3-E_1$, in modo tale che gli elettroni dallo stato $E_1$ si eccitino raggiungendo lo stato instabile $E_3$. Questa prima fase è chiamata \emph{pompaggio}.
+Considerando un sistema ad esattamente tre livelli energetici ($E_1$, $E_2$ e $E_3$) schematizzato in Figura \ref{sistema3liv}, si sottopone il sistema atomico ad una radiazione luminosa di frequenza $\nu_{31}$, corrispondente al gap energetico $\Delta E_{31} = E_3-E_1$, in modo tale che gli elettroni dallo stato $E_1$ si eccitino raggiungendo lo stato instabile $E_3$. Questa prima fase è chiamata \emph{pompaggio}.
 
 Successivamente si manifesta un decadimento dallo stato instabile $E_3$ allo stato $E_2$ in tempi molto rapidi e privi di emissione spontanea. Solitamente l'energia rilasciata viene trasferita sotto forma di moto vibrazionale al materiale circostante e non come fotone emesso.
 
@@ -112,7 +114,7 @@ Un struttura pi\'u efficiente \'e quella a quattro livelli schematizzata in Figu
 
 A differenza della struttura a tre livelli, questa ha il vantaggio di avere il livello $E_3$ popolato mentre il livello $E_2$ vuoto ($N_2=0$), in quanto gli elettroni decadono rapidamente dallo stato $E_2$ allo stato $E_1$, aiutando a conservare l'inversione di popolazione $N_3 \gg N_2$. 
 				
-Oltre al meccanismo appena descritto, altre caratteristiche risultano cruciali nel funzionamento del laser: la cavit\'a ottica e il materiale attivo.
+Oltre al meccanismo appena descritto, altre caratteristiche risultano cruciali nel funzionamento del laser: la \textit{cavit\'a ottica} e il \textit{materiale attivo}.
 
 \subsection{Cavit\'a ottica e materiale attivo}
 Nel paragrafo precedente abbiamo visto come realizzare un materiale amplificatore, che sfrutta l'inversione di popolazione nei livelli energetici. Per generare il fascio laser \'e necessario, per\'o, inserire il materiale attivo all'interno di una cavit\'a ottica.
@@ -160,13 +162,13 @@ Considerando come perdite solamente la riflettività parziale degli specchi $R_1
 Quest'ultimo è chiamato guadagno critico o inversione critica.
 
 \section{Laser a semiconduttore}
-Un dispositivo laser a semiconduttore utilizza una giunzione p-n come materiale attivo all'interno della cavità ottica. Il pompaggio avviene tramite la ricombinazione di elettroni e lacune, che produce fotoni ad una lunghezza d'onda dipendente dal \textit{gap} tra i livelli energetici del dispositivo: la frequenza della radiazione emessa è legata quindi al tipo di materiali impiegati~\cite{sveltolaser}.
+Un dispositivo laser a semiconduttore utilizza una giunzione \textit{p-n} come materiale attivo all'interno della cavità ottica. Il pompaggio avviene tramite la ricombinazione di elettroni e lacune, che produce fotoni ad una lunghezza d'onda dipendente dal \textit{gap} tra i livelli energetici del dispositivo: la frequenza della radiazione emessa è legata quindi al tipo di materiali impiegati~\cite{sveltolaser}.
 
 In commercio esistono diverse tipologie di laser a semiconduttore. Esse differiscono sulla base di due aspetti fondamentali: il tipo di cavità ottica impiegata e la forma degli specchi semi-riflettenti necessari a realizzare la retroazione ottica. 
 
 Sulla base di queste due caratteristiche si possono individuare tre categorie principali di laser:
 \begin{enumerate}
-	\item Laser Fabry-perot
+	\item Laser Fabry-Perot
 	\item Laser DFB
 	\item Laser VCSEL
 \end{enumerate}
@@ -214,10 +216,10 @@ VCSEL è l'acronimo di \emph{Vertical Cavity Surface-Emitting Laser}. Questi dis
 
 La cavità ottica ha una lunghezza molto inferiore alle dimensioni laterali del dispositivo, ciò implica che la luce del fascio laser viene emessa dalla superficie piuttosto che dai bordi laterali. 
 
-Poiché la cavità risulta essere più ridotta rispetto alle altre tipologie, a parità di guadagno $G$ occorre aumentare la riflettività degli specchi per ottenere un guadagno d'anello maggiore di uno. A sfavore vi è una limitazione in potenza di emissione dovuta agli specchi altamente riflettenti.
+Poiché la cavità risulta essere più ristretta rispetto alle altre tipologie, a parità di guadagno $G$ occorre aumentare la riflettività degli specchi per ottenere un guadagno d'anello maggiore di uno. A sfavore vi è una limitazione in potenza di emissione dovuta agli specchi altamente riflettenti.
 
 \section{Classi di sicurezza dei laser}
-Durante lo sviluppo di un sistema che include l'utilizzo di sorgenti laser è di fondamentale importanza garantire lo svolgimento del lavoro in sicurezza. Infatti, avendo a che fare con sorgenti laser, è importante conoscere i danni che esse possono provocare a cose e persone. In particolare, nei casi più gravi, le sorgenti laser possono procurare danni alla retina dell'occhio e ustioni alla pelle. 
+Durante lo sviluppo di un sistema che include l'utilizzo di sorgenti laser è di fondamentale importanza garantire lo svolgimento del lavoro in sicurezza. Infatti, avendo a che fare con sorgenti laser, è importante conoscere i danni che esse possono provocare a cose e/o persone. In particolare, nei casi più gravi, le sorgenti laser possono procurare danni alla retina dell'occhio e ustioni alla pelle. 
 
 Per poter scegliere in modo appropriato il laser da impiegare nel dispositivo è indispensabile conoscere le norme legislative che ne regolano l'utilizzo~\cite{ans}. A livello europeo vige la normativa \emph{IEC/EN 60825-1} che fissa una classificazione dei fasci laser in funzione della lunghezza d'onda e della potenza ottica emessa. 
 
@@ -241,6 +243,7 @@ La suddetta normativa classifica la pericolosità di una sorgente laser suddivid
 \end{figure}
 La classificazione appena descritta è rappresentata in Figura \ref{classisicurezza}, insieme alle lunghezza d'onda corrispondenti a ciascuna classe.
 
+%% TODO Check Leo fino a qui
 \section{Telemetri ottici}
 La telemetria è un insieme di metodi di osservazione aventi lo scopo di fornire la misura della distanza di un oggetto dall'osservatore.
 
