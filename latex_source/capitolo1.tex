@@ -5,8 +5,9 @@
 \textit{In questo Capitolo verranno richiamati i concetti fondamentali relativi al funzionamento delle sorgenti laser. Verranno quindi descritte le principali tipologie di sorgenti e le classi di sicurezza che ne regolamentano l'utilizzo. Successivamente, verr\'a esposto lo stato dell'arte dei misuratori ottici di distanza assoluta, ponendo particolare attenzione alle tecniche di misura a triangolazione, a tempo di volo e a onda continua. In conclusione, quest'ultime verranno messe a confronto con una tecnica alternativa, l'interferometria a retroiniezione, al fine di motivare l'utilizzo di tale tecnica per questo lavoro di Tesi.}
 
 \section{Principi di funzionamento del laser}
-LASER \'e l'acronimo di \emph{Light Amplification by Stimulated Emission of Radiation}, cio\'e amplificazione della luce mediante il fenomeno dell'emissione stimolata di radiazione~\cite{sveltolaser}. In generale, un laser \'e un dispositivo elettronico in grado di emettere un fascio di luce.
-Un fascio di luce \'e un onda elettromagnetica costituita da particelle chiamate fotoni. Il fotone \'e il quanto di energia della radiazione elettromagnetica.
+LASER \'e l'acronimo di \emph{Light Amplification by Stimulated Emission of Radiation}, cio\'e luce amplificata dall'emissione stimolata di radiazione~\cite{sveltolaser}. In generale, un laser \'e un dispositivo elettronico in grado di emettere un fascio di luce.
+%Un fascio di luce \'e un'onda elettromagnetica costituita da particelle chiamate fotoni. Il fotone \'e il quanto di energia della radiazione elettromagnetica.
+La luce ha una natura duale; infatti si comporta sia come un'onda elettromagnetica che come una particella, detta fotone, che costituisce il quanto di energia della luce. 
 
 Il fascio di luce emesso da un dispositivo laser possiede tre caratteristiche principali:
 \begin{enumerate}
@@ -18,7 +19,8 @@ Il fascio di luce emesso da un dispositivo laser possiede tre caratteristiche pr
 Per quanto riguarda la prima caratteristica ci si riferisce in particolare a due aspetti differenti: la coerenza spaziale e la coerenza temporale. La coerenza spaziale esprime la correlazione tra i valori che il campo elettromagnetico emesso assume in due punti diversi dello spazio, mentre per coerenza temporale si definisce la correlazione tra i valori che il campo elettromagnetico assume in due istanti di tempo diversi.
 Un onda \'e coerente spaziale se esiste una differenza di fase costante tra due punti qualunque sul fronte d'onda. Mentre, la coerenza temporale \'e strettamente legata al tempo di coerenza. Esso \'e l'intervallo medio di tempo nel quale l'onda compir\'a un certo numero di oscillazioni prima di cambiare fase.
 
-La seconda propriet\'a garantisce che tutti i fotoni generati per effetto dell'emissione stimolata risultino iso-frequenziali (aventi tutti la stessa frequenza). Essa \'e strettamente correlata alla coerenza temporale.
+La seconda propriet\'a garantisce che %(tutti i fotoni generati)
+tutte le onde generate per effetto dell'emissione stimolata risultino iso-frequenziali, ovvero aventi tutti la stessa frequenza. Essa \'e strettamente correlata alla coerenza temporale.
 
 La terza e ultima propriet\'a, invece, afferma che la radiazione emessa dalla sorgente si propaga nello spazio in un'unica direzione ben definita con piccoli angoli di divergenza del fascio parallelo e perpendicolare, pi\'u precisamente, l'angolo solido sotteso da un fascio laser \'e estremamente piccolo. Essa \'e strettamente correlata alla coerenza spaziale.
 
@@ -33,12 +35,12 @@ E=h\nu
 \end{equation}
 dove $h= \SI{6.62e-34}{J.s}$ \'e la costante di Planck, mentre $\nu$ \'e la frequenza della radiazione. A sua volta la frequenza $\nu$ \'e in relazione alla lunghezza d'onda $\lambda$ tramite la relazione:
 \begin{equation}
-\nu= \frac{c}{\lambda}
+\nu= \frac{v}{\lambda}
 \end{equation}
-dove $c= \SI{2.99e8}{m.\per.s}$ rappresenta la velocit\'a della luce nel vuoto.
+dove $v$ è la velocità dell'onda, che nel caso di un'onda elettromagnetica è pari a $c= \SI{2.99e8}{m.\per.s}$, ovvero la velocit\'a della luce nel vuoto.
 
 Un laser \'e un sistema ottico costituito da due specchi separati da un mezzo attivo, il quale pu\'o essere un solido, un liquido, un gas o un semiconduttore. Si consideri il mezzo attivo come un insieme di atomi (sistema atomico) e per semplicit\'a di trattazione si ipotizzi che il materiale attivo in questione, investito dalla radiazione, abbia due soli livelli energetici dotati rispettivamente di energia $E_{1}$ e $E_{2}$ con $E_{2}>E_{1}$. Definiamo lo stato ad energia inferiore $E_{1}$ come stato fondamentale e lo stato ad energia superiore $E_{2}$ come stato eccitato.
-\begin{figure}
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.7]{cap1/atomico2liv}
     \caption{Sistema atomico composto da due livelli}
@@ -55,7 +57,7 @@ Quando la luce investe un materiale, si possono verificare due differenti tipi d
 		\item \emph{Stimolata}: L'emissione stimolata, invece, si ottiene quando un fotone incidente causa la discesa di un elettrone dal livello $E_{2}$ al livello $E_{1}$ ottenendo così due fotoni alla stessa frequenza. Quindi, in breve, un fotone colpisce l'atomo e due fotoni lo lasciano. Essa viene definita anche emissione coerente: l'energia viene emessa con la stessa fase, frequenza e direzione.
 	\end{itemize} 
 \end{itemize}
-\begin{figure}
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.6]{cap1/funzatomoecc}
     \caption{Schema di funzionamento di un atomo eccitato: assorbimento, emissione spontanea ed emissione stimolata}
@@ -85,7 +87,7 @@ In un sistema a due livelli questa condizione non \'e realizzabile poich\'e, com
 Per ottenere la condizione di inversione di popolazione \'e quindi necessario l'utilizzo di un sistema atomico con almeno tre livelli energetici.
 
 \subsection{Inversione di popolazione}
-\begin{figure}
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.6]{cap1/sistema3liv}
     \caption{Sistema atomico a tre livelli energetici}
@@ -101,14 +103,16 @@ Successivamente si manifesta un decadimento dallo stato instabile $E_3$ allo sta
 Dal livello $E_2$ si verifica l'emissione laser alla frequenza $\nu_{21}$ e la conseguente regressione dal livello $E_2$ al livello $E_1$. La condizione necessaria, sui tempi di vita medi, per il funzionamento del laser è $\tau_{32} \ll \tau_{21}$, ovvero che il decadimento da $E_3$ a $E_2$ sia pi\'u rapido di quello da $E_2$ a $E_1$. Tale condizione permette di avere inversione di popolazione, ovvero $N_2 > N_1$, cos\'i da poter innescare l'amplificazione ottica e, quindi, l'effetto laser alla frequenza $\nu_{21}$.
 
 Questo metodo \'e inefficiente perch\'e richiede un pompaggio elevato: \'e necessario fornire un numero elevato di elettroni al livello $E_3$ in modo tale che possa donarli al livello $E_2$ permettendo cos\'i l'inversione di popolazione.
-\begin{figure}
-  \begin{center}
-    \includegraphics[scale=0.6]{cap1/sistema4liv}
-    \caption{Sistema atomico a quattro livelli energetici}
-    \label{sistema4liv}
-  \end{center}
-\end{figure}
+
 Un struttura pi\'u efficiente \'e quella a quattro livelli schematizzata in Figura \ref{sistema4liv}. In questa disposizione, il pompaggio degli elettroni avviene da $E_1$ a $E_4$ a cui segue una transizione rapida e senza radiazione verso $E_3$ che consente di popolare il livello energetico. A questo punto avviene la transizione lenta e l'emissione tramite azione laser. Infine avviene una rapida transizione da $E_2$ allo stato fondamentale $E_1$.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.6]{cap1/sistema4liv}
+		\caption{Sistema atomico a quattro livelli energetici}
+		\label{sistema4liv}
+	\end{center}
+\end{figure}
 
 A differenza della struttura a tre livelli, questa ha il vantaggio di avere il livello $E_3$ popolato mentre il livello $E_2$ vuoto ($N_2=0$), in quanto gli elettroni decadono rapidamente dallo stato $E_2$ allo stato $E_1$, aiutando a conservare l'inversione di popolazione $N_3 \gg N_2$. 
 				
@@ -116,15 +120,15 @@ Oltre al meccanismo appena descritto, altre caratteristiche risultano cruciali n
 
 \subsection{Cavit\'a ottica e materiale attivo}
 Nel paragrafo precedente abbiamo visto come realizzare un materiale amplificatore, che sfrutta l'inversione di popolazione nei livelli energetici. Per generare il fascio laser \'e necessario, per\'o, inserire il materiale attivo all'interno di una cavit\'a ottica.
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.4]{cap1/cavitaottica}
-    \caption{Cavit\'a di Fabry-Perot}
-    \label{cavitaottica}
-  \end{center}
-\end{figure}
 Una semplice cavit\'a ottica può essere rappresentata dalla cavit\'a a specchi piani e paralleli, nota anche come cavit\'a di Fabry-Perot, mostrata in Figura \ref{cavitaottica}. 
-\begin{figure}  
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{cap1/cavitaottica}
+		\caption{Cavit\'a di Fabry-Perot}
+		\label{cavitaottica}
+	\end{center}
+\end{figure}
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.6]{cap1/roundtrip}
     \caption{Schema del Roundtrip ottico nella cavit\'a ottica}
@@ -138,7 +142,8 @@ Per definire il guadagno ottico del materiale attivo \'e necessario introdurre p
 I(l)=I(0)e^{\sigma(N_2-N_1)l}
 \end{equation}
 dove $\sigma$ \'e la la \textit{cross section} di emissione e $l$ \'e la lunghezza della cavit\'a ottica.
-\begin{figure}  
+
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.6]{cap1/propagazione}
     \caption{Propagazione della radiazione all'interno della cavità laser}
@@ -172,7 +177,7 @@ Sulla base di queste due caratteristiche si possono individuare tre categorie pr
 \end{enumerate}
 
 \subsection{Laser Fabry-Perot}
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.5]{cap1/fabryperot}
     \caption{Laser Fabry-Perot}
@@ -189,21 +194,21 @@ Gli specchi agli estremi della cavità rendono possibile la retroazione positiva
 Questo può rappresentare uno svantaggio in applicazioni come l'interferometria.
 
 \subsection{Laser DFB}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{cap1/dfb}
+		\caption{Laser DFB}
+		\label{dfb}
+	\end{center}
+\end{figure}
 DFB è l'acronimo di \emph{Distributed Feedback Laser}. Il principio di funzionamento è simile a quello dei laser Fabry-Perot, ma con la importante differenza che non sono presenti due specchi separati a formare la cavità ottica ma è inserito uno strato corrugato adiacente allo strato attivo.
 
 Questo strato aggiuntivo è fabbricato in maniera tale da riflettere solo una banda stretta di lunghezze d'onda, così da garantire un singolo modo longitudinale. 
 
 Per questa caratteristica i laser DFB, sono più stabili dei Fabry-Perot, e più adatti ad applicazioni connesse alle fibre ottiche.
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.6]{cap1/dfb}
-    \caption{Laser DFB}
-    \label{dfb}
-  \end{center}
-\end{figure}
 
 \subsection{Laser VCSEL}
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.45]{cap1/vcsel}
     \caption{Laser VCSEL}
@@ -232,7 +237,7 @@ La suddetta normativa classifica la pericolosità di una sorgente laser suddivid
 		\end{itemize}
 	\item \emph{Classe 4}: Questa classe include le sorgenti laser più pericolose. Possono causare lesioni alla pelle e costituiscono pericolo d'incendio. 
 \end{itemize}
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.5]{cap1/classisicurezza}
     \caption{Classi di sicurezza dei laser}
@@ -254,7 +259,7 @@ Le tipologie più diffuse sono tre:
 \end{enumerate}
 
 \subsection{Telemetri a triangolazione}
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.5]{cap1/triangolazione}
     \caption{Schema di funzionamento di un telemetro a triangolazione}
@@ -294,6 +299,13 @@ Il principale svantaggio di questa tecnica è che, con l'aumentare della distanz
 Per tale motivo, questa tipologia di telemetro è utilizzata per la misura di brevi distanze ($0.1\div 10 m$) .
 
 \subsection{Telemetri a tempo di volo}
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.4]{cap1/tempodivolo}
+		\caption{Schema di funzionamento di un telemetri a tempo di volo}
+		\label{tempodivolo}
+	\end{center}
+\end{figure}
 I telemetri a tempo di volo utilizzano un laser impulsato. Essi emettono potenza solo per un brevissimo istante di tempo $\tau$.
 
 Con un bersaglio posto a distanza $L$ dalla sorgente laser, il fascio laser percorre un cammino pari a $2L$ (Andata e Ritorno) in un tempo $T$ viaggiando a velocità della luce $c\approx3\cdot10^8\frac{m}{s}$, ricavando così la seguente relazione:
@@ -311,16 +323,8 @@ Si può osservare come la misura $\Delta L$ dipenda unicamente dal $\Delta T$ ch
 
 Il vincolo di questi telemetri è che la durata dell'impulso $\tau$ deve soddisfare la condizione $\tau \ll \Delta T$. Per tale motivo sono utilizzati per misure di distanze medio-lunghe (fino a $10 Km$). 
 
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.4]{cap1/tempodivolo}
-    \caption{Schema di funzionamento di un telemetri a tempo di volo}
-    \label{tempodivolo}
-  \end{center}
-\end{figure}
-
 \subsection{Telemetri a onda continua}
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.4]{cap1/ondacontinua}
     \caption{Potenza trasmessa e potenza riflessa in un telemetro a onda continua}
@@ -345,7 +349,7 @@ dove $\Delta t=\frac{2L}{c}$ e $T_{mod}=\frac{1}{f_{mod}}$, si ottiene così la 
 \end{equation}
 Dall'ultima equazione si può notare come la sensibilità $S$ della misura migliori all'aumentare della frequenza di modulazione. Tuttavia un aumento eccessivo della frequenza di modulazione comporta una riduzione della massima distanza rilevabile. 
 
-Questo tipo di telemetro si utilizza per misure comprese tra $1\div1000m$, con risoluzioni dell'ordine del millimetro. 
+Questo tipo di telemetro si utilizza per misure comprese tra $1$ e $1000m$, con risoluzioni dell'ordine del millimetro. 
 
 \section{Una tecnica alternativa per la misura}
 Come già discusso nell'Introduzione, lo scopo di questo lavoro di Tesi è realizzare il prototipo di un misuratore di distanza assoluta che sia a basso costo e con ingombro limitato per poter essere più maneggevole nella misura di medio-brevi distanze.
