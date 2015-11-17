@@ -35,13 +35,13 @@ Per come é costruito l'interferometro di \textit{Michelson}, si avrà che la fa
 
 Indicando con $k=\frac{2\pi}{\lambda}$ il numero d'onda (numero di oscillazione nell'unità di lunghezza) è possibile esplicitare l'argomento del coseno ottenendo:
 \begin{equation}
-	\phi=ks=\frac{2\pi}{\lambda}s	
+	\phi=2ks=2\frac{2\pi}{\lambda}s	
 \end{equation}
 dove $\lambda$ è la lunghezza d'onda della sorgente laser e $s$ è lo spostamento.
 
 Essendo $\phi_r= ks_r$ e $\phi_m = ks_m$, si può ricavare la variazione di fase totale, ottenendo:
 \begin{equation}
-	\Delta \phi=\phi_m-\phi_r=k(s_m-s_r)=\frac{2\pi}{\lambda}(s_m-s_r)
+	\Delta \phi=\phi_m-\phi_r=2k(s_m-s_r)=2\frac{2\pi}{\lambda}(s_m-s_r)
 \end{equation}
 dove $s_m$ e $s_r$ sono rispettivamente i cammini ottici di misura e di riferimento.
 
@@ -100,15 +100,15 @@ dove $k=\frac{2\pi}{\lambda}$ è il numero d'onda e $s$ è la distanza.
     \label{rapprvet}
   \end{center}
 \end{figure}
-Come mostrato in figura \ref{rapprvet} è possibile scomporre $E_r$, operando un'analisi vettoriale, nelle sue componenti in fase ed in ampiezza. Ciò permette, nella cavità ottica, sia la modulazione in frequenza (FM) che la modulazione in ampiezza (AM) del campo elettrico emesso originariamente dalla sorgente $E_0$. 
+Come mostrato in Figura \ref{rapprvet} è possibile scomporre $E_r$, operando un'analisi vettoriale, nelle sue componenti in fase ed in ampiezza. Ciò permette, nella cavità ottica, sia la modulazione in frequenza (FM) che la modulazione in ampiezza (AM) del campo elettrico emesso originariamente dalla sorgente $E_0$. 
 
-La componente che opera la modulazione d'ampiezza è $E_r\cos[\phi(t)]$, mentre la componente di modulazione di frequenza è $E_r\sin[\phi(t)]$. Le' due componenti sono sfasate di $90\degree$ e quindi la discriminazione dei due segnali in quadratura permette di ricavare senza ambiguità il verso dello spostamento del bersaglio, al contrario dell'interferometro di \textit{Michelson}.
+La componente che opera la modulazione d'ampiezza è $E_r\cos[\phi(t)]$, mentre la componente di modulazione di frequenza è $E_r\sin[\phi(t)]$. Le due componenti sono sfasate di $90\degree$ e quindi la discriminazione dei due segnali in quadratura permette di ricavare senza ambiguità il verso dello spostamento del bersaglio, al contrario dell'interferometro di \textit{Michelson}.
 
-L'equazione che governa la corrente nel fotodiodo sará:
+L'equazione che governa la corrente nel fotodiodo sarà:
 \begin{equation}
 	I_{ph}=I_0(1+m_{AM})\cos{[(1+m_{FM})\omega t]}
 \end{equation}
-dove $m_{AM}$ e $m_{FM}$ sono le profondità di modulazione.
+dove $m_{AM}$ e $m_{FM}$ sono le profondità di modulazione e $\omega = 2\pi v_0$.
 
 Se si utilizza un laser a semiconduttore, come nel caso dello strumento presentato in questa Tesi, la componente FM presente nel fotodiodo é impossibile da estrarre in quanto presenta frequenze dell'ordine delle decine di $MHz$. Quindi, l'unica modulazione visibile sulla corrente del fotodiodo è quella AM:
 \begin{equation}
@@ -160,23 +160,23 @@ Per studiare le soluzioni del sistema, si divide l'analisi del problema in due c
 Nel primo caso, ovvero con coefficiente $\alpha$ nullo, si trovano le stesse equazioni di un normale laser in cui il guadagno e le perdite sono uguali, ovvero:
 \begin{equation}
 	\begin{cases}
-   G_{loop}=R_1R_2e^{2\gamma L}\\\Phi_{loop} = 2kL=N2\pi
+   G_{loop}=R_1R_2e^{2\gamma L}\\\Phi_{loop} = 2kL=2\pi N
    \end{cases}
    \label{sistnoretr}
 \end{equation}
 con:
 \begin{equation}
-k=2\pi n_l \frac{\nu_0}{c}	
+k=2\pi \eta_l \frac{\nu_0}{c}	
 \end{equation}
 \begin{equation}
-	\nu_0 = N\frac{c}{2n_lL}
+	\nu_0 = N\frac{c}{2 \eta_l L}
 \end{equation}
 
-dove $k$ è il numero d'onda, $\nu_0$ sono i modi di risonanza e $n_l$ rappresenta l'indice di rifrazione del mezzo attivo.
+dove $k$ è il numero d'onda, $\nu_0$ sono i modi di risonanza e $\eta_l$ rappresenta l'indice di rifrazione del mezzo attivo.
 
 Se la frequenza reale si discosta da quella di risonanza propria, la frazione di fase $2kL$ in eccesso rispetto ad un multiplo di $2\pi$ può essere scritta come:
 \begin{equation}
-	2kL=4\pi n_l L \frac{\nu - \nu_0}{c}
+	2kL=4\pi \eta_l L \frac{\nu - \nu_0}{c}
 \end{equation}
 
 Infatti, in un interferometro con laser Fabry-Perot, la frequenza di risonanza diminuisce all'aumentare della lunghezza $L$ della cavità. Tale affermazione è resa valida dalla relazione differenziale:
@@ -186,7 +186,7 @@ Infatti, in un interferometro con laser Fabry-Perot, la frequenza di risonanza d
 
 Se invece si è in presenza di retroiniezione (secondo caso), ovvero con coefficiente $\alpha$ non nullo, l'equazione \ref{gloop} diventa:
 \begin{equation}
-	R_1R_2e^{2\gamma L}\sin{ \left (4\pi n_l L \frac{\nu - \nu_0}{c} \right )} + \alpha \sin{(2ks)} = 0
+	R_1R_2e^{2\gamma L}\sin{ \left (4\pi \eta_l L \frac{\nu - \nu_0}{c} \right )} + \alpha \sin{(2ks)} = 0
 	\label{regimeretr}
 \end{equation}
 
@@ -195,12 +195,12 @@ Ipotizziamo il termine di variazione di frequenza $(\nu-\nu_0)$ abbastanza picco
 	2ks=4\pi s \frac{\nu}{c} \approx 4\pi s \frac{\nu_0}{c}
 \end{equation}
 \begin{equation}
-	(\nu - \nu_0) + \left[ \frac{c}{4\pi n_l L}\alpha \sin{\left (\frac{4 \pi s \nu_0}{c}\right )} \right] = 0
+	(\nu - \nu_0) + \left[ \frac{c}{4\pi \eta_l L}\alpha \sin{\left (\frac{4 \pi s \nu_0}{c}\right )} \right] = 0
 \end{equation}
 
 Indicando, infine, con $\nu'=(\nu-\nu_0)$ lo scostamento della frequenza reale rispetto a quella ideale, la modulazione della frequenza vale: 
 \begin{equation}
-	\nu'= \frac{c}{4\pi n_l L} \alpha \sin \left ( \frac{4 \pi s \nu_0}{c} \right )
+	\nu'= \frac{c}{4\pi \eta_l L} \alpha \sin \left ( \frac{4 \pi s \nu_0}{c} \right )
 \end{equation}
 
 \begin{figure}  
@@ -238,19 +238,19 @@ Il limite tra i due regimi sta nel punto centrale del grafico in cui vi è un fl
    \end{cases}
    \label{sistflesso}
 \end{equation}
-dove $A=- \frac{c}{4 \pi n_l L}\alpha$ e $B=\frac{4\pi s}{c}$. Dal sistema \ref{sistflesso} si ricava $AB=1$ e sostituendo i parametri fisici si ottiene:
+dove $A=- \frac{c}{4 \pi \eta_l L}\alpha$ e $B=\frac{4\pi s}{c}$. Dal sistema \ref{sistflesso} si ricava $AB=1$ e sostituendo i parametri fisici si ottiene:
 \begin{equation}
-	\frac{c}{4 \pi n_l L} \alpha \frac{4\pi s}{c} = \frac{\alpha s}{n_l L} = 1
+	\frac{c}{4 \pi \eta_l L} \alpha \frac{4\pi s}{c} = \frac{\alpha s}{\eta_l L} = 1
 \end{equation}
 
 Arrivati a questo punto si è in grado di definire il fattore $C$ come indice della retroiniezione del sistema interferometrico a \textit{self-mixing}:
 \begin{equation}
-	C = \frac{\alpha s}{n_l L}
+	C = \frac{\alpha s}{\eta_l L}
 \end{equation}
 
 Nel caso in cui la sorgente laser considerata utilizzi come materiale attivo un semiconduttore, il parametro $C$ diventa:
 \begin{equation}
-	C=\alpha s \frac{\sqrt{1+\alpha_{en}^2}}{n_l L}
+	C=\alpha s \frac{\sqrt{1+\alpha_{en}^2}}{\eta_l L}
 \end{equation}
 dove $\alpha_{en}$ è il fattore di allargamento di riga che tipicamente assume valori tra $2$ e $6$ nel caso di laser a stato solido.
 
@@ -308,7 +308,7 @@ La tecnica \textit{self-mixing} ha diversi vantaggi rispetto agli strumenti basa
 I principali vantaggi sono:
 \begin{itemize}
 	\item \underline{Semplicità strutturale}: Il sistema interferometrico non necessita dell'uso di un canale ottico di riferimento o di divisori di fascio. L'informazione dello spostamento è ricavata direttamente dalla potenza emessa dal laser.
-	\item \underline{Semplicità di rilevamento}: Il rilevamento si basa sull'osservazione della distorsione delle frange, più semplice del rilevamento nell'interferometro di \textit{Michelson}. Inoltre, l'allineamento ottico del bersaglio non è particolarmente critico ed è possibile eseguire misure valide su molteplici tipologie di superficie del bersaglio.
+	\item \underline{Semplicità di rilevamento}: Il rilevamento si basa sull'osservazione della distorsione delle frange, più semplice del rilevamento nell'interferometro di \textit{Michelson}. Inoltre, l'allineamento ottico del bersaglio non è particolarmente critico ed è possibile eseguire misure valide su molteplici tipologie di superfici del bersaglio.
 	\item \underline{Performante}: La semplicità di rilevamento permette di ottenere uno strumento di misura performante.
 	\item \underline{Non ambiguità del verso dello spostamento}: Il problema dell'ambiguità del verso di spostamento non è presente perché tale informazione è intrinseca nella forma d'onda $F(\Phi)$. Per tale motivo non si rende necessario l'utilizzo di un secondo canale di misura interferometrico. 
 	\item \underline{Elevata sensibilità}: Si basa su un sistema ottico coerente che estrae le informazioni dalla sorgente di luce, a differenza della tecnica di triangolazione.
@@ -378,7 +378,7 @@ Indipendentemente dalla configurazione di interferometro scelta, le prestazioni 
 			
 			 L'effetto di tale sovrapposizione è il risultato dell'interferenza costruttiva e distruttiva di onde aventi fase diversa. Ogni granulo ottico così formato prende il nome di \textit{speckle}. Geometricamente si definisce \textit{speckle} un ellissoide avente variazioni di fase contenute nel $50\%$ e dimensioni trasversali ($S_t$) e longitudinali ($S_l$) pari a:
 			 \begin{equation}
-			 	S_t=\lambda \left ( \frac{z_0}{D} \right )^2
+			 	S_t=\lambda \left ( \frac{z_0}{D} \right )
 			 \end{equation}
 			 \begin{equation}
 			 	S_l=\lambda \left ( 2 \frac{z_0}{D} \right )^2
@@ -416,7 +416,7 @@ Come descritto in precedenza, un segnale interferometrico è caratterizzato dall
 \end{equation}
 che rappresenta lo sfasamento del campo elettrico retroiniettato rispetto al campo elettrico emesso.
 
-Da tale relazione si nota che per generare un segnale interferometrico è necessario uno spostamento $s$ del bersaglio o una variazione della lunghezza d'onda $\lambda$ del fascio emesso dal laser. Considerando come campo di applicazione la misura di distanza assoluta è necessario agire solo sulla lunghezza d'onda $\lambda$ e non sullo spostamento $s$ dato che il bersaglio è immobile.
+Da tale relazione si nota che per generare un segnale interferometrico è necessario uno spostamento $s$ del bersaglio o una variazione della lunghezza d'onda $\lambda$ del fascio emesso dal laser. Considerando come campo di applicazione la misura di distanza assoluta è necessario agire solo sulla lunghezza d'onda $\lambda$ e non sullo spostamento $s$, dato che il bersaglio è immobile.
 
 Un metodo per variare la lunghezza d'onda $\lambda$ è quello di modulare la corrente di pompa della sorgente laser:
 \begin{equation}
@@ -437,7 +437,7 @@ Infine, la misura di distanza assoluta s può essere compiuta in due modi:
 \begin{enumerate}
 	\item \underline{Conteggio del numero di frange}: Questo metodo consiste nel contare il numero di frange visibili nel segnale interferometrico. Il numero di frange ad una distanza fissata $s$ dipende dalla variazione della lunghezza d'onda. Nota la variazione della lunghezza d'onda, più precisamente il periodo in cui viene fornita la variazione di corrente che genera la variazione di lunghezza d'onda, è possibile misurare la distanza assoluta del bersaglio con la seguente equazione:
 	\begin{equation}
-		s=\frac{N_F}{\Delta \lambda}\frac{\lambda^2}{2}
+		s=-\frac{N_F}{\Delta \lambda}\frac{\lambda^2}{2}
 	\end{equation}
 	dove $N_F$ rappresenta il numero di frange pari a:
 	\begin{equation}
@@ -451,7 +451,7 @@ Infine, la misura di distanza assoluta s può essere compiuta in due modi:
 dove $\Delta \lambda_{2\pi}$ è la variazione di lunghezza d'onda che produce una variazione di fase interferometrica $\Delta \phi$ pari a $2\pi$.
 Dalla precedente relazione è possibile ricavare la variazione di lunghezza d'onda $\Delta \lambda_{2\pi}$:
 	\begin{equation}
-		\Delta \lambda_{2\pi} = \frac{t_{frangia}}{\Delta t} \Delta \lambda = \frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t} t_{frangia}
+		\Delta \lambda_{2\pi} = \frac{t_{frangia}}{\Delta t} \Delta \lambda = \frac{\Delta \lambda}{\Delta I}\frac{\Delta I}{\Delta t} t_{frangia} = \chi \frac{\Delta I}{\Delta t} t_{frangia}
 	\end{equation}
 	Per ricavare la distanza assoluta $s$ è necessario fare riferimento alla relazione:
 	\begin{equation}
@@ -497,7 +497,7 @@ Sapendo che la fase complessiva del segnale interferometrico è formata dai due 
 \begin{equation}
 	s \propto \frac{ \left | \frac{d\phi_{mod}}{dt} + \frac{d\phi_{s}}{dt} \right |+ \left | \frac{d\phi_{mod}}{dt} - \frac{d\phi_{s}}{dt} \right |}{2} = \frac{d\phi_{mod}}{dt}
 \end{equation}
-Infine, in questo modo è possibile misurare la distanza assoluta eliminando così il contributo indesiderato $\phi_s$ causato da un eventuale spostamento del bersaglio.
+Infine, in questo modo è possibile misurare la distanza assoluta eliminando così il contributo indesiderato $\phi_s$ causato da un eventuale spostamento del bersaglio. 
 
 Esprimendo le grandezze $f_{rise}$ e $f_{fall}$ attraverso le seguenti relazioni:
 \begin{equation}
@@ -508,7 +508,7 @@ Esprimendo le grandezze $f_{rise}$ e $f_{fall}$ attraverso le seguenti relazioni
 \end{equation}
 dove $v$ è la velocità del bersaglio e $T$ è il semiperiodo della triangolare di modulazione, è possibile definire l'equazione della distanza assoluta $s$ in maniera più precisa:
 \begin{equation}
-	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
+	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
 \end{equation}
 Questa tecnica risulta più accurata della precedente perché è limitata solamente dalla precisione con la quale è possibile misurare il periodo e dalla capacità della sorgente di generare un segnale interferometrico ripetibile. 
 
