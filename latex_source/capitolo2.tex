@@ -5,10 +5,10 @@
 \textit{In questo Capitolo verranno trattati i principi di base dell'interferometria, in particolare verrà presentata la tecnica utilizzata dello strumento di misura sviluppato in questo lavoro di Tesi: l'interferometria a retroiniezione. Dopo aver descritto il principio di funzionamento dell'interferometria a retroiniezione, saranno esposti i principali vantaggi, svantaggi e limitazioni di questa tecnica. In conclusione, verranno descritti i campi di applicazione della tecnica a retroiniezione ponendo particolare attenzione al campo d'applicazione dello strumento sviluppato: la misura di distanza assoluta.}
 
 \section{Principi di interferometria convenzionale}
-L'interferometria convenzionale è una tecnica che si basa sulla sovrapposizione di due o più fasci ottici, emessi dalla stessa sorgente, al fine di ottenere una frequenza di battimento (frequenza risultante dalla sovrapposizione) che contiene informazioni sui differenti cammini percorsi dai due fasci. Questa tecnica è in accordo con la teoria ondulatoria della luce che attribuisce alla propagazione della luce le caratteristiche della propagazione delle onde (elettromagnetiche) elastiche. Essa si basa sul fenomeno dell'interferenza e in particolare si sfrutta il principio secondo cui un'onda risultante dalla combinazione di due onde differenti mantiene proprietà che dipendono dalle onde generatrici.
+L'interferometria convenzionale è una tecnica che si basa sulla sovrapposizione di due o più fasci ottici, emessi dalla stessa sorgente, al fine di ottenere una frequenza di battimento (frequenza risultante dalla sovrapposizione) che contiene informazioni sui differenti cammini percorsi dai due fasci. Questa tecnica è in accordo con la teoria ondulatoria della luce che attribuisce alla propagazione della luce le caratteristiche della propagazione delle onde meccaniche. Essa si basa sul fenomeno dell'interferenza e in particolare si sfrutta il principio secondo cui un'onda risultante dalla combinazione di due onde differenti mantiene proprietà che dipendono dalle onde generatrici.
 
 I campi di applicazione di tale tecnica spaziano dall'astronomia alla metrologia ottica. Essa, in generale, trova applicazioni in ambiti dove l'ambiente di lavoro è critico (ad esempio superfici calde) o l'oggetto da misurare è difficilmente raggiungibile.
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.4]{cap2/michelson}
     \caption{Interferometro di \textit{Michelson}}
@@ -68,9 +68,9 @@ Tutto ciò ha fatto emergere la necessità di uno strumento che presentasse una 
 \section{Interferometria a retroiniezione}
 È stato esposto, nel paragrafo precedente, come l'interferometria convenzionale presenti notevoli svantaggi. Per tale motivo viene presentata una differente tecnica interferometrica: si tratta dell'interferometria a retroiniezione, chiamata anche interferometria a \textit{self-mixing}~\cite{1464-4258-4-6-371}.
 
-La tecnica interferometrica a retroiniezione rende possibile la realizzazione di uno strumento di misura tramite il semplice utilizzo di una sorgente laser e di una lente per focalizzare il raggio ottico. Questa configurazione interferometrica risolve, quindi, i problemi dell'interferometria convenzionale, presentando una ridotta complessità di realizzazione e un costo contenuto. Per tale motivo il misuratore realizzato in questo lavoro di tesi sfrutta codesta tecnica.
+La tecnica interferometrica a retroiniezione rende possibile la realizzazione di uno strumento di misura tramite il semplice utilizzo di una sorgente laser e di una lente per focalizzare il raggio ottico. Questa configurazione interferometrica risolve, quindi, i problemi dell'interferometria convenzionale, presentando una ridotta complessità di realizzazione e un costo contenuto. Questi due motivi hanno fatto ricadere la scelta su questa tecnica per il lavoro di tesi presentato.
 
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.5]{cap2/selfmix}
     \caption{Schema di principio di un interferometro a retroiniezione}
@@ -110,7 +110,7 @@ L'equazione che governa la corrente nel fotodiodo sarà:
 \end{equation}
 dove $m_{AM}$ e $m_{FM}$ sono le profondità di modulazione e $\omega = 2\pi v_0$.
 
-Se si utilizza un laser a semiconduttore, come nel caso dello strumento presentato in questa Tesi, la componente FM presente nel fotodiodo é impossibile da estrarre in quanto presenta frequenze dell'ordine delle decine di $MHz$. Quindi, l'unica modulazione visibile sulla corrente del fotodiodo è quella AM:
+Se si utilizza un laser a semiconduttore, come nel caso dello strumento presentato in questa tesi, la componente FM presente nel fotodiodo é impossibile da estrarre in quanto presenta frequenze dell'ordine delle decine di $MHz$. Quindi, l'unica modulazione visibile sulla corrente del fotodiodo è quella AM:
 \begin{equation}
 	I_{ph}=I_0(1+m_{AM})\cos{[\omega t]}
 \end{equation}
@@ -119,14 +119,16 @@ Il funzionamento di un diodo laser a singolo modo longitudinale soggetto a retro
 Per questo motivo nel paragrafo successivo è presentata soltanto una soluzione qualitativa delle equazioni di Lang\&Kobayashi, con lo scopo di determinare i regimi di retroiniezione della tecnica \textit{self-mixing}.
 
 \subsection{Regimi di retroiniezione tramite risoluzione qualitativa}
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.5]{cap2/roundtrips}
-    \caption{Round trip ottico del campo elettrico all'interno della cavità laser}
-    \label{roundtrips}
-  \end{center}
-\end{figure}
+
 Un approccio qualitativo per determinare i regimi di retroiniezione è quello di considerare il \textit{round trip} del campo elettrico di Figura \ref{roundtrips}. In figura sono stati evidenziati i \textit{round trip} all'interno della cavità e tra il bersaglio e la cavità stessa.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[scale=0.5]{cap2/roundtrips}
+		\caption{Round trip ottico del campo elettrico all'interno della cavità laser}
+		\label{roundtrips}
+	\end{center}
+\end{figure}
 
 Il campo elettrico totale presente all'interno della cavità è dato dalla somma di due campi elettrici: quello dovuto alla riflessione dello specchio interno posto al lato opposto della cavità e quello dovuto alla riflessione del bersaglio. Il campo elettrico risultante è quindi:
 \begin{equation}
@@ -203,7 +205,7 @@ Indicando, infine, con $\nu'=(\nu-\nu_0)$ lo scostamento della frequenza reale r
 	\nu'= \frac{c}{4\pi \eta_l L} \alpha \sin \left ( \frac{4 \pi s \nu_0}{c} \right )
 \end{equation}
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.5]{cap2/pertfreq}
     \caption{Perturbazione della frequenza reale rispetto alla frequenza ideale}
@@ -222,6 +224,7 @@ assumendo $\Delta s$ minore di $\frac{\lambda}{2}$.
 Le intersezioni tra le linee tratteggiate e le curve sinusoidali, mostrate in Figura \ref{pertfreq}, indicano i punti di lavoro del sistema: spostando il bersaglio della quantità $\delta s$, la frequenza reale assume il valore dato dall'intersezione tra la linea tratteggiata e la curva.
 
 In base all'ampiezza della sinusoide si possono distinguere due regimi di funzionamento:
+\newpage
 \begin{enumerate}
 	\item \textit{Regime di bassa retroiniezione}
 	\item \textit{Regime di alta retroiniezione}
@@ -322,29 +325,16 @@ Tuttavia, l'interferometria a retroiniezione presenta anche diversi svantaggi:
 
 \section{Principali limitazioni della tecnica interferometrica}
 Indipendentemente dalla configurazione di interferometro scelta, le prestazioni della tecnica intereferometrica presentano limiti dovuti a molteplici cause. Le principali sono descritte di seguito.
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.4]{cap2/wegel}
-    \caption{Diagramma di Wegel}
-    \label{wegel}
-  \end{center}
-\end{figure}
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.4]{cap2/saltifase}
-    \caption{Esempio di salti di fase dell'onda nel tempo}
-    \label{saltifase}
-  \end{center}
-\end{figure}
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.1]{cap2/spackle}
-    \caption{Speckle causato da una superficie diffusiva}
-    \label{spackle}
-  \end{center}
-\end{figure}
-\begin{itemize}
+ 
+ \begin{itemize}
 	\item \underline{Limitazioni nel piano spostamento-frequenza}: Il diagramma di Wegel, rappresentato in Figura \ref{wegel}, è utilizzato per analizzare la qualità di un interferometro in termini di prestazioni e limiti. Il diagramma presenta 5 segmenti che delimitano un'area chiamata "zona di funzionamento". Maggiore sarà l'area della zona di funzionamento maggiore risulterà il campo d'azione dello strumento di misura.
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.4]{cap2/wegel}
+			\caption{Diagramma di Wegel}
+			\label{wegel}
+		\end{center}
+	\end{figure}
  
 		I 5 segmenti rappresentano, in particolare, 5 limitazioni qui di seguito riportate:
 		\begin{itemize}
@@ -355,7 +345,18 @@ Indipendentemente dalla configurazione di interferometro scelta, le prestazioni 
 		\item \textit{Velocità di spostamento massima}: Il segmento obliquo 4 mostra la velocità limite di spostamento massimo, che è proporzionale al prodotto tra la frequenza di oscillazione e la sua ampiezza.
 		\end{itemize}
 	
-	\item \underline{Coerenza temporale}: Un qualunque fascio coerente generato da un laser ha una lunghezza di coerenza limitata, ovvero dopo un certo tempo dalla sua emissione la fase dell'onda cambia ed assume un valore casuale. Dunque il campo emesso da un laser presenta salti di fase a intervalli casuali, come mostrato in Figura \ref{saltifase}. Indicando con $T_{coh}$ la coerenza temporale e con $L_{coh}$ la lunghezza di coerenza, è possibile scrivere:
+	\item \underline{Coerenza temporale}: Un qualunque fascio coerente generato da un laser ha una lunghezza di coerenza limitata, ovvero dopo un certo tempo dalla sua emissione la fase dell'onda cambia ed assume un valore casuale. Dunque il campo emesso da un laser presenta salti di fase a intervalli casuali, come mostrato in Figura \ref{saltifase}. 
+	
+	\begin{figure}[H]
+		\begin{center}
+			\includegraphics[scale=0.4]{cap2/saltifase}
+			\caption{Esempio di salti di fase dell'onda nel tempo}
+			\label{saltifase}
+		\end{center}
+	\end{figure}
+	\begin{figure}
+	
+	Indicando con $T_{coh}$ la coerenza temporale e con $L_{coh}$ la lunghezza di coerenza, è possibile scrivere:
 		\begin{equation}
 			\begin{cases}
 				L_{coh}=cT_{coh}\\T_{coh}=\frac{1}{\Delta \nu}
@@ -368,9 +369,16 @@ Indipendentemente dalla configurazione di interferometro scelta, le prestazioni 
 			s_{max}=|s_m - s_r|_{max}=\frac{c}{\Delta \nu} = L_{coh}
 		\end{equation}
 		Se la distanza dell'ostacolo è maggiore di $L_{coh}$ non si ha segnale interferometrico ma solo rumore dunque non è possibile effettuare misure valide non potendo contare correttamente le frange interferometriche. Questo rumore è definito come rumore di fase. Solitamente il rumore di fase è il contributo dominante nella determinazione del minimo spostamento misurabile. 
-		
 		Tuttavia esiste un altro contributo che limita le prestazioni: il rumore quantico. Tale rumore risulta essere quasi sempre trascurabile perché il rumore di fase è dominante rispetto ad esso.
+		
 		\item \underline{Speckle-Pattern}: \'E un fenomeno dovuto alla superficie del bersaglio. In particolare, se un fascio di luce coerente colpisce un bersaglio avente superficie diffondente la luce retrodiffusa avrà una distribuzione di potenza granulare e non omogenea. Il fenomeno è mostrato in Figura \ref{spackle}.
+		
+		  \begin{center}
+		  	\includegraphics[scale=0.1]{cap2/spackle}
+		  	\caption{Speckle causato da una superficie diffusiva}
+		  	\label{spackle}
+		  \end{center}
+		\end{figure}
 		
 			La luce retrodiffusa è generata dalla combinazione di due fasci di luce: una porzione di fascio riflessa in modo speculare alla direzione di incidenza e l'altra porzione di fascio diffusa uniformemente nello spazio. Quest'ultima è causata da imperfezioni superficiali del bersaglio.
 			
@@ -389,7 +397,7 @@ Indipendentemente dalla configurazione di interferometro scelta, le prestazioni 
 	\item \underline{Dispersione del mezzo}: Il fascio ottico che si propaga fuori cavità subisce delle alterazioni dovute alle caratteristiche di ogni mezzo che esso attraversa, che ne modifica la lunghezza d'onda. I fattori che incidono maggiormente sono temperatura e pressione del mezzo. Per minimizzare il contributo dispersivo di questi fattori vengono impiegati stabilizzatori di temperatura e pressione ambientale.
 \end{itemize}
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.5]{cap2/specklegeom}
     \caption{Rappresentazione esemplificata del fenomeno dello speckle-pattern}
