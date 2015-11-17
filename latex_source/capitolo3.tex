@@ -168,7 +168,7 @@ Una descrizione dettagliata dell'integrato è fornita sul sito del produttore~\c
 \section{Parte digitale}
 La parte digitale dello strumento è composta da una scheda \textit{embedded} di prototipazione. 
 
-\subsection{Scheda di prototipazione utilizzata}
+\subsection{Scheda di prototipazione}
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.4]{cap3/sbrio}
@@ -186,10 +186,10 @@ Sono presenti infine un connettore \textit{10/100Base-T Ethernet} per la comunic
 
 A causa dei vincoli stringenti sulla temporizzazione non è stato possibile sfruttare i convertitori integrati nella \textit{sbRIO}, che sono stati sostituiti con i componenti precedentemente descritti. Una descrizione più dettagliata della scheda è fornita sul sito di \textit{National Instruments}~\cite{sitesbrio}.
 
-Poiché la parte centrale dell'architettura software è stata sviluppata per essere eseguita da un'FPGA, in questo capitolo si darà ampio spazio ad una spiegazione generale della nascita e delle principali tecnologie impiegate nella costruzione di FPGA.
+Poiché la parte centrale dell'architettura software è stata sviluppata per essere eseguita su FPGA, in questo capitolo si darà ampio spazio ad una spiegazione generale della nascita e delle principali tecnologie impiegate nella costruzione di FPGA.
 
 \subsection{FPGA}
-Con il termine FPGA, acronimo di \textit{Field Programmable Gate Array}, si intende un circuito integrato le cui funzionalità sono programmabili via software~\cite{Kuon:2008:FAS:1454695.1454696}. Rispetto ad una soluzione specializzata (ASIC, ovvero \textit{Application Specific Integrated Circuit}) offrono numerosi vantaggi, infatti per la realizzazione di un'ASIC possono trascorrere mesi e la spesa è dell'ordine di centinaia di migliaia di dollari solo per la realizzazione del primo prototipo; al contrario un'FPGA può essere riconfigurata in pochi secondi e i suoi costi non superano qualche migliaio di dollari.
+Con il termine FPGA, acronimo di \textit{Field Programmable Gate Array}, si intende un circuito integrato le cui funzionalità sono programmabili via software~\cite{Kuon:2008:FAS:1454695.1454696}. Rispetto ad una soluzione specializzata come ASIC (\textit{Application Specific Integrated Circuit}), le FPGA offrono numerosi vantaggi, infatti per la realizzazione di un'ASIC possono trascorrere mesi e la spesa è dell'ordine di centinaia di migliaia di dollari solo per la realizzazione del primo prototipo; al contrario un'FPGA può essere riconfigurata in pochi secondi e i suoi costi non superano qualche migliaio di dollari.
 
 I vantaggi in termini di costo e velocità di sviluppo sono compensati da una maggiore area occupata, tipicamente dalle $20$ alle $35$ volte, una computazione $3$-$4$ volte più lenta e un consumo energetico circa $10$ volte maggiore~\cite{4068926}.
 
@@ -202,7 +202,7 @@ I primi dispositivi programmabili avevano architetture regolari e funzionalità 
 
 Questi primi array contenevano celle logiche che potevano essere programmate, attraverso la "metallizzazione", durante il processo produttivo per creare funzioni logiche a due ingressi. A metà degli anni $'60$ si è raggiunta la capacità di programmare i circuiti sul campo, ovvero dopo il processo di produzione, attraverso l'introduzione di "punti di taglio"~\cite{Minnick:1967:SMR:321386.321387} nei \textit{cellular array}. Le connessioni tra i diversi elementi logici erano ancora fisse, ma la funzionalità di ogni cella logica era modificabile grazie all'introduzione di fusibili programmabili. Questi fusibili erano programmabili sul campo attraverso l'uso di correnti di programmazione.
 
-Negli anni $'70$ sono state introdotte le memorie PROM, che hanno portato nuovi modi di implementare funzioni logiche. Nonostante una ROM a $N$ indirizzi possa implementare qualsiasi funzione logica con $N$ ingressi, l'efficienza rispetto all'area si rivela essere un problema. Infatti l'area dipende in modo esponenziale dal numero di ingressi $N$ e quindi, anche con valori piccoli di $N$, il chip avrà dimensioni elevate.
+Negli anni $'70$ sono state introdotte le memorie PROM (\textit{Programmable Read Only Memory}), che hanno portato nuovi modi di implementare funzioni logiche. Nonostante una PROM a $N$ indirizzi possa implementare qualsiasi funzione logica con $N$ ingressi, l'efficienza rispetto all'area si rivela essere un problema. Infatti l'area dipende in modo esponenziale dal numero di ingressi $N$ e quindi, anche con valori piccoli di $N$, il chip avrà dimensioni elevate.
 
 \begin{figure}
 \centering
@@ -214,17 +214,17 @@ Negli anni $'70$ sono state introdotte le memorie PROM, che hanno portato nuovi 
 \caption{Tipologie di PLA}\label{plas}
 \end{figure}
 
-I primi dispositivi programmabili, chiamati PLA (\textit{Programmable Logic Array}) si basavano su questa architettura, con una struttura a due livelli, AND e OR. Un esempio di PLA è mostrato in Figura \ref{plasa}.
+I primi dispositivi programmabili, chiamati PLA (\textit{Programmable Logic Array}), si basavano su questa architettura, con una struttura a due livelli, AND e OR. Un esempio di PLA è mostrato in Figura \ref{plasa}.
 
 Questa architettura si è poi evoluta in un piano AND programmabile, seguito da un piano OR fisso (Figura \ref{plasb}). Questa seconda architettura mantiene comunque una buona flessibilità, ma al tempo stesso riduce la complessità del circuito.
 
-Quest'architettura è stata introdotta sul mercato nel $1977$ da \textit{Monolithic Memories Incorporated} (MMI)~\cite{birkner1978programmable}.
+Quest'architettura è stata introdotta sul mercato da \textit{Monolithic Memories Incorporated} (MMI) nel $1977$~\cite{birkner1978programmable}.
 
 Per realizzare una funzione logica con questo tipo di architettura è necessario usare uno o due livelli della struttura. Gli input e le combinazioni intermedie alimentano l'array attraverso un'interconnessione programmabile, tipicamente una \textit{crossbar}. Questo tipo di implementazione dell'interconnessione porta ad una crescita dell'area molto rapida, soprattutto per circuiti con molti ingressi.
 
 La prima memoria basata su FPGA (\textit{SRAM-based FPGA}) è stata introdotta da \textit{Wahlstrom} nel $1967$~\cite{wahl}. 
 
-Questa architettura usa uno stream di bits sia per la logica che per l'interconnessione. Al contrario della \textit{cellular array} ogni cella logica può implementare sia una funzione logica che una memoria. Inoltre, la connessione tra celle logiche può essere facilmente modificata per permettere l'implementazione di diverse topologie del circuito. Nonostante la memoria statica (SRAM) offra una flessibilità maggiore nella programmabilità, richiede un'area maggiore rispetto all'implementazione ROM.
+Questa architettura usa uno stream di bits sia per la logica che per l'interconnessione. Al contrario della \textit{cellular array} ogni cella logica può implementare sia una funzione logica che una memoria. Inoltre, la connessione tra celle logiche può essere facilmente modificata per permettere l'implementazione di diverse topologie del circuito. Nonostante la memoria statica (SRAM) offra una flessibilità maggiore nella programmabilità, richiede un'area maggiore rispetto all'implementazione PROM.
 
 Questo problema ha ritardato l'introduzione in commercio di prodotti basati su memoria statica fino alla metà degli anni $'80$, quando il costo per transistor era diventato sufficientemente basso.
 
@@ -246,7 +246,7 @@ L'array è circondato da una serie di blocchi input/output programmabili, che co
 
 Ogni FPGA si affida alla presenza di switch programmabili, che sono usati per dare al chip la sua caratteristica di programmabilità.
 
-Nel corso degli anni sono state introdotte diverse tecniche per rendere programmabile un chip, partendo dalle EPROM, EEPROM, per arrivare alle tecniche  \textit{static-memory}, \textit{flash} ed \textit{anti-fuse}.
+Nel corso degli anni sono state introdotte diverse tecniche per rendere programmabile un chip, partendo dalle EPROM (\textit{Erasable PROM}), EEPROM (\textit{Electrically Erasable PROM}), per arrivare alle tecniche  \textit{static-memory}, \textit{flash} ed \textit{anti-fuse}.
 
 Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implementate nei moderni prodotti commerciali. In seguito saranno trattate soltanto le tecnologie attualmente in uso.
 
@@ -315,13 +315,13 @@ Rispetto ad un dispositivo puramente SRAM si guadagna quindi la non volatilità,
 \paragraph{Anti-fuse}
 Una tecnologia alternativa a SRAM e ai transistor \textit{floating gate} è la tecnologia programmabile \textit{anti-fuse}. Le interconnessioni di questa tecnologia sono strutture che in circostanze nominali mostrano una resistenza molto alta, ma che possono essere programmaticamente connessi per creare canali a bassa resistenza. A differenza delle precedenti tecniche, il collegamento è permanente. L'elemento programmabile, detto \textit{anti-fuse}, è usato direttamente per trasmettere i segnali all'interno dell'FPGA.
 
-Per implementare gli anti-fuse sono usati due approcci:
+Per implementare gli \textit{anti-fuse} sono usati due approcci:
 \begin{enumerate}
-	\item \underline{Dielettrico}: Gli anti-fuse dielettrici sono composti da un dielettrico posizionato tra lo strato $N+$ e il polisilicio \cite{32929}. L'applicazione di alte tensioni causano la rottura del dielettrico e formano un link conduttore con una resistenza tipicamente tra i $100$ e i $600\Omega$ \cite{231343}.
+	\item \underline{Dielettrico}: Gli anti-fuse dielettrici sono composti da un dielettrico posizionato tra lo strato $N+$ e il polisilicio \cite{32929}. L'applicazione di alte tensioni causa la rottura del dielettrico e formano un link conduttore con una resistenza tipicamente tra i $100$ e i $600\Omega$ \cite{231343}.
 	\item \underline{Metal-to-metal}: Gli anti-fuse \textit{metal-to-metal} hanno largamente sostituito l'implementazione dielettrica. Questi \textit{anti-fuse} sono formati da due strati di metallo, separati da uno strato di isolante (tipicamente silicio amorfo o ossido di silicio). Anche in questo caso l'applicazione di alte tensioni causa la rottura dell'\textit{anti-fuse} e lo rende conduttivo. Il vantaggio di questa implementazione è la resistenza molto più bassa, tipicamente tra i $20$ e i $100 \Omega$ \cite{584227}.
 \end{enumerate}
 
-Il principale vantaggio della tecnologia \textit{anti-fuse} è il basso utilizzo di area. In particolare, con l'implementazione \textit{metal-to-metal}, non è richiesta area in silicio per creare le connessioni; ciò diminuisce l'overhead in termini di area causato dalla programmabilità. Tuttavia questo decremento in termini di area è compensato dalla necessità di introdurre transistor di programmazione molto grandi, che devono fornire correnti elevati per programmare gli \textit{anti-fuse}. Anche se questa area può essere distribuita tra molti \textit{anti-fuse} con una progettazione opportuna, gli \textit{anti-fuse} hanno un vantaggio aggiuntivo: hanno resistenze e capacità parassite più basse rispetto alle altre tecnologie.
+Il principale vantaggio della tecnologia \textit{anti-fuse} è il basso utilizzo di area. In particolare, con l'implementazione \textit{metal-to-metal}, non è richiesta area in silicio per creare le connessioni; ciò diminuisce l'overhead in termini di area causato dalla programmabilità. Tuttavia questo decremento in termini di area è compensato dalla necessità di introdurre transistor di programmazione molto grandi, che devono fornire correnti elevate per programmare gli \textit{anti-fuse}. Anche se questa area può essere distribuita tra molti \textit{anti-fuse} con una progettazione opportuna, gli \textit{anti-fuse} hanno un vantaggio aggiuntivo: hanno resistenze e capacità parassite più basse rispetto alle altre tecnologie.
 
 L'area minore, la capacità e la resistenza ridotte permettono di includere più switch per dispositivo che nelle altre tecnologie. La non volatilità, come per i dispositivi basati su flash, significa che il dispositivo è pronto all'uso all'accensione; questo abbassa i costi, poiché non è necessaria una memoria aggiuntiva, e rende la tecnologia utilizzabile in quegli ambiti in cui il dispositivo deve essere pronto all'uso una volta acceso. Dato che la programmazione dell'FPGA va fatta una sola volta è possibile eseguirla in un ambiente controllato, migliorando così la sicurezza nel design dell'FPGA. Attualmente anche le altre tipologie di programmazione forniscono una modalità sicura, che disabilita l'accesso all'interfaccia di programmazione una volta che il dispositivo è programmato.
 
@@ -336,11 +336,11 @@ Infine la caratteristica di singola programmazione non consente ai produttori di
 \subsubsection{Xilinx Spartan-6 LX45}
 L'FPGA integrata nella scheda di prototipazione usata è la \textit{Spartan-6 LX45}, prodotta da \textit{Xilinx}.
 
-In particolare questo prodotto integra al suo interno $54576$ registri \textit{Flip Flop} e 27288 \textit{Look Up Table} (LUT) a 6 ingressi raggruppati in $6822$ \textit{Slices} (blocchi logici che contengono 8 Flip Flop e 4 LUT). Inoltre sono integrati $58$ \textit{DSP48} (che contengono un moltiplicatore $18x18$ , un sommatore ed un accumulatore), $5$ canali DMA, $2088$ Kbits di block RAM e $358$ moduli di input/output riconfigurabili. 
+In particolare questo prodotto integra al suo interno $54576$ registri \textit{Flip Flop} e 27288 \textit{Look Up Table} (LUT) a 6 ingressi raggruppati in $6822$ \textit{Slices} (blocchi logici che contengono 8 Flip Flop e 4 LUT). Inoltre sono integrati $58$ \textit{DSP48} (che contengono un moltiplicatore $18 \times 18$ , un sommatore ed un accumulatore), $5$ canali DMA, $2088$ Kbits di block RAM e $358$ moduli di input/output riconfigurabili. 
 
 La scheda possiede un'oscillatore a $40MHz$, da cui possono essere derivati clock in un intervallo compreso tra $2.5MHz$ e $320MHz$. La tecnologia usata per implementare lo switching è SRAM. 
 
-Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx}\cite{dsxilinx}.
+Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx} \cite{dsxilinx}.
 
 \paragraph{Utilizzo area FPGA}
 Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha portato ad un notevole utilizzo di area del FPGA. I valori di utilizzo sono riportati in Tabella \ref{tabarea}. Inoltre, sono stati sfruttati due diversi clock di frequenza $30MHz$ e $60MHz$.
@@ -352,18 +352,18 @@ Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha
 \textbf{Slices}                         & 5560                & 6822            & 81,5                                      \\
 \textbf{Registri (FF)}                  & 13465               & 54576           & 24,7                                      \\
 \textbf{Look Up Table (LUT)}            & 18003               & 27288           & 66                                        \\
-\textbf{Block RAM}                      & 57                  & 116             & 49,1                                      \\
+\textbf{Block RAM (BRAM)}                      & 57                  & 116             & 49,1                                      \\
 \textbf{Digital Signal Processor (DSP)} & 57                  & 58              & 98,3                                      \\
-\textbf{DMA Channel}                    & 5                   & 5               & 100                                      
+\textbf{DMA}                    & 5                   & 5               & 100                                      
 \end{tabular}
 \caption{Valori di utilizzo di area dell'FPGA}
 \label{tabarea}
 \end{table}
-
+%% TODO Leo Riprendere check da qui
 \subsection{Microcontrollore}
 Un microcontrollore è un dispositivo elettronico integrato in un singolo chip, utilizzato in alternativa ad un microprocessore nei sistemi \textit{embedded}, ed in particolare per applicazioni specifiche di controllo digitale.
 
-Il microcontrollore utilizzato per il progetto descritto in questo elaborato, codice prodotto \textit{MPC5125}, è prodotto da \textit{Freescale}. 
+Il microcontrollore utilizzato per il progetto descritto in questo elaborato è l'\textit{MPC5125} prodotto da \textit{Freescale}. 
 
 \begin{figure}  
   \begin{center}
@@ -375,7 +375,7 @@ Il microcontrollore utilizzato per il progetto descritto in questo elaborato, co
 
 Nella Figura \ref{uproc} è presentato lo schema a blocchi del microcontrollore; si può notare la presenza dei dispositivi tipicamente integrati in un prodotto di questa categoria, come ad esempio i GPIO, un modulo JTAG e le DMA.
 
-Il core del microcontrollore è basata su architettura \textit{PowerPC}, ed in particolare si tratta dell'architettura \textit{Power e300z4}. Nel corso di questo paragrafo verrà data una spiegazione più dettagliata di questa architettura.
+Il core del microcontrollore è basata su architettura \textit{PowerPC}, ed in particolare si tratta dell'architettura \textit{Power E300Z4}. Nel corso di questo paragrafo verrà data una spiegazione più dettagliata di questa architettura.
 
 Infine la scheda integra $256MB$ di memoria RAM e $512MB$ di memoria non volatile, su cui sono caricati i programmi utente ed il sistema operativo.
 

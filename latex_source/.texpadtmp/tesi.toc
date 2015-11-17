@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{Convertitore ADC}{48}
 \contentsline {paragraph}{Convertitore ADC presente sulla scheda di conversione}{49}
 \contentsline {section}{\numberline {3.4}Parte digitale}{49}
-\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione utilizzata}{49}
+\contentsline {subsection}{\numberline {3.4.1}Scheda di prototipazione}{49}
 \contentsline {subsection}{\numberline {3.4.2}FPGA}{50}
 \contentsline {subsubsection}{Storia delle FPGA}{51}
 \contentsline {subsubsection}{Tecniche di implementazione delle FPGA}{53}
