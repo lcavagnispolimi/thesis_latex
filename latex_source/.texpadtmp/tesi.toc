@@ -20,8 +20,8 @@
 \contentsline {section}{\numberline {2.1}Principi di interferometria convenzionale}{19}
 \contentsline {subsection}{\numberline {2.1.1}Svantaggi dell'interferometria convenzionale}{21}
 \contentsline {section}{\numberline {2.2}Interferometria a retroiniezione}{22}
-\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{25}
-\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{30}
+\contentsline {subsection}{\numberline {2.2.1}Regimi di retroiniezione tramite risoluzione qualitativa}{24}
+\contentsline {subsection}{\numberline {2.2.2}Vantaggi e svantaggi dell'interferometria a retroiniezione}{31}
 \contentsline {section}{\numberline {2.3}Principali limitazioni della tecnica interferometrica}{32}
 \contentsline {section}{\numberline {2.4}Applicazioni dell'interferometria a retroiniezione}{36}
 \contentsline {subsection}{\numberline {2.4.1}Misura di distanza assoluta}{36}
@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {3.2}Parte analogica}{43}
 \contentsline {subsection}{\numberline {3.2.1}Sistema ottico e sorgente laser}{43}
 \contentsline {subsection}{\numberline {3.2.2}Circuito di interfacciamento}{45}
-\contentsline {section}{\numberline {3.3}Parte di Conversione}{45}
+\contentsline {section}{\numberline {3.3}Parte di conversione}{45}
 \contentsline {subsection}{\numberline {3.3.1}Convertitori}{46}
 \contentsline {subsubsection}{Convertitore DAC}{48}
 \contentsline {paragraph}{Convertitore DAC presente sulla scheda di conversione}{48}
@@ -47,8 +47,8 @@
 \contentsline {subsubsection}{Xilinx Spartan-6 LX45}{58}
 \contentsline {paragraph}{Utilizzo area FPGA}{59}
 \contentsline {subsection}{\numberline {3.4.3}Microcontrollore}{59}
-\contentsline {subsubsection}{Architettura PowerPC}{59}
-\contentsline {paragraph}{PowerPC e300}{61}
+\contentsline {subsubsection}{Architettura PowerPC}{60}
+\contentsline {paragraph}{PowerPC E300}{61}
 \contentsline {chapter}{\numberline {4}Architettura Software dello strumento}{63}
 \contentsline {section}{\numberline {4.1}Ambiente di sviluppo LabVIEW}{63}
 \contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{65}

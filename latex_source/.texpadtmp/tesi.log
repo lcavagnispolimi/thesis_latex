@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  17 NOV 2015 12:53
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  17 NOV 2015 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -843,31 +843,32 @@ File: ./pictures/cap2/versospost.png Graphic file (type QTm)
 File: ./pictures/cap2/selfmix.png Graphic file (type QTm)
  <use  "./pictures/cap2/selfmix.png" >
 File: ./pictures/cap2/rapprvet.png Graphic file (type QTm)
- <use  "./pictures/cap2/rapprvet.png" > [23]
+ <use  "./pictures/cap2/rapprvet.png" > [23] [24]
 File: ./pictures/cap2/roundtrips.png Graphic file (type QTm)
- <use  "./pictures/cap2/roundtrips.png" > [24] [25] [26]
+ <use  "./pictures/cap2/roundtrips.png" > [25] [26]
 File: ./pictures/cap2/pertfreq.png Graphic file (type QTm)
- <use  "./pictures/cap2/pertfreq.png" > [27] [28] [29]
+ <use  "./pictures/cap2/pertfreq.png" > [27] [28]
 File: ./pictures/cap2/regimifunz.png Graphic file (type QTm)
  <use  "./pictures/cap2/regimifunz.png" >
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 290.
+(Font)              <10> on input line 293.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 290.
+(Font)              <7> on input line 293.
 File: ./pictures/cap2/regimisegn.png Graphic file (type QTm)
- <use  "./pictures/cap2/regimisegn.png" > [30] [31]
+ <use  "./pictures/cap2/regimisegn.png" > [29] [30] [31]
 File: ./pictures/cap2/wegel.png Graphic file (type QTm)
- <use  "./pictures/cap2/wegel.png" >
+ <use  "./pictures/cap2/wegel.png" > [32]
 File: ./pictures/cap2/saltifase.jpg Graphic file (type QTm)
  <use  "./pictures/cap2/saltifase.jpg" >
-File: ./pictures/cap2/spackle.jpg Graphic file (type QTm)
- <use  "./pictures/cap2/spackle.jpg" > [32] [33] [34]
-File: ./pictures/cap2/specklegeom.png Graphic file (type QTm)
- <use  "./pictures/cap2/specklegeom.png" >
-Underfull \vbox (badness 1292) has occurred while \output is active []
+Underfull \hbox (badness 2961) in paragraph at lines 368--369
+[]\T1/lmr/m/n/10.95 Dalle pre-ce-den-ti re-la-zio-ni è pos-si-bi-le ri-ca-va-re la di-stan-za mas-si-ma
+ []
 
- [35] [36]
-Overfull \hbox (4.59903pt too wide) in paragraph at lines 462--463
+File: ./pictures/cap2/spackle.jpg Graphic file (type QTm)
+<use  "./pictures/cap2/spackle.jpg" > [33] [34]
+File: ./pictures/cap2/specklegeom.png Graphic file (type QTm)
+ <use  "./pictures/cap2/specklegeom.png" > [35] [36]
+Overfull \hbox (4.59903pt too wide) in paragraph at lines 471--472
 []\T1/lmr/m/n/10.95 Infine, per ri-ca-va-re la di-stan-za $\OML/lmm/m/it/10.95 s$\T1/lmr/m/n/10.95 , è ne-ces-sa-rio ap-pros-si-ma-re $\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 ^^U \OT1/lmr/m/n/10.95 + ^^A\OML/lmm/m/it/10.95 ^^U[]\OT1/lmr/m/n/10.95 ) \OMS/lmsy/m/n/10.95 ^^Y
  []
 
@@ -896,8 +897,8 @@ File: ./pictures/cap3/scoboardfoto.png Graphic file (type QTm)
  <use  "./pictures/cap3/scoboardfoto.png" >
 File: ./pictures/cap3/scoboardschema.png Graphic file (type QTm)
  <use  "./pictures/cap3/scoboardschema.png" > [45] [46]
-Overfull \hbox (11.89357pt too wide) in paragraph at lines 134--135
-[]\T1/lmr/m/n/10.95 Come de-scrit-to nel pa-ra-gra-fo pre-ce-den-te, le spe-ci-fi-che for-ni-te so-no: $\OT1/lmr/m/n/10.95 50\OML/lmm/m/it/10.95 MS=s$
+Overfull \hbox (18.28996pt too wide) in paragraph at lines 134--135
+[]\T1/lmr/m/n/10.95 Come de-scrit-to nel pa-ra-gra-fo pre-ce-den-te, le spe-ci-fi-che for-ni-te so-no: $\OT1/lmr/m/n/10.95 50\OML/lmm/m/it/10.95 MSa=s$
  []
 
 File: ./pictures/cap3/dac.png Graphic file (type QTm)
@@ -926,8 +927,12 @@ File: ./pictures/cap3/sma.png Graphic file (type QTm)
 <use  "./pictures/cap3/sma.png" >
 File: ./pictures/cap3/smb.png Graphic file (type QTm)
  <use  "./pictures/cap3/smb.png" >
+Underfull \hbox (badness 1009) in paragraph at lines 260--260
+[]\T1/lmr/m/n/9 (b) Mul-ti-ple-xer (MUX) con Sta-tic
+ []
+
 File: ./pictures/cap3/smc.png Graphic file (type QTm)
- <use  "./pictures/cap3/smc.png" > [53] [54]
+<use  "./pictures/cap3/smc.png" > [53] [54]
 File: ./pictures/cap3/floatgate.png Graphic file (type QTm)
  <use  "./pictures/cap3/floatgate.png" > [55] [56] [57] [58]
 Overfull \hbox (8.00266pt too wide) in paragraph at lines 350--359
@@ -935,10 +940,7 @@ Overfull \hbox (8.00266pt too wide) in paragraph at lines 350--359
  []
 
 File: ./pictures/cap3/uproc.png Graphic file (type QTm)
-<use  "./pictures/cap3/uproc.png" > [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60] [61]) [62]
+<use  "./pictures/cap3/uproc.png" > [59] [60] [61]) [62]
 \openout2 = `capitolo4.aux'.
 
  (./capitolo4.tex
@@ -1291,6 +1293,6 @@ Here is how much of TeX's memory you used:
  16635 multiletter control sequences out of 15000+600000
  110198 words of font info for 80 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
- 36i,17n,43p,10391b,597s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,17n,43p,10391b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (170 pages).

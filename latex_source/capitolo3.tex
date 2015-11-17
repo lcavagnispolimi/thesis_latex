@@ -93,7 +93,7 @@ Il segnale di corrente dovuto all'effetto interferometrico è minore di $2 \mu A
 
 Una descrizione più dettagliata della parte analogica e dell'attività di progetto del sistema è trattata nel lavoro di tesi sviluppato dal laureando Samuele Disegna con cui abbiamo collaborato~\cite{thesissmldis}.
 
-\section{Parte di Conversione}
+\section{Parte di conversione}
 La scheda utilizzata per la parte di conversione del misuratore è la \textit{SCO Board}, progettata e prodotta nel laboratorio di "Misure Ottiche ed Elettroniche - MOLES" del Politecnico di Milano. Anch'essa è stata progetta e realizzata da Samuele Disegna nel contesto del suo lavoro di tesi.
 \begin{figure}  
   \begin{center}
@@ -112,7 +112,7 @@ Essa possiede due interfacce di conversione: un'interfaccia Analogico-Digitale (
   \end{center}
 \end{figure}
 
-Le specifiche fornite per la frequenza massima di campionamento dei segnali sono $50MS/s$ con $12$ bit di quantizzazione, essi garantiscono di avere una buona dinamica di misura della distanza e una buona dinamica di ampiezza del segnale misurato con rumore di quantizzazione trascurabile. In Figura \ref{scoboardfoto} e \ref{scoboardschema} sono mostrate rispettivamente la \textit{SCO Board} e il relativo schema a blocchi del circuito.
+Le specifiche fornite per la frequenza massima di campionamento dei segnali sono $50MSa/s$ con $12$ bit di quantizzazione, essi garantiscono di avere una buona dinamica di misura della distanza e una buona dinamica di ampiezza del segnale misurato con rumore di quantizzazione trascurabile. In Figura \ref{scoboardfoto} e \ref{scoboardschema} sono mostrate rispettivamente la \textit{SCO Board} e il relativo schema a blocchi del circuito.
 
 I due amplificatori operazionali completamente differenziali si occupano della gestione dei segnali analogici. Uno pilota l'uscita differenziale corrispondente al DAC e porta la dinamica di uscita a $1V_{pp}$, l'altro prepara il segnale di ingresso differenziale per il campionamento. I filtri passa basso svolgono la funzione di antialiasing per l'ADC e di ricostruzione del segnale del DAC.
 
@@ -131,7 +131,7 @@ Le caratteristiche fondamentali di un convertitore dati sono:
 	\item \underline{Tempo di conversione}: Indica il tempo impiegato dal convertitore per eseguire la conversione. I tempi impiegati per la conversione differiscono notevolmente a seconda della tipologia di convertitore utilizzato, anche se, in generale, la conversione DA è più veloce dell'operazione inversa. Di solito è più conveniente specificare il numero di campioni che possono essere convertiti in un secondo, piuttosto che il tempo di conversione. Tale grandezza è chiamata frequenza di campionamento (o \textit{sampling rate}) e si esprime in Hertz $[Hz]$ o campioni per secondo $[Sa/s]$.
 \end{itemize}
 
-Come descritto nel paragrafo precedente, le specifiche fornite sono: $50MS/s$ per la frequenza massima di campionamento dei segnali con $12$ bit di risoluzione ($4096$ livelli di quantizzazione) e $1 V{pp}$ di dinamica.
+Come descritto nel paragrafo precedente, le specifiche fornite sono: $50MSa/s$ per la frequenza massima di campionamento dei segnali con $12$ bit di risoluzione ($4096$ livelli di quantizzazione) e $1 V{pp}$ di dinamica.
 
 \subsubsection{Convertitore DAC}
 Il processo di ricostruzione di un segnale analogico consiste nel prelevare valori digitali e convertirli nei loro equivalenti analogici. Questa operazione è svolta dal convertitore Digitale-Analogico (DAC)~\cite{storeyelet}.
@@ -256,10 +256,10 @@ Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implem
 \subfigure[Static Memory Cell]
 {\label{staticmema}\includegraphics[scale=.35]{cap3/sma}}
 \hspace{5mm}
-\subfigure[Multiplexer con Static Memory Cell]
+\subfigure[Multiplexer (MUX) con Static Memory Cell]
 {\label{staticmemb}\includegraphics[scale=.35]{cap3/smb}}
 \hspace{5mm}
-\subfigure[Static Memory Cell e Lookup Table]
+\subfigure[LookUp Table (LUT) con Static Memory Cell]
 {\label{staticmemc}\includegraphics[scale=.35]{cap3/smc}}
 \caption{Static Memory}\label{staticmem}
 \end{figure}
@@ -359,7 +359,7 @@ Il codice sviluppato per lo strumento di misura descritto in questo elaborato ha
 \caption{Valori di utilizzo di area dell'FPGA}
 \label{tabarea}
 \end{table}
-%% TODO Leo Riprendere check da qui
+
 \subsection{Microcontrollore}
 Un microcontrollore è un dispositivo elettronico integrato in un singolo chip, utilizzato in alternativa ad un microprocessore nei sistemi \textit{embedded}, ed in particolare per applicazioni specifiche di controllo digitale.
 
@@ -375,9 +375,9 @@ Il microcontrollore utilizzato per il progetto descritto in questo elaborato è 
 
 Nella Figura \ref{uproc} è presentato lo schema a blocchi del microcontrollore; si può notare la presenza dei dispositivi tipicamente integrati in un prodotto di questa categoria, come ad esempio i GPIO, un modulo JTAG e le DMA.
 
-Il core del microcontrollore è basata su architettura \textit{PowerPC}, ed in particolare si tratta dell'architettura \textit{Power E300Z4}. Nel corso di questo paragrafo verrà data una spiegazione più dettagliata di questa architettura.
+Il core del microcontrollore è basato su un'architettura \textit{PowerPC}, ed in particolare si tratta dell'architettura \textit{Power Architecture E300Z4}. Nel corso di questo paragrafo verrà data una spiegazione più dettagliata di questa architettura.
 
-Infine la scheda integra $256MB$ di memoria RAM e $512MB$ di memoria non volatile, su cui sono caricati i programmi utente ed il sistema operativo.
+Infine il processore possiede una frequenza massima di $400MHz$ e integra al suo interno $256MB$ di memoria RAM e $512MB$ di memoria non volatile, su cui sono caricati i programmi utente ed il sistema operativo.
 
 \subsubsection{Architettura PowerPC}
 L'architettura \textit{PowerPC} è nata nel $1991$ dalla collaborazione di \textit{Apple}, \textit{IBM} e \textit{Motorola}. 
@@ -391,17 +391,17 @@ L'architettura RISC è nata alla fine degli anni $'70$, quando i ricercatori di 
 Inoltre scoprirono che alcune istruzioni complesse CISC erano più lente del loro corrispettivo sviluppato utilizzando una serie di istruzioni generiche. Per questi motivi si svilupparono set di istruzioni più semplici, che garantissero una progettazione del processore meno complessa e una velocità di esecuzione migliore.
 La conseguenza dell'introduzione di questo tipo di architetture è stata la possibilità di sfruttare soluzioni di parallellizzazione delle istruzioni, come la \textit{pipeline}.
 
-\paragraph{PowerPC e300}
-L'architettura \textit{e300} comprende una famiglia di processori a $32$-bit sviluppata da \textit{Freescale}, il cui principale utilizzo sono le applicazioni \textit{embedded}.
+\paragraph{PowerPC E300}
+L'architettura \textit{E300} comprende una famiglia di processori a $32$-bit sviluppata da \textit{Freescale}, il cui principale utilizzo sono le applicazioni \textit{embedded}.
 
-L'architettura \textit{e300} segue la filosofia RISC precedentemente illustrata ed implementa una pipeline a $4$ stadi. 
+L'architettura \textit{E300} segue la filosofia RISC precedentemente illustrata ed implementa una \textit{pipeline} a $4$ stadi. 
 
-L'\textit{e300}, inoltre, segue la filosofia \textit{superscalar}, che prevede la possibilità di leggere dalla memoria e di completare più di un'istruzione per ciclo di clock, aumentando così il \textit{throughput} del sistema.
+L'\textit{E300}, inoltre, segue la filosofia \textit{superscalar}, che prevede la possibilità di leggere dalla memoria e di completare più di un'istruzione per ciclo di clock, aumentando così il \textit{throughput} del sistema.
 
 La pipeline, come accennato sopra, si compone di 4 fasi principali:
 
 \begin{enumerate}
-	\item \underline{Fetch}: Si legge l'istruzione da eseguire dalla memoria di sistema e si calcola la posizione dell'istruzione successiva. Inoltre, se necessario, la BPU (\textit{Branch Prediction Unit}) decodifica i branch e decide quale è l'istruzione successiva.
+	\item \underline{Fetch}: Si legge l'istruzione da eseguire dalla memoria di sistema e si calcola la posizione dell'istruzione successiva. Inoltre, se necessario, la BPU (\textit{Branch Prediction Unit}) decodifica i branch e decide qual è l'istruzione successiva.
 	\item \underline{Dispatch}: Decodifica l'istruzione proveniente dalla fase di fetch e determina quali istruzioni possono essere eseguite nel ciclo corrente. Inoltre gli operatori delle operazioni sono letti dai registri sorgente ed inviati assieme all'istruzione alla fase successiva della pipeline.
 	\item \underline{Execution}: In questa fase ogni unità funzionale a cui è stata assegnata un'istruzione esegue l'operazione, scrive il risultato nel registro di destinazione e notifica allo stadio finale della pipeline il termine dell'operazione. In questa fase è possibile che le operazioni richiedano più di un ciclo di clock.
 	\item \underline{Complete/write-back}: questa fase si preoccupa di mantenere il corretto comportamento architetturale della macchina, ad esempio in presenza di interrupt la pipeline viene scaricata, i risultati delle precedenti computazioni sono scartati e il flusso di istruzioni viene indirizzato dalla sorgente corretta.
