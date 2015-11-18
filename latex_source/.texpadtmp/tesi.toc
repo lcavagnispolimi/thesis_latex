@@ -83,13 +83,13 @@
 \contentsline {subparagraph}{Producer-consumer}{91}
 \contentsline {subparagraph}{4-Wire Handshake}{94}
 \contentsline {paragraph}{Fixed Point}{96}
-\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{97}
+\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{98}
 \contentsline {paragraph}{Algoritmo per il controllo del rumore}{98}
 \contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{98}
 \contentsline {paragraph}{Calcolo delle frequenze di frangia}{99}
 \contentsline {paragraph}{Calcolo della distanza assoluta}{99}
 \contentsline {subsubsection}{Implementazione software}{100}
-\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{100}
+\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{101}
 \contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{103}
 \contentsline {section}{\numberline {5.1}Metodologia proposta}{103}
 \contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{104}

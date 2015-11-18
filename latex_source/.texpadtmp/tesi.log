@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  18 NOV 2015 22:51
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  19 NOV 2015 00:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1070,9 +1070,10 @@ File: ./pictures/cap4/timdiagfft.png Graphic file (type QTm)
 File: ./pictures/cap4/fxpvsfloat.jpg Graphic file (type QTm)
  <use  "./pictures/cap4/fxpvsfloat.jpg" > [96]
 File: ./pictures/cap4/configfxp.png Graphic file (type QTm)
- <use  "./pictures/cap4/configfxp.png" > [97]
-Missing character: There is no ̀ in font ec-lmr10!
- [98] [99]
+ <use  "./pictures/cap4/configfxp.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97] [98] [99]
 File: ./pictures/cap4/guimicro.png Graphic file (type QTm)
  <use  "./pictures/cap4/guimicro.png" > [100]
 File: ./pictures/cap4/dmafunz.png Graphic file (type QTm)
@@ -1304,10 +1305,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13683 strings out of 493725
- 277308 string characters out of 6145912
- 288728 words of memory out of 5000000
- 16597 multiletter control sequences out of 15000+600000
+ 13684 strings out of 493725
+ 277322 string characters out of 6145912
+ 288740 words of memory out of 5000000
+ 16598 multiletter control sequences out of 15000+600000
  101813 words of font info for 77 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
