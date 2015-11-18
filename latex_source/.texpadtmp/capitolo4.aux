@@ -59,75 +59,73 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{77}}
 \newlabel{dfteq}{{4.3}{78}}
 \newlabel{dfteq2}{{4.5}{78}}
+\citation{31004}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Spectral leakage\relax }}{80}}
 \newlabel{spectleak}{{4.13}{80}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Algoritmo di Coley-Tukey FFT\relax }}{80}}
-\newlabel{alg:fft}{{1}{80}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{81}}
+\newlabel{hann}{{4.14}{81}}
 \citation{31004}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{82}}
-\newlabel{hann}{{4.14}{82}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Spectral leakage per diversi tipi di finestratura\relax }}{82}}
 \newlabel{smoothwins}{{4.15}{82}}
-\citation{31004}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{82}}
+\newlabel{deltaf}{{4.11}{82}}
+\citation{1007077}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Confronto tra DFT e FT di un segnale a frequenza $\omega _0$\relax }}{83}}
 \newlabel{ifft}{{4.16}{83}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{83}}
-\newlabel{deltaf}{{4.11}{83}}
+\newlabel{xcampionato}{{4.13}{83}}
 \citation{1007077}
-\newlabel{xcampionato}{{4.13}{84}}
-\citation{1007077}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{85}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Architettura Software}{85}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.17}{\ignorespaces Schema a blocchi ad alto livello dell'architettura\relax }}{86}}
 \newlabel{archgenschema}{{4.17}{86}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{86}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Architettura Software}{86}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}FPGA}{87}}
-\@writefile{toc}{\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{87}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}FPGA}{86}}
+\@writefile{toc}{\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{86}}
 \@writefile{toc}{\contentsline {paragraph}{Generazione del segnale di modulazione}{87}}
-\@writefile{toc}{\contentsline {paragraph}{Campionamento del segnale interferometrico}{88}}
-\@writefile{toc}{\contentsline {paragraph}{Condizionamento del segnale interferometrico}{88}}
-\@writefile{toc}{\contentsline {subparagraph}{Sottrazione del residuo}{88}}
+\@writefile{toc}{\contentsline {paragraph}{Campionamento del segnale interferometrico}{87}}
+\@writefile{toc}{\contentsline {paragraph}{Condizionamento del segnale interferometrico}{87}}
+\@writefile{toc}{\contentsline {subparagraph}{Sottrazione del residuo}{87}}
 \@writefile{toc}{\contentsline {subparagraph}{Estrazione di 512 campioni}{88}}
 \@writefile{toc}{\contentsline {subparagraph}{Finestratura}{88}}
-\@writefile{toc}{\contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{89}}
+\@writefile{toc}{\contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{88}}
 \@writefile{toc}{\contentsline {paragraph}{Estrazione del massimo bin di frequenza}{89}}
-\@writefile{toc}{\contentsline {subsubsection}{Implementazione software}{90}}
+\@writefile{toc}{\contentsline {subsubsection}{Implementazione software}{89}}
 \@writefile{toc}{\contentsline {paragraph}{Design pattern utilizzati}{91}}
 \@writefile{toc}{\contentsline {subparagraph}{Producer-consumer}{91}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.18}{\ignorespaces Block Diagram semplificato del VI eseguito su FPGA\relax }}{92}}
 \newlabel{codicefpga}{{4.18}{92}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.19}{\ignorespaces Pannello di configurazione per la creazione di una FIFO\relax }}{93}}
 \newlabel{fifolabview}{{4.19}{93}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.20}{\ignorespaces Esempio di Producer/Consumer implementato su LabVIEW FPGA\relax }}{93}}
+\newlabel{prodcons}{{4.20}{93}}
 \citation{4wirehs}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.20}{\ignorespaces Esempio di Producer/Consumer implementato su LabVIEW FPGA\relax }}{94}}
-\newlabel{prodcons}{{4.20}{94}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.21}{\ignorespaces Ingressi ed uscite di un express VI con esecuzione pipelined\relax }}{94}}
+\newlabel{pipelinevi}{{4.21}{94}}
 \@writefile{toc}{\contentsline {subparagraph}{4-Wire Handshake}{94}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.21}{\ignorespaces Ingressi ed uscite di un express VI con esecuzione pipelined\relax }}{95}}
-\newlabel{pipelinevi}{{4.21}{95}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.22}{\ignorespaces Computazione FFT\relax }}{96}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.23}{\ignorespaces Pannello di configurazione del FFT Express VI\relax }}{96}}
-\newlabel{configfft}{{4.23}{96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.22}{\ignorespaces Computazione FFT\relax }}{95}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.23}{\ignorespaces Pannello di configurazione del FFT Express VI\relax }}{95}}
+\newlabel{configfft}{{4.23}{95}}
 \citation{fxpdoc}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.24}{\ignorespaces FFT Express VI Timing Diagram\relax }}{97}}
-\newlabel{timdiagfft}{{4.24}{97}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.25}{\ignorespaces Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point e Floating Point\relax }}{97}}
-\newlabel{fxpvsfloat}{{4.25}{97}}
-\@writefile{toc}{\contentsline {paragraph}{Fixed Point}{97}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.26}{\ignorespaces Fixed point in LabVIEW\relax }}{98}}
-\newlabel{configfxp}{{4.26}{98}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{98}}
-\@writefile{toc}{\contentsline {paragraph}{Algoritmo per il controllo del rumore}{99}}
-\@writefile{toc}{\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{99}}
-\@writefile{toc}{\contentsline {paragraph}{Calcolo delle frequenze di frangia}{100}}
-\@writefile{toc}{\contentsline {paragraph}{Calcolo della distanza assoluta}{100}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.24}{\ignorespaces FFT Express VI Timing Diagram\relax }}{96}}
+\newlabel{timdiagfft}{{4.24}{96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.25}{\ignorespaces Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point e Floating Point\relax }}{96}}
+\newlabel{fxpvsfloat}{{4.25}{96}}
+\@writefile{toc}{\contentsline {paragraph}{Fixed Point}{96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.26}{\ignorespaces Fixed point in LabVIEW\relax }}{97}}
+\newlabel{configfxp}{{4.26}{97}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{97}}
+\@writefile{toc}{\contentsline {paragraph}{Algoritmo per il controllo del rumore}{98}}
+\@writefile{toc}{\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{98}}
+\@writefile{toc}{\contentsline {paragraph}{Calcolo delle frequenze di frangia}{99}}
+\@writefile{toc}{\contentsline {paragraph}{Calcolo della distanza assoluta}{99}}
 \citation{tanembaum}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.27}{\ignorespaces Interfaccia grafica dello strumento di misura\relax }}{101}}
-\newlabel{guimicro}{{4.27}{101}}
-\@writefile{toc}{\contentsline {subsubsection}{Implementazione software}{101}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{101}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.28}{\ignorespaces Schema architetturale per DMA\relax }}{102}}
-\newlabel{dmafunz}{{4.28}{102}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.27}{\ignorespaces Interfaccia grafica dello strumento di misura\relax }}{100}}
+\newlabel{guimicro}{{4.27}{100}}
+\@writefile{toc}{\contentsline {subsubsection}{Implementazione software}{100}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{100}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.28}{\ignorespaces Schema architetturale per DMA\relax }}{101}}
+\newlabel{dmafunz}{{4.28}{101}}
 \@setckpt{capitolo4}{
-\setcounter{page}{104}
+\setcounter{page}{103}
 \setcounter{equation}{32}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
@@ -152,8 +150,8 @@
 \setcounter{r@tfl@t}{0}
 \setcounter{ContinuedFloat}{0}
 \setcounter{float@type}{8}
-\setcounter{algorithm}{1}
-\setcounter{ALG@line}{12}
+\setcounter{algorithm}{0}
+\setcounter{ALG@line}{0}
 \setcounter{ALG@rem}{0}
 \setcounter{ALG@nested}{0}
 \setcounter{ALG@Lnr}{2}

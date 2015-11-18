@@ -43,7 +43,7 @@ Le istruzioni, definite in fase di stesura del codice mediante il linguaggio gra
 
 Le caratteristiche principali che hanno portato alla scelta di LabVIEW e del linguaggio G sono:
 \begin{itemize}
-	\item LabVIEW un ambiente di sviluppo orientato fortemente all'acquisizione dati e all'analisi ed elaborazione numerica di segnali
+	\item LabVIEW è un ambiente di sviluppo orientato fortemente all'acquisizione dati e all'analisi ed elaborazione numerica di segnali
 	\item Il linguaggio G possiede un parallelismo intrinseco che è facile da utilizzare grazie alla metodologia di scrittura grafica dei programmi. La programmazione parallela consente di raggiungere elevate prestazioni di calcolo, specialmente nella programmazione per FPGA
 	\item LabVIEW include al suo interno una serie di librerie per l'analisi dei segnali disponibili anche per la compilazione su FPGA che ha notevolmente accelerato il processo di sviluppo del codice
 	\item LabVIEW è l'unico linguaggio di programmazione ufficialmente supportato dalla scheda di prototipazione scelta (vedi Capitolo \ref{capitolo3})
@@ -205,7 +205,7 @@ Le principali fasi della sintesi hardware sono:
 \begin{itemize}
 	\item \underline{Translation}: Molti software per la sintesi hardware consentono al programmatore di poter scrivere la specifica hardware in diversi modi (HDL o schema circuitale). La prima fase della compilazione consiste nel combinare e tradurre le diverse specifiche in un'unica specifica completa.
 	\item \underline{Functional simulation}: Questa fase consiste nella simulazione dell'architettura progettata. Questo processo verifica la correttezza logica del circuito senza considerare i vincoli temporali.
-	\item \underline{Optimisation}: Dopo che l'architettura è stata valutata logicamente corretta, viene effettuata un ottimizzazione automatica al fine di semplificarne l'implementazione. Le ottimizzazioni più comuni sono le semplificazioni aritmetico-logiche.
+	\item \underline{Optimisation}: Dopo che l'architettura è stata valutata logicamente corretta, viene effettuata un'ottimizzazione automatica al fine di semplificarne l'implementazione. Le ottimizzazioni più comuni sono le semplificazioni aritmetico-logiche.
 	\item \underline{Mapping}: L'architettura ottimizzata viene distribuita sulle risorse disponibili del dispositivo hardware. Il processo è molto impegnativo nel caso di programmazione FPGA perché esistono svariati modi per tracciare le interconnessioni.
 	\item \underline{Place and route}: La configurazione risultante dal processo di Mapping viene sottoposta ad una dettagliata simulazione temporale. Questa fase verifica che l'architettura realizzata rispetti i vincoli temporali sul dispositivo hardware reale.
 	\item \underline{Configuration data}: Se i risultati della simulazione temporale sono soddisfacenti, viene generato un file di configurazione chiamato \textit{bitfile}. Il \textit{bitfile} contiene tutte le informazioni necessarie per configurare correttamente l'architettura progettata sul dispositivo hardware programmabile.
@@ -248,7 +248,9 @@ Per i motivi esposti all'inizio del paragrafo, abbiamo scelto di utilizzare un'a
 \end{figure}
 		
 \subsubsection{LabVIEW FPGA}
-Per lo sviluppo dell'architettura FPGA di questo lavoro di Tesi è stato utilizzato il modulo software LabVIEW FPGA. NI LabVIEW \textit{FPGA Module} è un componente aggiuntivo di LabVIEW utilizzato per sviluppare applicazioni per FPGA.
+Per lo sviluppo dell'architettura FPGA di questo lavoro di Tesi è stato utilizzato il modulo software LabVIEW FPGA. 
+
+NI LabVIEW \textit{FPGA Module} è un componente aggiuntivo di LabVIEW utilizzato per sviluppare applicazioni per FPGA.
 
 Questo ambiente di sviluppo compila ed esegue il codice LabVIEW sul dispositivo FPGA. Il processo di compilazione automatica è suddiviso in tre fasi:
 \begin{enumerate}
@@ -264,9 +266,8 @@ Questo ambiente di sviluppo compila ed esegue il codice LabVIEW sul dispositivo 
   \end{center}
 \end{figure}
 
-Al contrario del microprocessore, non esiste alcun sistema operativo sul chip FPGA, ma LabVIEW FPGA offre comunque la possibilità di controllare ingressi e uscite attraverso un applicazione host.
+Al contrario del microprocessore, non esiste alcun sistema operativo sul chip FPGA, ma LabVIEW FPGA offre comunque la possibilità di controllare ingressi e uscite attraverso un'applicazione host.
 
-%% TODO Cap4 Controllare formule analisi teorica algortimi	
 \section{Analisi teorica degli algoritmi implementati}
 In questo paragrafo verranno introdotti i concetti fondamentali alla base dei principali algoritmi utilizzati nell'ambito dello sviluppo del firmware dell'interferometro.
 
@@ -278,7 +279,7 @@ Gli algoritmi utilizzati sono:
 \end{itemize}
 
 \subsection{Fast Fourier Transform (FFT)}
-Prima di illustrare il funzionamento dell'algoritmo di FFT, è bene richiamare alcuni concetti sull'analisi in frequenza dei segnali.
+Prima di illustrare il funzionamento dell'algoritmo di FFT, è bene richiamare alcuni concetti sull'analisi in frequenza dei segnali.
 
 I principali metodi di analisi dei segnali di misura sono l'analisi nel dominio del tempo e nel dominio della frequenza. I due approcci sono tra loro intercambiabili, ovvero, sotto opportune condizioni, nessun informazione viene persa nel passare da un dominio all'altro. 
 
@@ -304,7 +305,7 @@ dove $x(n)$ indica la sequenza infinita di campioni in ingresso e $\omega$ la pu
 
 Considerando, invece, una sequenza finita $x[n]$ di lunghezza $N$, a cui corrisponde la DTFT $X(e^{j\omega})$, è possibile definire la Trasformata di Fourier Discreta (DFT) come la sequenza di $N$ campioni:
 \begin{equation}
-	X(k)=X(e^{j\omega}) |_{\omega = \frac{2 \pi k}{N}} = \sum_{n=0}^{N-1} x(n)e^{-j \frac{2 \pi}{N} k n}
+	X[k]=X(e^{j\omega}) |_{\omega = \frac{2 \pi k}{N}} = \sum_{n=0}^{N-1} x(n)e^{-j \frac{2 \pi}{N} k n}
 	\label{dfteq}
 \end{equation}
 
@@ -316,7 +317,7 @@ con:
 $$0 \leq k \leq N-1$$
 viene chiamata \textit{bin}. Si nota che lo spettro è calcolato unicamente per le frequenze di bin.
 
-Per ottenere la sequenza $x[k]$ a partire dai campioni $x[n]$ è necessario uno sforzo computazionalmente considerevole (complessità quadratica $O(N^2)$). Esso è dovuto all'elevato numero di operazioni di moltiplicazione e addizione presenti nel calcolo della DFT. Per tale motivo, sono stati realizzati algoritmi che riducono notevolmente il numero di operazioni necessarie rendendo il costo computazionale meno cospicuo.
+Per ottenere la sequenza $X[k]$ a partire dai campioni $x[n]$ è necessario uno sforzo computazionalmente considerevole (complessità quadratica $O(N^2)$). Esso è dovuto all'elevato numero di operazioni di moltiplicazione e addizione presenti nel calcolo della DFT. Per tale motivo, sono stati realizzati algoritmi che riducono notevolmente il numero di operazioni necessarie rendendo il costo computazionale meno cospicuo.
 
 Questi algoritmi hanno complessità $O(NlogN)$ e prendono il nome di 
 \textit{Fast Fourier Transform (FFT) algorithm}.
@@ -370,31 +371,7 @@ la cui soluzione è $T(N)=O(N \log N )$.
 
 Alla luce dei risultati appena esposti, possiamo concludere che l'algoritmo di FFT riduce notevolmente il tempo di computazione portando il numero di operazioni a $(\frac{N}{2}) \log N$.
 
-Nel listato \ref{alg:fft} è mostrato lo pseudocodice dell'algoritmo di FFT.
-
-Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo della FFT si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
-
-%% TODO Cap4 Commentare e capire pseudocodice FFT
-\begin{algorithm}
-\caption{Algoritmo di Coley-Tukey FFT}\label{alg:fft}
-\begin{algorithmic}[1]
-\Procedure{$X_{0,...,N-1} \gets$ fft}{\textit{x, N, s}}
-\If {$N = 1$}
-\State $X_0 \gets x_0 $
-\Else
-\State $X_{0,...,\frac{N}{2}-1} \gets \textsc{fft}(x, \frac{N}{2}, 2s) $
-\State $X_{\frac{N}{2},...,N-1} \gets \textsc{fft}(x+s, \frac{N}{2}, 2s) $
-\For{$K=0$ \textbf{to} $\frac{N}{2}-1$}
-\State $t \gets X_k$
-\State $ X_k \gets t + e^{-2 \pi i \frac{k}{N}} X_{k+\frac{N}{2}}$
-\State $ X_{k+\frac{N}{2}} \gets t - e^{-2 \pi i \frac{k}{N}} X_{k+\frac{N}{2}}$
-\EndFor
-\State \textbf{end for}
-\EndIf
-\State \textbf{end if}
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
+Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
 
 \begin{figure}  
   \begin{center}
@@ -412,13 +389,13 @@ Applicare l'algoritmo di FFT direttamente alla sequenza campionata equivale ad u
 
 Una soluzione che limita il fenomeno di \textit{spectral leakage} è l'utilizzo di una finestra rettangolare di troncamento contenente un numero intero di periodi. Tale soluzione non è sempre realizzabile perciò, nella pratica, si utilizza un'altra soluzione che consiste nel sostituire la finestra rettangolare con finestre che presentano una transizione graduale alle estremità. 
 
-Pertanto, un importante aspetto da tenere in considerazione quando si esegue il calcolo della FFT di un segnale periodico campionato è l'operazione di finestratura \cite{31004}. 
+Pertanto, un importante aspetto da tenere in considerazione quando si esegue il calcolo della FFT di un segnale periodico campionato è l'operazione di finestratura \cite{31004}. 
 
 Le finestre con transizione graduale alle estremità, chiamate anche \textit{smoothing window}, risolvono i problemi dovuti ad un campionamento non coerente. I problemi del campionamento non coerente si manifestano principalmente agli estremi della finestra di osservazione, dove si osservano discontinuità, quindi è ragionevole ipotizzare che se si potessero trascurare gli estremi e si potesse concentrare l'analisi sulla parte centrale della finestra di osservazione si otterrebbe uno spettro in frequenza più corretto. 
 
 Pertanto, come già accennato, le \textit{smoothing window} pesano differentemente i vari campioni assumendo valore basso agli estremi e valore elevato nelle porzioni centrali della finestra.
 
-Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
+Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.4]{cap4/hann}
@@ -472,9 +449,9 @@ Questi algoritmi, chiamati \textit{Interpolated FFT (IFTT) algorithm}, permetton
 \end{equation}
 con:
 $$ 0 < \delta \leq 0.5$$
-Gli algoritmi di interpolazione si dividono tra metodi a 2 punti e a 3 punti. Si è scelto di utilizzare algoritmi a due punti perchè essi limitano il contributo di rumore rispetto al caso a 3 punti. 
+Gli algoritmi di interpolazione si dividono tra metodi a 2 punti e a 3 punti. Si è scelto di utilizzare algoritmi a due punti poiché essi limitano il contributo di rumore rispetto al caso a 3 punti. 
 
-Per migliorare ulteriormente l'accuratezza dell'estrazione del tono è stato necessario utilizzare un algoritmo di interpolazione dei moduli specifico per segnali a cui è stata applicata la finestra di \textit{Hanning} \cite{1007077}. Pertanto, si mostra ora il procedimento per il calcolo del fattore di correzione $\delta$ nel caso di finestra di \textit{Hanning}.
+Per migliorare ulteriormente l'accuratezza dell'estrazione del tono è stato necessario utilizzare un algoritmo di interpolazione dei moduli specifico per segnali a cui è stata applicata la finestra di \textit{Hanning} \cite{1007077}. Pertanto, si mostra ora il procedimento per il calcolo del fattore di correzione $\delta$ nel caso di finestra di \textit{Hanning}.
 
 Si consideri un segnale sinusoidale di frequenza $f_0$ campionato con periodo $T_s=\frac{1}{f_s}$:
 \begin{equation}
@@ -494,7 +471,7 @@ La DFT dell'equazione precedente alla linea spettrale $k$ è espressa dalla rela
 \begin{equation}
 	x[k] = \frac{1}{2} \left \{ A_0 e^{j\phi} W[(\gamma -k)f_0] + A_0 e^{-j\phi}W[(\gamma + k)f_0]  \right \}
 \end{equation}
-dove $W(f)$ è lo spettro di frequenza della funzione di finestratura utilizzata.
+dove $W(f)$ è lo spettro di frequenza della funzione di finestratura utilizzata.
 
 Come anticipato, la finestratura utilizzata è quella di \textit{Hanning} definita nel tempo come:	
 \begin{equation}
@@ -513,7 +490,7 @@ dove $W_R (f)$ è lo spettro di frequenza della finestra rettangolare:
 	W_R (f) = \frac{ \sin \left ( \pi \frac{f}{\Delta f} \right ) }{ \sin \left ( \pi \frac{f}{N \Delta f} \right ) } e^ { j \pi \frac{(N-1) f}{N \Delta f} }
 \end{equation}
 
-Considerando ora il calcolo della FFT sul segnale a cui è stata applicata la finestra di \textit{Hanning}: il risultato è la sequenza $X_h(n)$.
+Considerando ora il calcolo della FFT sul segnale a cui è stata applicata la finestra di \textit{Hanning}: il risultato è la sequenza $X_h(n)$.
 
 Determinato lo spettro $X_h(n)$, l'elaborazione continua calcolandone il modulo. \'E sufficiente calcolare il modulo di solo una metà della sequenza $X_h(n)$, poiché l'altra parte non aggiunge informazioni ulteriori.
 
@@ -526,14 +503,14 @@ Se ipotizziamo che il bin di ampiezza maggiore sia $|X_h(k)|=|V_k|$ con $k$ posi
 
 Per i passi che hanno portato alla stima della correzione $\delta$ si rimanda alla letteratura \cite{1007077}.
 
-Le finestre utilizzate nel lavoro di tesi sono quella di \textit{Hanning} e quella rettangolare. Per tale motivo di seguito viene mostrato il fattore di correzione nel caso di finestra rettangolare.
+Le finestre utilizzate nel lavoro di tesi sono quella di \textit{Hanning} e quella rettangolare. Per tale motivo di seguito viene mostrato il fattore di correzione $\delta$ nel caso di finestra rettangolare.
 
 Nel tempo la funzione che rappresenta la finestra rettangolare è definita con la relazione: 
 \begin{equation}
 w_{n,R}
 \left\{\begin{matrix}
 1 & & 0 \leq n \leq N \\ 
-0  &  & 0 > n \geq N
+0  &  & 0 > n > N
 \end{matrix}\right.
 \end{equation}
 e il fattore correttivo di frequenza $\delta$ è pari a:
@@ -541,7 +518,7 @@ e il fattore correttivo di frequenza $\delta$ è pari a:
 	\delta = \frac{|V_{k+1}|}{|V_{k+1}| + |V_k|}
 \end{equation}
 
-Infine, per calcolare la frequenza del tono fondamentale è sufficiente usare la relazione: 
+Infine, per calcolare la frequenza del tono fondamentale è sufficiente usare la relazione: 
 \begin{equation}
 	f_0 = (k + \delta)\Delta f
 \end{equation}
@@ -551,10 +528,10 @@ In questo modo, il valore del tono estratto viene scorrelato dalla larghezza del
 \subsection{Calcolo della distanza assoluta}
 Come descritto in precedenza nel Capitolo \ref{capitolo2}, la distanza assoluta $s$ del bersaglio si ricava con la relazione:
 \begin{equation}
-	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
+	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
 \end{equation}
-dove $f_{rise}$ e $f_{fall}$ sono rispettivamente il tono fondamentale del segnale interferometrico nella rampa di salita e discesa dell'onda triangolare.
-	
+dove $f_{rise}$ e $f_{fall}$ sono rispettivamente il tono fondamentale del segnale interferometrico nella rampa di salita e discesa dell'onda triangolare di modulazione del laser.
+%% TODO Check Leo riprendere da qui	
 \section{Architettura Software}
 L'obiettivo principale del lavoro di tesi è lo sviluppo di un firmware, per la scheda di prototipazione, che sia in grado di computare e mostrare all'utente finale le misure di distanza assoluta prodotte da un laser mediante la tecnica di interferometria a retroiniezione.
 \begin{figure}  
