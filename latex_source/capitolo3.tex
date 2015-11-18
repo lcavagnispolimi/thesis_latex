@@ -7,10 +7,10 @@
 \section{Struttura complessiva dello strumento}
 Lo strumento di misura progettato in questo elaborato è un misuratore \textit{contactless} di distanza. Lo scopo è realizzare un sistema \textit{embedded} in grado di gestire in modo autonomo tutta la misura, dal controllo della sorgente laser all'acquisizione ed elaborazione del segnale interferometrico.
 
-Per sistema \textit{embedded}, si intende un sistema di elaborazione progettato appositamente per una specifica applicazione (\textit{special purpose}). Come già introdotto, l'applicazione in questione è la misura di distanza. 
+Per sistema \textit{embedded}, si intende un sistema di elaborazione progettato appositamente per una specifica applicazione. Come già detto, l'applicazione in questione è la misura di distanza. 
 
 Il principio fisico per il quale è possibile effettuare una misura è stato descritto nel Capitolo \ref{capitolo2}.
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.1]{cap3/fotostrum}
     \caption{Risultato finale del misuratore realizzato}
@@ -23,7 +23,7 @@ La Figura \ref{fotorisfin} mostra il risultato finale del misuratore progettato 
 	\item \underline{Parte di conversione}: La parte di conversione è formata da due sezioni: la sezione di conversione analogico-digitale (ADC) e la sezione di conversione digitale-analogico (DAC). La prima sezione provvede ad effettuare la conversione analogico-digitale del segnale interferometrico in uscita dalla parte analogica. Mentre, la seconda sezione effettua la conversione digitale-analogica dal segnale di modulazione del laser in uscita dalla parte digitale.
 	\item \underline{Parte digitale}: La parte digitale è costituta da un dispositivo \textit{embedded} di prototipazione composto da un microprocessore e un FPGA. I compiti principali della parte digitale sono la generazione del segnale di modulazione del laser, l'elaborazione del segnale interferometrico per l'estrazione della frequenza di frangia e il calcolo della misura di distanza. Un computer è collegato con la parte digitale tramite connessione \textit{Ethernet}, attraverso questo collegamento è possibile la comunicazione con gli elementi programmabili del sistema.
 \end{itemize}
-\begin{figure}  
+\begin{figure}
   \begin{center}
     \includegraphics[scale=0.4]{cap3/archgen}
     \caption{Schema a blocchi dell'architettura complessiva del misuratore}
@@ -54,7 +54,7 @@ In lavori precedenti sono state provate diverse sorgenti~\cite{thesispallsilv}~\
 
 Si tratta di una sorgente laser di tipo DFB (\textit{Distributed FeedBack}) prodotta dalla \textit{Wavespectrum}, la cui struttura è mostrata in Figura \ref{laserwave}. Essa emette ad una lunghezza d'onda di $1550nm$.
 
-La sorgente è allineata alla lente per la collimazione, questi due componenti alloggiano in un supporto di alluminio. La lente, codice prodotto \textit{C230TMD-C} realizzata da \textit{Thorlabs}, ha la funzione di raccogliere tutto il fascio laser della sorgente focalizzandolo a piacere. \'E possibile infatti regolarne la posizione avvitandola o svitandola.
+La sorgente è allineata alla lente per la collimazione, questi due componenti alloggiano in un supporto di alluminio. La lente, codice prodotto \textit{C230TMD-C} realizzata da \textit{Thorlabs}, ha la funzione di raccogliere tutto il fascio laser della sorgente focalizzandolo a piacere. \'E possibile infatti regolarne la posizione grazie ad un supporto a vite.
 
 Di seguito vengono riassunti i punti chiave che hanno portato alla scelta di tale sorgente laser:
 \begin{itemize}
@@ -78,7 +78,7 @@ In Figura \ref{sistottico} è mostrato il sistema ottico senza supporto. Il bers
 
 \subsection{Circuito di interfacciamento}
 Come ampiamente descritto nel Capitolo precedente, è necessario generare una corrente di modulazione sovrapposta a quella di polarizzazione per il diodo laser. Per tale motivo, questo circuito si occupa dell'elaborazione dei segnali analogici, rispettivamente della corrente di pilotaggio del laser e della corrente di uscita dal fotodiodo.
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.5]{cap3/circanalog}
     \caption{Schema a blocchi del circuito di interfacciamento}
@@ -95,7 +95,7 @@ Una descrizione più dettagliata della parte analogica e dell'attività di proge
 
 \section{Parte di conversione}
 La scheda utilizzata per la parte di conversione del misuratore è la \textit{SCO Board}, progettata e prodotta nel laboratorio di "Misure Ottiche ed Elettroniche - MOLES" del Politecnico di Milano. Anch'essa è stata progetta e realizzata da Samuele Disegna nel contesto del suo lavoro di tesi.
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.35]{cap3/scoboardfoto}
     \caption{Foto della scheda di conversione \textit{SCO Board} e identificazione delle connessioni}
@@ -104,7 +104,7 @@ La scheda utilizzata per la parte di conversione del misuratore è la \textit{SC
 \end{figure}
 
 Essa possiede due interfacce di conversione: un'interfaccia Analogico-Digitale (AD), che riceve in ingresso il segnale interferometrico in arrivo dalla sorgente laser, e un'interfaccia Digitale-Analogica (DA), che converte il segnale digitale di modulazione in arrivo dalla scheda di prototipazione. Le conversioni AD e DA vengono svolte in parallelo.
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.4]{cap3/scoboardschema}
     \caption{Schema a blocchi del sistema di conversione A/D - D/A, \textit{SCO Board}}
@@ -136,7 +136,7 @@ Come descritto nel paragrafo precedente, le specifiche fornite sono: $50MSa/s$ p
 \subsubsection{Convertitore DAC}
 Il processo di ricostruzione di un segnale analogico consiste nel prelevare valori digitali e convertirli nei loro equivalenti analogici. Questa operazione è svolta dal convertitore Digitale-Analogico (DAC)~\cite{storeyelet}.
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.35]{cap3/dac}
     \caption{Schema di funzionamento di un convertitore Digitale-Analogico (DAC)}
@@ -152,7 +152,7 @@ Una descrizione dettagliata dell'integrato è fornita sul sito del costruttore~\
 
 \subsubsection{Convertitore ADC}
 Il processo di campionamento di un segnale analogico consiste nel prelevare una lettura istantanea della sua grandezza e di convertirla in una forma digitale. Questa operazione è svolta dal convertitore Analogico-Digitale (ADC)~\cite{storeyelet}.
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
     \includegraphics[scale=0.3]{cap3/adc}
     \caption{Schema di funzionamento di un convertitore Analogico-Digitale (ADC)}
@@ -235,7 +235,7 @@ Dal primo esempio commerciale le FPGA sono cresciute enormemente, infatti una mo
 \subsubsection{Tecniche di implementazione delle FPGA}
 Come già accennato in precedenza, una FPGA consiste in un array di blocchi logici programmabili, potenzialmente di tipo differente, che includono logica generica, celle di memoria e moltiplicatori, circondati da una rete di routing programmabile, che permette di modificare l'interconnessione via software.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.3]{cap3/chipFPGA}
     \caption{Struttura semplificata del chip FPGA}
@@ -250,8 +250,9 @@ Nel corso degli anni sono state introdotte diverse tecniche per rendere programm
 
 Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implementate nei moderni prodotti commerciali. In seguito saranno trattate soltanto le tecnologie attualmente in uso.
 
-\paragraph{Static-memory}
-\begin{figure}
+
+
+\begin{figure}[H]
 \centering
 \subfigure[Static Memory Cell]
 {\label{staticmema}\includegraphics[scale=.35]{cap3/sma}}
@@ -263,6 +264,7 @@ Di tutte le tecnologie introdotte soltanto le ultime $3$ sono attualmente implem
 {\label{staticmemc}\includegraphics[scale=.35]{cap3/smc}}
 \caption{Static Memory}\label{staticmem}
 \end{figure}
+\paragraph{Static-memory}
 Le celle statiche di memoria sono la base per la tecnologia SRAM. In questi dispositivi, le celle di memoria statica (Figura \ref{staticmema}) sono distribuite all'interno del chip FPGA, per garantire la programmabilità.
 
 In questo tipo di architettura le SRAM hanno due principali utilizzi; alcune celle di memoria svolgono la funzione di \textit{multiplexer}, per guidare i segnali attraverso le interconnessioni, mentre la maggior parte delle celle implementano le \textit{Look Up Table} (LUT), che sono utilizzate tipicamente per implementare funzioni logiche. Le Figure \ref{staticmemb} ed \ref{staticmemc} illustrano questi possibili utilizzi.
@@ -288,7 +290,7 @@ Storicamente le EEPROM non erano usate per controllare gli switch sui segnali de
 
 I moderni processi produttivi hanno permesso di utilizzare le celle di memoria \textit{floating gate} direttamente come switch. In particolare attualmente sono usate celle di memoria flash a causa della loro efficenza rispetto all'area. L'uso diffuso di memorie flash come memoria non volatile del chip assicura vantaggi nella diminuzione della dimensione geometrica dei transistor.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.4]{cap3/floatgate}
     \caption{Implementazione del floating gate}
@@ -365,7 +367,7 @@ Un microcontrollore è un dispositivo elettronico integrato in un singolo chip, 
 
 Il microcontrollore utilizzato per il progetto descritto in questo elaborato è l'\textit{MPC5125} prodotto da \textit{Freescale}. 
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.4]{cap3/uproc}
     \caption{Schema a blocchi dell'architettura del microcontrollore MPC5125}
