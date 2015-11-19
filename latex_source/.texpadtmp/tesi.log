@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  19 NOV 2015 00:16
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  19 NOV 2015 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,7 +588,7 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `sub@' multiply defined.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1090,7 +1090,7 @@ Capitolo 5.
 File: ./pictures/cap5/allestimento.jpg Graphic file (type QTm)
  <use  "./pictures/cap5/allestimento.jpg" > [104] [105]
 File: ./pictures/cap5/segnaleinterf.eps Graphic file (type eps)
- <./pictures/cap5/segnaleinterf.eps> [106]
+ <./pictures/cap5/segnaleinterf.eps>
 File: ./pictures/cap5/misfisso1a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso1a.eps>
 File: ./pictures/cap5/misfisso1b.png Graphic file (type QTm)
@@ -1099,26 +1099,23 @@ File: ./pictures/cap5/misfisso2a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso2a.eps>
 File: ./pictures/cap5/misfisso2b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso2b.png" >
-Overfull \hbox (1.77603pt too wide) in paragraph at lines 106--110
+Overfull \hbox (1.77603pt too wide) in paragraph at lines 104--108
  [] 
  []
 
 File: ./pictures/cap5/mismobile1.eps Graphic file (type eps)
 <./pictures/cap5/mismobile1.eps>
 File: ./pictures/cap5/mismobile2.eps Graphic file (type eps)
- <./pictures/cap5/mismobile2.eps>
+ <./pictures/cap5/mismobile2.eps> [106]
 File: ./pictures/cap5/spectleakinterf.eps Graphic file (type eps)
  <./pictures/cap5/spectleakinterf.eps>
-Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap5/semiperiodononcomp.eps Graphic file (type eps)
- <./pictures/cap5/semiperiodononcomp.eps> [107] [108] [109] [110]
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
+ <./pictures/cap5/semiperiodononcomp.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [111]
+ [107] [108] [109] [110]
+Missing character: There is no ̀ in font ec-lmr10!
+ [111] [112]
 File: ./pictures/cap5/regressioncurvefrangia.eps Graphic file (type eps)
  <./pictures/cap5/regressioncurvefrangia.eps>
 File: ./pictures/cap5/slidingfft.png Graphic file (type QTm)
@@ -1130,13 +1127,9 @@ File: ./pictures/cap5/mulfactdiscesa.eps Graphic file (type eps)
 File: ./pictures/cap5/mulfactsalita.eps Graphic file (type eps)
  <./pictures/cap5/mulfactsalita.eps>
 Missing character: There is no ̀ in font ec-lmr10!
- [112] [113] [114]
 Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
-
-Overfull \hbox (5.73018pt too wide) in paragraph at lines 209--210
+ [113] [114]
+Overfull \hbox (5.73018pt too wide) in paragraph at lines 207--208
 []$[]$ $[]$
  []
 
@@ -1149,7 +1142,7 @@ File: ./pictures/cap5/primadopocompdisc.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdisc.eps>
 File: ./pictures/cap5/primadopocompsal.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsal.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 240--240
+Underfull \hbox (badness 1158) in paragraph at lines 238--238
 []\T1/lmss/m/sl/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
@@ -1157,12 +1150,7 @@ File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
 <./pictures/cap5/misfisso3a.eps>
 File: ./pictures/cap5/misfisso3b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso3b.png" >
-Overfull \hbox (11.71956pt too wide) in paragraph at lines 247--251
- [] 
- []
-
-
-Overfull \hbox (7.88374pt too wide) in paragraph at lines 243--253
+Overfull \hbox (7.88374pt too wide) in paragraph at lines 241--251
 []\T1/lmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
  []
 
@@ -1172,7 +1160,7 @@ File: ./pictures/cap5/cinquesegnali.eps Graphic file (type eps)
  <./pictures/cap5/cinquesegnali.eps> [119]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 294.
+               Default added (so using `tbp') on input line 292.
 
 [120]
 File: ./pictures/cap5/cinquesegnalidis.eps Graphic file (type eps)
@@ -1183,30 +1171,23 @@ File: ./pictures/cap5/misfisso4b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso4b.png" >
 File: ./pictures/cap5/mismobile4.eps Graphic file (type eps)
  <./pictures/cap5/mismobile4.eps>
-Overfull \hbox (0.43459pt too wide) in paragraph at lines 349--350
+Overfull \hbox (0.43459pt too wide) in paragraph at lines 347--348
 []\T1/lmr/m/n/10.95 L'errore picco-picco mi-su-ra-to con que-sta pro-va è di $\OT1/lmr/m/n/10.95 451\OML/lmm/m/it/10.95 ^^Vm$\T1/lmr/m/n/10.95 , men-tre l'RMS
  []
 
-[121]
-Missing character: There is no ̀ in font ec-lmr10!
- [122] [123]
+[121] [122] [123]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 372.
+               Default added (so using `tbp') on input line 370.
 
-
-Overfull \hbox (43.01105pt too wide) in paragraph at lines 374--381
- [][] 
- []
-
-File: ./pictures/cap5/residuo.png Graphic file (type QTm)
-<use  "./pictures/cap5/residuo.png" >
+File: ./pictures/cap5/residuo.eps Graphic file (type eps)
+<./pictures/cap5/residuo.eps>
 File: ./pictures/cap5/misfisso5a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso5a.eps>
 File: ./pictures/cap5/misfisso5b.png Graphic file (type QTm)
- <use  "./pictures/cap5/misfisso5b.png" > [124] [125] [126]
+ <use  "./pictures/cap5/misfisso5b.png" > [124] [125]
 File: ./pictures/cap5/mismobile5.eps Graphic file (type eps)
- <./pictures/cap5/mismobile5.eps> [127]
+ <./pictures/cap5/mismobile5.eps>
 File: ./pictures/cap5/misfisso5a20.eps Graphic file (type eps)
  <./pictures/cap5/misfisso5a20.eps>
 File: ./pictures/cap5/misfisso5b20.png Graphic file (type QTm)
@@ -1216,28 +1197,28 @@ File: ./pictures/cap5/misfisso5a90.eps Graphic file (type eps)
 File: ./pictures/cap5/misfisso5b90.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso5b90.png" >
 File: ./pictures/cap5/mismobile520.eps Graphic file (type eps)
- <./pictures/cap5/mismobile520.eps>
+ <./pictures/cap5/mismobile520.eps> [126] [127]
 File: ./pictures/cap5/mismobile590.eps Graphic file (type eps)
  <./pictures/cap5/mismobile590.eps>
-File: ./pictures/cap5/rangemis.png Graphic file (type QTm)
- <use  "./pictures/cap5/rangemis.png" >
-File: ./pictures/cap5/ampbindiscesa.png Graphic file (type QTm)
- <use  "./pictures/cap5/ampbindiscesa.png" >
-File: ./pictures/cap5/ampbinsalita.png Graphic file (type QTm)
- <use  "./pictures/cap5/ampbinsalita.png" > [128] [129] [130] [131] [132] [133]
+File: ./pictures/cap5/rangemis.eps Graphic file (type eps)
+ <./pictures/cap5/rangemis.eps>
+File: ./pictures/cap5/ampbindiscesa.eps Graphic file (type eps)
+ <./pictures/cap5/ampbindiscesa.eps>
+File: ./pictures/cap5/ampbinsalita.eps Graphic file (type eps)
+ <./pictures/cap5/ampbinsalita.eps> [128] [129] [130] [131] [132] [133]
 File: ./pictures/cap5/curvefittingfreq.eps Graphic file (type eps)
  <./pictures/cap5/curvefittingfreq.eps>
 File: ./pictures/cap5/mulfactdiscesanew.eps Graphic file (type eps)
  <./pictures/cap5/mulfactdiscesanew.eps>
 File: ./pictures/cap5/mulfactsalitanew.eps Graphic file (type eps)
- <./pictures/cap5/mulfactsalitanew.eps>
+ <./pictures/cap5/mulfactsalitanew.eps> [134]
 File: ./pictures/cap5/newondafinale.eps Graphic file (type eps)
- <./pictures/cap5/newondafinale.eps> [134]
+ <./pictures/cap5/newondafinale.eps>
 File: ./pictures/cap5/primadopocompdiscnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdiscnew.eps>
 File: ./pictures/cap5/primadopocompsalnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsalnew.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 564--564
+Underfull \hbox (badness 1158) in paragraph at lines 562--562
 []\T1/lmss/m/sl/10 Figura 5.32: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
@@ -1246,17 +1227,17 @@ File: ./pictures/cap5/fissomodliscioa.eps Graphic file (type eps)
 File: ./pictures/cap5/fissomodlisciob.png Graphic file (type QTm)
  <use  "./pictures/cap5/fissomodlisciob.png" >
 File: ./pictures/cap5/mobilemodliscio.eps Graphic file (type eps)
- <./pictures/cap5/mobilemodliscio.eps> [135] [136] [137] [138]) [139]
+ <./pictures/cap5/mobilemodliscio.eps> [135] [136]
+Underfull \vbox (badness 5563) has occurred while \output is active []
+
+ [137] [138] [139]) [140]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [140
+ (./conclusioni.tex [141
 
 
 
-] [141]
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
-) [142]
+]) [142]
 \openout2 = `ringraziamenti.aux'.
 
  (./ringraziamenti.tex) [143
@@ -1266,25 +1247,7 @@ Missing character: There is no ̀ in font ec-lmr10!
 ] [144
 
 
-]
-\openout2 = `appendiceA.aux'.
-
- (./appendiceA.tex
-Appendice A.
-) [145
-
-
 ] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[146
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
 []\T1/lmr/m/n/10.95 http://www.standa.lt/products/catalog/motorised _
  []
@@ -1294,23 +1257,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 []\T1/lmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
  []
 
-[147] [148]
+[145
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[146]
 Underfull \hbox (badness 1509) in paragraph at lines 182--184
 []\T1/lmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/lmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
  []
 
-[149]) [150] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+[147]) [148] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13684 strings out of 493725
- 277322 string characters out of 6145912
- 288740 words of memory out of 5000000
- 16598 multiletter control sequences out of 15000+600000
+ 13675 strings out of 493725
+ 276929 string characters out of 6145912
+ 288208 words of memory out of 5000000
+ 16596 multiletter control sequences out of 15000+600000
  101813 words of font info for 77 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (168 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (166 pages).

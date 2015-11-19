@@ -7,19 +7,19 @@
 \section{Metodologia proposta}
 Per testare lo strumento e valutarne le prestazioni sono state effettuate tre differenti tipologie di prove.
 
-La prima consiste nell'acquisire un certo numero di misure di un bersaglio fisso a distanza nota. La seconda tipologia, al contrario, si articola in due fasi. Inizialmente si acquisisce un campione della distanza del sensore da un bersaglio montato su una slitta motorizzata in grado di compiere spostamenti precisi; in seguito si procede spostando la slitta di una distanza nota, ripetendo il procedimento un numero prefissato di volte. Le due prove mirano a valutare differenti caratteristiche dello strumento: la precisione della misura e la sua accuratezza.
+La prima consiste nell'acquisire un certo numero di misure di un bersaglio fisso a distanza nota. La seconda tipologia, al contrario, si articola in due fasi. Inizialmente si acquisisce un campione della distanza del sensore da un bersaglio montato su una slitta motorizzata in grado di compiere spostamenti precisi; in seguito si procede spostando la slitta di una distanza nota, ripetendo il procedimento un numero prefissato di volte. Le due prove mirano a valutare differenti caratteristiche dello strumento: la precisione e l'accuratezza della misura.
 
-Queste prove sono state effettuate inizialmente ad una distanza prefissata di $50cm$ e ripetute ad ogni passo dello sviluppo dello strumento. A strumento ultimato sono state effettuate ulteriori misurazioni (a $20cm$ e a $90cm$), per valutare le prestazioni del prototipo finale su un range più vario di distanza.
+Queste prove sono state effettuate inizialmente ad una distanza prefissata di $50cm$ e ripetute ad ogni passo dello sviluppo dello strumento. A strumento ultimato sono state effettuate due ulteriori misurazioni (a $20cm$ e a $90cm$), per valutare le prestazioni del prototipo finale su un range più vario di distanza.
 
-La terza tipologia di prova, invece, si svolge mantenendo il bersaglio fisso ad una distanza prestabilita acquisendo un numero di campioni coerente con quello che lo strumento finale userà per fornire all'utente un singolo campione di distanza. In seguito si varia la distanza del bersaglio dal sensore e si ripete l'acquisizione. Lo scopo della prova è valutare empiricamente il range di misura dello strumento.
+La terza tipologia di prova, invece, si svolge mantenendo il bersaglio fisso ad una distanza prestabilita e acquisendo un numero di campioni coerente con quello che lo strumento finale userà per fornire all'utente un singolo campione di distanza. In seguito si varia la distanza del bersaglio dal sensore e si ripete l'acquisizione. Lo scopo della prova è valutare empiricamente il range di misura dello strumento.
 
 Per tutte le prove il fuoco del laser è stato mantenuto oltre la massima distanza misurata in ciascuna prova.
 
 Di seguito sono descritte più nel dettaglio le metodologie di prove effettuate. Per confrontare i miglioramenti tra diverse implementazioni si è scelto di valutare la deviazione standard  (o incertezza) relativa della misura.
 
-\begin{figure}  
+\begin{figure}
   \begin{center}
-  	%% TODO Cap5 Sistemare foto allestimento misura
+  	%% TODO Cap5 Riusciamo a sistemare sta foto?
     \includegraphics[scale=0.1]{cap5/allestimento}
     \caption{Allestimento della misura}
   \end{center}
@@ -28,7 +28,7 @@ Di seguito sono descritte più nel dettaglio le metodologie di prove effettuate.
 \subsection{Prova a bersaglio fisso}
 La misura a bersaglio fisso è stata effettuata con il sensore fissato su di un tavolo ottico e puntato verso un bersaglio metallico nero, anch'esso fissato ad un tavolo ottico. L'uso del tavolo ottico si è reso necessario per minimizzare l'effetto delle vibrazioni.
 
-Inizialmente si è lasciato in esecuzione il software che effettua la modulazione del laser, in modo da consentire al sensore di raggiungere una temperatura stabile, per minimizzare l'influenza del cambiamento di temperatura del laser sulla misura. Si è deciso di lasciare attiva la modulazione senza acquisire dati per $10$ minuti.
+Inizialmente si è lasciato in esecuzione il software che effettua la modulazione del laser, in modo da consentire al sensore di raggiungere una temperatura stabile, per minimizzare l'influenza del cambiamento di temperatura del laser sulla misura. Si è deciso di lasciare attiva la modulazione senza acquisire dati per circa $10$ minuti.
 
 Con lo strumento ad una temperatura stabile si sono acquisiti $1000$ campioni della distanza dal bersaglio e se ne è valutata la media e la deviazione standard relativa. In questo modo è stato possibile valutare quanto è ampia l'oscillazione della misura rispetto alla media, e di determinare così la precisione dello strumento.
 
@@ -45,11 +45,11 @@ La prova si articola in due fasi:
 Nella fase di acquisizione, con il bersaglio fermo, si acquisiscono $100$ campioni della distanza dal sensore. Di questi campioni si valutano media e deviazione standard relativa.
 Nella fase di spostamento si allontana la slitta di $200 \mu m$ dal sensore. Si è scelto di utilizzare un passo di $200 \mu m$ perché consistente con la risoluzione dello strumento verificata nella prova a bersaglio fisso.
 
-Queste due fasi sono ripetute per $15 \div 20$ volte, in modo da coprire una distanza totale di $3 \div 4mm$.
+Queste due fasi sono ripetute per $15 \div 20$ volte, in modo da coprire una distanza totale di $3 \div 4 mm$.
 
 Lo scopo della prova è quello di valutare la linearità dello strumento rispetto allo spostamento del bersaglio. Per fare questo si valuta l'oscillazione della misura rispetto alla retta ideale dello spostamento; in particolare si valutano distanza picco-picco dell'errore della misura rispetto alla retta ideale e l'RMS (\textit{Root Mean Square}, valore quadratico medio).
 
-L'errore di misura è calcolabile in modo semplice con la relazione:
+L'errore di misura è calcolato in modo semplice con la relazione:
 \begin{equation}
 	e = x_t - x 
 \end{equation}
@@ -65,7 +65,7 @@ I risultati migliori si ottengono quando si riscontrano distanze picco-picco ed 
 \subsection{Prova del range di misura}
 La prova del range di misura si effettua con un allestimento identico alla prima prova, ma, al contrario di quest'ultima, i campioni acquisiti sono in numero minore, ovvero $100$. Il numero è stato scelto in modo coerente con il numero di campioni che lo strumento finale utilizzerà per fornire all'utente un singolo valore di distanza. 
 
-Poiché lo scopo della prova è valutare il range di distanze in cui lo strumento è in grado di lavorare nei limiti di precisione desiderati, si ripete l'acquisizione dei campioni a diverse distanze dal sensore, partendo da $10cm$ e arrivando a $100$ cm, con passi di $10cm$ circa.
+Poiché lo scopo della prova è valutare il range di distanze in cui lo strumento è in grado di lavorare nei limiti di precisione desiderati, si ripete l'acquisizione dei campioni a diverse distanze dal sensore, partendo da $10 cm$ e arrivando a $100 cm$, con passi di $10 cm$ circa.
 
 Sui $100$ campioni acquisiti si valutano media e deviazione standard relativa, e si ritiene soddisfacente la prestazione dello strumento quando la deviazione standard relativa fornita è minore di $10^{-3}$.
 
@@ -73,9 +73,8 @@ Sui $100$ campioni acquisiti si valutano media e deviazione standard relativa, e
 Come già discusso nel Capitolo \ref{capitolo4}, l'implementazione finale dello strumento genera un'onda triangolare che modula la sorgente laser in corrente. 
 
 L'onda di modulazione triangolare generata e il segnale interferometrico in risposta dal laser, sono formati entrambi da $1250$ punti, $625$ per il semiperiodo di discesa della triangolare di modulazione e $625$ per il semiperiodo di salita. 
-\begin{figure}  
+\begin{figure}
   \begin{center}
-  	%% TODO Cap5 Legenda nella figura?
     \includegraphics[scale=0.5]{cap5/segnaleinterf}
     \caption{Segnale interferometrico (blu) in un periodo di modulazione (nero)}
     \label{segnaleinterf}
@@ -86,7 +85,7 @@ Di questi $625$ punti soltanto $512$ contengono l'informazione utile per l'estra
 
 Per l'estrazione del tono fondamentale del segnale si utilizza l'algoritmo di FFT interpolata a due punti con finestratura a $512$ punti.
 
-Inoltre si sono valutate due differenti finestrature per il segnale, la finestratura rettangolare e quella di \textit{Hanning}.
+Come accennato nel capitolo precedente, sono state valutate due differenti finestrature per il segnale: la finestra rettangolare e quella di \textit{Hanning}.
 
 Per determinare quale delle due finestrature utilizzare nell'implementazione finale dello strumento sono state realizzate prove a bersaglio fisso e a bersaglio mobile con modulazione triangolare a pendenza fissa.
 \begin{figure}
@@ -95,9 +94,8 @@ Per determinare quale delle due finestrature utilizzare nell'implementazione fin
 {\label{misfisso1a}\includegraphics[scale=.5]{cap5/misfisso1a}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso1b}\includegraphics[scale=.35]{cap5/misfisso1b}}
+{\label{misfisso1b}\includegraphics[scale=.4]{cap5/misfisso1b}}
 \caption{Misure a bersaglio fisso con finestratura rettangolare}\label{misfisso1}
-%% TODO Cap5: qui le misure sono 900 e non 1000!
 \end{figure}
 
 \begin{figure}
@@ -120,9 +118,9 @@ Per determinare quale delle due finestrature utilizzare nell'implementazione fin
 \caption{Misure di distanza a bersaglio mobile effettuate su $200 \mu m$ di spostamento}\label{mismobile12}
 \end{figure}
 
-I risultati delle prove a bersaglio fisso sono mostrati in Figura \ref{misfisso1} e \ref{misfisso2}. Sono inoltre riportati i grafici della distribuzione dei punti misurati rispetto alla media. In Figura \ref{mismobile12}, invece, sono mostrate le misure a bersaglio mobile: i punti rossi rappresentano le medie valutate ogni $100$ misurazioni, e le barre di errore l'incertezza assoluta di misura. La curva blu, invece, rappresenta il valore atteso.
+I risultati delle prove a bersaglio fisso sono mostrati in Figura \ref{misfisso1} e \ref{misfisso2}. Sono inoltre riportati i grafici della distribuzione dei punti misurati rispetto alla media. In Figura \ref{mismobile12}, invece, sono mostrate le misure a bersaglio mobile: i punti rossi rappresentano le medie valutate ogni $100$ misurazioni, e le barre di errore mostrano l'incertezza assoluta di misura. La curva blu, invece, rappresenta il valore atteso.
 
-Dai risultati delle misure a bersaglio fisso si evince che con la finestratura di \textit{Hanning} vi è un chiaro miglioramento in termini di precisione. L'incertezza relativa di misura si riduce complessivamente di un fattore $10$ passando da $10^{-1}$, con finestra rettangolare, a $10^{-}2$ con finestra di \textit{Hanning}.
+Dai risultati delle misure a bersaglio fisso si evince che con la finestratura di \textit{Hanning} vi è un chiaro miglioramento in termini di precisione. L'incertezza relativa di misura si riduce complessivamente di un fattore $10$ passando da $10^{-1}$, con finestra rettangolare, a $10^{-2}$ con finestra di \textit{Hanning}.
 
 Si nota inoltre, dai risultati delle misure a bersaglio mobile, che l'utilizzo della finestra di \textit{Hanning} rende lo strumento lineare allo spostamento con un errore massimo picco-picco dell'ordine del millimetro (ca. $4mm$). \'E facile intuire graficamente che l'utilizzo della finestra rettangolare rende lo strumento fortemente non lineare allo spostamento.
 \begin{figure}  
@@ -133,7 +131,7 @@ Si nota inoltre, dai risultati delle misure a bersaglio mobile, che l'utilizzo d
   \end{center}
 \end{figure}
 
-Il motivo che spiega questo miglioramento è la diminuzione dello \textit{spectral leakage}, che risulta meno marcato per la finestra di \textit{Hanning} piuttosto che per quella rettangolare. In Figura \ref{spectleakinterf} sono confrontati gli spettri di frequenza di un segnale interferometrico calcolati sul fronte di discesa dalla FFT con finestra rettangolare e di \textit{Hanning}. Dalla figura si nota l'evidente effetto dello \textit{spectral leakage} che affligge la FFT con finestra rettangolare.
+Il motivo che spiega questo miglioramento è la diminuzione dello \textit{spectral leakage}, che risulta meno marcato per la finestra di \textit{Hanning} piuttosto che per quella rettangolare. In Figura \ref{spectleakinterf} sono confrontati gli spettri di frequenza di un segnale interferometrico calcolati sul fronte di discesa dalla FFT con finestra rettangolare e di \textit{Hanning}. Dalla figura si nota l'evidente effetto dello \textit{spectral leakage} che affligge la FFT con finestra rettangolare.
 
 \section{Linearizzazione della misura}
 Nonostante i notevoli miglioramenti in termini di precisione, il misuratore possiede ancora una scarsa accuratezza. Tale limitazione dipende dalla lunghezza del periodo di frangia del segnale interferometrico. In particolare, fissata la distanza $s$ dell'ostacolo e modulando triangolarmente il laser, quindi con pendenza $\frac{\Delta I}{\Delta t}$ costante, il periodo di frangia $t_{frangia}$ dovrebbe essere costante lungo tutto il segnale. 
@@ -147,11 +145,11 @@ Nonostante i notevoli miglioramenti in termini di precisione, il misuratore poss
 
 Tuttavia, come osservato in Figura \ref{semiperiodononcomp}, il periodo della singola frangia $t_{frangia}$ non è costante lungo tutto il fronte di salita o di discesa. Di conseguenza, questo fenomeno è la causa del limite sull'accuratezza della misura.
 
-Questo limite sull'accuratezza è dovuto alla non-linearità del laser. È possibile notare dall'equazione utilizzata per il calcolo della distanza assoluta: 
+Questo limite sull'accuratezza è dovuto alla non-linearità del laser. \'E possibile notare dall'equazione utilizzata per il calcolo della distanza assoluta: 
 \begin{equation}
-	s = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right ) t_{frangia}} 
+	s = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right ) t_{frangia}} 
 \end{equation}
-che è il parametro $\chi = \frac{\Delta \lambda}{\Delta I}$ a causare la non-linearità del periodo di frangia. Infatti dal momento in cui tutti i parametri sono fissati, l'unico che può causare la non-linearità è appunto $\chi$.
+che è il parametro $\chi = \frac{\Delta \lambda}{\Delta I}$ a causare la non-linearità del periodo di frangia. Infatti dal momento in cui tutti i parametri sono fissati, l'unico che può causare la non-linearità è appunto $\chi$.
 
 Un secondo motivo per cui il tempo di frangia $t_{frangia}$ non è costante è la costante termica del laser, che causa un ritardo nel raggiungimento di una condizione di equilibrio.
 
@@ -163,7 +161,7 @@ I due effetti combinati, quindi, causano una non linearità nella frequenza dell
 \label{subsec:metodocomp}
 Una tecnica per compensare le variazioni del parametro $\chi = \frac{\Delta \lambda}{\Delta I}$ consiste nell'utilizzare un segnale modulante con pendenza $\frac{\Delta I}{\Delta t}$ variabile durante il semiperiodo di modulazione. Per fare ciò è necessario ricavare l'andamento $\chi = \frac{\Delta \lambda}{\Delta I}$ conoscendo quello del $t_{frangia}$ o, in alternativa, $f_{frangia}$. Una volta ricavato l'andamento non-lineare nel tempo di $\chi = \frac{\Delta \lambda}{\Delta I}$ lo si compensa, modificando $\frac{\Delta I}{\Delta t}$, in modo che il prodotto $\frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I}$ sia costante e, di conseguenza, anche $t_{frangia}$ risulti costante.
 
-Il metodo utilizzato per ricavare la forma d'onda del segnale di modulazione è stato implementato in LabVIEW Real-Time ed eseguito sul microprocessore della scheda di prototipazione. Per permettere ciò, è stato utilizzato un firmware FPGA, leggermente diverso de quello implementato nello strumento finale, che permettesse di inviare al microprocessore il segnale interferometrico completo e non solo i risultati dell'algoritmo di FFT.
+Il metodo utilizzato per ricavare la forma d'onda del segnale di modulazione è stato implementato in LabVIEW Real-Time ed eseguito sul microprocessore della scheda di prototipazione. Per permettere ciò, è stato sviluppato un firmware FPGA, leggermente diverso de quello implementato nello strumento finale, che permettesse di inviare al microprocessore il segnale interferometrico completo e non solo i risultati dell'algoritmo di FFT.
 
 Di seguito vengono descritti i passi principali del metodo di compensazione sviluppato:
 \begin{figure}  
@@ -201,9 +199,9 @@ Di seguito vengono descritti i passi principali del metodo di compensazione svil
 \end{figure}
 
 \begin{enumerate}
-	\item \underline{Modulazione triangolare}: La forma d'onda utilizzata per la modulazione è un'onda triangolare simmetrica con pendenza fissa. Il bersaglio è posto ad un distanza tale da produrre un elevato numero di frange (nel nostro caso si è posto il bersaglio a circa $50cm$ dal sensore).
-	\item \underline{Calcolo della curva di regressione polinomiale}: Per avere una misura più precisa delle frequenza di frangia è stata calcolata la curva di regressione polinomiale di grado $5$ del segnale interferometrico (esempio in Figura \ref{regressioncurvefrangia}) ed è stata sottratta digitalmente da esso. In questo modo la lunghezza del tempo di frangia è valutata in modo più rigoroso.
-	\item \underline{Calcolo della curva delle variazione delle frequenze di frangia}: L'algoritmo analizza separatamente i due fronti, ricevendo in ingresso i $512$ campioni del segnale interferometrico per ciascun fronte. Per ogni fronte si selezionano i primi $128$ campioni e si estrae il valore di frequenza corrispondente alle prime frange del segnale. Per l'estrazione della frequenza del segnale, LabVIEW offre un metodo già implementato chiamato \textit{Extract Single Tone Information}. Si tratta di una FFT con finestra di \textit{Hanning} interpolata a due punti, con una correzione per l'aliasing intorno alla continua a $\frac{f_{sample}}{2}$. A questo punto la finestra di selezione viene traslata di un campione verso destra e la frequenza delle frange viene ricalcolata (Figura \ref{slidingfft}). Questa operazione viene effettuata fino a che la selezione comprende l'ultimo campione del segnale interferometrico.
+	\item \underline{Modulazione triangolare}: La forma d'onda utilizzata per la modulazione è un'onda triangolare simmetrica con pendenza fissa. Il bersaglio è posto ad un distanza tale da produrre un elevato numero di frange (nel nostro caso si è posto il bersaglio a circa $50cm$ dal sensore).
+	\item \underline{Calcolo della curva di regressione polinomiale}: Per avere una misura più precisa delle frequenza di frangia è stata calcolata la curva di regressione polinomiale di grado $5$ del segnale interferometrico (esempio in Figura \ref{regressioncurvefrangia}) ed è stata sottratta digitalmente da esso. In questo modo la lunghezza del tempo di frangia è valutata in modo più rigoroso.
+	\item \underline{Calcolo della curva delle variazioni delle frequenze di frangia}: L'algoritmo analizza separatamente i due fronti, ricevendo in ingresso i $512$ campioni del segnale interferometrico per ciascun fronte. Per ogni fronte si selezionano i primi $128$ campioni e si estrae il valore di frequenza corrispondente alle prime frange del segnale. Per l'estrazione della frequenza del segnale, LabVIEW offre un metodo già implementato chiamato \textit{Extract Single Tone Information}. Si tratta di una FFT con finestra di \textit{Hanning} interpolata a due punti, con una correzione per l'aliasing intorno alla continua a $\frac{f_{sample}}{2}$. A questo punto la finestra di selezione viene traslata di un campione verso destra e la frequenza delle frange viene ricalcolata (Figura \ref{slidingfft}). Questa operazione viene effettuata fino a che la selezione comprende l'ultimo campione del segnale interferometrico.
 	
 	In questo modo si ottengono $384$ valori di frequenze per ciascun fronte, in funzione della posizione delle frange all'interno del fronte stesso (Figura \ref{curvamediatafreq}). Questo procedimento è stato effettuato per $100$ segnali acquisiti ed i risultati sono stati poi mediati. \'E stato deciso di associare ai primi $113$ ($=625-512$) campioni scartati valori di frequenza fittizi, approssimando tali valori con una retta di pendenza pari alla pendenza della prima frequenza estratta, mentre agli ultimi $128$ ($=512-384$) campioni è stata associata una retta con pendenza pari alla pendenza dell'ultima frequenza estratta.
 	\item \underline{Calcolo iterativo del fattore moltiplicativo} \underline{da applicare alla curva delle} \underline{frequenze}: La curva mediata delle frequenze, ricavata al passo precedente, viene moltiplicata alla triangolare con pendenza costante ricavando così il segnale di modulazione con pendenza $\frac{\Delta I}{\Delta t}$ non costante.
@@ -215,7 +213,7 @@ Di seguito vengono descritti i passi principali del metodo di compensazione svil
 	Questo procedimento è stato reiterato una seconda volta aumentando il numero di cifre significative del fattore di scala stesso (partendo da $0.35$ ed arrivando a $0.15$ con passi di $0.01$), in modo da aumentare la precisione della linearizzazione.
 	
 	Le prime curve ricavate vengono presentate in Figura \ref{mulfact}. Si può notare che sia per il fronte di salita che per il fronte di discesa il minimo si trova nell'intorno di $0.2$. I valori esatti ricavati nella seconda iterazione sono $0.18$ per il fronte di discesa e $0.22$ per il fronte di salita.
-	\item \underline{Generazione della curva di modulazione compensata}: La curva delle frequenze, scalata dei valori moltiplicativi calcolati al passo precedente, viene moltiplicata alla triangolare con pendenza costante ricavando così il segnale di modulazione con pendenza $\frac{\Delta I}{\Delta t}$ non costante.	
+	\item \underline{Generazione della curva di modulazione compensata}: Le curve delle variazioni delle frequenze di frangia, calcolate al passo 2, vengono scalate dei valori moltiplicativi calcolati al passo precedente. Le curve scalate vengono poi moltiplicate ai semiperiodi della triangolare con pendenza costante ricavando così il segnale di modulazione con pendenza $\frac{\Delta I}{\Delta t}$ non costante.	
 \end{enumerate}
 \begin{figure}  
   \begin{center}
@@ -247,7 +245,7 @@ I miglioramenti ottenuti per merito della compensazione della non-linearità son
 {\label{misfisso3a}\includegraphics[scale=.5]{cap5/misfisso3a}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso3b}\includegraphics[scale=.4]{cap5/misfisso3b}}
+{\label{misfisso3b}\includegraphics[scale=.35]{cap5/misfisso3b}}
 \caption{Misure a bersaglio fisso con segnale di modulazione compensato}\label{misfisso3}
 \end{figure}
 
@@ -263,14 +261,14 @@ Questo miglioramento ha influito sulla precisione e sull'accuratezza della misur
 
 Si può apprezzare, dai risultati delle misure a bersaglio fisso, che utilizzando un segnale di modulazione compensato la precisione di misura migliora sensibilmente. In particolare, l'incertezza relativa diminuisce di due ordini di grandezza, passando da $10^{-2}$ a $4 \cdot 10^{-4}$.
 
-Inoltre, si può notare come le misure effettuate con la modulazione compensata risultino complessivamente più lineari rispetto a quella effettuata senza compensazione.
+Inoltre, si può notare come le misure effettuate con la modulazione compensata risultino complessivamente più lineari rispetto a quelle effettuate senza compensazione.
 
-La valutazione dell'errore massimo picco-picco rispetto al valore atteso conferma quanto intuito graficamente: l'errore nel caso di segnale di modulazione con pendenza compensata migliora discretamente passando da $4mm$ a $826 \mu m$, con un RMS pari a $568 \mu m$.
+La valutazione dell'errore massimo picco-picco rispetto al valore atteso conferma quanto intuito graficamente: l'errore nel caso di segnale di modulazione con pendenza compensata migliora considerevolmente passando da $4mm$ a $826 \mu m$, con un RMS pari a $568 \mu m$.
 
 Nonostante l'ottimo miglioramento raggiunto, l'accuratezza non è ancora soddisfacente, a tal proposito si è ritenuto opportuno migliorare ulteriormente la misura con ottimizzazioni che verranno descritte nel paragrafo successivo.
 
 \section{Ottimizzazione della misura}
-In questo paragrafo verranno discusse le ottimizzazioni sviluppate al fine di migliorare la precisione e la l'accuratezza della misura.
+In questo paragrafo verranno discusse le ottimizzazioni sviluppate al fine di migliorare la precisione e l'accuratezza della misura.
 
 \subsection{Variazione dell'ampiezza del segnale di modulazione}
 \begin{figure}  
@@ -281,16 +279,16 @@ In questo paragrafo verranno discusse le ottimizzazioni sviluppate al fine di mi
   \end{center}
 \end{figure}
 
-Per cercare di mitigare effetti dipendenti dall'ampiezza del segnale di modulazione sul laser si è deciso di utilizzare un segnale di modulazione ad ampiezza variabile. Poiché le prestazioni dello strumento in termini di velocità di acquisizione di una singola misura sono piuttosto elevate (il tempo di misura è di circa $40 \mu s$), si è deciso di utilizzare $5$ segnali di modulazione con ampiezze differenti (Figura \ref{cinquesegnali}). Le ampiezze scelte per i segnali sono state rispettivamente di $100\%$, $95\%$, $90\%$, $85\%$ e $80\%$ rispetto al segnale di modulazione utilizzato inizialmente.	
+Per cercare di mitigare effetti dipendenti dall'ampiezza del segnale di modulazione sul laser si è deciso di utilizzare un segnale di modulazione ad ampiezza variabile. Poiché le prestazioni dello strumento in termini di velocità di acquisizione di una singola misura sono piuttosto elevate (il tempo di misura teorico è di circa $40 \mu s$), si è deciso di utilizzare $5$ segnali di modulazione con ampiezze differenti (Figura \ref{cinquesegnali}). Le ampiezze scelte per i segnali sono state rispettivamente di $100\%$, $95\%$, $90\%$, $85\%$ e $80\%$ rispetto al segnale di modulazione utilizzato inizialmente.	
 
 Diverse ampiezze del segnale di modulazione restituiscono frequenze di interferenza diverse a parità di distanza del sensore dal bersaglio.
 
 Questo fenomeno è facilmente verificabile osservando la consueta formula per il calcolo della distanza assoluta:
 \begin{equation}
-	s = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  f_{frangia} 
+	s = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )}  f_{frangia} 
 \end{equation}
 
-Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\frac{\Delta I}{\Delta T}$, mentre gli altri elementi dell'equazione restano costanti. \'E facile dimostrare che all'aumentare dell'ampiezza del segnale di modulazione e a parità di distanza aumenta la frequenza di frangia $f_{frangia}$.
+Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\frac{\Delta I}{\Delta t}$, mentre gli altri elementi dell'equazione restano costanti. \'E facile dimostrare che all'aumentare dell'ampiezza del segnale di modulazione e a parità di distanza aumenta la frequenza di frangia $f_{frangia}$.
 \begin{table}[]
 \centering
 \begin{tabular}{l|l|l|}
@@ -301,7 +299,7 @@ Poiché variando le ampiezze dei segnali di modulazione varia il valore di $\fra
 \textbf{85} & 83.9557 & 92.338 \\
 \textbf{90} & 90.3068 & 96.5311 \\
 \textbf{95} & 95.8657 & 100.965 \\
-\textbf{100} & 100 & 105.502
+\textbf{100} & \textbf{100} & 105.502
 \end{tabular}
 \caption{Fattori correttivi di frequenza}
 \label{tabfattoricorr}
@@ -312,7 +310,7 @@ Per questo motivo tutte le frequenze misurate sono riportate al valore, ritenuto
 Si può notare un leggero scostamento tra i fattori correttivi empirici e i valori teorici. Ciò accade in quanto, con la variazione del parametro $\frac{\Delta I}{\Delta t}$, la linearizzazione del parametro $\frac{\Delta \lambda}{\Delta I}$ non avviene più in maniera rigorosa.
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap5/cinquesegnalidis}
+    \includegraphics[scale=0.52]{cap5/cinquesegnalidis}
     \caption{Segnale di modulazione compensato, costituito da cinque forme d'onda di ampiezza diversa in ordine sparso}
     \label{cinquesegnalidis}
   \end{center}
@@ -324,7 +322,7 @@ L'utilizzo di questa tecnica peggiora il tempo di acquisizione di una singola mi
 
 Questo approccio, tuttavia, permette di scorrelare l'errore di misura provocato dallo sfasamento iniziale delle frange, permettendo una riduzione teorica di $\sqrt{5}$ sulla deviazione standard della misura. 
 
-Tramite la prova a bersaglio fisso si è notato un miglioramento della deviazione standard di un fattore $2$, leggermente minore del risultato teorico atteso ($\sqrt{5} \approx 2.24$). La deviazione standard su $1000$ misure effettuate ad una distanza di $50 cm$ dal bersaglio è passata da $4 \cdot 10^{-4}$ a $2.5 \cdot 10^{-4}$. 
+Tramite la prova a bersaglio fisso si è notato un miglioramento della deviazione standard di un fattore $2$, leggermente minore del risultato teorico atteso ($\sqrt{5} \approx 2.24$). La deviazione standard relativa su $1000$ misure effettuate ad una distanza di $50 cm$ dal bersaglio è passata da $4 \cdot 10^{-4}$ a $2.5 \cdot 10^{-4}$. 
 
 \begin{figure}
 \centering
@@ -353,9 +351,9 @@ Rispetto al caso precedente l'errore picco picco diminuisce di un fattore $2$, m
 \subsection{Sottrazione del residuo}
 Come già trattato nei capitoli precedenti, l'algoritmo usato per calcolare l'FFT interpolata a 2 punti con finestra di \textit{Hanning} fa uso del bin di ampiezza massima e del bin di ampiezza maggiore scelto tra il precedente ed il successivo.
 
-Analizzando il segnale in arrivo dal sensore laser in assenza di ostacolo, si è notata la presenza di un residuo causato dallo sottrazione non perfetta presente nello stadio analogico. Tale residuo è un errore deterministico che può influenzare negativamente la scelta del bin laterale nella algoritmo di FFT interpolata, poiché nella maggior parte dei casi essi rispetto al massimo bin avranno ampiezze relativamente basse e comparabili al segnale contenuto nel residuo. Questo può portare ad un errore nella stima del bin interpolato e quindi influenzare negativamente la precisione della misura.
+Analizzando il segnale in arrivo dal sensore laser in assenza di ostacolo, si è notata la presenza di un residuo causato dallo sottrazione non perfetta presente nello stadio analogico. Tale residuo è un errore deterministico che può influenzare negativamente la scelta del bin laterale nella algoritmo di FFT interpolata, poiché nella maggior parte dei casi essi, rispetto al massimo bin, avranno ampiezze relativamente basse e comparabili al segnale contenuto nel residuo. Questo può portare ad un errore nella stima del bin interpolato e quindi influenzare negativamente la precisione della misura.
 
-Per cercare di mitigare l'effetto del rumore deterministico causato dal residuo si è deciso di procedere sottraendo un certo intervallo di frequenze dal segnale misurato dal laser in presenza di ostacolo.
+Per cercare di mitigare l'effetto del rumore deterministico causato dal residuo si è deciso di procedere sottraendo al segnale interferometrico acquisito il suo residuo.
 
 All'avvio dello strumento, con il sensore in assenza di ostacolo, si acquisiscono e mediano $1000$ segnali in assenza di frange. Il risultato della media è un segnale che chiamiamo "residuo". Perciò, per ogni successiva acquisizione di segnale interferometrico, si procede alla sottrazione del residuo al segnale acquisito.
 
@@ -363,17 +361,17 @@ La sottrazione è effettuata al momento dell'acquisizione del segnale, perciò l
 
 Utilizzando questa tecnica si è notato un miglioramento delle prestazioni dello strumento a basse frequenze. Ciò accade perché il residuo estratto è correlato al rumore della misura solo per determinate frequenze e la sottrazione del residuo su tutto lo spettro porta, per frequenze maggiori, all'aggiunta di ulteriore rumore alla misura.
 
-Per mantenere i vantaggi della sottrazione del fondo a basse frequenze senza peggiorare la misura ad alte frequenze si è deciso di applicare un filtro passa-basso al residuo acquisito.
+Per mantenere i vantaggi della sottrazione del residuo a basse frequenze senza peggiorare la misura ad alte frequenze si è deciso di applicare un filtro passa-basso al residuo acquisito.
 
-Sperimentalmente si è verificato che sottraendo il residuo per frequenze più basse di $1 \div 1.5MHz$ si ha un miglioramento della deviazione standard relativa della misura, mentre per frequenze più elevate la sottrazione del fondo porta ad un peggioramento della misura.
-Per queste ragioni si è scelto in modo conservativo come frequenza di taglio del filtro passa basso $1MHz$, per evitare di aggiungere ulteriore rumore alla misura.
+Sperimentalmente si è verificato che sottraendo il residuo per frequenze più basse di $1 \div 1.5MHz$ si ha un miglioramento della deviazione standard relativa della misura, mentre per frequenze più elevate la sottrazione del residuo porta ad un peggioramento della misura.
+Per queste ragioni si è scelto in modo conservativo come frequenza di taglio del filtro passa-basso $1MHz$, per evitare di aggiungere ulteriore rumore alla misura.
 
 
 \begin{table}[]
 \centering
 \begin{tabular}{c|l|l|}
 \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Deviazione standard relativa}} \\ \hline
-\multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Frequenza \\ (Distanza)\end{tabular}}} & \textbf{con sottrazione del residuo} & \textbf{senza sottrazione del residuo} \\ \hline
+\multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Frequenza \\ (Distanza)\end{tabular}}} & \textbf{con sottrazione del residuo} & \textbf{senza sottrazione} \\ \hline
 \textbf{\begin{tabular}[c]{@{}c@{}}800 KHz\\ (ca. 20cm)\end{tabular}}  & $2 \cdot 10^{-4} \div 3 \cdot 10^{-4}$ & $3 \cdot 10^{-4} \div 4 \cdot 10^{-4}$   \\
 \textbf{\begin{tabular}[c]{@{}c@{}}1.5 MHz\\ (ca. 40cm)\end{tabular}} & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$  & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$ \\
 \textbf{\begin{tabular}[c]{@{}c@{}}3.5 MHz\\ (ca. 90cm)\end{tabular}} & $6 \cdot 10^{-4} \div 7 \cdot 10^{-4}$ & $5 \cdot 10^{-4} \div 6 \cdot 10^{-4}$
@@ -385,7 +383,7 @@ Per queste ragioni si è scelto in modo conservativo come frequenza di taglio de
 In Tabella \ref{tab:residuofatt} è mostrato il range di deviazioni standard relative misurate al variare della frequenza.
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.4]{cap5/residuo}
+    \includegraphics[scale=0.5]{cap5/residuo}
     \caption{Residuo filtrato passa-basso con frequenza di taglio a 1 MHz}
     \label{residuo}
   \end{center}
@@ -398,11 +396,11 @@ Anche per queste implementazioni sono state eseguite le consuete prove descritte
 {\label{misfisso5a}\includegraphics[scale=.5]{cap5/misfisso5a}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso5b}\includegraphics[scale=.35]{cap5/misfisso5b}}
+{\label{misfisso5b}\includegraphics[scale=.4]{cap5/misfisso5b}}
 \caption{Misure di distanza a bersaglio fisso con sottrazione del residuo}\label{misfisso5}
 \end{figure}
 
-Nella prova a bersaglio fisso (Figura \ref{misfisso5}) si è notato un miglioramento non sostanziale rispetto al caso senza sottrazione del fondo. Questo accade a causa del posizionamento del bersaglio; infatti, alla distanza di $50 cm$, la frequenza misurata (ca. $1.9MHz$) è al di sopra della frequenza di taglio del filtro passa-basso che agisce sul fondo estratto, rendendo la sottrazione del fondo poco efficace.
+Nella prova a bersaglio fisso (Figura \ref{misfisso5}) si è notato un miglioramento non sostanziale rispetto al caso senza sottrazione del residuo. Questo accade a causa del posizionamento del bersaglio; infatti, alla distanza di $50 cm$, la frequenza misurata (ca. $1.9MHz$) è al di sopra della frequenza di taglio del filtro passa-basso che agisce sul residuo estratto, rendendo la sottrazione del residuo poco efficace.
 
 In questo caso il valore di deviazione standard relativa calcolato su $1000$ campioni vale $2.4 \cdot 10^{-4}$.
 
@@ -416,7 +414,7 @@ Nella Figura \ref{misfisso5b} è stata sovrapposta la distribuzione gaussiana te
   \end{center}
 \end{figure}
 
-Dai risultati ottenuti nella prova a bersaglio mobile (Figura \ref{mismobile5}) si ottiene, al contrario dell'esperimento a bersaglio fisso, un notevole miglioramento nell'accuratezza. Vi è un dimezzamento, rispetto al caso senza sottrazione del fondo, della distanza picco-picco dell'errore. Essa scende a $280 \mu m$ con un RMS pari a $124 \mu m$.
+Dai risultati ottenuti nella prova a bersaglio mobile (Figura \ref{mismobile5}) si ottiene, al contrario dell'esperimento a bersaglio fisso, un notevole miglioramento nell'accuratezza. Vi è un dimezzamento, rispetto al caso senza sottrazione del residuo, della distanza picco-picco dell'errore. Essa scende a $280 \mu m$ con un RMS pari a $124 \mu m$.
 
 \section{Prove dello strumento finale}
 Alla luce dei risultati riportati nei paragrafi precedenti, nell'implementazione finale dello strumento si è deciso di utilizzare l'algoritmo a $5$ segnali di modulazione con sottrazione del residuo.
@@ -432,7 +430,7 @@ Come anticipato in precedenza con la configurazione finale sono state eseguite d
 {\label{misfisso5a20}\includegraphics[scale=.5]{cap5/misfisso5a20}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso5b20}\includegraphics[scale=.3]{cap5/misfisso5b20}}
+{\label{misfisso5b20}\includegraphics[scale=.4]{cap5/misfisso5b20}}
 \caption{Misure di distanza a 20cm con bersaglio fisso }\label{misfisso520}
 \end{figure}
 
@@ -442,7 +440,7 @@ Come anticipato in precedenza con la configurazione finale sono state eseguite d
 {\label{misfisso5a90}\includegraphics[scale=.5]{cap5/misfisso5a90}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso5b90}\includegraphics[scale=.3]{cap5/misfisso5b90}}
+{\label{misfisso5b90}\includegraphics[scale=.4]{cap5/misfisso5b90}}
 \caption{Misure di distanza a 90cm con bersaglio fisso }\label{misfisso590}
 \end{figure}
 
@@ -478,7 +476,7 @@ In questo caso lo strumento dimostra una maggiore linearità all'aumentare della
 Con lo strumento nella sua configurazione finale è stata anche misurata la deviazione standard relativa su $100$ misure a differenti distanze al fine di determinare il range di distanza misurabile dallo strumento. 
 \begin{figure}  
   \begin{center}
-    \includegraphics[scale=0.5]{cap5/rangemis}
+    \includegraphics[scale=0.45]{cap5/rangemis}
     \caption{Andamento della deviazione standard relativa in funzione della distanza}
     \label{rangemis}
   \end{center}
@@ -572,7 +570,7 @@ Con lo scopo di mostrare i miglioramenti ottenuti dell'algoritmo di compensazion
 {\includegraphics[scale=.5]{cap5/fissomodliscioa}}
 \hspace{5mm}
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\includegraphics[scale=.4]{cap5/fissomodlisciob}}
+{\includegraphics[scale=.6]{cap5/fissomodlisciob}}
 \caption{Misure di distanza a bersaglio fisso con segnale di modulazione compensato e liscio}\label{fissomodliscio}
 \end{figure}
 
@@ -598,7 +596,7 @@ Come accennato all'inizio del capitolo, per mitigare l'effetto del drift termico
 \section{Precisazione sui risultati ottenuti}
 A causa della mole di dati presentata è necessario introdurre alcuni chiarimenti riguardanti i risultati ottenuti.
 
-Innanzitutto è necessario considerare le condizioni di svolgimento della prova. Nonostante si siano prese tutte le dovute precauzioni per minimizzare le vibrazioni presenti su strumento e bersaglio non è stato possibile annullarle completamente. Questo, unito alla sensibilità dello strumento, porta la deviazione standard a non restare costante nel tempo, ma può avere degli scostamenti tra prove differenti. Inoltre questo stimatore dipende anche dal numero di campioni utilizzati per ricavarlo. 
+Innanzitutto è fondamentale considerare le condizioni di svolgimento della prova. Nonostante si siano prese tutte le dovute precauzioni per minimizzare le vibrazioni presenti su strumento e bersaglio non è stato possibile annullarle completamente. Questo, unito alla sensibilità dello strumento, porta la deviazione standard a non restare costante nel tempo, ma può avere degli scostamenti tra prove differenti. Inoltre questo stimatore dipende anche dal numero di campioni utilizzati per ricavarlo. 
 
 Questa precisazione è necessaria in quanto alcuni risultati basati sulla deviazione standard possono apparire inconsistenti, come ad esempio il contrasto tra i risultati a bersaglio fisso e la prova del range di misura. La prima prova è stata effettuata mediando $1000$ acquisizioni, mentre la seconda è stata effettuata utilizzando soltanto $100$ campioni, il che porta ad un aumento della deviazione standard della misura. 
 
@@ -606,4 +604,4 @@ Per questa ragione, inoltre, non è possibile confrontare i risultati percentual
 
 Inoltre le misure sono state effettuate senza tener conto delle condizioni di temperatura dello strumento. Una variazione della temperatura di esercizio del laser può portare ad una differente precisione della misura e questo fatto può essere ulteriore causa di apparente inconsistenza tra i vari risultati presentati.
 
-Concludendo, ogni prova descritta in questo Capitolo è stata rieseguita più volte e in istanti differenti al fine di confermare la correttezza dei dati sperimentali ottenuti.
+Concludendo, ogni prova descritta in questo Capitolo è stata rieseguita più volte e in istanti differenti al fine di validare la correttezza dei dati sperimentali ottenuti.

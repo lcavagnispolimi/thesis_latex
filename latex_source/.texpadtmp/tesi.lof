@@ -67,7 +67,7 @@
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Finestra di Hanning\relax }}{81}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Spectral leakage per diversi tipi di finestratura\relax }}{82}
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Confronto tra DFT e FT di un segnale a frequenza $\omega _0$\relax }}{83}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Schema a blocchi ad alto livello dell'architettura\relax }}{86}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Schema a blocchi ad alto livello dell'architettura dello strumento\relax }}{86}
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Block Diagram semplificato del VI eseguito su FPGA\relax }}{92}
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Pannello di configurazione per la creazione di una FIFO\relax }}{93}
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Esempio di Producer/Consumer implementato su LabVIEW FPGA\relax }}{93}
@@ -81,7 +81,7 @@
 \contentsline {figure}{\numberline {4.28}{\ignorespaces Schema architetturale per DMA\relax }}{101}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Allestimento della misura\relax }}{104}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Segnale interferometrico (blu) in un periodo di modulazione (nero)\relax }}{106}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Segnale interferometrico (blu) in un periodo di modulazione (nero)\relax }}{107}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Misure a bersaglio fisso con finestratura rettangolare\relax }}{108}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{108}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{108}
@@ -94,11 +94,11 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Porzione di spettro calcolato sul fronte di discesa dalla FFT con finestra rettangolare e di Hanning\relax }}{111}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Semiperiodo del segnale interferometrico prodotto dalla sorgente laser con modulazione a pendenza $\frac {\Delta I}{\Delta t}$ costante su di un bersaglio metallico a distanza fissa\relax }}{112}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Curva di regressione polinomiale del segnale interferometrico\relax }}{113}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Spostamento della finestra di 128 campioni lungo il semiperiodo di modulazione su cui viene calcolata la FFT\relax }}{113}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Spostamento della finestra di 128 campioni lungo il semiperiodo di modulazione su cui viene calcolata la FFT\relax }}{114}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Curva mediata delle frequenze in un semiperiodo di modulazione con ostacolo a distanza fissa\relax }}{114}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Curva delle deviazioni standard relative dei due fronti al variare del fattore moltiplicativo\relax }}{114}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{114}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{114}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Curva delle deviazioni standard relative dei due fronti al variare del fattore moltiplicativo\relax }}{115}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{115}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{115}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Forma d'onda finale usata per la modulazione\relax }}{116}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, prima e dopo la compensazione\relax }}{117}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{117}
@@ -114,10 +114,10 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{123}
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Misure di distanza a bersaglio mobile effettuate su $200\mu m$ di spostamento con i 5 segnali di modulazione\relax }}{124}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Residuo filtrato passa-basso con frequenza di taglio a 1 MHz\relax }}{125}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Misure di distanza a bersaglio fisso con sottrazione del residuo\relax }}{126}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{126}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{126}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Misure di distanza a bersaglio mobile con sottrazione del residuo effettuate su $200 \mu m$ di spostamento\relax }}{127}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Misure di distanza a bersaglio fisso con sottrazione del residuo\relax }}{127}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{127}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{127}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Misure di distanza a bersaglio mobile con sottrazione del residuo effettuate su $200 \mu m$ di spostamento\relax }}{128}
 \contentsline {figure}{\numberline {5.23}{\ignorespaces Misure di distanza a 20cm con bersaglio fisso \relax }}{129}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{129}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{129}
@@ -127,19 +127,18 @@
 \contentsline {figure}{\numberline {5.25}{\ignorespaces Misure di distanza a $20cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{131}
 \contentsline {figure}{\numberline {5.26}{\ignorespaces Misure di distanza a $90cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{131}
 \contentsline {figure}{\numberline {5.27}{\ignorespaces Andamento della deviazione standard relativa in funzione della distanza\relax }}{132}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Ampiezza del massimo bin in funzione della distanza\relax }}{132}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sempiperiodo di discesa}}}{132}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{132}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Curva mediata delle frequenze in un semiperiodo di modulazione con curve fitting polinomiale di $3\degree $ grado\relax }}{134}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Curva delle massime variazioni relative rispetto alla media dei due fronti al variare del fattore moltiplicativo\relax }}{135}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{135}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{135}
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Forma d'onda ricavata con algoritmo di compensazione ottimizzato\relax }}{136}
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, con forma d'onda liscia (rosso) e non (blu)\relax }}{136}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Ampiezza del massimo bin in funzione della distanza\relax }}{133}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sempiperiodo di discesa}}}{133}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{133}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Curva mediata delle frequenze in un semiperiodo di modulazione con curve fitting polinomiale di $3\degree $ grado\relax }}{135}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Curva delle massime variazioni relative rispetto alla media dei due fronti al variare del fattore moltiplicativo\relax }}{136}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{136}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{136}
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Misure di distanza a bersaglio fisso con segnale di modulazione compensato e liscio\relax }}{137}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{137}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{137}
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Misure di distanza a $50cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{138}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Forma d'onda ricavata con algoritmo di compensazione ottimizzato\relax }}{136}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Curve mediate delle frequenze estratte per entrambi i fronti di modulazione, con forma d'onda liscia (rosso) e non (blu)\relax }}{137}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Semiperiodo di discesa}}}{137}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Semiperiodo di salita}}}{137}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces Misure di distanza a bersaglio fisso con segnale di modulazione compensato e liscio\relax }}{138}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{138}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{138}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces Misure di distanza a $50cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{139}
