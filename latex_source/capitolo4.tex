@@ -43,7 +43,7 @@ Le istruzioni, definite in fase di stesura del codice mediante il linguaggio gra
 
 Le caratteristiche principali che hanno portato alla scelta di LabVIEW e del linguaggio G sono:
 \begin{itemize}
-	\item LabVIEW un ambiente di sviluppo orientato fortemente all'acquisizione dati e all'analisi ed elaborazione numerica di segnali
+	\item LabVIEW è un ambiente di sviluppo orientato fortemente all'acquisizione dati e all'analisi ed elaborazione numerica di segnali
 	\item Il linguaggio G possiede un parallelismo intrinseco che è facile da utilizzare grazie alla metodologia di scrittura grafica dei programmi. La programmazione parallela consente di raggiungere elevate prestazioni di calcolo, specialmente nella programmazione per FPGA
 	\item LabVIEW include al suo interno una serie di librerie per l'analisi dei segnali disponibili anche per la compilazione su FPGA che ha notevolmente accelerato il processo di sviluppo del codice
 	\item LabVIEW è l'unico linguaggio di programmazione ufficialmente supportato dalla scheda di prototipazione scelta (vedi Capitolo \ref{capitolo3})
@@ -205,7 +205,7 @@ Le principali fasi della sintesi hardware sono:
 \begin{itemize}
 	\item \underline{Translation}: Molti software per la sintesi hardware consentono al programmatore di poter scrivere la specifica hardware in diversi modi (HDL o schema circuitale). La prima fase della compilazione consiste nel combinare e tradurre le diverse specifiche in un'unica specifica completa.
 	\item \underline{Functional simulation}: Questa fase consiste nella simulazione dell'architettura progettata. Questo processo verifica la correttezza logica del circuito senza considerare i vincoli temporali.
-	\item \underline{Optimisation}: Dopo che l'architettura è stata valutata logicamente corretta, viene effettuata un ottimizzazione automatica al fine di semplificarne l'implementazione. Le ottimizzazioni più comuni sono le semplificazioni aritmetico-logiche.
+	\item \underline{Optimisation}: Dopo che l'architettura è stata valutata logicamente corretta, viene effettuata un'ottimizzazione automatica al fine di semplificarne l'implementazione. Le ottimizzazioni più comuni sono le semplificazioni aritmetico-logiche.
 	\item \underline{Mapping}: L'architettura ottimizzata viene distribuita sulle risorse disponibili del dispositivo hardware. Il processo è molto impegnativo nel caso di programmazione FPGA perché esistono svariati modi per tracciare le interconnessioni.
 	\item \underline{Place and route}: La configurazione risultante dal processo di Mapping viene sottoposta ad una dettagliata simulazione temporale. Questa fase verifica che l'architettura realizzata rispetti i vincoli temporali sul dispositivo hardware reale.
 	\item \underline{Configuration data}: Se i risultati della simulazione temporale sono soddisfacenti, viene generato un file di configurazione chiamato \textit{bitfile}. Il \textit{bitfile} contiene tutte le informazioni necessarie per configurare correttamente l'architettura progettata sul dispositivo hardware programmabile.
@@ -248,7 +248,9 @@ Per i motivi esposti all'inizio del paragrafo, abbiamo scelto di utilizzare un'a
 \end{figure}
 		
 \subsubsection{LabVIEW FPGA}
-Per lo sviluppo dell'architettura FPGA di questo lavoro di Tesi è stato utilizzato il modulo software LabVIEW FPGA. NI LabVIEW \textit{FPGA Module} è un componente aggiuntivo di LabVIEW utilizzato per sviluppare applicazioni per FPGA.
+Per lo sviluppo dell'architettura FPGA di questo lavoro di Tesi è stato utilizzato il modulo software LabVIEW FPGA. 
+
+NI LabVIEW \textit{FPGA Module} è un componente aggiuntivo di LabVIEW utilizzato per sviluppare applicazioni per FPGA.
 
 Questo ambiente di sviluppo compila ed esegue il codice LabVIEW sul dispositivo FPGA. Il processo di compilazione automatica è suddiviso in tre fasi:
 \begin{enumerate}
@@ -264,9 +266,8 @@ Questo ambiente di sviluppo compila ed esegue il codice LabVIEW sul dispositivo 
   \end{center}
 \end{figure}
 
-Al contrario del microprocessore, non esiste alcun sistema operativo sul chip FPGA, ma LabVIEW FPGA offre comunque la possibilità di controllare ingressi e uscite attraverso un applicazione host.
+Al contrario del microprocessore, non esiste alcun sistema operativo sul chip FPGA, ma LabVIEW FPGA offre comunque la possibilità di controllare ingressi e uscite attraverso un'applicazione host.
 
-%% TODO Cap4 Controllare formule analisi teorica algortimi	
 \section{Analisi teorica degli algoritmi implementati}
 In questo paragrafo verranno introdotti i concetti fondamentali alla base dei principali algoritmi utilizzati nell'ambito dello sviluppo del firmware dell'interferometro.
 
@@ -278,7 +279,7 @@ Gli algoritmi utilizzati sono:
 \end{itemize}
 
 \subsection{Fast Fourier Transform (FFT)}
-Prima di illustrare il funzionamento dell'algoritmo di FFT, è bene richiamare alcuni concetti sull'analisi in frequenza dei segnali.
+Prima di illustrare il funzionamento dell'algoritmo di FFT, è bene richiamare alcuni concetti sull'analisi in frequenza dei segnali.
 
 I principali metodi di analisi dei segnali di misura sono l'analisi nel dominio del tempo e nel dominio della frequenza. I due approcci sono tra loro intercambiabili, ovvero, sotto opportune condizioni, nessun informazione viene persa nel passare da un dominio all'altro. 
 
@@ -304,7 +305,7 @@ dove $x(n)$ indica la sequenza infinita di campioni in ingresso e $\omega$ la pu
 
 Considerando, invece, una sequenza finita $x[n]$ di lunghezza $N$, a cui corrisponde la DTFT $X(e^{j\omega})$, è possibile definire la Trasformata di Fourier Discreta (DFT) come la sequenza di $N$ campioni:
 \begin{equation}
-	X(k)=X(e^{j\omega}) |_{\omega = \frac{2 \pi k}{N}} = \sum_{n=0}^{N-1} x(n)e^{-j \frac{2 \pi}{N} k n}
+	X[k]=X(e^{j\omega}) |_{\omega = \frac{2 \pi k}{N}} = \sum_{n=0}^{N-1} x(n)e^{-j \frac{2 \pi}{N} k n}
 	\label{dfteq}
 \end{equation}
 
@@ -316,7 +317,7 @@ con:
 $$0 \leq k \leq N-1$$
 viene chiamata \textit{bin}. Si nota che lo spettro è calcolato unicamente per le frequenze di bin.
 
-Per ottenere la sequenza $x[k]$ a partire dai campioni $x[n]$ è necessario uno sforzo computazionalmente considerevole (complessità quadratica $O(N^2)$). Esso è dovuto all'elevato numero di operazioni di moltiplicazione e addizione presenti nel calcolo della DFT. Per tale motivo, sono stati realizzati algoritmi che riducono notevolmente il numero di operazioni necessarie rendendo il costo computazionale meno cospicuo.
+Per ottenere la sequenza $X[k]$ a partire dai campioni $x[n]$ è necessario uno sforzo computazionalmente considerevole (complessità quadratica $O(N^2)$). Esso è dovuto all'elevato numero di operazioni di moltiplicazione e addizione presenti nel calcolo della DFT. Per tale motivo, sono stati realizzati algoritmi che riducono notevolmente il numero di operazioni necessarie rendendo il costo computazionale meno cospicuo.
 
 Questi algoritmi hanno complessità $O(NlogN)$ e prendono il nome di 
 \textit{Fast Fourier Transform (FFT) algorithm}.
@@ -370,31 +371,7 @@ la cui soluzione è $T(N)=O(N \log N )$.
 
 Alla luce dei risultati appena esposti, possiamo concludere che l'algoritmo di FFT riduce notevolmente il tempo di computazione portando il numero di operazioni a $(\frac{N}{2}) \log N$.
 
-Nel listato \ref{alg:fft} è mostrato lo pseudocodice dell'algoritmo di FFT.
-
-Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo della FFT si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
-
-%% TODO Cap4 Commentare e capire pseudocodice FFT
-\begin{algorithm}
-\caption{Algoritmo di Coley-Tukey FFT}\label{alg:fft}
-\begin{algorithmic}[1]
-\Procedure{$X_{0,...,N-1} \gets$ fft}{\textit{x, N, s}}
-\If {$N = 1$}
-\State $X_0 \gets x_0 $
-\Else
-\State $X_{0,...,\frac{N}{2}-1} \gets \textsc{fft}(x, \frac{N}{2}, 2s) $
-\State $X_{\frac{N}{2},...,N-1} \gets \textsc{fft}(x+s, \frac{N}{2}, 2s) $
-\For{$K=0$ \textbf{to} $\frac{N}{2}-1$}
-\State $t \gets X_k$
-\State $ X_k \gets t + e^{-2 \pi i \frac{k}{N}} X_{k+\frac{N}{2}}$
-\State $ X_{k+\frac{N}{2}} \gets t - e^{-2 \pi i \frac{k}{N}} X_{k+\frac{N}{2}}$
-\EndFor
-\State \textbf{end for}
-\EndIf
-\State \textbf{end if}
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
+Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
 
 \begin{figure}  
   \begin{center}
@@ -412,13 +389,13 @@ Applicare l'algoritmo di FFT direttamente alla sequenza campionata equivale ad u
 
 Una soluzione che limita il fenomeno di \textit{spectral leakage} è l'utilizzo di una finestra rettangolare di troncamento contenente un numero intero di periodi. Tale soluzione non è sempre realizzabile perciò, nella pratica, si utilizza un'altra soluzione che consiste nel sostituire la finestra rettangolare con finestre che presentano una transizione graduale alle estremità. 
 
-Pertanto, un importante aspetto da tenere in considerazione quando si esegue il calcolo della FFT di un segnale periodico campionato è l'operazione di finestratura \cite{31004}. 
+Pertanto, un importante aspetto da tenere in considerazione quando si esegue il calcolo della FFT di un segnale periodico campionato è l'operazione di finestratura \cite{31004}. 
 
 Le finestre con transizione graduale alle estremità, chiamate anche \textit{smoothing window}, risolvono i problemi dovuti ad un campionamento non coerente. I problemi del campionamento non coerente si manifestano principalmente agli estremi della finestra di osservazione, dove si osservano discontinuità, quindi è ragionevole ipotizzare che se si potessero trascurare gli estremi e si potesse concentrare l'analisi sulla parte centrale della finestra di osservazione si otterrebbe uno spettro in frequenza più corretto. 
 
 Pertanto, come già accennato, le \textit{smoothing window} pesano differentemente i vari campioni assumendo valore basso agli estremi e valore elevato nelle porzioni centrali della finestra.
 
-Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
+Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.4]{cap4/hann}
@@ -472,9 +449,9 @@ Questi algoritmi, chiamati \textit{Interpolated FFT (IFTT) algorithm}, permetton
 \end{equation}
 con:
 $$ 0 < \delta \leq 0.5$$
-Gli algoritmi di interpolazione si dividono tra metodi a 2 punti e a 3 punti. Si è scelto di utilizzare algoritmi a due punti perchè essi limitano il contributo di rumore rispetto al caso a 3 punti. 
+Gli algoritmi di interpolazione si dividono tra metodi a 2 punti e a 3 punti. Si è scelto di utilizzare algoritmi a due punti poiché essi limitano il contributo di rumore rispetto al caso a 3 punti. 
 
-Per migliorare ulteriormente l'accuratezza dell'estrazione del tono è stato necessario utilizzare un algoritmo di interpolazione dei moduli specifico per segnali a cui è stata applicata la finestra di \textit{Hanning} \cite{1007077}. Pertanto, si mostra ora il procedimento per il calcolo del fattore di correzione $\delta$ nel caso di finestra di \textit{Hanning}.
+Per migliorare ulteriormente l'accuratezza dell'estrazione del tono è stato necessario utilizzare un algoritmo di interpolazione dei moduli specifico per segnali a cui è stata applicata la finestra di \textit{Hanning} \cite{1007077}. Pertanto, si mostra ora il procedimento per il calcolo del fattore di correzione $\delta$ nel caso di finestra di \textit{Hanning}.
 
 Si consideri un segnale sinusoidale di frequenza $f_0$ campionato con periodo $T_s=\frac{1}{f_s}$:
 \begin{equation}
@@ -494,7 +471,7 @@ La DFT dell'equazione precedente alla linea spettrale $k$ è espressa dalla rela
 \begin{equation}
 	x[k] = \frac{1}{2} \left \{ A_0 e^{j\phi} W[(\gamma -k)f_0] + A_0 e^{-j\phi}W[(\gamma + k)f_0]  \right \}
 \end{equation}
-dove $W(f)$ è lo spettro di frequenza della funzione di finestratura utilizzata.
+dove $W(f)$ è lo spettro di frequenza della funzione di finestratura utilizzata.
 
 Come anticipato, la finestratura utilizzata è quella di \textit{Hanning} definita nel tempo come:	
 \begin{equation}
@@ -513,7 +490,7 @@ dove $W_R (f)$ è lo spettro di frequenza della finestra rettangolare:
 	W_R (f) = \frac{ \sin \left ( \pi \frac{f}{\Delta f} \right ) }{ \sin \left ( \pi \frac{f}{N \Delta f} \right ) } e^ { j \pi \frac{(N-1) f}{N \Delta f} }
 \end{equation}
 
-Considerando ora il calcolo della FFT sul segnale a cui è stata applicata la finestra di \textit{Hanning}: il risultato è la sequenza $X_h(n)$.
+Considerando ora il calcolo della FFT sul segnale a cui è stata applicata la finestra di \textit{Hanning}: il risultato è la sequenza $X_h(n)$.
 
 Determinato lo spettro $X_h(n)$, l'elaborazione continua calcolandone il modulo. \'E sufficiente calcolare il modulo di solo una metà della sequenza $X_h(n)$, poiché l'altra parte non aggiunge informazioni ulteriori.
 
@@ -526,14 +503,14 @@ Se ipotizziamo che il bin di ampiezza maggiore sia $|X_h(k)|=|V_k|$ con $k$ posi
 
 Per i passi che hanno portato alla stima della correzione $\delta$ si rimanda alla letteratura \cite{1007077}.
 
-Le finestre utilizzate nel lavoro di tesi sono quella di \textit{Hanning} e quella rettangolare. Per tale motivo di seguito viene mostrato il fattore di correzione nel caso di finestra rettangolare.
+Le finestre utilizzate nel lavoro di tesi sono quella di \textit{Hanning} e quella rettangolare. Per tale motivo di seguito viene mostrato il fattore di correzione $\delta$ nel caso di finestra rettangolare.
 
 Nel tempo la funzione che rappresenta la finestra rettangolare è definita con la relazione: 
 \begin{equation}
 w_{n,R}
 \left\{\begin{matrix}
 1 & & 0 \leq n \leq N \\ 
-0  &  & 0 > n \geq N
+0  &  & 0 > n > N
 \end{matrix}\right.
 \end{equation}
 e il fattore correttivo di frequenza $\delta$ è pari a:
@@ -541,7 +518,7 @@ e il fattore correttivo di frequenza $\delta$ è pari a:
 	\delta = \frac{|V_{k+1}|}{|V_{k+1}| + |V_k|}
 \end{equation}
 
-Infine, per calcolare la frequenza del tono fondamentale è sufficiente usare la relazione: 
+Infine, per calcolare la frequenza del tono fondamentale è sufficiente usare la relazione: 
 \begin{equation}
 	f_0 = (k + \delta)\Delta f
 \end{equation}
@@ -551,21 +528,21 @@ In questo modo, il valore del tono estratto viene scorrelato dalla larghezza del
 \subsection{Calcolo della distanza assoluta}
 Come descritto in precedenza nel Capitolo \ref{capitolo2}, la distanza assoluta $s$ del bersaglio si ricava con la relazione:
 \begin{equation}
-	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
+	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )}  \right ]
 \end{equation}
-dove $f_{rise}$ e $f_{fall}$ sono rispettivamente il tono fondamentale del segnale interferometrico nella rampa di salita e discesa dell'onda triangolare.
-	
+dove $f_{rise}$ e $f_{fall}$ sono rispettivamente il tono fondamentale del segnale interferometrico nella rampa di salita e discesa dell'onda triangolare di modulazione del laser.
+
 \section{Architettura Software}
 L'obiettivo principale del lavoro di tesi è lo sviluppo di un firmware, per la scheda di prototipazione, che sia in grado di computare e mostrare all'utente finale le misure di distanza assoluta prodotte da un laser mediante la tecnica di interferometria a retroiniezione.
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.2]{cap4/archgenschema}
-    \caption{Schema a blocchi ad alto livello dell'architettura}
+    \caption{Schema a blocchi ad alto livello dell'architettura dello strumento}
     \label{archgenschema}
   \end{center}
 \end{figure}
 
-La computazione è completamente svolta sulla scheda di prototipazione, in parte su FPGA ed in parte su microprocessore. Mentre, è presente un computer connesso alla scheda che ha come unico scopo quello di mostrare i risultati dell'elaborazione mediante un interfaccia grafica. In figura \ref{archgenschema} è mostrato uno schema a blocchi ad alto livello dell'architettura appena descritta.
+La computazione è completamente svolta sulla scheda di prototipazione, in parte su FPGA ed in parte su microprocessore. Mentre, è presente un computer connesso alla scheda che ha come unico scopo quello di mostrare i risultati dell'elaborazione mediante un interfaccia grafica. In Figura \ref{archgenschema} è mostrato uno schema a blocchi ad alto livello dell'architettura appena descritta.
 
 In particolare, l'elaborazione consiste, inizialmente, nell'acquisizione del segnale interferometrico in arrivo dal sistema elettronico del laser. Una volta acquisito, il segnale interferometrico viene condizionato e se ne estrae il tono fondamentale sfruttando l'algoritmo di FFT. Infine, utilizzando l'informazione del tono fondamentale del segnale, si ricava la misura di distanza assoluta che viene poi mostrata all'utente finale mediante l'interfaccia grafica.
 
@@ -599,7 +576,7 @@ Il segnale interferometrico in arrivo dal laser viene campionato, dai pin digita
 Il segnale d'ingresso è anch'esso composto da $1250$ punti ognuno con una dinamica da $0$ a $4095$ livelli di tensione. Pertanto un segnale interferometrico completo equivalente a un periodo di modulazione del laser è disponibile ogni $41.6us$ ($24KHz$).
 
 \paragraph{Condizionamento del segnale interferometrico}
-Il segnale interferometrico, acquisito dal circuito di conversione Analogico/Digitale, viene condizionato prima di passato alla fase di elaborazione vera e propria.
+Il segnale interferometrico, acquisito dal circuito di conversione Analogico/Digitale, viene condizionato prima di essere inviato alla fase di elaborazione vera e propria.
 
 Le operazione svolte nella fase di condizionamento sono:
 \begin{itemize}
@@ -609,7 +586,7 @@ Le operazione svolte nella fase di condizionamento sono:
 \end{itemize}
 
 \subparagraph{Sottrazione del residuo}
-La sottrazione del residuo è un operazione che consiste nel sottrarre punto per punto al segnale interferometrico completo un segnale di $1250$ punti chiamato \textit{residuo}. Il \textit{residuo} è un segnale che viene calcolato e conservato nel FPGA nelle fasi preliminari di avviamento dello strumento di misura, il significato di tale segnale verrà illustrato nel Capitolo \ref{capitolo5}.
+La sottrazione del residuo è un operazione che consiste nel sottrarre punto per punto al segnale interferometrico completo un segnale di $1250$ punti chiamato \textit{residuo}. Il \textit{residuo} è un segnale che viene calcolato e conservato nel FPGA nelle fasi preliminari di avviamento dello strumento di misura, il significato di tale segnale verrà discusso nel Capitolo \ref{capitolo5}.
 
 \subparagraph{Estrazione di 512 campioni}
 Il segnale interferometrico, dopo essere stato privato del suo residuo, viene suddiviso in $2$ semiperiodi da $625$ campioni. Per ciascuno dei due semiperiodi vengono estratti solamente $512$ campioni contigui. I restanti $113$ campioni vengono scartati. 
@@ -632,7 +609,7 @@ Dato che i campioni in ingresso all'algoritmo di FFT sono campionati a $30MHz$, 
 \end{equation}
 Ciò significa che ciascun \textit{bin} di frequenza rappresenta la quantità totale di energia al quadrato posseduta dal segnale a quella particolare frequenza. Il primo punto corrisponde a $0Hz$ (componente continua), il secondo punto corrisponde a $58.59375 KHz$, il terzo punto corrisponde a $117.1875KHz$ e così via.
 
-Sappiamo dal teorema di \textit{Nyquist} che il campionamento a $30MS/s$ sarà in grado di misurare frequenze fino a un massimo di $15MHz$. Perciò, tutti i bin maggiori al $257\degree$ (pari alla frequenza $256 * 58.59375 KHz = 15MHz$) rappresentano frequenze negative: il $258\degree$ corrisponde alla frequenza $-14.9414062 MHz$, il $259\degree$ corrisponde a $-14.8828124 MHz$ e così via.
+Sappiamo dal teorema di \textit{Nyquist} che il campionamento a $30MSa/s$ sarà in grado di misurare frequenze fino a un massimo di $15MHz$. Perciò, tutti i bin maggiori al $257\degree$ (pari alla frequenza $256 * 58.59375 KHz = 15MHz$) rappresentano frequenze negative: il $258\degree$ corrisponde alla frequenza $-14.9414062 MHz$, il $259\degree$ corrisponde a $-14.8828124 MHz$ e così via.
 
 \paragraph{Estrazione del massimo bin di frequenza}
 L'ultima fase dell'elaborazione numerica del segnale interferometrico su FPGA è l'estrazione del bin di frequenza con massima ampiezza.
@@ -650,11 +627,11 @@ Infine, i risultati dell'elaborazione vengono inviati al microprocessore.
 \subsubsection{Implementazione software}
 Il software eseguito dall'FPGA è implementato su un unico VI, come richiesto da LabVIEW; infatti, a differenza di PC e microcontrollori, una FPGA che esegue codice LabVIEW può avere un solo VI in esecuzione simultanea.
 
-Il VI sviluppato si compone di una \textit{Sequence Structure}, composta da 2 frame. La \textit{Sequence Structure} è un costrutto di LabVIEW utilizzato per imporre vincoli di precedenza temporale nell'esecuzione del codice. Questa scelta è stata fatta per garantire il corretto ordine di esecuzione delle istruzioni del codice, con il primo \textit{frame} che si occupa dell'inizializzazione dello strumento e il secondo e ultimo \textit{frame} che esegue le funzionalità precedentemente descritte.
+Il VI sviluppato si compone di una \textit{Sequence Structure}, composta da 2 frame. La \textit{Sequence Structure} è un costrutto di LabVIEW utilizzato per imporre vincoli di precedenza temporale nell'esecuzione del codice. Questa scelta è stata fatta per garantire il corretto ordine di esecuzione delle istruzioni del codice, con il primo \textit{frame} che si occupa dell'inizializzazione dello strumento e il secondo \textit{frame} che esegue le funzionalità precedentemente descritte.
 
 Il \textit{frame} di inizializzazione si occupa di abilitare e inizializzare i pin digitali (DIO pin, \textit{Digital Input Output pin}) della scheda e di predisporre le memorie dell'FPGA per l'esecuzione. In particolare vengono inizializzate le memorie che conservano il segnale di modulazione, della funzione finestra e del residuo.
 
-Il \textit{frame} finale è stato diviso in blocchi funzionali, ognuno contenente una porzione di funzionalità che è necessario garantire. I blocchi funzionali realizzati sono descritti di seguito:
+Il secondo \textit{frame} è stato diviso in blocchi funzionali, ognuno contenente una porzione di funzionalità che è necessario garantire. I blocchi funzionali realizzati sono descritti di seguito:
 \begin{itemize}
 	\item \underline{Generazione del clock}, del \underline{segnale di modulazione} e \underline{acquisizione} del \underline{segnale interferometrico}: In questo blocco funzionale è implementata una macchina a stati finiti, composta da due stati: il primo attiva alto il segnale di clock per i circuiti di conversione DAC e ADC ed invia ai pin digitali di uscita il valore del punto del segnale di modulazione da generare. Nel secondo stato, invece, il segnale di clock per i circuiti di conversione viene portato basso e si legge il valore digitale presente ai pin d'ingresso della scheda che corrisponde al valore letto dal circuito elettronico del laser in quell'istante. In questo modo viene garantita una sincronizzazione tra il valore di modulazione e il valore di risposta del laser.
 	\item \underline{Lettura dalla memoria del segnale di modulazione}: Questo blocco funzionale provvede a leggere dalla memoria, precedentemente inizializzata, il punto successivo del segnale di modulazione usato per pilotare il laser. Ogni punto letto viene inviato al blocco di generazione del segnale di modulazione.
@@ -675,7 +652,7 @@ Ogni blocco funzionale è rappresentato graficamente da un ciclo. I cicli vengon
 In Figura \ref{codicefpga} è mostrata una versione semplificata del diagramma a blocchi utilizzato per implementare le funzionalità FPGA soprascritte. Il primo ciclo possiede una frequenza di $60MHz$ per garantire la corretta generazione del clock a $30MHz$ per i circuiti di conversione A/D e D/A, al contrario dei restanti cicli che hanno frequenza $30MHz$.
 	
 \paragraph{Design pattern utilizzati}
-Nello sviluppo del codice eseguito in hardware dall'FPGA ci si è serviti di due \textit{design pattern} tipicamente utilizzati durante lo sviluppo di codice LabVIEW: il \textit{Producer-Consumer} e il \textit{4-Wire Handshake}, che verranno spiegati in dettaglio nel seguito del paragrafo.
+Per lo sviluppo del codice eseguito in hardware dall'FPGA sono stati sfruttati due \textit{design pattern} tipicamente utilizzati durante lo sviluppo di codice LabVIEW: il \textit{Producer-Consumer} e il \textit{4-Wire Handshake}, che verranno spiegati in dettaglio nel seguito del paragrafo.
 
 \subparagraph{Producer-consumer}
 Il \textit{Producer-Consumer design pattern} è un pattern utilizzato per la sincronizzazione tra processi basato sul Master/Slave pattern. Il problema descrive due processi, uno produttore (\textit{Producer, Master}) ed uno consumatore (\textit{Consumer, Slave}), che condividono una memoria comune, chiamata buffer, di dimensione fissata. 
@@ -700,7 +677,7 @@ La \textit{FIFO} è una struttura dati che contiene gli elementi nell'ordine in 
   \end{center}
 \end{figure}
 
-La Figura \ref{prodcons} seguente mostra un esempio in LabVIEW di Producer/Consumer pattern utilizzato per trasferire dati tra due cicli Single Timed Loop sulla stessa FPGA. I due processi risiedono su due diversi domini di frequenza: il producer utilizza un clock a $60 MHz$ mentre il consumer utilizza un clock a $30 MHz$. 
+La Figura \ref{prodcons} seguente mostra un esempio in LabVIEW di Producer/Consumer pattern utilizzato per trasferire dati tra due cicli Timed Loop sulla stessa FPGA. I due processi risiedono su due diversi domini di frequenza: il producer utilizza un clock a $60 MHz$ mentre il consumer utilizza un clock a $30 MHz$. 
 
 Nel processo producer, le letture relative al numero dell'iterazione del ciclo vengono scritte nel buffer di memoria FIFO attraverso il nodo \textit{FIFO Method Node Write}. Se il dato numerico in ingresso al metodo non è disponibile o la coda è piena, il metodo \textit{Write} non scrive alcun dato nella coda e asserisce l'uscita \textit{Timed Out?} a vero segnalando che l'elemento non è stato depositato nella coda. Il metodo \textit{FIFO Method Node Read}, nel processo consumer, legge i dati dalla coda. Se i dati non sono disponibili per la lettura asserisce l'uscita \textit{Timed Out?} a vero segnalando che la coda è vuota.
 
@@ -713,13 +690,13 @@ Nei nodi che consentono l'utilizzo di questo pattern tipicamente si hanno due in
 \begin{itemize}
 	\item \underline{Ingressi}
 	\begin{itemize}
-	\item \textit{Input Valid}: specifica che il prossimo dato da processare è pronto in ingresso
+	\item \textit{Input Valid}: Specifica che il prossimo dato da processare è pronto in ingresso
 	\item \textit{Ready for output}: Specifica se i nodi a valle sono pronti per ricevere nuovi dati in ingresso
 	\end{itemize}
 	\item \underline{Uscite}
 	\begin{itemize}
-	\item \textit{Output valid}: specifica ai nodi a valle che il dato corrente in uscita è valido
-	\item \textit{Ready for input}: specifica se il subVI può ricevere nuovi dati in ingresso al prossimo ciclo
+	\item \textit{Output valid}: Notifica ai nodi a valle che il dato corrente in uscita è valido
+	\item \textit{Ready for input}: Notifica se il subVI può ricevere nuovi dati in ingresso al prossimo ciclo
 	\end{itemize}
 \end{itemize}
 
@@ -731,22 +708,23 @@ Nei nodi che consentono l'utilizzo di questo pattern tipicamente si hanno due in
   \end{center}
 \end{figure}
 
-L'esecuzione del protocollo \textit{4-Wire Handshake} inizia con il nodo pipelined che comunica alla coda in ingresso che è pronto per accettare nuovi dati in ingresso. Tipicamente è utilizzato un feedback node per comunicare il valore logico della variabile \textit{ready for input} ai nodi a valle del subVI. 
+L'esecuzione del protocollo \textit{4-Wire Handshake} inizia con il nodo pipelined che comunica alla coda in ingresso che è pronto per accettare nuovi dati. Tipicamente è utilizzato un feedback node per comunicare il valore logico della variabile \textit{Ready for input} ai nodi a valle del subVI. 
 
 Quando il nodo a valle del subVI fornisce il dato assegna il valore logico Vero alla variabile \textit{Input Valid} indicando così al subVI che il dato al suo ingresso è pronto per essere processato. Se il nodo pipelined ha ricevuto tutti i dati di cui necessitava il valore logico della variabile \textit{Ready for input} viene portato a Falso.
 
-Al termine della computazione il subVI attende che il valore della variabile \textit{ready for output} sia Vero e modifica il valore logico della variabile \textit{output valid} a Vero, per comunicare ai nodi a monte che il valore in output è valido. Contemporaneamente il valore della variabile \textit{ready for input} viene portato a Vero, per poter accettare un nuovo valore in ingresso e ricominciare la computazione.
-
-Nel caso del subVI dell'FFT il valore di \textit{input ready} è dato dal \textit{Time out?} della coda FIFO \textit{Waveform}; infatti, se la coda contiene almeno un dato al suo interno, il dato che fornisce è valido. Al termine della computazione dell'FFT il valore \textit{output valid} consente al calcolo del modulo al quadrato dell'FFT di essere eseguito, e, come specificato dal pattern, il valore logico di \textit{ready for input} viene portato a Vero.
-
-Poiché il calcolo del modulo quadrato dell'FFT non è stato sviluppato sfruttando la pipeline, esso è sempre pronto a ricevere un input, rendendo il valore di \textit{ready for output} sempre Vero.
+Al termine della computazione il subVI attende che il valore della variabile \textit{Ready for output} sia Vero e modifica il valore logico della variabile \textit{Output valid} a Vero, per comunicare ai nodi a monte che il risultato in uscita è valido. Contemporaneamente il valore della variabile \textit{Ready for input} viene portato a Vero, per poter accettare un nuovo valore in ingresso e ricominciare così la computazione.
 
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.35]{cap4/fftloop}
     \caption{Computazione FFT}
+    \label{compfftciclo}
   \end{center}
 \end{figure}
+
+Nel caso del subVI dell'FFT (Figura \ref{compfftciclo}) il valore di \textit{Input ready} è dato dal \textit{Time out?} della coda FIFO \textit{Waveform}; infatti, se la coda contiene almeno un dato al suo interno, il dato che fornisce è valido. Al termine della computazione dell'FFT il valore \textit{Output valid} consente al calcolo del modulo al quadrato dell'FFT di essere eseguito, e, come specificato dal pattern, il valore logico di \textit{Ready for input} viene portato a Vero.
+
+Poiché il calcolo del modulo quadrato dell'FFT non è stato sviluppato sfruttando la pipeline, esso è sempre pronto a ricevere un input, rendendo il valore di \textit{Ready for output} sempre Vero.
 
 \begin{figure}  
   \begin{center}
@@ -766,11 +744,10 @@ Il SubVI \textit{FFT Express VI}, che effettua la computazione del FFT, è inser
   \end{center}
 \end{figure}
 
-ll \textit{Timing diagram} in Figura \ref{timdiagfft} mostra le relazioni temporali tra gli ingressi e le uscite dell'FFT Express VI quando esso si trova all'interno di un single-cycle Timed Loop con Throughput pari 1 input/ciclo.
-
-			
+ll \textit{Timing diagram} in Figura \ref{timdiagfft} mostra le relazioni temporali tra gli ingressi e le uscite dell'FFT Express VI quando esso si trova all'interno di un Timed Loop con throughput pari 1 input/ciclo.
+	
 \paragraph{Fixed Point}
-Per motivi di prestazioni e di area, è stato ampiamente utilizzato il tipo di dato \textit{fixed point} nello sviluppo del codice FPGA. Per i precedenti motivi, inoltre, le funzioni di libreria presenti in LabVIEW FPGA accettano come ingressi numeri rappresentati in \textit{fixed point}.
+Per motivi di prestazioni e di area, è stato ampiamente utilizzato il tipo di dato \textit{fixed point} nello sviluppo del codice FPGA. Questa scelta non ha complicato la realizzazione del firmware in quanto le funzioni di libreria presenti in LabVIEW FPGA accettano come ingressi numeri rappresentati in \textit{fixed point}.
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.7]{cap4/fxpvsfloat}
@@ -787,7 +764,7 @@ La lunghezza della parte intera può essere maggiore o minore rispetto alla lung
 
 \'E anche possibile rappresentare numeri con parte intera negativa. In questo caso non è possibile rappresentare numeri interi, ed in particolare si potranno rappresentare soltanto numeri compresi tra $0$ e $1$ in caso di \textit{fixed point unsigned}, oppure tra $-1$ e $1$ in caso di \textit{fixed point signed}.
 
-Per lo sviluppo del progetto sono stati utilizzati fixed point signed a $12$-bit con parola intera di $12$ bit per i segnali generati ed acquisiti. Questa scelta è stata fatta tenendo conto della risoluzione dei convertitori utilizzati, che è appunto di $12$-bit.
+Per lo sviluppo del progetto sono stati utilizzati \textit{fixed point signed} a $12$-bit con parola intera di $12$ bit per i segnali generati ed acquisiti. Questa scelta è stata fatta tenendo conto della risoluzione dei convertitori utilizzati, che è appunto di $12$-bit.
 
 Per quanto riguarda le restanti configurazioni del tipo di dato all'interno del codice si è fatto affidamento al sistema di auto-adattamento delle uscite in base alla lunghezza dei risultati integrato in LabVIEW. Questo sistema calcola il massimo valore rappresentabile in uscita da un blocco funzionale e adatta il tipo di dato di conseguenza.
 
@@ -809,7 +786,7 @@ Il software sviluppato per l'esecuzione su microcontrollore svolge le funzionali
 \end{itemize}
 
 \paragraph{Algoritmo per il controllo del rumore}
-A causa di possibili disturbi esterni, non tutte le misure sono da ritenere valide. È stato quindi implementato un algoritmo di controllo che scartasse le ampiezze dei bin qualora fossero palesemente errate.
+A causa di possibili disturbi esterni, non tutte le misure sono da ritenere valide. \'E stato quindi implementato un algoritmo di controllo che scartasse le ampiezze dei bin qualora fossero palesemente errate.
 
 Per fare ciò si è usato un semplice criterio di selezione: se le ampiezze dei bin massimo e laterali sono al di sotto di una determinata soglia, chiamata "soglia di rumore", vengono scartate altrimenti accettate. Le ampiezze vengono accettate se e solo se tutte le ampiezze di un periodo di modulazione superano positivamente il criterio di selezione.
 
@@ -829,9 +806,11 @@ dove:
 \begin{itemize}
 	\item $k$ è il bin di frequenza di ampiezza massima
 	\item $|V_k|$ è il modulo del bin di ampiezza massima
+	\item $|V_x|$ è il massimo tra $|V_{k-1}|$ e $|V_{k+1}|$:
+	\begin{itemize}
 	\item $|V_{k-1}|$ è il modulo del bin precedente al massimo
 	\item $|V_{k+1}|$ è il modulo del bin successivo al massimo
-	\item $|V_x|$ è il massimo tra $|V_{k-1}|$ e $|V_{k+1}|$ 
+	\end{itemize} 
 \end{itemize}
 
 Altrimenti, se la funzione finestra utilizzata è \textit{Hanning} viene applicata l'equazione:
@@ -850,15 +829,15 @@ La frequenza del segnale, in funzione del bin interpolato, si calcola con la rel
 \begin{equation}
 	f_0 = \frac{f_{sample}}{N} k' = \frac{30MHz}{512} k'
 \end{equation}
-Per preparare il sistema ad eseguire la misura di distanza assoluta è necessario analizzare separatamente i dati corrispondenti al semiperiodo di discesa e al semiperiodo di salita del segnale triangolare di modulazione, in modo da estrarre separatamente i toni fondamentali $f_{fall}$ e $f_{rise}$.
+Per preparare il sistema ad eseguire la misura di distanza assoluta è necessario analizzare separatamente i dati corrispondenti al semiperiodo di discesa e al semiperiodo di salita del segnale triangolare di modulazione, in modo tale da estrarre separatamente i toni fondamentali $f_{fall}$ e $f_{rise}$.
 
 \paragraph{Calcolo della distanza assoluta}
 L'ultima operazione compiuta dal microcontrollore è il calcolo della distanza assoluta mediante la relazione:
 \begin{equation}
-	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )}  \right ] = \frac{f_{rise}+f_{fall}}{2} \Psi
+	s = \frac{f_{rise}+f_{fall}}{2} \left [ \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )}  \right ] = \frac{f_{rise}+f_{fall}}{2} \Psi
 \end{equation}
 
-Il parametro $\Psi = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta T} \frac{\Delta \lambda}{\Delta I} \right )} $ non è definito, questo perché $\frac{\Delta \lambda}{\Delta I}$ non è noto a priori, ma si può ritenere in prima approssimazione costante, e si può ricavare variando la distanza e mantenendo tutti gli altri parametri costanti. Dopo aver mediato i risultati si ottiene $\Psi=261.5 nm/Hz$.
+Il parametro $\Psi = \frac{\lambda^2}{2\left ( \frac{\Delta I}{\Delta t} \frac{\Delta \lambda}{\Delta I} \right )} $ non è definito, questo perché $\frac{\Delta \lambda}{\Delta I}$ non è noto a priori, ma si può ritenere in prima approssimazione costante, e si può ricavare variando la distanza e mantenendo tutti gli altri parametri costanti. Dopo aver mediato i risultati si ottiene $\Psi=261.5 nm/Hz$.
 
 Inoltre, è possibile mediare $M$ misure di distanza ottenendo così una misura più accurata mediante la relazione:
 \begin{equation}
@@ -874,8 +853,6 @@ Il VI principale eseguito dal microcontrollore si compone di una parte di codice
 
 La parte di codice iniziale si occupa della configurazione dello strumento, inviando all'FPGA il \textit{bitfile} da eseguire, i parametri di esecuzione ed il contenuto delle memorie. Il ciclo di elaborazione, invece, esegue tutte le funzionalità appena descritte.
 
-L'interfaccia grafica, che corrisponde al front panel del VI implementato su microcontrollore, viene eseguita su un PC collegato con cavo \textit{Ethernet} alla scheda di prototipazione. Il microcontrollore invia, attraverso il protocollo \textit{Ethernet}, i dati da visualizzare graficamente sugli indicatori del front panel.
-
 \begin{figure}  
   \begin{center}
     \includegraphics[scale=0.3]{cap4/guimicro}
@@ -883,6 +860,8 @@ L'interfaccia grafica, che corrisponde al front panel del VI implementato su mic
     \label{guimicro}
   \end{center}
 \end{figure} 
+
+L'interfaccia grafica (Figura \ref{guimicro}), che corrisponde al front panel del VI implementato su microcontrollore, viene eseguita su un PC collegato con cavo \textit{Ethernet} alla scheda di prototipazione. Il microcontrollore invia, attraverso il protocollo \textit{Ethernet}, i dati da visualizzare graficamente sugli indicatori del front panel.
 
 \subsection{Comunicazione tra FPGA e Microcontrollore}
 Lo comunicazione tra il microprocessore e il chip FPGA avviene attraverso l'utilizzo di un componente hardware dedicato chiamato DMA.

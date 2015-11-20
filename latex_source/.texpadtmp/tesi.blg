@@ -13,7 +13,6 @@ A level-1 auxiliary file: capitolo4.aux
 A level-1 auxiliary file: capitolo5.aux
 A level-1 auxiliary file: conclusioni.aux
 A level-1 auxiliary file: ringraziamenti.aux
-A level-1 auxiliary file: appendiceA.aux
 The style file: plain.bst
 Database file #1: ../bibl_tesi.bib
 Warning--entry type for "standa" isn't style-file defined
@@ -66,7 +65,7 @@ Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y
 while executing---line 1090 of file plain.bst
 You've used 47 entries,
             2118 wiz_defined-function locations,
-            741 strings with 9976 characters,
+            740 strings with 9962 characters,
 and the built_in function-call counts, 12624 in all, are:
 = -- 1177
 > -- 514
