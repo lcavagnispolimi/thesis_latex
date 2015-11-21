@@ -17,7 +17,7 @@ La differenza sostanziale tra il linguaggio G e i linguaggi tradizionali risiede
 
 I programmi generati da LabVIEW prendono il nome di "strumenti virtuali" (\textit{Virtual Instrument}, VI). Un programma VI è composto da due parti fondamentali: il Pannello frontale (\textit{Front Panel}) e il Diagramma a blocchi funzionale (\textit{Block Diagram}).
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \subfigure[Front Panel]
 {\label{esempiolva}\includegraphics[scale=.8]{cap4/esempiolvaimg}}
@@ -31,9 +31,9 @@ Il pannello frontale è l'interfaccia utente del VI. Esso permette di definire e
  
 Lo schema a blocchi è il diagramma di flusso che rappresenta il codice sorgente, in formato grafico. Esso è composto da due elementi distinti: i \textit{nodi} e i \textit{collegamenti}. I \textit{nodi} sono gli elementi di elaborazione, mentre i \textit{collegamenti} sono i fili che uniscono i vari nodi e permettono lo scambio di informazione ovvero il flusso dei dati.
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
-    \includegraphics[scale=0.6]{cap4/nodocoll}
+    \includegraphics[scale=0.7]{cap4/nodocoll}
     \caption{Esempio di Nodo e di Collegamento}
     \label{nodocoll}
   \end{center}
@@ -55,13 +55,13 @@ Come già accennato nel Capitolo precedente, lo scopo di questo lavoro di Tesi 
 \subsection{Programmazione del microcontrollore}
 	Lo sviluppo di codice per un sistema \textit{embedded} basato su microcontrollore si può suddivere in due approcci:
 	\begin{enumerate}
-		\item \underline{Bare-metal approach}: consiste in una programmazione a basso livello dove il codice viene caricato direttamente sul dispositivo hardware (in questo caso microontrollore).  Questo approccio è utilizzato quando la complessità del sistema non è elevata. Pertanto garantisce un occupazione di memoria molto piccola (\textit{memory footprint}). Un grosso svantaggio è la poca flessibilità ai cambiamenti di specifiche.
+		\item \underline{Bare-metal approach}: consiste in una programmazione a basso livello dove il codice viene caricato direttamente sul dispositivo hardware (in questo caso microontrollore).  Questo approccio è utilizzato quando la complessità del sistema non è elevata. Pertanto garantisce un \textit{memory footprint} (occupazione di memoria) molto piccola. Un grosso svantaggio è la poca flessibilità ai cambiamenti di specifiche.
 		\item \underline{Real-time Operating System approach}: consiste in una programmazione basata sul supporto di un sistema operativo \textit{Real-Time}. Questo approccio sfrutta tutti i vantaggi dell'utilizzo di un OS (programmazione \textit{multi-thread}, astrazione dell'hardware, ecc...).
 	\end{enumerate}
 	
 	Per i motivi sopracitati si è scelto di sfruttare i vantaggi dell'utilizzo di un sistema Real-Time. Nel paragrafo successivo verrano trattate le caratteristiche dei sistemi Real-Time, i sistemi operativi Real-Time e in particolare il sistema operativo in uso sulla scheda di prototipazione scelta.
 	
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.55]{cap4/baremetalrtos}
     \caption{Schema di funzionamento dei due approcci: RTOS e Bare-metal}
@@ -104,7 +104,7 @@ L'RTOS presente sulla scheda di prototipazione utilizzata è \textit{VxWorks}.
 
 La struttura del sistema operativo è basata su \textit{micro-kernel}. Il \textit{micro-kernel}, contrariamente al kernel monolitico, fornisce solo le funzionalità strettamente necessarie alla gestione dei processi. Le funzionalità accessorie, come ad esempio la gestione di rete, sono rese disponibili da librerie esterne al kernel. Questa soluzione offre un ristretto utilizzo di memoria e libertà al progettista di personalizzare il sistema con le funzionalità prescelte.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.5]{cap4/microvsmono}
     \caption{Confronto tra kernel monolitico e micro-kernel}
@@ -112,7 +112,7 @@ La struttura del sistema operativo è basata su \textit{micro-kernel}. Il \texti
 \end{figure}
 
 Lo scheduling utilizzato da \textit{VxWorks} utilizza la politica Round-Robin con diritto di prelazione e priorità. I task con priorità più elevata vengono eseguiti per primi e nel caso di task con la stessa priorità l'esecuzione è Round-Robin.
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.5]{cap4/vxworks}
     \caption{Struttura del sistema operativo VxWorks}
@@ -128,7 +128,7 @@ Per lo sviluppo dell'architettura Real-Time di questo lavoro di Tesi è stato ut
 
 NI LabVIEW \textit{Real-Time Module} è un componente aggiuntivo di LabVIEW utilizzato per la creazione di applicazioni Real-Time in esecuzione su dispositivi hardware \textit{embedded}.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.5]{cap4/lvrt}
     \caption{Struttura del modulo LabVIEW Real-Time}
@@ -136,7 +136,7 @@ NI LabVIEW \textit{Real-Time Module} è un componente aggiuntivo di LabVIEW util
   \end{center}
 \end{figure}
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.4]{cap4/lvrtvi}
     \caption{Architettura software di un applicazione LabVIEW Real-Time}
@@ -151,10 +151,10 @@ L'applicazione \textit{host}, eseguita sul computer host, ha il compito di inter
 L'applicazione \textit{target}, invece, è l'applicazione Real-Time eseguita dal microprocessore del target computer. Nel nostro lavoro di Tesi il target computer è la scheda di prototipazione \textit{Single Board RIO 9636} ampiamente descritta nel Capitolo \ref{capitolo3}.
 
 L'applicazione \textit{target} è composta da processi. Un processo è un insieme di operazioni che si ripetono iterativamente nel tempo consumando una precisa quantità di tempo del microprocessore (\textit{deadline}).
-\begin{figure}
+\begin{figure}[H]
 \centering
 \subfigure[Timed Loop (Deterministico)]
-{\label{timedloop}\includegraphics[scale=.5]{cap4/timed}}
+{\label{timedloop}\includegraphics[scale=0.6]{cap4/timed}}
 \hspace{5mm}
 \subfigure[While Loop (Non deterministico)]
 {\label{whileloop}\includegraphics[scale=.5]{cap4/while}}
@@ -219,7 +219,7 @@ Le principali fasi della sintesi hardware sono:
 \end{figure}
 		
 \subsubsection{High-Level Synthesis (HLS)}
-\textit{High-level synthesis} (HLS), in italiano Sintesi ad alto livello, è un processo automatizzato di compilazione che interpreta una descrizione algoritmica di un desiderato comportamento e crea l'hardware digitale che implementa tale comportamento \cite{Coussy:2008:HSA:1457713}.
+\textit{High-level synthesis} (HLS), in italiano Sintesi ad alto livello, è un processo automatizzato di compilazione che interpreta una descrizione algoritmica del comportamento desiderato e crea l'implementazione digitale in hardware di tale comportamento \cite{Coussy:2008:HSA:1457713}.
 
 La descrizione algoritmica del comportamento è espressa con linguaggi di alto livello come C, infatti è talvolta chiamata \textit{C-Synthesis}. Nella pratica, gli strumenti di compilazione HLS convertono codice C o C-like in un linguaggio di descrizione dell'hardware (HDL), come VHDL o Verilog. 
 
@@ -238,14 +238,14 @@ Di seguito vengono elencati i passi principali del processo di sintesi di alto l
 	\item \underline{Output processing}: I risultati prodotti dai passi precedenti vengono tradotti in codice HDL.
 \end{enumerate}
 
-Per i motivi esposti all'inizio del paragrafo, abbiamo scelto di utilizzare un'ambiente di sviluppo che permettesse di sfruttare i benefici della sintesi ad alto livello. L'ambiente di sviluppo utilizzato per la programmazione della scheda FPGA è descritto nel paragrafo successivo.
-
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.4]{cap4/hls}
-    \caption{High Level Synthesis}
-  \end{center}
+\begin{figure}[H]  
+	\begin{center}
+		\includegraphics[scale=0.4]{cap4/hls}
+		\caption{High Level Synthesis}
+	\end{center}
 \end{figure}
+
+Per i motivi esposti all'inizio del paragrafo, abbiamo scelto di utilizzare un'ambiente di sviluppo che permettesse di sfruttare i benefici della sintesi ad alto livello. L'ambiente di sviluppo utilizzato per la programmazione della scheda FPGA è descritto nel paragrafo successivo.
 		
 \subsubsection{LabVIEW FPGA}
 Per lo sviluppo dell'architettura FPGA di questo lavoro di Tesi è stato utilizzato il modulo software LabVIEW FPGA. 
@@ -259,7 +259,7 @@ Questo ambiente di sviluppo compila ed esegue il codice LabVIEW sul dispositivo 
 	\item \underline{Bitfile download}: Il \textit{bitfile} generato dal compilatore di \textit{Xilinx} viene caricato ed eseguito sull'FPGA.
 \end{enumerate}
 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.4]{cap4/fpgalv}
     \caption{Processo di compilazione LabVIEW FPGA}
@@ -290,7 +290,7 @@ Il campionamento ideale consiste nel moltiplicare il segnale $x(t)$ per il treno
 \begin{equation}
 	x_s(t)=x(t) s(t) = \sum_{n=-\infty}^{+\infty} x(nT_s) (\delta (t-nT_s))
 \end{equation}
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.6]{cap4/trenoimp}
     \caption{Segnale campionato con treno di impulsi}
@@ -315,7 +315,7 @@ La DFT è costituita da un campionamento delle pulsazioni della DTFT con passo d
 \end{equation}
 con:
 $$0 \leq k \leq N-1$$
-viene chiamata \textit{bin}. Si nota che lo spettro è calcolato unicamente per le frequenze di bin.
+viene chiamata \textit{bin}. Si nota che lo spettro \'e calcolato unicamente per le frequenze di bin.
 
 Per ottenere la sequenza $X[k]$ a partire dai campioni $x[n]$ è necessario uno sforzo computazionalmente considerevole (complessità quadratica $O(N^2)$). Esso è dovuto all'elevato numero di operazioni di moltiplicazione e addizione presenti nel calcolo della DFT. Per tale motivo, sono stati realizzati algoritmi che riducono notevolmente il numero di operazioni necessarie rendendo il costo computazionale meno cospicuo.
 
@@ -373,9 +373,9 @@ Alla luce dei risultati appena esposti, possiamo concludere che l'algoritmo di F
 
 Il calcolo della FFT è caratterizzato però da un problema che riguarda la valutazione finale dello spettro di frequenza: il calcolo si può considerare corretto solo se il segnale è periodico e l'analisi viene effettuata su un segnale campionato coerentemente, ovvero se si considerano un numero intero di periodi del segnale.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
-    \includegraphics[scale=0.5]{cap4/spectleak}
+    \includegraphics[scale=0.7]{cap4/spectleak}
     \caption{Spectral leakage}
     \label{spectleak}
   \end{center}
@@ -396,9 +396,9 @@ Le finestre con transizione graduale alle estremità, chiamate anche \textit{smo
 Pertanto, come già accennato, le \textit{smoothing window} pesano differentemente i vari campioni assumendo valore basso agli estremi e valore elevato nelle porzioni centrali della finestra.
 
 Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[scale=0.4]{cap4/hann}
+    \includegraphics[scale=0.7]{cap4/hann}
     \caption{Finestra di Hanning}
     \label{hann}
   \end{center}
@@ -411,9 +411,9 @@ La funzione peso della finestratura di \textit{Hanning} è definita dalla seguen
 con:
 $$ 0 \leq n \leq N-1 $$
 ed è mostrata in figura \ref{hann}. La forma di questa finestra consente di eliminare la discontinuità del segnale agli estremi in caso di campionamento non coerente. 
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
-    \includegraphics[scale=0.4]{cap4/smoothwins}
+    \includegraphics[scale=0.65]{cap4/smoothwins}
     \caption{Spectral leakage per diversi tipi di finestratura}
     \label{smoothwins}
   \end{center}
@@ -435,7 +435,7 @@ Se si campiona il segnale di ingresso con una frequenza $f_s$, si ottiene una ri
 dove $N$ è il numero dei campioni e $\Delta f$ è la distanza tra 2 \textit{bin} consecutivi.
 
 Per migliorare la risoluzione del tono principale del segnale esistono algoritmi che utilizzano metodi di interpolazione.
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.4]{cap4/ifft}
     \caption{Confronto tra DFT e FT di un segnale a frequenza $\omega _0$}
@@ -534,7 +534,7 @@ dove $f_{rise}$ e $f_{fall}$ sono rispettivamente il tono fondamentale del segna
 
 \section{Architettura Software}
 L'obiettivo principale del lavoro di tesi è lo sviluppo di un firmware, per la scheda di prototipazione, che sia in grado di computare e mostrare all'utente finale le misure di distanza assoluta prodotte da un laser mediante la tecnica di interferometria a retroiniezione.
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.2]{cap4/archgenschema}
     \caption{Schema a blocchi ad alto livello dell'architettura dello strumento}
@@ -639,17 +639,19 @@ Il secondo \textit{frame} è stato diviso in blocchi funzionali, ognuno contenen
 	\item \underline{Computazione FFT}: In questo blocco si esegue l'algoritmo di FFT sulla porzione di segnale precedentemente condizionata. L'algoritmo di FFT viene eseguito in pipeline con una latenza di $1316$ cicli di clock. Il risultato dell'algoritmo viene inviato, punto per punto, al blocco finale.
 	\item \underline{Calcolo del massimo bin dell'FFT}: Per ogni risultato generato dal blocco di computazione dell'FFT si verifica se quest'ultimo è quello di ampiezza massima finora rilevato e si provvede a salvare in dei registri il numero del bin con la relativa ampiezza, oltre all'ampiezza precedente e successiva. Questi valori vengono poi inviati al microprocessore per poter eseguire l'FFT interpolata e ricavare il tono fondamentale dal segnale.
 \end{itemize}
-
-Ogni blocco funzionale è rappresentato graficamente da un ciclo. I cicli vengono eseguiti fisicamente in parallelo, per via delle caratteristiche intrinseche dell'esecuzione su FPGA, e la comunicazione inter-processo avviene utilizzando delle code dati chiamate \textit{FIFO}. 
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.5]{cap4/codicefpga}
-    \caption{Block Diagram semplificato del VI eseguito su FPGA}
-    \label{codicefpga}
-  \end{center}
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.6]{cap4/codicefpga}
+		\caption{Block Diagram semplificato del VI eseguito su FPGA}
+		\label{codicefpga}
+	\end{center}
 \end{figure}
+Ogni blocco funzionale è rappresentato graficamente da un ciclo. I cicli vengono eseguiti fisicamente in parallelo, per via delle caratteristiche intrinseche dell'esecuzione su FPGA, e la comunicazione inter-processo avviene utilizzando delle code dati chiamate \textit{FIFO}. 
 
 In Figura \ref{codicefpga} è mostrata una versione semplificata del diagramma a blocchi utilizzato per implementare le funzionalità FPGA soprascritte. Il primo ciclo possiede una frequenza di $60MHz$ per garantire la corretta generazione del clock a $30MHz$ per i circuiti di conversione A/D e D/A, al contrario dei restanti cicli che hanno frequenza $30MHz$.
+
+
+
 	
 \paragraph{Design pattern utilizzati}
 Per lo sviluppo del codice eseguito in hardware dall'FPGA sono stati sfruttati due \textit{design pattern} tipicamente utilizzati durante lo sviluppo di codice LabVIEW: il \textit{Producer-Consumer} e il \textit{4-Wire Handshake}, che verranno spiegati in dettaglio nel seguito del paragrafo.
@@ -660,7 +662,7 @@ Il \textit{Producer-Consumer design pattern} è un pattern utilizzato per la sin
 Il compito del produttore è generare dati e depositarli nel buffer. Contemporaneamente, il consumatore utilizzerà i dati prodotti, rimuovendoli di volta in volta dal buffer. Il problema è assicurare che il produttore non elabori nuovi dati se il buffer è pieno, e che il consumatore non cerchi dati se il buffer è vuoto.
 
 In LabVIEW i processi producer e consumer sono rappresentati rispettivamente da due cicli (\textit{While} o \textit{Timed-Loop}) eseguiti in parallelo, mentre il buffer è rappresentato da una memoria \textit{FIFO}. 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.4]{cap4/fifolabview}
     \caption{Pannello di configurazione per la creazione di una FIFO}
@@ -669,7 +671,7 @@ In LabVIEW i processi producer e consumer sono rappresentati rispettivamente da 
 \end{figure}
 
 La \textit{FIFO} è una struttura dati che contiene gli elementi nell'ordine in cui sono ricevuti e fornisce l'accesso a quest'ultimi usando un criterio \textit{First-In First-Out}. Quando si configura una FIFO, è necessario specificarne la dimensione e la tipologia di dato (Figura \ref{fifolabview}).
-\begin{figure}  
+\begin{figure}
   \begin{center}
     \includegraphics[scale=0.5]{cap4/prodcons}
     \caption{Esempio di Producer/Consumer implementato su LabVIEW FPGA}
@@ -700,9 +702,9 @@ Nei nodi che consentono l'utilizzo di questo pattern tipicamente si hanno due in
 	\end{itemize}
 \end{itemize}
 
-\begin{figure}  
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[scale=0.4]{cap4/pipelinevi}
+    \includegraphics[scale=0.8]{cap4/pipelinevi}
     \caption{Ingressi ed uscite di un express VI con esecuzione pipelined}
     \label{pipelinevi}
   \end{center}
@@ -714,9 +716,9 @@ Quando il nodo a valle del subVI fornisce il dato assegna il valore logico Vero 
 
 Al termine della computazione il subVI attende che il valore della variabile \textit{Ready for output} sia Vero e modifica il valore logico della variabile \textit{Output valid} a Vero, per comunicare ai nodi a monte che il risultato in uscita è valido. Contemporaneamente il valore della variabile \textit{Ready for input} viene portato a Vero, per poter accettare un nuovo valore in ingresso e ricominciare così la computazione.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
-    \includegraphics[scale=0.35]{cap4/fftloop}
+    \includegraphics[scale=0.4]{cap4/fftloop}
     \caption{Computazione FFT}
     \label{compfftciclo}
   \end{center}
@@ -726,9 +728,9 @@ Nel caso del subVI dell'FFT (Figura \ref{compfftciclo}) il valore di \textit{Inp
 
 Poiché il calcolo del modulo quadrato dell'FFT non è stato sviluppato sfruttando la pipeline, esso è sempre pronto a ricevere un input, rendendo il valore di \textit{Ready for output} sempre Vero.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
-    \includegraphics[scale=0.3]{cap4/configfft}
+    \includegraphics[scale=0.5]{cap4/configfft}
     \caption{Pannello di configurazione del FFT Express VI}
     \label{configfft}
   \end{center}
@@ -736,7 +738,7 @@ Poiché il calcolo del modulo quadrato dell'FFT non è stato sviluppato sfruttan
 
 Il SubVI \textit{FFT Express VI}, che effettua la computazione del FFT, è inserito all'interno di un \textit{Single Cycle Timed Loop}. Esso effettua il calcolo dell'FFT di $512$ campioni con una latenza di $1316$ cicli di clock ($\frac{1316}{30MHz}=43.86us$) e un \textit{throughput} di ingresso pari a $1\ input/ciclo$. In Figura \ref{configfft} è mostrato il pannello di configurazione dell'\textit{FFT Express VI}.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.3]{cap4/timdiagfft}
     \caption{FFT Express VI Timing Diagram}
@@ -748,7 +750,7 @@ ll \textit{Timing diagram} in Figura \ref{timdiagfft} mostra le relazioni tempor
 	
 \paragraph{Fixed Point}
 Per motivi di prestazioni e di area, è stato ampiamente utilizzato il tipo di dato \textit{fixed point} nello sviluppo del codice FPGA. Questa scelta non ha complicato la realizzazione del firmware in quanto le funzioni di libreria presenti in LabVIEW FPGA accettano come ingressi numeri rappresentati in \textit{fixed point}.
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.7]{cap4/fxpvsfloat}
     \caption{Confronto dello spazio occupato da un sommatore su FPGA con Fixed Point e Floating Point}
@@ -766,15 +768,16 @@ La lunghezza della parte intera può essere maggiore o minore rispetto alla lung
 
 Per lo sviluppo del progetto sono stati utilizzati \textit{fixed point signed} a $12$-bit con parola intera di $12$ bit per i segnali generati ed acquisiti. Questa scelta è stata fatta tenendo conto della risoluzione dei convertitori utilizzati, che è appunto di $12$-bit.
 
+\begin{figure}[H]  
+	\begin{center}
+		\includegraphics[scale=0.7]{cap4/configfxp}
+		\caption{Fixed point in LabVIEW}
+		\label{configfxp}
+	\end{center}
+\end{figure}
+
 Per quanto riguarda le restanti configurazioni del tipo di dato all'interno del codice si è fatto affidamento al sistema di auto-adattamento delle uscite in base alla lunghezza dei risultati integrato in LabVIEW. Questo sistema calcola il massimo valore rappresentabile in uscita da un blocco funzionale e adatta il tipo di dato di conseguenza.
 
-\begin{figure}  
-  \begin{center}
-    \includegraphics[scale=0.5]{cap4/configfxp}
-    \caption{Fixed point in LabVIEW}
-    \label{configfxp}
-  \end{center}
-\end{figure}
 
 \subsection{Microcontrollore}
 Il software sviluppato per l'esecuzione su microcontrollore svolge le funzionalità che, per via della struttura intrinseca e dei limiti di spazio dell'FPGA, non è stato possibile implementare direttamente in hardware. In particolare il software eseguito sul microcontrollore fornisce le seguenti funzionalità:
@@ -853,7 +856,7 @@ Il VI principale eseguito dal microcontrollore si compone di una parte di codice
 
 La parte di codice iniziale si occupa della configurazione dello strumento, inviando all'FPGA il \textit{bitfile} da eseguire, i parametri di esecuzione ed il contenuto delle memorie. Il ciclo di elaborazione, invece, esegue tutte le funzionalità appena descritte.
 
-\begin{figure}  
+\begin{figure}[H]  
   \begin{center}
     \includegraphics[scale=0.3]{cap4/guimicro}
     \caption{Interfaccia grafica dello strumento di misura}
@@ -869,7 +872,7 @@ Lo comunicazione tra il microprocessore e il chip FPGA avviene attraverso l'util
 Il DMA, acronimo di \textit{Direct Memory Access}, di una CPU è quel meccanismo che permette ad altri sottosistemi, quali ad in esempio le periferiche, di accedere direttamente alla memoria interna per scambiare dati, in lettura e/o scrittura, senza coinvolgere l'unità di controllo per ogni byte trasferito tramite l'usuale meccanismo dell'interrupt e la successiva richiesta dell'operazione desiderata, ma generando un singolo interrupt per blocco trasferito \cite{tanembaum}. Nella nostra architettura il sottosistema in questione è il chip FPGA.
 
 L'utilizzo del DMA permette al chip FPGA di trasferire grosse quantità di dati sulla memoria del Real-Time host senza l'intervento del microprocessore. Questo meccanismo offre un notevole incremento delle prestazioni del sistema poiché il microprocessore, non essendo impegnato nel trasferimento dei dati, può svolgere altre operazioni.
-\begin{figure}  
+\begin{figure}[H] 
   \begin{center}
     \includegraphics[scale=0.6]{cap4/dmafunz}
     \caption{Schema architetturale per DMA}
