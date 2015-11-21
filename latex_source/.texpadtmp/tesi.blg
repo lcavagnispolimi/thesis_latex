@@ -70,7 +70,7 @@ Too many commas in name 1 of "W. Carter, K. Duong, R. H. Freeman, H. Hsieh, J. Y
 while executing---line 1090 of file plain.bst
 You've used 48 entries,
             2118 wiz_defined-function locations,
-            744 strings with 10044 characters,
+            744 strings with 10034 characters,
 and the built_in function-call counts, 12772 in all, are:
 = -- 1189
 > -- 515

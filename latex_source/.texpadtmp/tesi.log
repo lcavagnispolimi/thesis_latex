@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  21 NOV 2015 00:57
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  21 NOV 2015 12:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1253,18 +1253,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [146]
 File: ./pictures/appendiceA/clock_gen.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/clock_gen.png" >
+ <use  "./pictures/appendiceA/clock_gen.png" > [147]
 File: ./pictures/appendiceA/acquisition.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/acquisition.png" > [147]
-File: ./pictures/appendiceA/acquisition.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/acquisition.png" > [148]
+ <use  "./pictures/appendiceA/acquisition.png" >
+File: ./pictures/appendiceA/generation.png Graphic file (type QTm)
+ <use  "./pictures/appendiceA/generation.png" > [148]
 File: ./pictures/appendiceA/progetto.png Graphic file (type QTm)
  <use  "./pictures/appendiceA/progetto.png" >
 File: ./pictures/appendiceA/VI.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/VI.png" >
-Underfull \vbox (badness 3907) has occurred while \output is active []
-
- [149]) [150]
+ <use  "./pictures/appendiceA/VI.png" > [149]) [150]
 \openout2 = `appendiceB.aux'.
 
  (./appendiceB.tex
@@ -1297,10 +1294,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13711 strings out of 493725
- 278104 string characters out of 6145912
+ 13713 strings out of 493725
+ 278154 string characters out of 6145912
  289301 words of memory out of 5000000
- 16609 multiletter control sequences out of 15000+600000
+ 16610 multiletter control sequences out of 15000+600000
  101813 words of font info for 77 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
