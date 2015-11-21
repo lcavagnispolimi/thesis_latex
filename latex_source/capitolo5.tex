@@ -19,8 +19,7 @@ Di seguito sono descritte più nel dettaglio le metodologie di prove effettuate.
 
 \begin{figure}
   \begin{center}
-  	%% TODO Cap5 Riusciamo a sistemare sta foto?
-  	%% e come fai, fa schifo tutto nel laboratorio ahahahah
+  	%% TODO Evidenziare gli elementi
     \includegraphics[scale=0.1]{cap5/allestimento}
     \caption{Allestimento della misura}
   \end{center}
@@ -342,7 +341,7 @@ Tramite la prova a bersaglio fisso si è notato un miglioramento della deviazion
 \begin{figure}
 	\centering
 \subfigure[Distribuzione dei valori misurati rispetto alla media]
-{\label{misfisso4b}\includegraphics[scale=.4]{cap5/misfisso4b}}
+{\label{misfisso4b}\includegraphics[scale=.3]{cap5/misfisso4b}}
 \caption{Misure a bersaglio fisso con i 5 segnali di modulazione}\label{misfisso4}
 \end{figure}
 
@@ -447,7 +446,7 @@ I risultati sono in linea con le aspettative. Le prestazioni degradano alla dist
 \begin{figure}[H]
 	\centering
 	\subfigure[Distribuzione dei valori misurati rispetto alla media]
-	{\label{misfisso5b20}\includegraphics[scale=.4]{cap5/misfisso5b20}}
+	{\label{misfisso5b20}\includegraphics[scale=.35]{cap5/misfisso5b20}}
 	\caption{Misure di distanza a 20cm con bersaglio fisso }\label{misfisso520}
 \end{figure}
 \begin{figure}[H]
@@ -529,12 +528,17 @@ Qui di seguito si riassumono le prestazioni di misura dello strumento finale:
 \end{itemize}
 
 \section{Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}
-Osservando la forma d'onda finale di modulazione ricavata nei passi precedenti (Figura \ref{ondafinale}) è facile notare come la curva non sia perfettamente liscia e presenti delle irregolarità.
-Queste irregolarità derivano da imperfezioni introdotte durante il calcolo della curva della variazione delle frequenze di frangia (passo $3$ dell'algoritmo presentato nel paragrafo \ref{subsec:metodocomp}) che viene interpolata linearmente punto per punto provocando così un andamento non liscio. 
+Osservando la forma d'onda finale di modulazione ricavata nei passi precedenti (Figura \ref{ondafinale}) è facile notare come la curva non sia perfettamente liscia e presenti delle irregolarità in alcune zone (Figura \ref{irrzoom}).
+Queste irregolarità derivano da imperfezioni introdotte durante il calcolo della curva della variazione delle frequenze di frangia (passo $3$ dell'algoritmo presentato nel paragrafo \ref{subsec:metodocomp}) che viene interpolata linearmente punto per punto provocando così un andamento non liscio.
+\begin{figure}  
+	\begin{center}
+		\includegraphics[scale=0.2]{cap5/irrzoom}
+		\caption{Irregolarità nel segnale di modulazione}
+		\label{irrzoom}
+	\end{center}
+\end{figure}
 
-Queste irregolarità possono influire negativamente durante la modulazione del laser e quindi peggiorare la precisione e l'accuratezza della misura. 
-
-Per questo motivo è stato deciso di approssimare la curva delle frequenze di frangia utilizzando un processo di \textit{curve fitting} polinomiale di $3\degree$ grado invece che un'interpolazione lineare punto-punto. In Figura \ref{curvefittingfreq} è mostrata in blu la curva delle frequenze di frangia estratta in un semiperiodo di modulazione e in rosso la sua approssimazione polinomiale di $3\degree$ grado.
+Queste irregolarità possono influire negativamente durante la modulazione del laser e quindi peggiorare la precisione e l'accuratezza della misura. Per questo motivo è stato deciso di approssimare la curva delle frequenze di frangia utilizzando un processo di \textit{curve fitting} polinomiale di $3\degree$ grado invece che un'interpolazione lineare punto-punto. In Figura \ref{curvefittingfreq} è mostrata in blu la curva delle frequenze di frangia estratta in un semiperiodo di modulazione e in rosso la sua approssimazione polinomiale di $3\degree$ grado.
 \begin{figure}[H]  
 	\begin{center}
 		\includegraphics[scale=0.5]{cap5/curvefittingfreq}

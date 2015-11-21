@@ -398,7 +398,7 @@ Pertanto, come già accennato, le \textit{smoothing window} pesano differentemen
 Le \textit{smoothing window} sono divise tra finestre cosinusoidali e non cosinusoidali. Una delle più utilizzate è quella cosinusoidale di \textit{Hanning}.
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale=0.7]{cap4/hann}
+    \includegraphics[scale=0.5]{cap4/hann}
     \caption{Finestra di Hanning}
     \label{hann}
   \end{center}
@@ -413,7 +413,7 @@ $$ 0 \leq n \leq N-1 $$
 ed è mostrata in figura \ref{hann}. La forma di questa finestra consente di eliminare la discontinuità del segnale agli estremi in caso di campionamento non coerente. 
 \begin{figure}[H] 
   \begin{center}
-    \includegraphics[scale=0.65]{cap4/smoothwins}
+    \includegraphics[scale=0.5]{cap4/smoothwins}
     \caption{Spectral leakage per diversi tipi di finestratura}
     \label{smoothwins}
   \end{center}
@@ -730,7 +730,7 @@ Poiché il calcolo del modulo quadrato dell'FFT non è stato sviluppato sfruttan
 
 \begin{figure}[H]  
   \begin{center}
-    \includegraphics[scale=0.5]{cap4/configfft}
+    \includegraphics[scale=0.35]{cap4/configfft}
     \caption{Pannello di configurazione del FFT Express VI}
     \label{configfft}
   \end{center}
@@ -770,6 +770,7 @@ Per lo sviluppo del progetto sono stati utilizzati \textit{fixed point signed} a
 
 \begin{figure}[H]  
 	\begin{center}
+	  %% TODO Sgranata da migliorare (mettere 12 bit signed)
 		\includegraphics[scale=0.7]{cap4/configfxp}
 		\caption{Fixed point in LabVIEW}
 		\label{configfxp}

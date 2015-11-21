@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  21 NOV 2015 12:57
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  21 NOV 2015 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,7 +588,7 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `sub@' multiply defined.
 
-) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceB.aux))
+) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -970,17 +970,17 @@ Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/baremetalrtos.png Graphic file (type QTm)
  <use  "./pictures/cap4/baremetalrtos.png" > [65] [66]
 File: ./pictures/cap4/microvsmono.png Graphic file (type QTm)
- <use  "./pictures/cap4/microvsmono.png" >
+ <use  "./pictures/cap4/microvsmono.png" > [67]
 File: ./pictures/cap4/vxworks.png Graphic file (type QTm)
- <use  "./pictures/cap4/vxworks.png" > [67] [68]
+ <use  "./pictures/cap4/vxworks.png" > [68]
 File: ./pictures/cap4/lvrt.png Graphic file (type QTm)
  <use  "./pictures/cap4/lvrt.png" >
 File: ./pictures/cap4/lvrtvi.png Graphic file (type QTm)
- <use  "./pictures/cap4/lvrtvi.png" >
+ <use  "./pictures/cap4/lvrtvi.png" > [69]
 File: ./pictures/cap4/timed.png Graphic file (type QTm)
  <use  "./pictures/cap4/timed.png" >
 File: ./pictures/cap4/while.png Graphic file (type QTm)
- <use  "./pictures/cap4/while.png" > [69]
+ <use  "./pictures/cap4/while.png" >
 Overfull \hbox (25.10526pt too wide) in paragraph at lines 167--168
 []$[]$ \T1/lmr/m/n/10.95 (\T1/lmr/m/it/10.95 Non-deterministc loop/process\T1/lmr/m/n/10.95 ): pro-ces-si \T1/lmr/m/it/10.95 Soft-deadline\T1/lmr/m/n/10.95 .
  []
@@ -998,23 +998,20 @@ File: ./pictures/cap4/hls.png Graphic file (type QTm)
 File: ./pictures/cap4/fpgalv.png Graphic file (type QTm)
  <use  "./pictures/cap4/fpgalv.png" > [76]
 File: ./pictures/cap4/trenoimp.png Graphic file (type QTm)
- <use  "./pictures/cap4/trenoimp.png" > [77]
-Missing character: There is no ̀ in font ec-lmr10!
- [78] [79]
+ <use  "./pictures/cap4/trenoimp.png" > [77] [78] [79]
 File: ./pictures/cap4/spectleak.png Graphic file (type QTm)
  <use  "./pictures/cap4/spectleak.png" >
 Missing character: There is no ̀ in font ec-lmr10!
  [80]
 Missing character: There is no ̀ in font ec-lmr10!
-File: ./pictures/cap4/hann.png Graphic file (type QTm)
- <use  "./pictures/cap4/hann.png" >
+File: ./pictures/cap4/hann.eps Graphic file (type eps)
+ <./pictures/cap4/hann.eps> [81]
 Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/smoothwins.png Graphic file (type QTm)
- <use  "./pictures/cap4/smoothwins.png" > [81]
+ <use  "./pictures/cap4/smoothwins.png" > [82]
 File: ./pictures/cap4/ifft.png Graphic file (type QTm)
- <use  "./pictures/cap4/ifft.png" > [82]
+ <use  "./pictures/cap4/ifft.png" > [83]
 Missing character: There is no ̀ in font ec-lmr10!
- [83]
 Missing character: There is no ̀ in font ec-lmr10!
 Missing character: There is no ́ in font ec-lmr10!
 Missing character: There is no ̀ in font ec-lmr10!
@@ -1022,215 +1019,285 @@ Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap4/archgenschema.png Graphic file (type QTm)
  <use  "./pictures/cap4/archgenschema.png" > [85] [86] [87] [88]
 Missing character: There is no ̀ in font ec-lmr10!
-
-Underfull \vbox (badness 1852) has occurred while \output is active []
-
  [89]
 Overfull \hbox (1.98749pt too wide) in paragraph at lines 637--638
 []$[]$\T1/lmr/m/n/10.95 : Que-sto bloc-co fun-
  []
 
-
+[90]
 Overfull \hbox (4.51218pt too wide) in paragraph at lines 640--641
 []$[]$\T1/lmr/m/n/10.95 : Per ogni ri-sul-ta-to ge-ne-ra-to dal bloc-
  []
 
 File: ./pictures/cap4/codicefpga.png Graphic file (type QTm)
-<use  "./pictures/cap4/codicefpga.png" > [90]
+<use  "./pictures/cap4/codicefpga.png" >
+Overfull \hbox (51.89069pt too wide) in paragraph at lines 644--645
+ [] 
+ []
+
+[91] [92]
 File: ./pictures/cap4/fifolabview.png Graphic file (type QTm)
  <use  "./pictures/cap4/fifolabview.png" >
 File: ./pictures/cap4/prodcons.png Graphic file (type QTm)
- <use  "./pictures/cap4/prodcons.png" > [91] [92] [93]
-Overfull \hbox (1.03926pt too wide) in paragraph at lines 685--686
+ <use  "./pictures/cap4/prodcons.png" >
+Underfull \vbox (badness 1917) has occurred while \output is active []
+
+ [93]
+Overfull \hbox (1.03926pt too wide) in paragraph at lines 687--688
  \T1/lmr/bx/n/10.95 4-Wire Hand-sha-ke[] \T1/lmr/m/n/10.95 L'im-ple-men-ta-zio-ne \T1/lmr/m/it/10.95 pi-pe-li-ned \T1/lmr/m/n/10.95 dell'\T1/lmr/m/it/10.95 express VI \T1/lmr/m/n/10.95 FFT
  []
 
+[94]
 File: ./pictures/cap4/pipelinevi.png Graphic file (type QTm)
-<use  "./pictures/cap4/pipelinevi.png" > [94]
+ <use  "./pictures/cap4/pipelinevi.png" >
 File: ./pictures/cap4/fftloop.png Graphic file (type QTm)
  <use  "./pictures/cap4/fftloop.png" >
+Overfull \hbox (22.22122pt too wide) in paragraph at lines 721--722
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95]
 File: ./pictures/cap4/configfft.png Graphic file (type QTm)
- <use  "./pictures/cap4/configfft.png" > [95]
+ <use  "./pictures/cap4/configfft.png" > [96]
 File: ./pictures/cap4/timdiagfft.png Graphic file (type QTm)
  <use  "./pictures/cap4/timdiagfft.png" >
 File: ./pictures/cap4/fxpvsfloat.jpg Graphic file (type QTm)
- <use  "./pictures/cap4/fxpvsfloat.jpg" > [96]
+ <use  "./pictures/cap4/fxpvsfloat.jpg" > [97]
 File: ./pictures/cap4/configfxp.png Graphic file (type QTm)
- <use  "./pictures/cap4/configfxp.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [97] [98] [99]
+ <use  "./pictures/cap4/configfxp.png" > [98] [99] [100]
 File: ./pictures/cap4/guimicro.png Graphic file (type QTm)
- <use  "./pictures/cap4/guimicro.png" > [100]
+ <use  "./pictures/cap4/guimicro.png" > [101]
 File: ./pictures/cap4/dmafunz.png Graphic file (type QTm)
- <use  "./pictures/cap4/dmafunz.png" > [101]) [102]
+ <use  "./pictures/cap4/dmafunz.png" > [102]) [103]
 \openout2 = `capitolo5.aux'.
 
- (./capitolo5.tex
-Capitolo 5.
-[103
+ (./capitolo5.tex [104
 
 
 
 ]
+Capitolo 5.
+[105]
 File: ./pictures/cap5/allestimento.jpg Graphic file (type QTm)
- <use  "./pictures/cap5/allestimento.jpg" > [104] [105]
+ <use  "./pictures/cap5/allestimento.jpg" > [106] [107]
 File: ./pictures/cap5/segnaleinterf.eps Graphic file (type eps)
- <./pictures/cap5/segnaleinterf.eps>
+ <./pictures/cap5/segnaleinterf.eps> [108]
 File: ./pictures/cap5/misfisso1a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso1a.eps>
 File: ./pictures/cap5/misfisso1b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso1b.png" >
 File: ./pictures/cap5/misfisso2a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso2a.eps>
-File: ./pictures/cap5/misfisso2b.png Graphic file (type QTm)
- <use  "./pictures/cap5/misfisso2b.png" >
-Overfull \hbox (1.77603pt too wide) in paragraph at lines 104--108
- [] 
- []
-
-File: ./pictures/cap5/mismobile1.eps Graphic file (type eps)
-<./pictures/cap5/mismobile1.eps>
-File: ./pictures/cap5/mismobile2.eps Graphic file (type eps)
- <./pictures/cap5/mismobile2.eps> [106]
-File: ./pictures/cap5/spectleakinterf.eps Graphic file (type eps)
- <./pictures/cap5/spectleakinterf.eps>
-File: ./pictures/cap5/semiperiodononcomp.eps Graphic file (type eps)
- <./pictures/cap5/semiperiodononcomp.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [107] [108] [109] [110]
+ [109]
+File: ./pictures/cap5/misfisso2b.png Graphic file (type QTm)
+ <use  "./pictures/cap5/misfisso2b.png" >
+Overfull \hbox (1.77603pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110]
+File: ./pictures/cap5/mismobile1.eps Graphic file (type eps)
+ <./pictures/cap5/mismobile1.eps>
+File: ./pictures/cap5/mismobile2.eps Graphic file (type eps)
+ <./pictures/cap5/mismobile2.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [111]
+File: ./pictures/cap5/spectleakinterf.eps Graphic file (type eps)
+ <./pictures/cap5/spectleakinterf.eps>
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [112]
 Missing character: There is no ̀ in font ec-lmr10!
- [111] [112]
+ [113]
+File: ./pictures/cap5/semiperiodononcomp.eps Graphic file (type eps)
+ <./pictures/cap5/semiperiodononcomp.eps>
 File: ./pictures/cap5/regressioncurvefrangia.eps Graphic file (type eps)
- <./pictures/cap5/regressioncurvefrangia.eps>
+ <./pictures/cap5/regressioncurvefrangia.eps> [114]
+Missing character: There is no ̀ in font ec-lmr10!
+Missing character: There is no ̀ in font ec-lmr10!
 File: ./pictures/cap5/slidingfft.png Graphic file (type QTm)
- <use  "./pictures/cap5/slidingfft.png" >
+ <use  "./pictures/cap5/slidingfft.png" > [115]
 File: ./pictures/cap5/curvamediatafreq.eps Graphic file (type eps)
  <./pictures/cap5/curvamediatafreq.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116]
 File: ./pictures/cap5/mulfactdiscesa.eps Graphic file (type eps)
  <./pictures/cap5/mulfactdiscesa.eps>
-File: ./pictures/cap5/mulfactsalita.eps Graphic file (type eps)
- <./pictures/cap5/mulfactsalita.eps>
-Missing character: There is no ̀ in font ec-lmr10!
-Missing character: There is no ̀ in font ec-lmr10!
- [113] [114]
-Overfull \hbox (5.73018pt too wide) in paragraph at lines 207--208
+Overfull \hbox (5.73018pt too wide) in paragraph at lines 203--212
 []$[]$ $[]$
  []
 
-[115]
+File: ./pictures/cap5/mulfactsalita.eps Graphic file (type eps)
+<./pictures/cap5/mulfactsalita.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
 File: ./pictures/cap5/ondafinale.eps Graphic file (type eps)
- <./pictures/cap5/ondafinale.eps>
+ <./pictures/cap5/ondafinale.eps> [118]
 Missing character: There is no ̀ in font ec-lmr10!
- [116]
 File: ./pictures/cap5/primadopocompdisc.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdisc.eps>
 File: ./pictures/cap5/primadopocompsal.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsal.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 238--238
+Underfull \hbox (badness 1158) in paragraph at lines 245--245
 []\T1/lmss/m/sl/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
-File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
-<./pictures/cap5/misfisso3a.eps>
-File: ./pictures/cap5/misfisso3b.png Graphic file (type QTm)
- <use  "./pictures/cap5/misfisso3b.png" >
-Overfull \hbox (7.88374pt too wide) in paragraph at lines 241--251
+
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+ [119]
+Overfull \hbox (7.88374pt too wide) in paragraph at lines 248--249
 []\T1/lmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
  []
 
-File: ./pictures/cap5/mismobile3.eps Graphic file (type eps)
-<./pictures/cap5/mismobile3.eps> [117] [118]
-File: ./pictures/cap5/cinquesegnali.eps Graphic file (type eps)
- <./pictures/cap5/cinquesegnali.eps> [119]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 292.
-
 [120]
+File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
+ <./pictures/cap5/misfisso3a.eps>
+File: ./pictures/cap5/misfisso3b.png Graphic file (type QTm)
+ <use  "./pictures/cap5/misfisso3b.png" >
+Overfull \hbox (11.71956pt too wide) in paragraph at lines 267--268
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121]
+File: ./pictures/cap5/mismobile3.eps Graphic file (type eps)
+ <./pictures/cap5/mismobile3.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122]
+File: ./pictures/cap5/cinquesegnali.eps Graphic file (type eps)
+ <./pictures/cap5/cinquesegnali.eps> [123]
 File: ./pictures/cap5/cinquesegnalidis.eps Graphic file (type eps)
  <./pictures/cap5/cinquesegnalidis.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [124]
 File: ./pictures/cap5/misfisso4a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso4a.eps>
 File: ./pictures/cap5/misfisso4b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso4b.png" >
 File: ./pictures/cap5/mismobile4.eps Graphic file (type eps)
  <./pictures/cap5/mismobile4.eps>
-Overfull \hbox (0.43459pt too wide) in paragraph at lines 347--348
+Overfull \hbox (0.43459pt too wide) in paragraph at lines 358--359
 []\T1/lmr/m/n/10.95 L'errore picco-picco mi-su-ra-to con que-sta pro-va è di $\OT1/lmr/m/n/10.95 451\OML/lmm/m/it/10.95 ^^Vm$\T1/lmr/m/n/10.95 , men-tre l'RMS
  []
 
-[121] [122] [123]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 370.
+Underfull \vbox (badness 6348) has occurred while \output is active []
 
+ [125] [126] [127]
 File: ./pictures/cap5/residuo.eps Graphic file (type eps)
-<./pictures/cap5/residuo.eps>
+ <./pictures/cap5/residuo.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128]
 File: ./pictures/cap5/misfisso5a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso5a.eps>
 File: ./pictures/cap5/misfisso5b.png Graphic file (type QTm)
- <use  "./pictures/cap5/misfisso5b.png" > [124] [125]
+ <use  "./pictures/cap5/misfisso5b.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [129]
 File: ./pictures/cap5/mismobile5.eps Graphic file (type eps)
  <./pictures/cap5/mismobile5.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130]
 File: ./pictures/cap5/misfisso5a20.eps Graphic file (type eps)
  <./pictures/cap5/misfisso5a20.eps>
 File: ./pictures/cap5/misfisso5b20.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso5b20.png" >
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [131]
 File: ./pictures/cap5/misfisso5a90.eps Graphic file (type eps)
  <./pictures/cap5/misfisso5a90.eps>
 File: ./pictures/cap5/misfisso5b90.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso5b90.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [132]
 File: ./pictures/cap5/mismobile520.eps Graphic file (type eps)
- <./pictures/cap5/mismobile520.eps> [126] [127]
+ <./pictures/cap5/mismobile520.eps> [133]
 File: ./pictures/cap5/mismobile590.eps Graphic file (type eps)
- <./pictures/cap5/mismobile590.eps>
+ <./pictures/cap5/mismobile590.eps> [134]
 File: ./pictures/cap5/rangemis.eps Graphic file (type eps)
  <./pictures/cap5/rangemis.eps>
 File: ./pictures/cap5/ampbindiscesa.eps Graphic file (type eps)
  <./pictures/cap5/ampbindiscesa.eps>
 File: ./pictures/cap5/ampbinsalita.eps Graphic file (type eps)
- <./pictures/cap5/ampbinsalita.eps> [128] [129] [130] [131] [132] [133]
+ <./pictures/cap5/ampbinsalita.eps> [135] [136]
+File: ./pictures/cap5/irrzoom.png Graphic file (type QTm)
+ <use  "./pictures/cap5/irrzoom.png" >
 File: ./pictures/cap5/curvefittingfreq.eps Graphic file (type eps)
- <./pictures/cap5/curvefittingfreq.eps>
+ <./pictures/cap5/curvefittingfreq.eps> [137] [138]
 File: ./pictures/cap5/mulfactdiscesanew.eps Graphic file (type eps)
  <./pictures/cap5/mulfactdiscesanew.eps>
 File: ./pictures/cap5/mulfactsalitanew.eps Graphic file (type eps)
- <./pictures/cap5/mulfactsalitanew.eps> [134]
+ <./pictures/cap5/mulfactsalitanew.eps>
 File: ./pictures/cap5/newondafinale.eps Graphic file (type eps)
  <./pictures/cap5/newondafinale.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [139]
 File: ./pictures/cap5/primadopocompdiscnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdiscnew.eps>
 File: ./pictures/cap5/primadopocompsalnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsalnew.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 562--562
-[]\T1/lmss/m/sl/10 Figura 5.32: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
+Underfull \hbox (badness 1158) in paragraph at lines 583--583
+[]\T1/lmss/m/sl/10 Figura 5.33: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
+
+Underfull \vbox (badness 3635) has occurred while \output is active []
+
+ [140]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [141]
 File: ./pictures/cap5/fissomodliscioa.eps Graphic file (type eps)
-<./pictures/cap5/fissomodliscioa.eps>
+ <./pictures/cap5/fissomodliscioa.eps>
 File: ./pictures/cap5/fissomodlisciob.png Graphic file (type QTm)
  <use  "./pictures/cap5/fissomodlisciob.png" >
-File: ./pictures/cap5/mobilemodliscio.eps Graphic file (type eps)
- <./pictures/cap5/mobilemodliscio.eps> [135] [136]
-Underfull \vbox (badness 5563) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [137] [138] [139]) [140]
+ [142]
+File: ./pictures/cap5/mobilemodliscio.eps Graphic file (type eps)
+ <./pictures/cap5/mobilemodliscio.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [143]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [144]) [145]
 \openout2 = `conclusioni.aux'.
 
- (./conclusioni.tex [141
+ (./conclusioni.tex [146
 
 
 
-]) [142]
+] [147]) [148]
 \openout2 = `ringraziamenti.aux'.
 
- (./ringraziamenti.tex) [143
+ (./ringraziamenti.tex) [149
 
 
 
-] [144
+] [150
 
 
 ]
@@ -1239,7 +1306,7 @@ Underfull \vbox (badness 5563) has occurred while \output is active []
  (./appendiceA.tex
 Appendice A.
 File: ./pictures/appendiceA/enable_output.png Graphic file (type QTm)
-<use  "./pictures/appendiceA/enable_output.png" > [145
+<use  "./pictures/appendiceA/enable_output.png" > [151
 
 
 ]
@@ -1251,17 +1318,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[146]
+[152]
 File: ./pictures/appendiceA/clock_gen.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/clock_gen.png" > [147]
+ <use  "./pictures/appendiceA/clock_gen.png" > [153]
 File: ./pictures/appendiceA/acquisition.png Graphic file (type QTm)
  <use  "./pictures/appendiceA/acquisition.png" >
 File: ./pictures/appendiceA/generation.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/generation.png" > [148]
+ <use  "./pictures/appendiceA/generation.png" > [154]
 File: ./pictures/appendiceA/progetto.png Graphic file (type QTm)
  <use  "./pictures/appendiceA/progetto.png" >
 File: ./pictures/appendiceA/VI.png Graphic file (type QTm)
- <use  "./pictures/appendiceA/VI.png" > [149]) [150] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
+ <use  "./pictures/appendiceA/VI.png" > [155]) [156] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 []\T1/lmr/m/n/10.95 http://www.standa.lt/products/catalog/motorised _
  []
@@ -1271,26 +1338,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 []\T1/lmr/m/n/10.95 http://www.xilinx.com/products/silicon-devices/fpga/spartan-
  []
 
-[151
+[157
 
 
-] [152]
+] [158]
 Underfull \hbox (badness 1509) in paragraph at lines 185--187
 []\T1/lmr/m/n/10.95 Freescale se-mi-con-duc-tor.  \T1/lmr/m/it/10.95 e300 Po-wer Ar-chi-tec-tu-re Co-re Fa-mi-ly
  []
 
-[153]) [154] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
+[159]) [160] (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.aux (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/frontespizio.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/dedica.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/sommario.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/abstract.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/introduzione.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo1.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo2.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo3.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo4.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/capitolo5.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/conclusioni.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/ringraziamenti.aux) (/Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/appendiceA.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13709 strings out of 493725
- 277960 string characters out of 6145912
- 289301 words of memory out of 5000000
- 16610 multiletter control sequences out of 15000+600000
+ 13708 strings out of 493725
+ 277817 string characters out of 6145912
+ 288782 words of memory out of 5000000
+ 16611 multiletter control sequences out of 15000+600000
  101813 words of font info for 77 fonts, out of 8000000 for 9000
  1329 hyphenation exceptions out of 8191
  36i,17n,43p,10391b,660s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (174 pages).
+Output written on /Users/leonardocavagnis/GitHub/thesis_latex/latex_source/.texpadtmp/tesi.pdf (180 pages).

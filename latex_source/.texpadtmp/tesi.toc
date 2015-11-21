@@ -54,62 +54,62 @@
 \contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{65}
 \contentsline {subsection}{\numberline {4.2.1}Programmazione del microcontrollore}{65}
 \contentsline {subsubsection}{Sistema Real-Time}{66}
-\contentsline {paragraph}{Sistema Operativo Real-Time}{66}
+\contentsline {paragraph}{Sistema Operativo Real-Time}{67}
 \contentsline {subparagraph}{VxWorks}{67}
 \contentsline {paragraph}{LabVIEW Real-Time}{69}
 \contentsline {subsection}{\numberline {4.2.2}Programmazione dell'FPGA}{70}
 \contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{71}
 \contentsline {paragraph}{VHDL}{71}
 \contentsline {subsubsection}{Sintesi Hardware}{72}
-\contentsline {subsubsection}{High-Level Synthesis (HLS)}{74}
-\contentsline {subsubsection}{LabVIEW FPGA}{75}
-\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{76}
+\contentsline {subsubsection}{High-Level Synthesis (HLS)}{72}
+\contentsline {subsubsection}{LabVIEW FPGA}{76}
+\contentsline {section}{\numberline {4.3}Analisi teorica degli algoritmi implementati}{77}
 \contentsline {subsection}{\numberline {4.3.1}Fast Fourier Transform (FFT)}{77}
 \contentsline {subsection}{\numberline {4.3.2}Interpolated Fast Fourier Transform (IFFT)}{82}
 \contentsline {subsection}{\numberline {4.3.3}Calcolo della distanza assoluta}{85}
-\contentsline {section}{\numberline {4.4}Architettura Software}{85}
+\contentsline {section}{\numberline {4.4}Architettura Software}{86}
 \contentsline {subsection}{\numberline {4.4.1}FPGA}{86}
-\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{86}
+\contentsline {paragraph}{Generazione dei segnali di clock per la scheda di conversione}{87}
 \contentsline {paragraph}{Generazione del segnale di modulazione}{87}
 \contentsline {paragraph}{Campionamento del segnale interferometrico}{87}
-\contentsline {paragraph}{Condizionamento del segnale interferometrico}{87}
-\contentsline {subparagraph}{Sottrazione del residuo}{87}
+\contentsline {paragraph}{Condizionamento del segnale interferometrico}{88}
+\contentsline {subparagraph}{Sottrazione del residuo}{88}
 \contentsline {subparagraph}{Estrazione di 512 campioni}{88}
 \contentsline {subparagraph}{Finestratura}{88}
 \contentsline {paragraph}{Calcolo della Fast Fourier Transform (FFT)}{88}
 \contentsline {paragraph}{Estrazione del massimo bin di frequenza}{89}
-\contentsline {subsubsection}{Implementazione software}{89}
+\contentsline {subsubsection}{Implementazione software}{90}
 \contentsline {paragraph}{Design pattern utilizzati}{91}
 \contentsline {subparagraph}{Producer-consumer}{91}
 \contentsline {subparagraph}{4-Wire Handshake}{94}
-\contentsline {paragraph}{Fixed Point}{96}
-\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{98}
-\contentsline {paragraph}{Algoritmo per il controllo del rumore}{98}
-\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{98}
-\contentsline {paragraph}{Calcolo delle frequenze di frangia}{99}
-\contentsline {paragraph}{Calcolo della distanza assoluta}{99}
-\contentsline {subsubsection}{Implementazione software}{100}
-\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{101}
-\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{103}
-\contentsline {section}{\numberline {5.1}Metodologia proposta}{103}
-\contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{104}
-\contentsline {subsection}{\numberline {5.1.2}Prova a bersaglio mobile}{105}
-\contentsline {subsection}{\numberline {5.1.3}Prova del range di misura}{106}
-\contentsline {section}{\numberline {5.2}Finestratura del segnale}{106}
-\contentsline {section}{\numberline {5.3}Linearizzazione della misura}{111}
-\contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{112}
-\contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{117}
-\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{119}
-\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{119}
-\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{122}
-\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{126}
-\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{126}
-\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{128}
-\contentsline {subsection}{\numberline {5.5.3}Range di misura}{128}
-\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{132}
-\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{134}
-\contentsline {section}{\numberline {5.7}Drift termico}{137}
-\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{139}
-\contentsline {chapter}{Conclusioni e sviluppi futuri}{141}
-\contentsline {chapter}{\numberline {A}Documentazione driver per SCO Board}{145}
-\contentsline {chapter}{Bibliografia}{151}
+\contentsline {paragraph}{Fixed Point}{97}
+\contentsline {subsection}{\numberline {4.4.2}Microcontrollore}{99}
+\contentsline {paragraph}{Algoritmo per il controllo del rumore}{99}
+\contentsline {paragraph}{Calcolo della Fast Fourier Transform interpolata (IFFT)}{99}
+\contentsline {paragraph}{Calcolo delle frequenze di frangia}{100}
+\contentsline {paragraph}{Calcolo della distanza assoluta}{100}
+\contentsline {subsubsection}{Implementazione software}{101}
+\contentsline {subsection}{\numberline {4.4.3}Comunicazione tra FPGA e Microcontrollore}{102}
+\contentsline {chapter}{\numberline {5}Misure effettuate e dati sperimentali}{105}
+\contentsline {section}{\numberline {5.1}Metodologia proposta}{105}
+\contentsline {subsection}{\numberline {5.1.1}Prova a bersaglio fisso}{106}
+\contentsline {subsection}{\numberline {5.1.2}Prova a bersaglio mobile}{107}
+\contentsline {subsection}{\numberline {5.1.3}Prova del range di misura}{108}
+\contentsline {section}{\numberline {5.2}Finestratura del segnale}{108}
+\contentsline {section}{\numberline {5.3}Linearizzazione della misura}{113}
+\contentsline {subsection}{\numberline {5.3.1}Metodo di compensazione della non-linearità}{114}
+\contentsline {subsection}{\numberline {5.3.2}Misure in seguito alla compensazione}{119}
+\contentsline {section}{\numberline {5.4}Ottimizzazione della misura}{123}
+\contentsline {subsection}{\numberline {5.4.1}Variazione dell'ampiezza del segnale di modulazione}{123}
+\contentsline {subsection}{\numberline {5.4.2}Sottrazione del residuo}{127}
+\contentsline {section}{\numberline {5.5}Prove dello strumento finale}{131}
+\contentsline {subsection}{\numberline {5.5.1}Bersaglio fisso}{131}
+\contentsline {subsection}{\numberline {5.5.2}Bersaglio mobile}{133}
+\contentsline {subsection}{\numberline {5.5.3}Range di misura}{135}
+\contentsline {subsection}{\numberline {5.5.4}Prestazioni}{137}
+\contentsline {section}{\numberline {5.6}Cenni su un'ulteriore ottimizzazione nell'algoritmo di compensazione}{137}
+\contentsline {section}{\numberline {5.7}Drift termico}{144}
+\contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{145}
+\contentsline {chapter}{Conclusioni e sviluppi futuri}{147}
+\contentsline {chapter}{\numberline {A}Documentazione driver per SCO Board}{151}
+\contentsline {chapter}{Bibliografia}{157}
