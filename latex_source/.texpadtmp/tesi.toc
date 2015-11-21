@@ -112,5 +112,4 @@
 \contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{139}
 \contentsline {chapter}{Conclusioni e sviluppi futuri}{141}
 \contentsline {chapter}{\numberline {A}Documentazione driver per SCO Board}{145}
-\contentsline {chapter}{\numberline {B}Documentazione software}{151}
-\contentsline {chapter}{Bibliografia}{152}
+\contentsline {chapter}{Bibliografia}{151}
