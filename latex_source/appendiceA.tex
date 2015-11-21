@@ -1,26 +1,26 @@
-\chapter{Appendice A - Documentazione driver per SCO-Board}
+\chapter{Documentazione driver per SCO Board}
 \label{appendiceA}
 \thispagestyle{empty}
 
-\textit{Questa appendice contiene una breve descrizione dei driver sviluppati per interfacciare la SCO-Board con la scheda di sviluppo NI9636}
+\textit{Quest'appendice contiene una breve descrizione dei driver sviluppati per interfacciare la SCO Board con la scheda di prototipazione NI sbRIO-9636}
 
-\section{VI sviluppati}
-Per consentire la comunicazione tra la scheda di conversione SCO-Board e la scheda di sviluppo NI9636 è stato necessario lo sviluppo di un apposito driver. Si è scelto di rendere disponibile una versione completa dei driver per consentire il riutilizzo della scheda di conversione per lavori futuri. 
-Per la distribuzione si è scelto di fornire un archivio \textit{.zip} che contiene i VI necessari scaricabile da github \cite{sourceforge}.
+\section*{Driver per SCO Board}
+Per consentire la comunicazione tra la scheda di conversione \textit{SCO Board} e la \textit{NI sbRIO-9636} è stato necessario lo sviluppo di un apposito driver. Si è scelto di rendere disponibile una versione completa dei driver per consentire il riutilizzo della scheda di conversione per lavori futuri. 
+Per la distribuzione si è deciso di fornire un archivio \textit{.zip}, scaricabile da \textit{SourceForge} \cite{sourceforge}, contenente i VI necessari.
 
-I VI che fanno parte del set di driver sviluppato sono
+I VI che fanno parte del set di driver sviluppato sono:
 \begin{itemize}
-	\item Output enable-disable: abilita o disabilita i pin di uscita
-	\item Clock pin init: abilita o disabilita i pin di clock
-	\item Clock generator: genera il segnale di clock sincrono per DAC ed ADC
-	\item Single point acquisition: acquisisce un campione dei dati in ingresso
-	\item Single point generation: genera un campione di dati sulle uscite
+	\item \textit{Output enable-disable}: Abilita/disabilita i pin digitali di uscita
+	\item \textit{Clock enable-disable}: Abilita/disabilita i pin digitali di uscita dedicati ai segnali di clock ADC/DAC
+	\item \textit{Clock generator}: Genera il segnale di clock sincrono per DAC ed ADC
+	\item \textit{Single point acquisition}: Acquisisce un campione dei dati in ingresso
+	\item \textit{Single point generation}: Genera un campione di dati sulle uscite
 \end{itemize}
 
-Di seguito sarà descritta in dettaglio la struttura di ciascun VI e sarà spiegato in dettaglio come utilizzare il driver sviluppato all'interno di un software LabVIEW.
-Per la descrizione di ingressi ed uscite si è scelto di utilizzare la convenzione di LabVIEW, segnando in grassetto gli ingressi necessari all'esecuzione del VI.
+Di seguito verrà descritta in dettaglio la struttura di ciascun VI e come utilizzarli all'interno di un software LabVIEW.
+Per la descrizione di ingressi ed uscite si è scelto di avvalersi della convenzione di LabVIEW, evidenziando in grassetto gli ingressi necessari all'esecuzione del VI.
 
-\subsection{Output enable-disable}
+\subsection*{Output enable-disable}
 
 \begin{figure}[H]
 	\begin{center}
@@ -29,41 +29,41 @@ Per la descrizione di ingressi ed uscite si è scelto di utilizzare la convenzio
 	\end{center}
 \end{figure}
 
-Questo VI consente di abilitare e disabilitare i pin di uscita della scheda di sviluppo a cui si connette la SCO-Board, in modo da permettere il loro utilizzo per inviare un segnale digitale da 12-bit al convertitore presente sulla scheda di conversione.
+Questo VI consente di abilitare o disabilitare i pin digitali di uscita della \textit{NI sbRIO-9636} a cui si connette la SCO Board. L'abilitazione della scrittura sui pin di uscita consente, mediante il VI \textit{Single point generation}, di inviare un segnale digitale a 12-bit al convertitore DAC presente sulla scheda di conversione.
 
-\paragraph{Input}
+\paragraph*{Input}
 \begin{itemize}
-	\item \textbf{Enable:} consente di scegliere se abilitare o disabilitare le uscite digitali a cui è collegata la SCO-Board.
-	\item Error in: consente di inserire in ingresso al VI un errore, per propagarlo nel codice o per ragioni di sincronizzazione.
+	\item \textbf{Enable}: Consente di scegliere se abilitare (\textit{True}) o disabilitare (\textit{False}) le uscite digitali a cui è collegata la SCO Board.
+	\item \textit{Error in}: Consente la gestione manuale dell'errore. Questo ingresso viene utilizzato per propagare un codice di errore avvenuto in precedenza nei nodi a monte o per ragioni di sincronizzazione.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
-	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
+	\item \textit{Error out}: Segnala se l'operazione è avvenuta con successo. In caso di errore viene mostrato un codice di errore.
 \end{itemize}
 
-\subsection{Clock pin init}
+\subsection*{Clock enable-disable}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1]{appendiceA/clock_init}
-		\caption{Struttura VI Clock pin init}
+		\caption{Struttura VI Clock enable-disable}
 	\end{center}
 \end{figure}
 
-Questo VI consente di abilitare o disabilitare i pin che forniscono il clock ai convertitori della scheda di acquisizione SCO-Board.
-\paragraph{Input}
+Questo VI consente di abilitare o disabilitare i pin digitali di uscita che forniscono il clock ai convertitori DAC/ADC della scheda di conversione SCO Board.
+\paragraph*{Input}
 \begin{itemize}
-	\item \textbf{Enable:} consente di scegliere se abilitare o disabilitare le uscite digitali a cui sono collegati i clock dei convertitori.
+	\item \textbf{Enable}: Consente di scegliere se abilitare (\textit{True}) o disabilitare (\textit{False}) le uscite digitali a cui sono collegati i clock dei convertitori DAC/ADC.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
-	\item I/O out clock ADC: indica il pin associato al clock dell'ADC.
-	\item I/O out clock DAC: indica il pin associato al clock del DAC.
+	\item \textit{I/O out clock ADC (pin 17)}: Indica il pin digitale associato al segnale di clock dell'ADC.
+	\item \textit{I/O out clock DAC (pin 16)}: Indica il pin digitale associato al segnale di clock del DAC.
 \end{itemize}
 
-\subsection{Clock generator}
+\subsection*{Clock generator}
 
 \begin{figure}[H]
 	\begin{center}
@@ -72,23 +72,23 @@ Questo VI consente di abilitare o disabilitare i pin che forniscono il clock ai 
 	\end{center}
 \end{figure}
 
-Questo VI si occupa di generare sulle uscite della scheda di sviluppo NI9636 il segnale logico all'ingresso del VI. Le uscite su cui questo segnale è generato sono associate ai clock del DAC e dell'ADC. Il VI genera il clock per i due convertitori in modo sincrono.
+Questo VI si occupa di generare sulle uscite digitali, relative ai segnali di clock DAC/ADC, il valore logico all'ingresso del VI. Questo VI viene utilizzato per generare il segnale di clock per i due convertitori in modo sincrono.
 
-\paragraph{Input}
+\paragraph*{Input}
 \begin{itemize}
-	\item \textbf{DAC clock pin:} pin associato al clock del DAC.
-	\item \textbf{ADC clock pin:} pin associato al clock dell'ADC.
-	\item \textbf{Clock in:} valore logico del clock da generare.
-	\item Error in: consente di inserire in ingresso al VI un errore, per propagarlo nel codice o per ragioni di sincronizzazione.
+	\item \textbf{DAC clock pin}: Indica il pin digitale associato al segnale di clock del DAC.
+	\item \textbf{ADC clock pin}: Indica il pin digitale associato al segnale di clock dell'ADC.
+	\item \textbf{Clock in}: Valore logico da generare in uscita.
+	\item \textit{Error in}: Consente la gestione manuale dell'errore. Questo ingresso viene utilizzato per propagare un codice di errore avvenuto in precedenza nei nodi a monte o per ragioni di sincronizzazione.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
-	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
-	\item !Clock: valore logico in ingresso negato.
+	\item \textit{Error out}: Segnala se l'operazione è avvenuta con successo. In caso di errore viene mostrato un codice di errore.
+	\item \textit{!Clock}: Negazione del valore logico in ingresso a \textbf{Clock in}.
 \end{itemize}
 
-\subsection{Single point acquisition}
+\subsection*{Single point acquisition}
 
 \begin{figure}[H]  
 	\begin{center}
@@ -97,68 +97,73 @@ Questo VI si occupa di generare sulle uscite della scheda di sviluppo NI9636 il 
 	\end{center}
 \end{figure}
 
-Questo VI acquisisce un singolo campione in uscita dall'ADC. In accordo con le psecifiche fornite per l'ADC, l'acquisizione del dato sarà eseguita sul fronte di discesa del clock dell'ADC.
-Il VI restituisce un valore numerico puro, espresso in \textit{fixed point da 12-bit, con parte intera da 12-bit}. Sono forniti sia il valore con segno che senza segno.
+Questo VI acquisisce un singolo campione di 12-bit in uscita dall'ADC. In accordo con le specifiche fornite per l'ADC, l'acquisizione del dato sarà eseguita sul fronte di discesa del clock.
+Il VI restituisce un valore numerico puro, espresso in \textit{fixed point} da 12-bit e con parte intera da 12-bit. Sono forniti sia il valore numerico con segno che senza segno.
 
-\paragraph{Input}
+\paragraph*{Input}
 Questo VI non ha input
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
-	\item Out: il valore numerico in uscita dall'ADC, senza segno (0;+4095).
-	\item Out (Unsigned): il valore in uscita dall'ADC, con segno (-2018;+2047).
+	\item \textit{Out}: Valore numerico con segno ($-2048 \ \div \ +2047$) in uscita dall'ADC.
+	\item \textit{Out (UnSigned)}: Valore numerico senza segno ($0 \ \div \ +4095$) in uscita dall'ADC.
 \end{itemize}
 
-\subsection{Single point generation}
+\subsection*{Single point generation}
 
 \begin{figure}[H]  
 	\begin{center}
-		\includegraphics[scale=1]{appendiceA/acquisition}
-		\caption{Struttura VI Single point acquisition}
+		\includegraphics[scale=1]{appendiceA/generation}
+		\caption{Struttura VI Single point generation}
 	\end{center}
 \end{figure}
 
-Questo VI genera un singolo punto sulle uscite della scheda di sviluppo NI9636 associate agli ingressi del DAC. In accordo con le specifiche fornite per il DAC la generazione del dato sarà eseguita sul fronte di salita del clock del DAC. Il VI accetta in ingresso un valore numerico puro, espresso in \textit{fixed point da 12-bit, con parte intera da 12-bit, senza segno}.
-\paragraph{Input}
+Questo VI genera un singolo campione da 12-bit sulle uscite della scheda di sviluppo associate agli ingressi del DAC. 
+In accordo con le specifiche fornite per il DAC la generazione del dato sarà eseguita sul fronte di salita del clock.
+Il VI accetta in ingresso un valore numerico puro, espresso in \textit{fixed point} da 12-bit con parte intera da 12-bit e senza segno (\textit{unsigned}).
+\paragraph*{Input}
 \begin{itemize}
-	\item \textbf{Data to write:} il dato che si vuole generare espresso in fixed point senza segno (0;4095).
+	\item \textbf{Data to write}: Il dato che si vuole generare in uscita espresso in \textit{unsigned fixed point} ($-2048 \ \div \ +2047$).
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
-	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
+	\item \textit{Error out}: Segnala se l'operazione è avvenuta con successo. In caso di errore viene mostrato un codice di errore.
 \end{itemize}
 
-\section{Esempio di utilizzo del driver}
-In questa sezione sarà mostrata la corretta procedura per implementare il driver SCO-Board all'interno di un applicativo LabVIEW.
+\section*{Esempio di utilizzo}
+In questa sezione sarà mostrata la corretta procedura per utilizzare il driver SCO Board all'interno di un progetto LabVIEW.
 
-Il progetto dell'applicativo LabVIW che farà uso del driver SCO-Board dovrà contenere tutti i VI contenuti nell'archivio \textit{.zip} fornito. La struttura delle cartelle dell'archivio non deve essere alterata.
-Il progetto avrà la struttura mostrata in figura \ref{progetto}.
+Il progetto del software LabVIEW, che farà uso del driver SCO Board, dovrà contenere tutti i VI presenti nell'archivio \textit{.zip} fornito. La struttura delle cartelle contenute nell'archivio non deve essere alterata.
+
+Il progetto avrà la struttura mostrata in Figura \ref{progetto}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=1]{appendiceA/progetto}
-		\caption{Struttura del progetto contenente i driver SCO-Board}
+		\caption{Struttura di un progetto contenente i driver SCO Board}
 		\label{progetto}
 	\end{center}
 \end{figure}
 
-La struttura di un VI che fa uso dei driver SCO-Board è mostrata in figura \ref{VI}
+Invece, il diagramma a blocchi (\textit{Block Diagram}) di un VI che fa uso dei driver SCO Board è mostrato in Figura \ref{VI}
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.6]{appendiceA/VI}
-		\caption{Struttura del VI contenente i driver SCO-Board}
+		\caption{Diagramma a blocchi di un VI contenente i driver SCO Board}
 		\label{VI}
 	\end{center}
 \end{figure}
 
-Il VI sarà composto da una \textit{sequence structure}; il primo \textit{frame} della struttura avrà il compito di inizializzare le uscite della scheda di sviluppo NI9636, mentre il frame sucessivo conterrà il codice dell'applicazione.
-All'intero del codice dell'applicazione è necessario inserire un \textit{single cycle timed loop}, con frequenza di clock doppia rispetto alla frequenza di campionamento, che conterrà il VI di generazione del clock e i VI di acquisizione e generazione del segnale. L'uso del \textit{single cycle timed loop} è necessario per garantire una temporizzazione precisa e coerente del clock.
-All'intero del \textit{single cycle timed loop} sarà inserita una \textit{case structure} che garantirà la corretta sequenza e temporizzazione di acquisizione e generazione del segnale. In particolare la generazione sarà eseguita sel caso \textit{true} della \textit{case structure}, mentre l'acquisizione sarà eseguita nel caso \textit{false}.
+Il VI sarà composto da una \textit{Sequence Structure}: il primo \textit{frame} della struttura avrà il compito di inizializzare le uscite della scheda di sviluppo \textit{sbRIO-9636}, mentre il secondo \textit{frame} conterrà il codice dell'applicazione.
 
-Per lo scambio di dati con il resto dell'applicativo è consigliabile utilizzare il pattern producer-consumer.
+All'interno del codice dell'applicazione è necessario inserire un \textit{Single-Cycle Timed Loop} (SCTL), con frequenza di esecuzione (\textit{Source time}) doppia rispetto alla frequenza di campionamento desiderata, che conterrà il VI di generazione del clock (\textit{Clock generator}) e i VI di acquisizione e generazione del segnale (\textit{Single point acquisition} e \textit{Single point generation}). 
 
+L'utilizzo del SCTL è necessario per garantire una temporizzazione precisa e coerente del clock. La massima frequenza di esecuzione impostabile sul SCTL è $100MHz$. Questo, perché i circuiti di conversione della SCO Board possiedono una frequenza massima di campionamento pari a $50MHz$.
 
+All'interno del SCTL sarà inserita, inoltre, una \textit{Case Structure} che garantirà la corretta sequenza e temporizzazione di acquisizione e generazione del segnale. 
 
+In particolare, la generazione del segnale sarà eseguita nella scheda \textit{True} della \textit{Case structure} (fronte di salita del segnale di clock), mentre l'acquisizione sarà svolta nella scheda \textit{False} (fronte di discesa del segnale di clock).
 
+Per lo scambio di dati con il resto dell'applicativo è consigliabile utilizzare code FIFO con il pattern \textit{Producer-Consumer}.
