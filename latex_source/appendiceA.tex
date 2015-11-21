@@ -1,12 +1,12 @@
-\chapter{Appendice A - Documentazione driver per SCO-Board}
+\chapter{Documentazione driver per SCO-Board}
 \label{appendiceA}
 \thispagestyle{empty}
-
+%% TODO App A: Leggere documentazione SCO-BOARD
 \textit{Questa appendice contiene una breve descrizione dei driver sviluppati per interfacciare la SCO-Board con la scheda di sviluppo NI9636}
 
-\section{VI sviluppati}
+\section*{VI sviluppati}
 Per consentire la comunicazione tra la scheda di conversione SCO-Board e la scheda di sviluppo NI9636 è stato necessario lo sviluppo di un apposito driver. Si è scelto di rendere disponibile una versione completa dei driver per consentire il riutilizzo della scheda di conversione per lavori futuri. 
-Per la distribuzione si è scelto di fornire un archivio \textit{.zip} che contiene i VI necessari scaricabile da github \cite{sourceforge}.
+Per la distribuzione si è scelto di fornire un archivio \textit{.zip} contenente i VI necessari scaricabile da \textit{github} \cite{sourceforge}.
 
 I VI che fanno parte del set di driver sviluppato sono
 \begin{itemize}
@@ -20,7 +20,7 @@ I VI che fanno parte del set di driver sviluppato sono
 Di seguito sarà descritta in dettaglio la struttura di ciascun VI e sarà spiegato in dettaglio come utilizzare il driver sviluppato all'interno di un software LabVIEW.
 Per la descrizione di ingressi ed uscite si è scelto di utilizzare la convenzione di LabVIEW, segnando in grassetto gli ingressi necessari all'esecuzione del VI.
 
-\subsection{Output enable-disable}
+\subsection*{Output enable-disable}
 
 \begin{figure}[H]
 	\begin{center}
@@ -37,12 +37,12 @@ Questo VI consente di abilitare e disabilitare i pin di uscita della scheda di s
 	\item Error in: consente di inserire in ingresso al VI un errore, per propagarlo nel codice o per ragioni di sincronizzazione.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
 	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
 \end{itemize}
 
-\subsection{Clock pin init}
+\subsection*{Clock pin init}
 
 \begin{figure}[H]
 	\begin{center}
@@ -52,18 +52,18 @@ Questo VI consente di abilitare e disabilitare i pin di uscita della scheda di s
 \end{figure}
 
 Questo VI consente di abilitare o disabilitare i pin che forniscono il clock ai convertitori della scheda di acquisizione SCO-Board.
-\paragraph{Input}
+\paragraph*{Input}
 \begin{itemize}
 	\item \textbf{Enable:} consente di scegliere se abilitare o disabilitare le uscite digitali a cui sono collegati i clock dei convertitori.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
 	\item I/O out clock ADC: indica il pin associato al clock dell'ADC.
 	\item I/O out clock DAC: indica il pin associato al clock del DAC.
 \end{itemize}
 
-\subsection{Clock generator}
+\subsection*{Clock generator}
 
 \begin{figure}[H]
 	\begin{center}
@@ -74,7 +74,7 @@ Questo VI consente di abilitare o disabilitare i pin che forniscono il clock ai 
 
 Questo VI si occupa di generare sulle uscite della scheda di sviluppo NI9636 il segnale logico all'ingresso del VI. Le uscite su cui questo segnale è generato sono associate ai clock del DAC e dell'ADC. Il VI genera il clock per i due convertitori in modo sincrono.
 
-\paragraph{Input}
+\paragraph*{Input}
 \begin{itemize}
 	\item \textbf{DAC clock pin:} pin associato al clock del DAC.
 	\item \textbf{ADC clock pin:} pin associato al clock dell'ADC.
@@ -82,13 +82,13 @@ Questo VI si occupa di generare sulle uscite della scheda di sviluppo NI9636 il 
 	\item Error in: consente di inserire in ingresso al VI un errore, per propagarlo nel codice o per ragioni di sincronizzazione.
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
 	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
 	\item !Clock: valore logico in ingresso negato.
 \end{itemize}
 
-\subsection{Single point acquisition}
+\subsection*{Single point acquisition}
 
 \begin{figure}[H]  
 	\begin{center}
@@ -100,16 +100,16 @@ Questo VI si occupa di generare sulle uscite della scheda di sviluppo NI9636 il 
 Questo VI acquisisce un singolo campione in uscita dall'ADC. In accordo con le psecifiche fornite per l'ADC, l'acquisizione del dato sarà eseguita sul fronte di discesa del clock dell'ADC.
 Il VI restituisce un valore numerico puro, espresso in \textit{fixed point da 12-bit, con parte intera da 12-bit}. Sono forniti sia il valore con segno che senza segno.
 
-\paragraph{Input}
+\paragraph*{Input}
 Questo VI non ha input
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
 	\item Out: il valore numerico in uscita dall'ADC, senza segno (0;+4095).
 	\item Out (Unsigned): il valore in uscita dall'ADC, con segno (-2018;+2047).
 \end{itemize}
 
-\subsection{Single point generation}
+\subsection*{Single point generation}
 
 \begin{figure}[H]  
 	\begin{center}
@@ -119,17 +119,17 @@ Questo VI non ha input
 \end{figure}
 
 Questo VI genera un singolo punto sulle uscite della scheda di sviluppo NI9636 associate agli ingressi del DAC. In accordo con le specifiche fornite per il DAC la generazione del dato sarà eseguita sul fronte di salita del clock del DAC. Il VI accetta in ingresso un valore numerico puro, espresso in \textit{fixed point da 12-bit, con parte intera da 12-bit, senza segno}.
-\paragraph{Input}
+\paragraph*{Input}
 \begin{itemize}
 	\item \textbf{Data to write:} il dato che si vuole generare espresso in fixed point senza segno (0;4095).
 \end{itemize}
 
-\paragraph{output}
+\paragraph*{Output}
 \begin{itemize}
 	\item Error out: mostra se l'operazione è avvenuta con successo. In caso di errore mostra un codice di errore.
 \end{itemize}
 
-\section{Esempio di utilizzo del driver}
+\section*{Esempio di utilizzo del driver}
 In questa sezione sarà mostrata la corretta procedura per implementare il driver SCO-Board all'interno di un applicativo LabVIEW.
 
 Il progetto dell'applicativo LabVIW che farà uso del driver SCO-Board dovrà contenere tutti i VI contenuti nell'archivio \textit{.zip} fornito. La struttura delle cartelle dell'archivio non deve essere alterata.

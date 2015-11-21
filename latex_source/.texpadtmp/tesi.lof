@@ -142,3 +142,12 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Misure di distanza e media}}}{138}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distribuzione dei valori misurati rispetto alla media}}}{138}
 \contentsline {figure}{\numberline {5.34}{\ignorespaces Misure di distanza a $50cm$ con bersaglio mobile effettuate su $200 \mu m$ di spostamento\relax }}{139}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Struttura VI Output enable-disable\relax }}{146}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Struttura VI Clock pin init\relax }}{146}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Struttura VI Clock generator\relax }}{147}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Struttura VI Single point acquisition\relax }}{148}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Struttura VI Single point acquisition\relax }}{148}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Struttura del progetto contenente i driver SCO-Board\relax }}{149}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Struttura del VI contenente i driver SCO-Board\relax }}{150}
+\addvspace {10\p@ }
