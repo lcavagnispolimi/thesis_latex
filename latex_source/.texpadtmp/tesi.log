@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  21 NOV 2015 15:58
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  22 NOV 2015 13:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,7 +1067,10 @@ File: ./pictures/cap4/timdiagfft.png Graphic file (type QTm)
 File: ./pictures/cap4/fxpvsfloat.jpg Graphic file (type QTm)
  <use  "./pictures/cap4/fxpvsfloat.jpg" > [97]
 File: ./pictures/cap4/configfxp.png Graphic file (type QTm)
- <use  "./pictures/cap4/configfxp.png" > [98] [99] [100]
+ <use  "./pictures/cap4/configfxp.png" >
+Underfull \vbox (badness 2409) has occurred while \output is active []
+
+ [98] [99] [100]
 File: ./pictures/cap4/guimicro.png Graphic file (type QTm)
  <use  "./pictures/cap4/guimicro.png" > [101]
 File: ./pictures/cap4/dmafunz.png Graphic file (type QTm)
@@ -1096,7 +1099,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [109]
 File: ./pictures/cap5/misfisso2b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso2b.png" >
-Overfull \hbox (1.77603pt too wide) in paragraph at lines 110--111
+Overfull \hbox (1.77603pt too wide) in paragraph at lines 109--110
  [][] 
  []
 
@@ -1133,7 +1136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [116]
 File: ./pictures/cap5/mulfactdiscesa.eps Graphic file (type eps)
  <./pictures/cap5/mulfactdiscesa.eps>
-Overfull \hbox (5.73018pt too wide) in paragraph at lines 203--212
+Overfull \hbox (5.73018pt too wide) in paragraph at lines 202--211
 []$[]$ $[]$
  []
 
@@ -1149,7 +1152,7 @@ File: ./pictures/cap5/primadopocompdisc.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdisc.eps>
 File: ./pictures/cap5/primadopocompsal.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsal.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 245--245
+Underfull \hbox (badness 1158) in paragraph at lines 244--244
 []\T1/lmss/m/sl/10 Figura 5.13: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
@@ -1157,7 +1160,7 @@ Underfull \hbox (badness 1158) in paragraph at lines 245--245
 Underfull \vbox (badness 1178) has occurred while \output is active []
 
  [119]
-Overfull \hbox (7.88374pt too wide) in paragraph at lines 248--249
+Overfull \hbox (7.88374pt too wide) in paragraph at lines 247--248
 []\T1/lmr/m/n/10.95 I mi-glio-ra-men-ti ot-te-nu-ti per me-ri-to del-la com-pen-sa-zio-ne del-la non-linearità
  []
 
@@ -1166,7 +1169,7 @@ File: ./pictures/cap5/misfisso3a.eps Graphic file (type eps)
  <./pictures/cap5/misfisso3a.eps>
 File: ./pictures/cap5/misfisso3b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso3b.png" >
-Overfull \hbox (11.71956pt too wide) in paragraph at lines 267--268
+Overfull \hbox (11.71956pt too wide) in paragraph at lines 266--267
  [][] 
  []
 
@@ -1192,7 +1195,7 @@ File: ./pictures/cap5/misfisso4b.png Graphic file (type QTm)
  <use  "./pictures/cap5/misfisso4b.png" >
 File: ./pictures/cap5/mismobile4.eps Graphic file (type eps)
  <./pictures/cap5/mismobile4.eps>
-Overfull \hbox (0.43459pt too wide) in paragraph at lines 358--359
+Overfull \hbox (0.43459pt too wide) in paragraph at lines 357--358
 []\T1/lmr/m/n/10.95 L'errore picco-picco mi-su-ra-to con que-sta pro-va è di $\OT1/lmr/m/n/10.95 451\OML/lmm/m/it/10.95 ^^Vm$\T1/lmr/m/n/10.95 , men-tre l'RMS
  []
 
@@ -1258,7 +1261,7 @@ File: ./pictures/cap5/primadopocompdiscnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompdiscnew.eps>
 File: ./pictures/cap5/primadopocompsalnew.eps Graphic file (type eps)
  <./pictures/cap5/primadopocompsalnew.eps>
-Underfull \hbox (badness 1158) in paragraph at lines 583--583
+Underfull \hbox (badness 1158) in paragraph at lines 582--582
 []\T1/lmss/m/sl/10 Figura 5.33: |Cur-ve me-dia-te del-le fre-quen-ze estrat-te per en-tram-bi i fron-ti di
  []
 
