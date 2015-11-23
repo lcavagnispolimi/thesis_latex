@@ -111,5 +111,6 @@
 \contentsline {section}{\numberline {5.7}Drift termico}{144}
 \contentsline {section}{\numberline {5.8}Precisazione sui risultati ottenuti}{145}
 \contentsline {chapter}{Conclusioni e sviluppi futuri}{147}
+\contentsline {chapter}{Ringraziamenti}{149}
 \contentsline {chapter}{\numberline {A}Documentazione driver per SCO Board}{151}
 \contentsline {chapter}{Bibliografia}{157}
