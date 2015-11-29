@@ -288,7 +288,7 @@ Questo approccio sta alla base dell'implementazione delle celle di memoria flash
 
 Storicamente le EEPROM non erano usate per controllare gli switch sui segnali dell'FPGA, ma erano usate per implementare le funzioni AND nei dispositivi PLD~\cite{fpgabook}. Questa tecnica non è più usata, tranne che nei dispositivi a piccola capacità~\cite{cpldxilinx}, a causa dell'eccessivo consumo statico dei dispositivi con questa architettura.
 
-I moderni processi produttivi hanno permesso di utilizzare le celle di memoria \textit{floating gate} direttamente come switch. In particolare attualmente sono usate celle di memoria flash a causa della loro efficenza rispetto all'area. L'uso diffuso di memorie flash come memoria non volatile del chip assicura vantaggi nella diminuzione della dimensione geometrica dei transistor.
+I moderni processi produttivi hanno permesso di utilizzare le celle di memoria \textit{floating gate} direttamente come switch. In particolare attualmente sono usate celle di memoria flash a causa della loro efficienza rispetto all'area. L'uso diffuso di memorie flash come memoria non volatile del chip assicura vantaggi nella diminuzione della dimensione geometrica dei transistor.
 
 \begin{figure}[H]  
   \begin{center}
@@ -340,7 +340,7 @@ L'FPGA integrata nella scheda di prototipazione usata è la \textit{Spartan-6 LX
 
 In particolare questo prodotto integra al suo interno $54576$ registri \textit{Flip Flop} e 27288 \textit{Look Up Table} (LUT) a 6 ingressi raggruppati in $6822$ \textit{Slices} (blocchi logici che contengono 8 Flip Flop e 4 LUT). Inoltre sono integrati $58$ \textit{DSP48} (che contengono un moltiplicatore $18 \times 18$ , un sommatore ed un accumulatore), $5$ canali DMA, $2088$ Kbits di block RAM e $358$ moduli di input/output riconfigurabili. 
 
-La scheda possiede un'oscillatore a $40MHz$, da cui possono essere derivati clock in un intervallo compreso tra $2.5MHz$ e $320MHz$. La tecnologia usata per implementare lo switching è SRAM. 
+La scheda possiede un oscillatore a $40MHz$, da cui possono essere derivati clock in un intervallo compreso tra $2.5MHz$ e $320MHz$. La tecnologia usata per implementare lo switching è SRAM. 
 
 Una descrizione più dettagliata dell'FPGA utilizzata può essere trovata nella documentazione fornita da \textit{Xilinx} \cite{dsxilinx}.
 
