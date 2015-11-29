@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  25 NOV 2015 00:07
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.8.29)  29 NOV 2015 01:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1268,25 +1268,16 @@ Underfull \hbox (badness 1158) in paragraph at lines 582--582
 
 Underfull \vbox (badness 3635) has occurred while \output is active []
 
- [140]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [141]
+ [140] [141]
 File: ./pictures/cap5/fissomodliscioa.eps Graphic file (type eps)
  <./pictures/cap5/fissomodliscioa.eps>
 File: ./pictures/cap5/fissomodlisciob.png Graphic file (type QTm)
  <use  "./pictures/cap5/fissomodlisciob.png" >
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [142]
 File: ./pictures/cap5/mobilemodliscio.eps Graphic file (type eps)
  <./pictures/cap5/mobilemodliscio.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [144]) [145]
+ [142] [143] [144]) [145]
 \openout2 = `conclusioni.aux'.
 
  (./conclusioni.tex [146
