@@ -54,9 +54,9 @@
 \contentsline {section}{\numberline {4.2}Sistema Real-Time e FPGA}{65}
 \contentsline {subsection}{\numberline {4.2.1}Programmazione del microcontrollore}{65}
 \contentsline {subsubsection}{Sistema Real-Time}{66}
-\contentsline {paragraph}{Sistema Operativo Real-Time}{67}
+\contentsline {paragraph}{Sistema Operativo Real-Time}{66}
 \contentsline {subparagraph}{VxWorks}{67}
-\contentsline {paragraph}{LabVIEW Real-Time}{69}
+\contentsline {paragraph}{LabVIEW Real-Time}{68}
 \contentsline {subsection}{\numberline {4.2.2}Programmazione dell'FPGA}{70}
 \contentsline {subsubsection}{Linguaggi di descrizione dell'Hardware (HDL)}{71}
 \contentsline {paragraph}{VHDL}{71}
