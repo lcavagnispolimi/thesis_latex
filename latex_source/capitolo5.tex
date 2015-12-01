@@ -382,7 +382,7 @@ Per queste ragioni si è scelto in modo conservativo come frequenza di taglio de
 \begin{tabular}{c|l|l|}
 \multicolumn{1}{l|}{} & \multicolumn{2}{c|}{\textbf{Deviazione standard relativa}} \\ \hline
 \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Frequenza \\ (Distanza)\end{tabular}}} & \textbf{con sottrazione del residuo} & \textbf{senza sottrazione} \\ \hline
-\textbf{\begin{tabular}[c]{@{}c@{}}800 KHz\\ (ca. 20cm)\end{tabular}}  & $2 \cdot 10^{-4} \div 3 \cdot 10^{-4}$ & $3 \cdot 10^{-4} \div 4 \cdot 10^{-4}$   \\
+\textbf{\begin{tabular}[c]{@{}c@{}}800 kHz\\ (ca. 20cm)\end{tabular}}  & $2 \cdot 10^{-4} \div 3 \cdot 10^{-4}$ & $3 \cdot 10^{-4} \div 4 \cdot 10^{-4}$   \\
 \textbf{\begin{tabular}[c]{@{}c@{}}1.5 MHz\\ (ca. 40cm)\end{tabular}} & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$  & $4 \cdot 10^{-4} \div 5 \cdot 10^{-4}$ \\
 \textbf{\begin{tabular}[c]{@{}c@{}}3.5 MHz\\ (ca. 90cm)\end{tabular}} & $6 \cdot 10^{-4} \div 7 \cdot 10^{-4}$ & $5 \cdot 10^{-4} \div 6 \cdot 10^{-4}$
 \end{tabular}
@@ -519,7 +519,7 @@ Qui di seguito si riassumono le prestazioni di misura dello strumento finale:
 	\item Range spaziale di misura: $10cm \div 110cm$
 	\item Minima incertezza relativa della misura di distanza: $8 \cdot 10^{-4}$
 	\item Massima incertezza relativa della misura di distanza: $2 \cdot 10^{-4}$
-	\item Frequenza massima teorica di misura: $1$ misura valida ogni $208 \mu s$ ($4.8 KHz$).
+	\item Frequenza massima teorica di misura: $1$ misura valida ogni $208 \mu s$ ($4.8 kHz$).
 	
 	A causa di mancanza di area nell'FPGA in uso non è stato possibile raggiungere le prestazioni di misura teoriche. Con un'acquisizione continua della misura si è riusciti ad ottenere una misura di distanza valida ogni $20 ms$ ($50 Hz$). L'occupazione in termini di area dell'algoritmo dell'FFT non ha permesso di implementare in hardware l'intero algoritmo di FFT interpolata e calcolo della distanza, rendendo così necessario l'uso di un microcontrollore per la conclusione dell'elaborazione numerica dei risultati dell'FFT.
 	

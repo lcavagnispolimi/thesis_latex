@@ -567,13 +567,13 @@ Il segnale di modulazione del laser viene generato, dai $12$ pin digitali d'usci
 
 Il segnale di modulazione viene riprodotto completamente in uscita ogni $1250$ punti; questo fa si che il laser venga pilotato da un segnale di modulazione con frequenza pari a:
 \begin{equation}
-	f_{mod} = \frac{30MHz}{1250} = 24KHz
+	f_{mod} = \frac{30MHz}{1250} = 24kHz
 \end{equation}
 
 \paragraph{Campionamento del segnale interferometrico}
 Il segnale interferometrico in arrivo dal laser viene campionato, dai pin digitali d'ingresso, con una frequenza pari alla frequenza di clock ($30MHz$) e una risoluzione di $12$ bit.
 
-Il segnale d'ingresso è anch'esso composto da $1250$ punti ognuno con una dinamica da $0$ a $4095$ livelli di tensione. Pertanto un segnale interferometrico completo equivalente a un periodo di modulazione del laser è disponibile ogni $41.6us$ ($24KHz$).
+Il segnale d'ingresso è anch'esso composto da $1250$ punti ognuno con una dinamica da $0$ a $4095$ livelli di tensione. Pertanto un segnale interferometrico completo equivalente a un periodo di modulazione del laser è disponibile ogni $41.6us$ ($24kHz$).
 
 \paragraph{Condizionamento del segnale interferometrico}
 Il segnale interferometrico, acquisito dal circuito di conversione Analogico/Digitale, viene condizionato prima di essere inviato alla fase di elaborazione vera e propria.
@@ -605,11 +605,11 @@ Dalla parte reale e immaginaria si ricava solamente, per ragioni dipendenti dall
 
 Dato che i campioni in ingresso all'algoritmo di FFT sono campionati a $30MHz$, la risoluzione di frequenza di ciascun \textit{bin} è pari a:
 \begin{equation}
-	f_{bin} = \frac{f_{sample}}{n_{sample}} = \frac{30MHz}{512} = 58.59375 KHz
+	f_{bin} = \frac{f_{sample}}{n_{sample}} = \frac{30MHz}{512} = 58.59375 kHz
 \end{equation}
-Ciò significa che ciascun \textit{bin} di frequenza rappresenta la quantità totale di energia al quadrato posseduta dal segnale a quella particolare frequenza. Il primo punto corrisponde a $0Hz$ (componente continua), il secondo punto corrisponde a $58.59375 KHz$, il terzo punto corrisponde a $117.1875KHz$ e così via.
+Ciò significa che ciascun \textit{bin} di frequenza rappresenta la quantità totale di energia al quadrato posseduta dal segnale a quella particolare frequenza. Il primo punto corrisponde a $0Hz$ (componente continua), il secondo punto corrisponde a $58.59375 kHz$, il terzo punto corrisponde a $117.1875kHz$ e così via.
 
-Sappiamo dal teorema di \textit{Nyquist} che il campionamento a $30MSa/s$ sarà in grado di misurare frequenze fino a un massimo di $15MHz$. Perciò, tutti i bin maggiori al $257\degree$ (pari alla frequenza $256 * 58.59375 KHz = 15MHz$) rappresentano frequenze negative: il $258\degree$ corrisponde alla frequenza $-14.9414062 MHz$, il $259\degree$ corrisponde a $-14.8828124 MHz$ e così via.
+Sappiamo dal teorema di \textit{Nyquist} che il campionamento a $30MSa/s$ sarà in grado di misurare frequenze fino a un massimo di $15MHz$. Perciò, tutti i bin maggiori al $257\degree$ (pari alla frequenza $256 * 58.59375 kHz = 15MHz$) rappresentano frequenze negative: il $258\degree$ corrisponde alla frequenza $-14.9414062 MHz$, il $259\degree$ corrisponde a $-14.8828124 MHz$ e così via.
 
 \paragraph{Estrazione del massimo bin di frequenza}
 L'ultima fase dell'elaborazione numerica del segnale interferometrico su FPGA è l'estrazione del bin di frequenza con massima ampiezza.
@@ -620,7 +620,7 @@ Inoltre, eliminando i primi campioni dello spettro si filtra la potenza della co
 
 A questo punto, l'algoritmo di estrazione del massimo bin valuta il campione con ampiezza maggiore, corrispondente al tono fondamentale, ed estrae la sua posizione e la sua ampiezza, l'ampiezza del tono successivo e quella del tono precedente.
 
-L'algoritmo effettua l'estrazione del massimo bin dopo ogni semiperiodo del segnale di modulazione. Ciò indica che la frequenza con cui viene prodotto un risultato è $48KHz$.
+L'algoritmo effettua l'estrazione del massimo bin dopo ogni semiperiodo del segnale di modulazione. Ciò indica che la frequenza con cui viene prodotto un risultato è $48kHz$.
 
 Infine, i risultati dell'elaborazione vengono inviati al microprocessore.
 
